@@ -1,0 +1,5 @@
+﻿l_russian:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "Уния между [SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetAltName('RU_CL_TP')] и [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAltName('RU_CL_TP')] завершилась"
+ notification_wilhelmina_notification_desc: "После смерти короля Вильгельма III [Concept('concept_personal_union', 'личная уния')] двух государств была разорвана в силу различий в законах о престолонаследии."

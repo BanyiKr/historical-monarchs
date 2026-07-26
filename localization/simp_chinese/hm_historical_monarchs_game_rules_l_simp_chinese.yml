@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+
+ rule_hm_scripted_deaths: "历史上的君主们预先设定的逝世日期"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc 历史#!#!"
+ setting_enable_scripted_deaths_desc: "根据游戏内日期，为君主启用预设死亡事件"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc 随机#!#!"
+ setting_disable_scripted_deaths_desc: "根据游戏内日期，禁用君主预设的死亡事件"
+
+ rule_hm_heir_generation: "历史继承人创建"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc 大量#!#!"
+ setting_aggressive_heir_generation_desc: "游戏会始终尝试生成一位历史上的继承人，即使该继承人的年龄为负值。这有助于保持继承链的完整性"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc 历史#!#!"
+ setting_historical_heir_generation_desc: "游戏只会生成在历史时间点之前已经出生的继承人。这样可以避免出现年龄为负数的继承人，但如果统治者在此之前去世，继承链可能会永久中断"

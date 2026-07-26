@@ -1,0 +1,5 @@
+﻿l_japanese:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "[SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName]の[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName]との連合が終了しました"
+ notification_wilhelmina_notification_desc: "ウィリアム3世の逝去に伴い、相続法の差異によってこれらの国家間における[concept_personal_union]が終結することになりました。"

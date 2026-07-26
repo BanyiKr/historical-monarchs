@@ -1,0 +1,13 @@
+﻿l_english:
+
+ rule_hm_scripted_deaths: "Historical Monarch Death Years"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Historical#!#!"
+ setting_enable_scripted_deaths_desc: "Enable scripted deaths for certain [Concept('concept_ruler','Monarchs')] based on the in-game year"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Random#!#!"
+ setting_disable_scripted_deaths_desc: "Disable scripted deaths for certain [Concept('concept_ruler','Monarchs')] based on the in-game year"
+
+ rule_hm_heir_generation: "Historical Heir Generation"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Aggressive#!#!"
+ setting_aggressive_heir_generation_desc: "The game will always try to generate a historical heir, even if they would have negative age. This helps to keep the chains of succession intact"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc Historical#!#!"
+ setting_historical_heir_generation_desc: "The game will only generate historical heirs after they were born historically. This prevents having heirs with negative age, but the chains of succession can permanently break if the ruler dies beforehand"

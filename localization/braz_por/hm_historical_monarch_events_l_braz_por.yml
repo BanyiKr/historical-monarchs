@@ -1,0 +1,101 @@
+﻿l_braz_por:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName] se torna [concept_heir]"
+
+ # Netherlands
+ hm_netherlands.1.t: "A Coroação de Guilherme II"
+ hm_netherlands.1.d: "Com o fim do reinado de Guilherme I, seu filho mais velho, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Guilherme II, Rei dos Países Baixos."
+ hm_netherlands.1.f: "Embora compartilhe das tendências conservadoras do pai, ele não deseja se envolver nos assuntos governamentais nem de longe tanto quanto o pai fazia."
+ hm_netherlands.1.a: "Viva o Rei!"
+ 
+ hm_netherlands.2.t: "A Coroação de Guilherme III"
+ hm_netherlands.2.d: "Com o fim do reinado de Guilherme II, seu filho mais velho, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Guilherme III, Rei dos Países Baixos."
+ hm_netherlands.2.f: "Quando seu pai faleceu, ele estava, naquele momento, hospedado na Duquesa de Cleveland, no Castelo de Raby. Representantes do governo holandês viajaram até Londres para conhecer seu novo rei. Guilherme relutava em voltar, mas foi convencido a fazê-lo.\n\nO rei é um homem de estatura imponente e voz estrondosa. Ele pode ser gentil e bondoso, mas, de repente, pode se tornar intimidador e até mesmo violento. Ele chuta e bate em seus servos. Ele tem tendência a aterrorizar e humilhar seus cortesãos. O novo rei também é cruel com os animais. Seus ministros têm medo dele. A maioria das pessoas ao seu redor concorda que ele é, até certo ponto, insano."
+ hm_netherlands.2.a: "Viva o Rei!"
+
+ hm_netherlands.3.t: "A Coroação da Rainha Guilhermina"
+ hm_netherlands.3.d: "O Rei está morto. Com a ascensão ao trono de sua filha mais nova, [SCOPE.sCharacter('queen_wilhelmina').GetFirstName], o reino se alegra e o trono de Luxemburgo passa a estar fora do controle holandês. Longo seja o reinado dela!"
+ hm_netherlands.3.d2: "O Rei está morto. With the ascension of his young daughter [SCOPE.sCharacter('queen_wilhelmina').GetFirstName], the realm rejoices. Longo seja o reinado dela!"
+ hm_netherlands.3.f: "“Juro que defenderei e preservarei a independência e o território do Reino com todas as minhas forças, que protegerei a liberdade e os direitos de todos os cidadãos e residentes holandeses e que empregarei todos os meios que a lei colocar à minha disposição para preservar e promover a prosperidade, conforme cabe a uma soberana boa e fiel.”\ n\nGuilhermina prestou juramento na Nieuwe Kerk, em Amsterdã. Ela está bem ciente do que se espera dos representantes eleitos, mas é uma mulher de temperamento forte e determinada, que fala e age de acordo com suas convicções. Ela “odeia” políticos e, em vez disso, declara seu amor pelo povo."
+ hm_netherlands.3.a: "Deus salve o Rei!"
+ hm_netherlands.3.tt: "Os membros da [concept_customs_union] do país [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAdjective] deixam nossa esfera econômica."
+
+ hm_netherlands.4.t: "A Coroação da Rainha Guilhermina"
+ hm_netherlands.4.d: "O Grão-Duque faleceu. Com a ascensão ao trono de sua filha mais nova, Guilhermina, o trono de Luxemburgo passa a estar fora do controle dos holandeses. [SCOPE.sCharacter('luxembourg_grand_duke').GetFullName], o primo de décimo sétimo grau do pai dela, agora governa Luxemburgo"
+ hm_netherlands.4.f: "Já idoso, [SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName] não pretende se envolver muito na política luxemburguesa, deixando os assuntos do dia a dia a cargo de seu filho, o novo herdeiro aparente."
+ hm_netherlands.4.a: "Viva o Grão-Duque!"
+
+ hm_netherlands.5.t: "Tragédia em Paris"
+ hm_netherlands.5.d: "Encontraram [SCOPE.sCharacter('relevant_heir').GetFullName] sem vida, em seu apartamento em Paris."
+ hm_netherlands.5.f: "om fervor e pressa, a polícia isola o local do crime no apartamento e inicia uma investigação sobre as circunstâncias da morte de [SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]. O príncipe estava desiludido após o fracasso de seu casamento e mergulhou em uma vida de sexo, bebida e jogos de azar. A causa da morte foi determinada como uma combinação de exaustão total, insuficiência hepática e tifo."
+ hm_netherlands.5.a: "Uma tragédia para a família real"
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName] morre."
+
+ # Belgium
+ hm_belgium.1.t: "A Coroação de Leopoldo II"
+ hm_belgium.1.d: "Com o fim do reinado de Leopoldo I', seu segundo filho, e o mais velho ainda vivo, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Leopoldo II, Rei dos Belgas."
+ hm_belgium.1.f: "Interessado em política e com vasta experiência em viagens, Leopold há muito tempo é um defensor da expansão colonial. O objetivo do novo rei para o país é que ele seja “forte, próspero e, portanto, possua suas próprias colônias, belas e tranquilas”."
+ hm_belgium.1.a: "Viva o Rei!"
+
+ hm_belgium.2.t: "A Morte do Príncipe Real"
+ hm_belgium.2.d: "O príncipe [SCOPE.sCharacter('relevant_heir').GetFullName] faleceu em consequência de uma pneumonia, após ter caído em um lago."
+ hm_belgium.2.f: "No funeral, seu pai, o [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName], não conseguiu conter a emoção em público, caindo de joelhos ao lado do caixão e soluçando incontrolavelmente."
+ hm_belgium.2.a: "Que ele descanse em paz"
+
+ hm_belgium.3.t: "Uma Tragédia Real"
+ hm_belgium.3.d: "O [SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName] faleceu vítima da gripe, tendo contraído a doença enquanto visitava sua irmã doente."
+ hm_belgium.3.f: "Após o falecimento, o Parlamento entrou em recesso e os teatros e instituições públicas foram fechados até depois do funeral."
+ hm_belgium.3.a: "Que ele descanse em paz"
+
+ hm_belgium.4.t: "A Coroação de Alberto I"
+ hm_belgium.4.d: "[SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono da [ROOT.GetCountry.GetAdjective] como Alberto I, Rei dos Belgas."
+ hm_belgium.4.f: "Alberto preparou-se intensamente para a tarefa de reinar, demonstrando grande preocupação com a situação das classes trabalhadoras.\nAo contrário dos reis belgas anteriores, Alberto proferiu seu discurso de ascensão ao trono tanto em holandês quanto em francês."
+ hm_belgium.4.a: "Viva o Rei!"
+ 
+ # Denmark
+ hm_denmark.1.t: "A Coroação de Frederico VII"
+ hm_denmark.1.d: "Com o fim do reinado de Cristiano VIII, seu único filho legítimo, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Frederico VII, Rei da Dinamarca."
+ hm_denmark.1.f: "O único filho legítimo de seu pai e que não teve descendentes, apesar de ter se casado três vezes. Ele será o último rei dinamarquês da dinastia Oldenburg, já que o próximo na linha de sucessão ao trono é seu primo de segundo grau, o príncipe Cristiano de Glücksburg, descendente do rei dinamarquês Cristiano III.\nA crise de sucessão também causará problemas em relação aos ducados de Schleswig-Holstein, pois a sucessão — de acordo com a Lei Sálica — aponta Frederico, duque de Augustenburg, como o próximo duque."
+ hm_denmark.1.f2: "O único filho legítimo de seu pai e que não teve descendentes, apesar de ter se casado três vezes. Ele será o último rei dinamarquês da dinastia Oldenburg, já que o próximo na linha de sucessão ao trono é seu primo de segundo grau, o príncipe Cristiano de Glücksburg, descendente do rei dinamarquês Cristiano III."
+ hm_denmark.1.a: "LViva o Rei!"
+
+ hm_denmark.2.t: "A Coroação de Cristiano IX"
+ hm_denmark.2.d: "Com o fim do reinado de Frederico VII, a linhagem principal da Casa de Oldemburgo extinguiu-se. Assim, o primo em segundo grau do falecido rei, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Cristiano IX, Rei da Dinamarca."
+ hm_denmark.2.f: "Com a extinção da linhagem dos reis de Oldenburg, a Casa de Glücksburg agora governa o reino, mas não sem dificuldades. De acordo com a Lei Sálica, os ducados de Schleswig-Holstein deveriam ter passado para Frederico, duque de Augustenburg, que se autoproclamou pretendente ao título de duque de Schleswig-Holstein. Ele conta com o apoio da população alemã dos ducados, especialmente em Holstein."
+ hm_denmark.2.f2: "Com a extinção da linhagem dos reis de Oldenburg, a Casa de Glücksburg agora governa o reino, mas os membros masculinos da dinastia ainda são poucos, tornando o futuro da família real incerto."
+ hm_denmark.2.a: "Viva o Rei!"
+
+ hm_denmark.3.t: "A Coroação de Frederico VIII"
+ hm_denmark.3.d: "Com o fim do reinado de Cristiano IX, seu primogênito, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Frederico VIII, Rei da Dinamarca."
+ hm_denmark.3.f: "Embora tenha ficado praticamente excluído da política e do poder durante o reinado de seu pai, Frederico tem todas as características de um monarca liberal, pois possui uma mentalidade reformista e uma inclinação democrática."
+ hm_denmark.3.a: "Viva o Rei!"
+
+ hm_denmark.4.t: "A Coroação de Cristiano X"
+ hm_denmark.4.d: "Com o fim do reinado de Frederico VIII, seu primogênito, [SCOPE.sCharacter('king_scope').GetFullName] chegou ao trono [ROOT.GetCountry.GetAdjective] como Cristiano X, Rei da Dinamarca."
+ hm_denmark.4.f: "Ao contrário de seu pai liberal, Cristiano reluta em abraçar plenamente a democracia, o que poderia causar agitação entre a população liberal e de esquerda."
+ hm_denmark.4.a: "Viva o Rei!"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "Um Rei para o Trono"
+ hm_monarch_choice.1.desc: "Com nossa recém-conquistada independência, cabe a nós decidir quem convidar para ocupar o trono da [ROOT.GetCountry.GetNameNoFormatting]."
+ hm_monarch_choice.1.f: "A decisão não é fácil. Por um lado, o candidato deveria pertencer a uma família real com laços nórdicos e ter uma sólida tradição naval, a fim de dissuadir a Suécia.\nUma opção controversa é nada menos do que um príncipe da família real [SCOPE.sCountry('swe_scope').GetAdjective], a Casa de Bernadotte, para apaziguar nossos vizinhos e aqueles ao nosso redor que nos considerariam revolucionários.\nOutros votam a favor de um príncipe de uma nação neutra e amiga, na esperança de que um monarca imparcial mantenha a paz e conquiste respeito internacionalmente.\nPor fim, os setores mais radicais do nosso país rejeitam totalmente a monarquia: os republicanos e socialistas querem uma verdadeira revolução e uma ruptura com a Europa tradicional."
+ hm_monarch_choice.1.a: "Vamos dar uma chance aos Bernadottes, para manter nossas nações unidas"
+ hm_monarch_choice.1.b: "O príncipe [SCOPE.sCountry('den_scope').GetAdjective] Valdemar, filho de Cristiano IX, será um excelente candidato neutro"
+ hm_monarch_choice.1.c: "O príncipe [SCOPE.sCountry('den_scope').GetAdjective] Carl, filho de Frederico VIII, será um excelente candidato neutro"
+ hm_monarch_choice.1.d: "O príncipe Arthur, duque de Connaught, nos aproximará da [SCOPE.sCountry('gbr_scope').GetName]"
+ hm_monarch_choice.1.e: "A monarquia nos decepcionou, vamos nos livrar de suas instituições arcaicas!"
+
+ hm_monarch_choice.2.t: "Um Novo Monarca Búlgaro"
+ hm_monarch_choice.2.desc: "Com a independência que acabamos de conquistar, cabe a nós convidar um nobre respeitado para liderar nossa nação"
+ hm_monarch_choice.2.flavor: "A escolha não é trivial. Há muito tempo que o objetivo da Rússia é obter mais influência e território nos Balcãs, e o país tem se empenhado fortemente em colocar um nobre aliado no trono da [ROOT.GetCountry.GetName]. Por outro lado, a [SCOPE.sCountry('gbr_scope').GetName] quer limitar a expansão da Rússia e ficaria muito descontente se escolhêssemos o candidato [SCOPE.sCountry('rus_scope').GetAdjective]. Também não devemos esquecer nossos antigos senhores: os interesses do [SCOPE.sCountry('tur_scope').GetName] também residem em limitar a influência da Rússia. Além disso, temos à disposição candidatos búlgaros e romenos, que impediriam a intromissão dessa grande potência em nossos assuntos."
+ hm_monarch_choice.2.a: "Alexandre de Battenberg, o candidato do czar, garantiria o apoio da [SCOPE.sCountry('rus_scope').GetName]"
+ hm_monarch_choice.2.b: "Ferdinand de Saxe-Coburgo e Gotha-Koháry é a escolha neutra para garantir nossa soberania"
+ hm_monarch_choice.2.c: "Niko I Dadiani, o candidato do czar, garantiria o apoio da [SCOPE.sCountry('rus_scope').GetName]"
+ hm_monarch_choice.2.d: "O príncipe Valdemar, da família real [SCOPE.sCountry('den_scope').GetAdjective], é o principal candidato [SCOPE.sCountry('gbr_scope').GetAdjective]"
+ hm_monarch_choice.2.e: "A escolha do príncipe Heinrich VII Reuss de Köstritz poderia nos colocar sob a proteção [SCOPE.sCountry('pru_scope').GetAdjective]"
+ hm_monarch_choice.2.f: "Emanoil de Vogoride-Conachi é um nobre respeitado na região e poderia limitar a interferência estrangeira"
+ hm_monarch_choice.2.g: "Alexander Bogoridi pertence à nobreza búlgara, mas a escolha de uma família poderia despertar a inveja dos demais aristocratas"
+ hm_monarch_choice.2.h: "Ao oferecer o trono ao [SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('rom_scope').GetAdjective], [SCOPE.sCountry('rom_scope').GetRuler.GetFullName], poderíamos unir nossas nações em uma união pessoal e fortalecer ambas"
+ hm_monarch_choice.2.i: "A monarquia é uma instituição arcaica; devemos delegar o poder ao povo!"
+ 

@@ -1,0 +1,13 @@
+﻿l_russian:
+
+ rule_hm_scripted_deaths: "Заранее установленные даты смерти исторических монархов"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Исторические#!#!"
+ setting_enable_scripted_deaths_desc: "Включить заранее запрограммированные даты смерти для определенных монархов"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Случайный#!#!"
+ setting_disable_scripted_deaths_desc: "Отключить заранее запрограммированные даты смерти для определенных монархов"
+
+ rule_hm_heir_generation: "Создание исторического наследника"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Агрессивное#!#!"
+ setting_aggressive_heir_generation_desc: "Игра всегда будет пытаться сгенерировать исторического наследника, даже если его возраст будет отрицательным. Это помогает сохранить непрерывность линии преемственности"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc Исторические#!#!"
+ setting_historical_heir_generation_desc: "Игра будет генерировать исторических наследников только после того, как они появятся на свет в реальности. Это позволяет избежать появления наследников с отрицательным возрастом, однако цепочка преемственности может быть навсегда прервана, если правитель умрет раньше времени"

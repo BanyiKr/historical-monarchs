@@ -1,0 +1,11 @@
+﻿l_korean:
+
+ hm_british_windsor_name_change: "왕실의 이름을 변경하십시오"
+ hm_british_windsor_name_change_desc: "작센-코부르크-고타 가문은 유서 깊고 명망 높은 독일의 귀족 가문입니다. 그러나 현재의 지정학적 여건으로 인해 국내외에서 반독일 정서가 고조되고 있습니다. 이러한 상황과 유럽 전역에서 군주제에 대한 반감이 커지고 있는 점을 고려할 때, 독일 왕실로부터 부여받은 모든 독일식 칭호와 가문명을 포기하고 영어식 이름을 채택하여, 이 왕실을 “윈저 가문”으로 명명하는 것이 현명할 것입니다."
+ hm_british_windsor_name_change_tt.1: "[GetGeographicRegion('geographic_region_europe').GetName]에 속하며 [concept_major_power] 이상 등급이고 $north_german$을 [Concept('concept_primary_cultures','$concept_primary_culture$')] 로 가진 임의의 국가:\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetName](와)과 전쟁 중임\n$EFFECT_LIST_BULLET$악명이 $infamy_notorious$ 이상일 것\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetNameNoFlag](와)과의 관계가 $relations_neutral$ 미만"
+ hm_british_windsor_name_change_tt.2: "통치 왕조의 모든 $concept_characters$는 성을 “$Windsor$”로 변경한다"
+
+ hm_house_of_belgium_name_change: "왕실의 이름을 변경하십시오"
+ hm_house_of_belgium_name_change_desc: "작센-코부르크-고타 가문은 유서 깊고 명망 높은 독일의 귀족 가문입니다. 그러나 현재의 지정학적 여건으로 인해 국내외에서 반독일 정서가 고조되고 있습니다. 이러한 상황과 유럽 전역에서 군주제에 대한 반감이 커지고 있는 점을 고려할 때, 독일 왕실로부터 부여받은 모든 독일식 칭호와 가문명을 포기하고 프랑스식 이름을 채택하여, 이 왕실을 “벨기에 왕가”로 명명하는 것이 현명할 것입니다."
+ hm_house_of_belgium_name_change_tt.1: "[GetGeographicRegion('geographic_region_europe').GetName]에 속하며 [concept_major_power] 이상 등급이고 $north_german$을 [Concept('concept_primary_cultures','$concept_primary_culture$')] 로 가진 임의의 국가:\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetName](와)과 전쟁 중임\n$EFFECT_LIST_BULLET$악명이 $infamy_notorious$ 이상일 것\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetNameNoFlag](와)과의 관계가 $relations_neutral$ 미만"
+ hm_house_of_belgium_name_change_tt.2: "통치 왕조의 모든 $concept_characters$는 성을 “$de_Belgique$”로 변경한다"

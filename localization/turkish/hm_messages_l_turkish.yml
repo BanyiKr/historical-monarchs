@@ -1,0 +1,5 @@
+﻿l_turkish:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "[SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName] ülkesinin [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName] ile birliği sona erdi"
+ notification_wilhelmina_notification_desc: "Kral III. Willem'ın ölümünün ardından farklı veraset yasaları nedeniyle iki ülke arasındaki [concept_personal_union] sona erdi."

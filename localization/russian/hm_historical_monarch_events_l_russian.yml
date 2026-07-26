@@ -1,0 +1,101 @@
+﻿l_russian:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName] становится [Concept('concept_heir', 'наследником')]"
+
+ # Netherlands
+ hm_netherlands.1.t: "Коронация Виллема II"
+ hm_netherlands.1.d: "С окончанием правления Виллема I, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Willem$ II, король Нидерландов."
+ hm_netherlands.1.f: "Хотя он разделяет консервативные взгляды своего отца, он не желает вмешиваться в государственные дела так сильно, как это делал его отец."
+ hm_netherlands.1.a: "Да здравствует Король!"
+ 
+ hm_netherlands.2.t: "Коронация Виллема III"
+ hm_netherlands.2.d: "С окончанием правления Виллема II, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Willem$ III, король Нидерландов."
+ hm_netherlands.2.f: "После смерти отца он в тот момент находился в гостях у герцогини Кливлендской в ​​замке Рэби. Представители голландского правительства отправились в Лондон, чтобы встретиться со своим новым королем. $Willem$ не хотел возвращаться, но его убедили это сделать.\n\nКороль – человек огромного роста и с громким голосом. Он может быть мягким и добрым, а затем внезапно стать устрашающим и даже жестоким. Он избивает и пинает своих слуг. Он склонен терроризировать и унижать своих придворных. Новый король также жесток к животным. Его министры боятся его. Большинство окружающих его людей сходятся во мнении, что он в той или иной степени безумен."
+ hm_netherlands.2.a: "Да здравствует Король!"
+
+ hm_netherlands.3.t: "Коронация королевы Вильгельмины"
+ hm_netherlands.3.d: "Король умер. С восшествием на престол его юной дочери [SCOPE.sCharacter('queen_wilhelmina').GetFirstName] королевство ликует, и люксембургский трон выходит из-под контроля Нидерландов. Да будет долгим её правление!"
+ hm_netherlands.3.d2: "Король умер. With the ascension of his young daughter, [SCOPE.sCharacter('queen_wilhelmina').GetFirstName] королевство ликует. Да будет долгим её правление!"
+ hm_netherlands.3.f: "«Клянусь, что буду защищать и сохранять независимость и территорию Королевства всеми силами, что буду защищать свободу и права всех граждан и жителей Нидерландов, и что буду использовать все средства, предоставленные мне законом, для сохранения и содействия процветанию, как того требует добрый и верный монарх». Вильгельмина принесла присягу в Новой церкви в Амстердаме. Она прекрасно понимает, чего ожидают от избранных представителей, но является волевой, решительной женщиной, которая говорит и действует в соответствии со своим мнением. Она «ненавидит» политиков и вместо этого заявляет о любви к народу."
+ hm_netherlands.3.a: "Да здравствует королева!"
+ hm_netherlands.3.tt: "Члены #tooltippable_name [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAdjective]ого#! [Concept('concept_customs_union', 'таможенного союза')] покидают нашу экономическую сферу."
+
+ hm_netherlands.4.t: "Коронация королевы Вильгельмины"
+ hm_netherlands.4.d: "Великий герцог умер. С восшествием на престол его юной дочери $Wilhelmina$ трон Люксембурга переходит из-под контроля Нидерландов. Теперь Люксембургом правит [SCOPE.sCharacter('luxembourg_grand_duke').GetFullName], семнадцатый двоюродный брат её отца."
+ hm_netherlands.4.f: "[SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName], уже будучи пожилым человеком, не планирует активно вмешиваться в люксембургскую политику, оставив повседневные дела своему сыну, новому наследнику престола."
+ hm_netherlands.4.a: "Да здравствует Великий Герцог!"
+
+ hm_netherlands.5.t: "Трагедия в Париже"
+ hm_netherlands.5.d: "[SCOPE.sCharacter('relevant_heir').GetFullName] has been found dead in [SCOPE.sCharacter('relevant_heir').GetHerHis] Parisian apartment."
+ hm_netherlands.5.f: "Полиция с большим рвением и в спешке оцепила место происшествия в квартире и начала расследование обстоятельств смерти [SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]а. Принц разочаровался после неудачной попытки жениться и погрузился в жизнь, полную разврата, пьянства и азартных игр. Причиной смерти было установлено сочетание полного истощения, печеночной недостаточности и тифа."
+ hm_netherlands.5.a: "Трагедия для королевской семьи."
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName] умирает."
+
+ # Belgium
+ hm_belgium.1.t: "Коронация Леопольда II"
+ hm_belgium.1.d: "С окончанием правления Леопольда I, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем Leopold II, король Бельгии."
+ hm_belgium.1.f: "Интересуясь политикой и много путешествуя, Леопольд давно выступал за колониальную экспансию. Цель нового короля для страны — сделать её «сильной, процветающей, а следовательно, имеющей собственные колонии, красивой и спокойной»."
+ hm_belgium.1.a: "Да здравствует Король!"
+
+ hm_belgium.2.t: "Смерть королевского принца"
+ hm_belgium.2.d: "Королевский принц [SCOPE.sCharacter('relevant_heir').GetFullName] скончался от пневмонии после падения в пруд."
+ hm_belgium.2.f: "На его похоронах отец, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName], не выдержал и разрыдался на глазах у публики, упав на колени рядом с гробом и безудержно рыдая."
+ hm_belgium.2.a: "Пусть он покоится с миром."
+
+ hm_belgium.3.t: "A royal tragedy"
+ hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName] скончался от гриппа, заразившись болезнью во время визита к больной сестре."
+ hm_belgium.3.f: "После смерти покойного заседание парламента было отложено, а театры и общественные учреждения были закрыты до окончания похорон."
+ hm_belgium.3.a: "Пусть он покоится с миром."
+
+ hm_belgium.4.t: "Коронация Альберта I"
+ hm_belgium.4.d: "[SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Albert$ I, король Бельгии."
+ hm_belgium.4.f: "$Albert$ усердно готовился к роли короля, серьезно обеспокоенный положением рабочего класса.\nВ отличие от предыдущих бельгийских королей, $Albert$ произнес свою инаугурационную речь не только на французском, но и на голландском языке."
+ hm_belgium.4.a: "Да здравствует Король!"
+ 
+ # Denmark
+ hm_denmark.1.t: "Коронация Фредерика VII"
+ hm_denmark.1.d: "С окончанием правления Кристиана VIII, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Frederik$ VII, король Дании."
+ hm_denmark.1.f: "Единственный законный сын своего отца, не имевший потомства, несмотря на три брака. Он станет последним датским королем династии Ольденбургов, поскольку следующим в очереди на престол является его двоюродный брат, принц $Christian$ $of_Glücksburg$, потомок датского короля $Christian$а III.\nКризис престолонаследия также создаст проблемы для герцогств Шлезвиг-Гольштейн, поскольку, согласно салическому праву, преемником герцога станет $Frederik$ Августенбургский."
+ hm_denmark.1.f2: "Единственный законный сын своего отца, не имевший потомства, несмотря на три брака. Он станет последним датским королем династии Ольденбургов, поскольку следующим в очереди на престол является его двоюродный брат, принц $Christian$ $of_Glücksburg$, потомок датского короля $Christian$а III."
+ hm_denmark.1.a: "Да здравствует Король!"
+
+ hm_denmark.2.t: "Коронация $Christian$а IX"
+ hm_denmark.2.d: "С окончанием правления Фридриха VII, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Christian$ IX, король Дании."
+ hm_denmark.2.f: "Поскольку династия королей Ольденбурга прервалась, королевством теперь правит династия Глюксбургов, но не без проблем. Герцогства Шлезвиг-Гольштейн по салическим законам должны были перейти к Фредерику, герцогу Августенбургскому, который объявил себя претендентом на титул герцога Шлезвиг-Гольштейна. Он пользуется поддержкой немецкого населения герцогств, особенно в Гольштейне."
+ hm_denmark.2.f2: "После того как династия королей Ольденбурга прервалась, королевством теперь правит дом Глюксбургов, но мужчин-членов династии по-прежнему немного, что делает будущее королевской семьи неопределенным."
+ hm_denmark.2.a: "Да здравствует Король!"
+
+ hm_denmark.3.t: "Коронация $Frederik$а VIII"
+ hm_denmark.3.d: "С окончанием правления Кристиана IX, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Frederik$ VIII, король Дании."
+ hm_denmark.3.f: "В период правления своего отца Фредерик был отстранен от политики и власти, но обладает задатками либерального монарха, будучи одновременно настроен на реформы и склонен к демократии."
+ hm_denmark.3.a: "Да здравствует Король!"
+
+ hm_denmark.4.t: "Коронация $Christian$а X"
+ hm_denmark.4.d: "С окончанием правления Фридриха VIII, [SCOPE.sCharacter('king_scope').GetFullName] восходит на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! престол под именем $Christian$ X, король Дании."
+ hm_denmark.4.f: "В отличие от своего либерального отца, $Christian$ неохотно принимает демократию в полной мере, что может привести к беспорядкам среди либерально настроенного и левого населения."
+ hm_denmark.4.a: "Да здравствует Король!"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "Король на трон"
+ hm_monarch_choice.1.desc: "С обретением независимости выбор того, кого пригласить на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#!престол, лежит на нас."
+ hm_monarch_choice.1.f: "Это непростое решение. Во-первых, они должны принадлежать к королевской семье с нордическими связями и обладать сильными военно-морскими традициями, чтобы сдерживать Швецию.\nОдин из спорных вариантов — это, конечно же, принц из #tooltippable_name [SCOPE.sCountry('swe_scope').GetAdjective|l]й#! королевской семьи, дома Бернадоттов, чтобы успокоить наших соседей и окружающих, которые считают нас революционерами.\nДругие голосуют за принца из дружественной нейтральной страны, надеясь, что беспристрастный монарх сохранит мир и заслужит международное уважение.\nНаконец, наиболее радикальные элементы нашей страны полностью отвергают монархию: республиканцы и социалисты хотят настоящей революции и разрыва с традиционной Европой."
+ hm_monarch_choice.1.a: "Давайте дадим Бернадоттам шанс, чтобы они сохранили тесные связи между нашими странами"
+ hm_monarch_choice.1.b: "#tooltippable_name [SCOPE.sCountry('den_scope').GetAdjective|l]ий#! принц $Valdemar$, сын $Christian$а IX, станет отличным нейтральным кандидатом"
+ hm_monarch_choice.1.c: "#tooltippable_name [SCOPE.sCountry('den_scope').GetAdjective|l]ий#! принц $Carl$, сын $Frederik$а VIII, станет отличным нейтральным кандидатом"
+ hm_monarch_choice.1.d: "Принц $Arthur$, герцог Коннотский, сблизит нас с [SCOPE.sCountry('gbr_scope').GetAltName('RU_CL_TP')]"
+ hm_monarch_choice.1.e: "Монархия нас подвела, давайте избавимся от ее архаичных институтов!"
+
+ hm_monarch_choice.2.t: "Новый болгарский монарх"
+ hm_monarch_choice.2.desc: "В связи с обретением независимости, на нас возложена обязанность пригласить уважаемого дворянина возглавить нашу страну."
+ hm_monarch_choice.2.flavor: "Выбор нетривиален. [SCOPE.sCountry('rus_scope').GetName] давно стремится к расширению своего влияния и территорий на Балканах, и она всерьез заинтересована в том, чтобы посадить на #tooltippable_name [ROOT.GetCountry.GetAdjective|l]ий#! трон дружественного ей дворянина. С другой стороны, [SCOPE.sCountry('gbr_scope').GetAltName('RU_CL_RP')] хочет ограничить экспансию России и будет крайне недовольна, если мы выберем российского кандидата. Нам также не следует забывать о наших бывших сюзеренах: интересы [SCOPE.sCountry('tur_scope').GetAltName('RU_CL_RP')] также заключаются в ограничении влияния России. У нас также есть выбор среди кандидатов из Болгарии и Румынии, которые предотвратили бы вмешательство великой державы в наши дела."
+ hm_monarch_choice.2.a: "$Alexander$ $of_Battenberg$, кандидат от царя, обеспечил бы поддержку [SCOPE.sCountry('rus_scope').GetAltName('RU_CL_RP')]"
+ hm_monarch_choice.2.b: "$Ferdinand$ $of_Saxe-Coburg-Gotha-Koháry$ — нейтральный выбор, гарантирующий наш суверенитет."
+ hm_monarch_choice.2.c: "$Niko$ $Dadiani$, кандидат от царя, обеспечил бы поддержку [SCOPE.sCountry('rus_scope').GetAltName('RU_CL_RP')]"
+ hm_monarch_choice.2.d: "Prince $Valdemar$ of the [SCOPE.sCountry('den_scope').GetAdjective] royal family is the primary candidate of [SCOPE.sCountry('gbr_scope').GetAdjective]"
+ hm_monarch_choice.2.e: "Выбор $Heinrich$ VII $von_Reuss$ может поставить нас под #tooltippable_name [SCOPE.sCountry('pru_scope').GetAdjective]ий#! защиту"
+ hm_monarch_choice.2.f: "$Emanoil$ $Vogoride-Conachi$ — уважаемый дворянин в регионе, и его избрание могло бы ограничить иностранное вмешательство"
+ hm_monarch_choice.2.g: "$Alexander$ $Bogoridi$ принадлежал к болгарской знати, однако выбор одной семьи мог вызвать зависть у других аристократов."
+ hm_monarch_choice.2.h: "Предложив трон #tooltippable_name [SCOPE.sCountry('rom_scope').GetAdjective|l]ому#! [SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle], [SCOPE.sCountry('rom_scope').GetRuler.GetFullName], мы могли бы объединить наши страны в личную унию и укрепить обе стороны нашей национальности."
+ hm_monarch_choice.2.i: "Монархия — это архаичный институт, мы должны делегировать власть народу!"
+ 

@@ -1,0 +1,1168 @@
+﻿namespace = hm_netherlands
+
+# For the Netherlands
+hm_netherlands.1 = { # Accession of William II
+	type = country_event
+	placement = root
+
+	title = hm_netherlands.1.t
+	desc = hm_netherlands.1.d
+	flavor = hm_netherlands.1.f
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = netherlands_scope
+		}
+		create_character = {
+			template = NET_willem_iii
+			heir = yes
+			save_scope_as = heir_scope
+		}
+	}
+
+	option = {
+		name = hm_netherlands.1.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}
+
+hm_netherlands.2 = { # Accession of William III
+	type = country_event
+	placement = root
+
+	title = hm_netherlands.2.t
+	desc = hm_netherlands.2.d
+	flavor = hm_netherlands.2.f
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {	
+		ruler = {
+			save_scope_as = king_scope
+		}
+		
+		root = {
+			save_scope_as = netherlands_scope
+		}
+		if = {
+			limit = {
+				game_date >= 1840.9.4
+				game_date < 1879.7.11
+			}
+			create_character = {
+				template = NET_prince_willem
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1880.8.31
+			}
+			create_character = {
+				template = NET_wilhelmina_i
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+	}
+
+	option = {
+		name = hm_netherlands.2.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}
+
+hm_netherlands.3 = { # Coronation of Queen Wilhelmina
+	type = country_event
+
+	title = hm_netherlands.3.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = hm_netherlands.3.d
+				trigger = {
+					exists = c:LUX
+					c:LUX = {
+						is_subject_of = ROOT
+						is_subject_type = subject_type_personal_union
+					}
+				}
+			}
+			triggered_desc = {
+				desc = hm_netherlands.3.d2
+				trigger = {
+					always = yes # Fallback
+				}
+			}
+		}
+	}
+	flavor = hm_netherlands.3.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		# triggered by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = queen_wilhelmina
+		}
+		if = {
+			limit = {
+				exists = c:HAN
+			}
+			c:NET ?= { power_bloc ?= { add_leverage = { target = c:LUX value = -1000 } } }
+		}
+		c:LUX ?= {
+			remove_diplomatic_pact = {
+				country = c:NET
+				type = personal_union
+			}
+			if = {
+				limit = {
+					exists = c:NAS
+				}
+				c:NAS = {
+					create_diplomatic_pact = {
+						country = c:LUX
+						type = personal_union
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					any_country_in_europe = {
+						was_formed_from = NAS
+					}
+				}
+				random_country_in_europe = {
+					limit = {
+						was_formed_from = NAS
+					}
+					create_diplomatic_pact = {
+						country = c:LUX
+						type = personal_union
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						game_date < 1905.11.17
+					}
+					create_character = {
+						template = NAS_adolf_von_nassau_weilburg
+						ruler = yes
+					}
+					create_character = {
+						template = LUX_william_iv
+						heir = yes
+					}
+				}
+				else_if = {
+					limit = {
+						game_date < 1912.2.25
+					}
+					create_character = {
+						template = LUX_william_iv
+						ruler = yes
+					}
+					create_character = {
+						template = LUX_marie_adelaide_i
+						heir = yes
+					}
+				}
+				else_if = {
+					limit = {
+						game_date < 1924.1.24
+					}
+					create_character = {
+						template = LUX_marie_adelaide_i
+						ruler = yes
+					}
+					create_character = {
+						template = LUX_charlotte_i
+						heir = yes
+					}
+				}
+				else = {
+					create_character = {
+						template = LUX_charlotte_i
+						ruler = yes
+					}
+					create_character = {
+						template = LUX_jean_i
+						heir = yes
+					}
+				}
+			}
+			save_scope_as = luxembourg_wilhelmina_scope
+		}
+		c:NET ?= {
+			save_scope_as = netherlands_wilhelmina_country_scope
+		}
+	}
+	option = {
+		name = hm_netherlands.3.a # God save the Queen!
+		show_as_tooltip = {
+			c:LUX ?= {
+				remove_diplomatic_pact = {
+					country = c:NET
+					type = personal_union
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					game_date >= 1896.8.31
+					game_date < 1909.4.30
+				}
+				create_character = {
+					template = GER_Heinrich_XXXII_Reuss
+					heir = yes
+					save_scope_as = heir_scope
+				}
+			}
+			else_if = {
+				limit = {
+					game_date >= 1909.4.30
+				}
+				create_character = {
+					template = NET_juliana_i
+					heir = yes
+					save_scope_as = heir_scope
+				}
+			}
+		}
+		custom_tooltip = hm_netherlands.3.tt
+		show_as_tooltip = {
+			scope:queen_wilhelmina = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+		hidden_effect = {
+			c:LUX ?= {
+				trigger_event = {
+					id = hm_netherlands.4
+					popup = yes
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				has_interest_marker_in_region = sr:region_western_europe
+			}
+			post_notification = wilhelmina_notification
+		}
+	}
+}
+
+hm_netherlands.4 = { # For Luxembourg
+	type = country_event
+
+	title = hm_netherlands.4.t
+	desc = hm_netherlands.4.d
+	flavor = hm_netherlands.4.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:luxembourg_grand_duke
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by hm_netherlands.3
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = luxembourg_grand_duke
+		}
+	}
+	option = {
+		name = hm_netherlands.4.a
+		show_as_tooltip = {
+			c:LUX ?= {
+				remove_diplomatic_pact = {
+					country = c:NET
+					type = personal_union
+				}
+			}
+		}
+	}
+}
+
+hm_netherlands.5 = { # Death of Prince William
+	type = country_event
+	placement = root
+	title = hm_netherlands.5.t
+	desc = hm_netherlands.5.d
+	flavor = hm_netherlands.5.f
+
+	event_image = {
+		video = "ip3_police_raid"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_character = {
+			has_template = NET_prince_willem
+		}
+		game_date >= 1879.7.11
+		OR = {
+			c:NET ?= this
+			was_formed_from = NET
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_ruler_of_own_country = yes
+			}
+			save_scope_as = relevant_ruler
+		}
+		random_scope_character = {
+			limit = {
+				has_template = NET_prince_willem
+			}
+			save_scope_as = relevant_heir
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = {
+			any_scope_character = {
+				has_template = NET_prince_willem
+			}
+		}
+	}
+
+	option = {
+		name = hm_netherlands.5.a
+		custom_tooltip = {
+			text = relevant_heir_death_tt
+			scope:relevant_heir = {
+				kill_character = { hidden = yes } # William dies
+			}
+			create_character = {
+				#  Alexander is the new heir
+				template = NET_prince_alexander
+				heir = yes
+			}
+		}
+		scope:relevant_ruler = {
+			add_modifier = {
+				name = royal_family_scandal
+				days = normal_modifier_time
+			}
+		}
+	}
+}
+
+hm_netherlands.6 = { # Abdication of William I
+	type = country_event
+	placement = ROOT
+
+	title = wedding.3.t
+	desc = wedding.3.d1
+	flavor = wedding.3.f
+
+	gui_window = event_window_2char
+
+	left_icon = scope:abdicating_monarch
+	right_icon = scope:heir_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/2Characters"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		game_date >= 1840.8.24
+		OR = {
+			c:NET ?= this
+			was_formed_from = NET
+		}
+		ruler ?= {
+			has_template = NET_willem_i_van_oranje_nassau
+			is_monarch = yes
+		}
+		calc_true_if = {
+			amount >= 2
+			
+			NOR = {
+				has_state_in_state_region = STATE_FLANDERS
+				has_state_in_state_region = STATE_WALLONIA
+			}
+			NOT = {
+				has_law_or_variant = law_type:law_autocracy
+			}
+			is_subject = yes
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = abdicating_monarch
+			interest_group ?= {
+				save_scope_as = monarch_ig
+			}
+		}
+		heir ?= {
+			save_scope_as = heir_scope
+		}
+		law_type:law_monarchy = {
+			save_scope_as = monarchy_law
+		}
+	}
+
+	option = { # reassure the aristocracy
+		name = wedding.3.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.1
+			pop_type = aristocrats
+		}
+		scope:heir_scope ?= {
+			set_character_as_ruler = yes
+		}
+		scope:abdicating_monarch ?= {
+			resign_and_retire = yes
+		}
+	}
+
+	option = { # reassure the people
+		name = wedding.3.b
+		add_loyalists = {
+			value = 0.01
+		}
+		scope:heir_scope ?= {
+			set_character_as_ruler = yes
+		}
+		scope:abdicating_monarch ?= {
+			resign_and_retire = yes
+		}
+	}
+}
+
+namespace = hm_belgium
+
+# For Belgium
+hm_belgium.1 = { # Accession of Leopold II
+	type = country_event
+	placement = root
+
+	title = hm_belgium.1.t
+	desc = hm_belgium.1.d
+	flavor = hm_belgium.1.f
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	duration = 3
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = belgium_scope
+		}
+		if = {
+			limit = {
+				game_date >= 1851.4.9
+			}
+			if = {
+				limit = {
+					game_date >= 1859.6.12
+				}
+				create_character = {
+					template = BEL_Prince_Leopold
+					heir = yes
+					save_scope_as = heir_scope
+				}
+			}
+			else = {
+				create_character = {
+					template = BEL_Prince_Philippe
+					heir = yes
+					save_scope_as = heir_scope
+				}
+			}
+		}
+	}
+
+	option = {
+		name = hm_belgium.1.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}
+
+hm_belgium.2 = { # Death of Prince Leopold
+	type = country_event
+	placement = root
+	title = hm_belgium.2.t
+	desc = hm_belgium.2.d
+	flavor = hm_belgium.2.f
+
+	event_image = {
+		video = "unspecific_sick_in_hospital"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_character = {
+			has_template = BEL_Prince_Leopold
+		}
+		game_date >= 1869.1.22
+		OR = {
+			c:BEL ?= this
+			was_formed_from = BEL
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_ruler_of_own_country = yes
+			}
+			save_scope_as = relevant_ruler
+		}
+		random_scope_character = {
+			limit = {
+				has_template = BEL_Prince_Leopold
+			}
+			save_scope_as = relevant_heir
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = {
+			any_scope_character = {
+				has_template = BEL_Prince_Leopold
+			}
+		}
+	}
+
+	option = {
+		name = hm_belgium.2.a
+		custom_tooltip = {
+			text = relevant_heir_death_tt
+			scope:relevant_heir = {
+				kill_character = { hidden = yes } # Leopold dies
+			}
+			create_character = {
+				#  Alexander is the new heir
+				template = BEL_Prince_Philippe
+				heir = yes
+			}
+		}
+	}
+}
+
+hm_belgium.3 = { # Death of Prince Baudouin
+	type = country_event
+	placement = root
+	title = hm_belgium.3.t
+	desc = hm_belgium.3.d
+	flavor = hm_belgium.3.f
+
+	event_image = {
+		video = "unspecific_sick_in_hospital"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_character = {
+			has_template = BEL_Prince_Baudouin
+		}
+		game_date >= 1891.1.23
+		OR = {
+			c:BEL ?= this
+			was_formed_from = BEL
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_ruler_of_own_country = yes
+			}
+			save_scope_as = relevant_ruler
+		}
+		random_scope_character = {
+			limit = {
+				has_template = BEL_Prince_Baudouin
+			}
+			save_scope_as = relevant_heir
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = {
+			any_scope_character = {
+				has_template = BEL_Prince_Baudouin
+			}
+		}
+	}
+
+	option = {
+		name = hm_belgium.3.a
+		custom_tooltip = {
+			text = relevant_heir_death_tt
+			scope:relevant_heir = {
+				kill_character = { hidden = yes } # Leopold dies
+			}
+			create_character = {
+				#  Alexander is the new heir
+				template = BEL_albert_i
+				heir = yes
+			}
+		}
+	}
+}
+
+hm_belgium.4 = { # Accession of Albert I
+	type = country_event
+	placement = root
+
+	title = hm_belgium.4.t
+	desc = hm_belgium.4.d
+	flavor = hm_belgium.4.f
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	duration = 3
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = belgium_scope
+		}
+		create_character = {
+			template = BEL_leopold_iii
+			heir = yes
+			save_scope_as = heir_scope
+		}
+	}
+
+	option = {
+		name = hm_belgium.4.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}
+
+namespace = hm_denmark
+
+# For Denmark
+hm_denmark.1 = { # Accession of Frederick VII
+	type = country_event
+	placement = root
+
+	title = hm_denmark.1.t
+	desc = hm_denmark.1.d
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = hm_denmark.1.f
+				trigger = {
+					any_subject_or_below = {
+						OR = {
+							c:SCH ?= this
+							c:HOL ?= this
+						}
+						is_direct_subject_of = ROOT
+						is_subject_type = subject_type_personal_union
+					}
+				}
+			}
+			triggered_desc = {
+				desc = hm_denmark.1.f2
+				trigger = {
+					always = yes # Fallback
+				}
+			}
+		}
+	}
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	duration = 3
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = belgium_scope
+		}
+		create_character = {
+			template = DEN_christian_ix
+			heir = yes
+			save_scope_as = heir_scope
+		}
+	}
+
+	option = {
+		name = hm_denmark.1.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}
+
+hm_denmark.2 = { # Accession of Christian IX
+	type = country_event
+	placement = root
+
+	title = hm_denmark.2.t
+	desc = hm_denmark.2.d
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = hm_denmark.2.f
+				trigger = {
+					any_subject_or_below = {
+						OR = {
+							c:SCH ?= this
+							c:HOL ?= this
+						}
+						is_direct_subject_of = ROOT
+						is_subject_type = subject_type_personal_union
+					}
+				}
+			}
+			triggered_desc = {
+				desc = hm_denmark.2.f2
+				trigger = {
+					always = yes # Fallback
+				}
+			}
+		}
+	}
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	duration = 3
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = belgium_scope
+		}
+		if = {
+			limit = {
+				game_date < 1843.6.3
+			}
+			create_character = {
+				template = DEN_prince_julius
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1843.6.3
+			}
+			create_character = {
+				template = DEN_frederik_viii
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+	}
+
+	option = {
+		name = hm_denmark.2.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+		if = {
+			limit = {
+				exists = c:SCH
+				c:SCH = {
+					is_subject_of = root
+				}
+			}
+			change_relations = {
+				country = c:SCH
+				value = -20
+			}
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = c:SCH
+			}
+			hidden_effect = {
+				c:SCH = {
+					add_radicals = {
+						value = medium_radicals
+						culture = cu:north_german
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = c:HOL
+				c:HOL = {
+					is_subject_of = root
+				}
+			}
+			change_relations = {
+				country = c:HOL
+				value = -40
+			}
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = c:HOL
+			}
+			hidden_effect = {
+				c:HOL = {
+					add_radicals = {
+						value = medium_radicals
+						culture = cu:north_german
+					}
+				}
+			}
+		}
+	}
+}
+
+hm_denmark.3 = { # Accession of Frederick VIII
+	type = country_event
+	placement = root
+
+	title = hm_denmark.3.t
+	desc = hm_denmark.3.d
+	flavor = hm_denmark.3.f
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	duration = 3
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = belgium_scope
+		}
+		if = {
+			limit = {
+				game_date >= 1858.10.27
+				game_date < 1870.9.26
+			}
+			create_character = {
+				template = DEN_prince_valdemar
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1870.9.26
+			}
+			create_character = {
+				template = DEN_christian_x
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+	}
+
+	option = {
+		name = hm_denmark.3.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}
+
+hm_denmark.4 = { # Accession of Christian X
+	type = country_event
+	placement = root
+
+	title = hm_denmark.4.t
+	desc = hm_denmark.4.d
+	flavor = hm_denmark.4.f
+
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:king_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/law_icons/monarchy.dds"
+
+	duration = 3
+
+	cooldown = { days = stupidly_long_modifier_time }
+
+	trigger = {
+		#Fired by on_action
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = king_scope
+		}
+		root = {
+			save_scope_as = belgium_scope
+		}
+		if = {
+			limit = {
+				game_date >= 1886.9.26
+				game_date < 1899.3.11
+			}
+			create_character = {
+				template = rr_NOR_haakon_vii
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1899.3.11
+			}
+			create_character = {
+				template = DEN_frederik_ix
+				heir = yes
+				save_scope_as = heir_scope
+			}
+		}
+	}
+
+	option = {
+		name = hm_denmark.4.a
+		default_option = yes
+		show_as_tooltip = {
+			scope:king_scope = {
+				set_character_as_ruler = yes
+			}
+			if = {
+				limit = {
+					exists = scope:heir_scope
+				}
+				set_heir = scope:heir_scope
+			}
+		}
+	}
+}

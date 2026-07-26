@@ -1,0 +1,5 @@
+﻿l_french:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "L'union [SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetAltNameNoFormatting('Du')][SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName] et [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAltNameNoFormatting('Du')][SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName] a pris fin"
+ notification_wilhelmina_notification_desc: "Avec la mort du roi Guillaume III, des lois de succession divergentes ont mis fin à l’[concept_personal_union|l] entre ces nations."

@@ -1,0 +1,101 @@
+﻿l_polish:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName] zostaje [Concept('concept_heir', 'następcą')]"
+
+ # Netherlands
+ hm_netherlands.1.t: "Koronacja Wilhelma II"
+ hm_netherlands.1.d: "Wraz z końcem panowania Wilhelma I na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Holandii Wilhelm II."
+ hm_netherlands.1.f: "Mimo że podziela konserwatywne poglądy swojego ojca, nie chce ingerować w sprawy rządowe tak bardzo, jak on."
+ hm_netherlands.1.a: "Niech żyje Król!"
+ 
+ hm_netherlands.2.t: "Koronacja Wilhelma III"
+ hm_netherlands.2.d: "Wraz z końcem panowania Wilhelma II na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Holandii Wilhelm III."
+ hm_netherlands.2.f: "Kiedy zmarł jego ojciec, przebywał wówczas gościem księżnej Cleveland w zamku Raby. Przedstawiciele rządu holenderskiego udali się do Londynu, aby spotkać się z nowym królem. Wilhelm niechętnie wracał, ale został przekonany.\n\nKról to człowiek o ogromnej posturze i donośnym głosie. Bywa łagodny i miły, ale nagle staje się groźny, a nawet brutalny. Kopie i bije swoich sług. Ma skłonność do terroryzowania i upokarzania dworzan. Nowy król jest również okrutny wobec zwierząt. Jego ministrowie się go boją. Większość ludzi z jego otoczenia zgadza się, że jest on w pewnym stopniu szalony."
+ hm_netherlands.2.a: "Niech żyje Król!"
+
+ hm_netherlands.3.t: "Koronacja królowej Wilhelminy"
+ hm_netherlands.3.d: "Król nie żyje. Wraz z wstąpieniem na tron ​​jego młodej córki, [SCOPE.sCharacter('queen_wilhelmina').GetFirstName], królestwo raduje się, a tron ​​Luksemburga wychodzi spod holenderskiej kontroli. Niechaj te rządy trwają jak najdłużej!"
+ hm_netherlands.3.d2: "Królestwo raduje się wraz z wstąpieniem na tron ​​jego młodej córki, [SCOPE.sCharacter('queen_wilhelmina').GetFirstName]. Niechaj te rządy trwają jak najdłużej!"
+ hm_netherlands.3.f: "„Przysięgam, że będę bronić i chronić niepodległość i terytorium Królestwa najlepiej, jak potrafię, że będę chronić wolność i prawa wszystkich obywateli i rezydentów Holandii oraz że wykorzystam wszelkie środki, jakimi dysponuje prawo, aby zachować i promować dobrobyt, tak jak to jest obowiązkiem dobrego i wiernego Władcy”. Wilhelmina została zaprzysiężona w Nieuwe Kerk w Amsterdamie. Doskonale zdaje sobie sprawę z oczekiwań wybranych przedstawicieli, ale jest silną, energiczną kobietą, która mówi i działa zgodnie z własnym sumieniem. „Nienawidzi” polityków, a zamiast tego deklaruje miłość do ludu."
+ hm_netherlands.3.a: "Boże, chroń królową!"
+ hm_netherlands.3.tt: "[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAdjective] [concept_customs_union|l] – członkowie tej unii opuszczają naszą przestrzeń gospodarczą."
+
+ hm_netherlands.4.t: "Koronacja królowej Wilhelminy"
+ hm_netherlands.4.d: "Wielki Książę nie żyje. Wraz z wstąpieniem na tron ​​jego młodej córki Wilhelminy, tron ​​Luksemburga wymknął się spod władzy Holandii. Luksemburgiem rządzi obecnie siedemnasty kuzyn jej ojca, [SCOPE.sCharacter('luxembourg_grand_duke').GetFullName], niegdyś usunięty z tronu."
+ hm_netherlands.4.f: "[SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName], będąc już starym człowiekiem, nie zamierza zbytnio ingerować w politykę Luksemburga, pozostawiając codzienne sprawy swojemu synowi, nowemu następcy tronu."
+ hm_netherlands.4.a: "Niech żyje Wielki Książę!"
+
+ hm_netherlands.5.t: "Tragedia w Paryżu"
+ hm_netherlands.5.d: "[SCOPE.sCharacter('relevant_heir').GetFullName] został znaleziony martwy w [SCOPE.sCharacter('relevant_heir').GetHerHis] paryskim mieszkaniu."
+ hm_netherlands.5.f: "Policja z zapałem i pośpiechem zabezpiecza miejsce zdarzenia w mieszkaniu i wszczyna śledztwo w sprawie okoliczności śmierci [SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]a. Książę był rozczarowany po tym, jak [SCOPE.sCharacter('relevant_heir').GetCustom('PL_jego_jej')] nie udało się ożenić, i pogrążył się w życiu wypełnionym seksem, alkoholem i hazardem. Przyczyną zgonu było połączenie całkowitego wyczerpania, niewydolności wątroby i tyfusu."
+ hm_netherlands.5.a: "Tragedia dla rodziny królewskiej"
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName] umiera."
+
+ # Belgium
+ hm_belgium.1.t: "Koronacja Leopolda II"
+ hm_belgium.1.d: "Wraz z końcem panowania Leopolda I na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Belgii Leopold II."
+ hm_belgium.1.f: "Zainteresowany polityką i podróżnik, Leopold od dawna opowiadał się za ekspansją kolonialną. Celem nowego króla jest, aby kraj był „silny, zamożny, a co za tym idzie, posiadał własne kolonie, piękne i spokojne”."
+ hm_belgium.1.a: "Niech żyje Król!"
+
+ hm_belgium.2.t: "Śmierć Księcia Królewskiego"
+ hm_belgium.2.d: "Książę [SCOPE.sCharacter('relevant_heir').GetFullName] zmarł na zapalenie płuc po tym, jak wpadł do stawu."
+ hm_belgium.2.f: "Podczas [SCOPE.sCharacter('relevant_heir').GetCustom('PL_jego_jej')] pogrzebu [SCOPE.sCharacter('relevant_heir').GetCustom('PL_jego_jej')] ojciec, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFirstName], publicznie wybuchnął płaczem, osunął się na kolana obok trumny i zaczął niekontrolowanie szlochać."
+ hm_belgium.2.a: "Niech spoczywa w pokoju"
+
+ hm_belgium.3.t: "Królewska tragedia"
+ hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName] zmarł na grypę, którą zaraził się podczas wizyty u chorej siostry."
+ hm_belgium.3.f: "Po śmierci odroczono obrady parlamentu, a teatry i instytucje publiczne zamknięto aż do zakończenia pogrzebu."
+ hm_belgium.3.a: "Niech spoczywa w pokoju"
+
+ hm_belgium.4.t: "Koronacja Alberta I"
+ hm_belgium.4.d: "Wraz ze śmiercią zmarłego króla na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName] wstąpił na tron ​[ROOT.GetCountry.GetAdjective|l] jako król Belgii Albert I."
+ hm_belgium.4.f: "Albert przygotowywał się pilnie do objęcia tronu, poważnie martwiąc się sytuacją klasy robotniczej.\nW przeciwieństwie do poprzednich królów Belgii, Albert wygłosił swoją mowę inauguracyjną zarówno w języku niderlandzkim, jak i francuskim."
+ hm_belgium.4.a: "Niech żyje Król!"
+ 
+ # Denmark
+ hm_denmark.1.t: "Koronacja Fryderyka VII"
+ hm_denmark.1.d: "Wraz z końcem panowania Chrystiana VIII na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Danii Fryderyk VII."
+ hm_denmark.1.f: "Jedyny prawowity syn swojego ojca i bezpotomny, pomimo trzykrotnego małżeństwa. Będzie ostatnim duńskim królem z dynastii oldenburskiej, ponieważ kolejnym w kolejce do tronu jest jego kuzyn, książę Chrystian z Glücksburga, potomek króla Danii Chrystiana III.\nKryzys sukcesyjny będzie miał również wpływ na problemy księstw Szlezwiku-Holsztynu, gdyż ich sukcesja – zgodnie z prawem salickim – wskazuje na Fryderyka, księcia Augustenburga, jako kolejnego księcia."
+ hm_denmark.1.f2: "Jedyny prawowity syn swojego ojca i bezpotomny, pomimo trzykrotnego małżeństwa. Będzie ostatnim duńskim królem z dynastii oldenburskiej, ponieważ kolejnym w kolejce do tronu jest jego kuzyn, książę Chrystian z Glücksburga, potomek króla Danii Chrystiana III."
+ hm_denmark.1.a: "Niech żyje Król!"
+
+ hm_denmark.2.t: "Koronacja Chrystiana IX"
+ hm_denmark.2.d: "Wraz z końcem panowania Fryderyka VII na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Danii Chrystian IX."
+ hm_denmark.2.f: "Po wygaśnięciu linii królów oldenburskich, królestwem rządzi obecnie ród Glücksburgów, choć nie bez problemów. Księstwa Szlezwiku-Holsztynu, zgodnie z prawem salickim, powinny trafić do Fryderyka, księcia Augustenburga, który ogłosił się pretendentem do tronu Szlezwiku-Holsztynu. Cieszy się on poparciem niemieckiej ludności księstw, zwłaszcza w Holsztynie."
+ hm_denmark.2.f2: "Po wygaśnięciu linii królów oldenburskich królestwem włada obecnie ród Glücksburgów, jednak męskich przedstawicieli dynastii jest nadal niewielu, co sprawia, że ​​przyszłość rodziny królewskiej jest niepewna."
+ hm_denmark.2.a: "Niech żyje Król!"
+
+ hm_denmark.3.t: "Koronacja Fryderyka VIII"
+ hm_denmark.3.d: "Wraz z końcem panowania Chrystiana IX na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Danii Fryderyk VIII."
+ hm_denmark.3.f: "Choć za panowania ojca był raczej wykluczony z polityki i władzy, Fryderyk miał zadatki na monarchę liberalnego, gdyż był zarówno reformatorem, jak i osobą o demokratycznych skłonnościach."
+ hm_denmark.3.a: "Niech żyje Król!"
+
+ hm_denmark.4.t: "Koronacja Chrystiana X"
+ hm_denmark.4.d: "Wraz z końcem panowania Fryderyka VIII na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Danii Chrystian X."
+ hm_denmark.4.f: "W przeciwieństwie do swojego ojca, liberała, Chrystian jest niechętny wobec całkowitego przyjęcia demokracji, co mogłoby skutkować niepokojami wśród społeczeństwa o poglądach liberalnych i lewicowych."
+ hm_denmark.4.a: "Niech żyje Król!"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "A King for the Throne"
+ hm_monarch_choice.1.desc: "Wraz z uzyskaniem niepodległości, to my sami musimy wybrać, kogo zaprosić na tron [ROOT.GetCountry.GetAdjective|l]."
+ hm_monarch_choice.1.f: "Decyzja nie jest łatwa. Po pierwsze, powinni pochodzić z rodziny królewskiej, mieć powiązania z krajami nordyckimi i silne tradycje morskie, aby odstraszyć Szwecję.\nJedną z kontrowersyjnych opcji jest nikt inny, jak tylko książę ze [SCOPE.sCountry('swe_scope').GetAdjective|l] rodziny królewskiej, dynastii Bernadotte, który miałby uspokoić naszych sąsiadów i osoby wokół nas, które mogłyby nas uznać za rewolucjonistów.\nInni głosują na księcia pochodzącego z przyjaznego i neutralnego kraju, mając nadzieję, że bezstronny monarcha utrzyma pokój i zyska szacunek na arenie międzynarodowej.\nWreszcie, najbardziej radykalne grupy w naszym kraju całkowicie odrzucają monarchię: republikanie i socjaliści pragną prawdziwej rewolucji i zerwania z tradycyjną Europą."
+ hm_monarch_choice.1.a: "Dajmy Bernadotte'om szansę, aby nasze narody pozostały blisko"
+ hm_monarch_choice.1.b: "[SCOPE.sCountry('den_scope').GetAdjective|l] książę Waldemar, syn Chrystiana IX, będzie doskonałym kandydatem neutralnym"
+ hm_monarch_choice.1.c: "The [SCOPE.sCountry('den_scope').GetAdjective|l] książę Karol, syn Fryderyka VIII, będzie doskonałym kandydatem neutralnym"
+ hm_monarch_choice.1.d: "Książę Artur, książę Connaught, przybliży nas do [SCOPE.sCountry('gbr_scope').GetName]"
+ hm_monarch_choice.1.e: "Monarchia nas zawiodła, pozbądźmy się jej archaicznych instytucji!"
+
+ hm_monarch_choice.2.t: "Nowy monarcha bułgarski"
+ hm_monarch_choice.2.desc: "Po uzyskaniu niepodległości naszym obowiązkiem jest zaprosić szanowanego szlachcica, by poprowadził nasz naród."
+ hm_monarch_choice.2.flavor: "Wybór nie jest błahy. [SCOPE.sCountry('rus_scope').GetName] od dawna dąży do zdobycia większych wpływów i ziem na Bałkanach, a jej celem jest osadzenie przyjaznego szlachcica na [ROOT.GetCountry.GetAdjective|l] tronie. Z drugiej strony [SCOPE.sCountry('gbr_scope').GetName] chce ograniczyć ekspansję Rosji i byłaby bardzo niezadowolona, ​​gdybyśmy wybrali kandydata rosyjskiego. Nie powinniśmy też zapominać o naszych byłych władcach: interesy [SCOPE.sCountry('tur_scope').GetName]go również leżą w ograniczeniu wpływów Rosji. Mamy też do wyboru kandydatów z Bułgarii i Rumunii, którzy zapobiegliby ingerencji Wielkiego Mocarstwa w nasze sprawy."
+ hm_monarch_choice.2.a: "Aleksander Battenberg, kandydat na cara, zapewniłby poparcie Rosji"
+ hm_monarch_choice.2.b: "Ferdynand z Saksonii-Coburga i Gothy-Koháry jest neutralnym wyborem, który zapewni nam suwerenność"
+ hm_monarch_choice.2.c: "Niko Dadiani, kandydat na cara, zapewniłby poparcie Rosji"
+ hm_monarch_choice.2.d: "Książę Waldemar z [SCOPE.sCountry('den_scope').GetAdjective|l] rodziny królewskiej jest głównym kandydatem [SCOPE.sCountry('gbr_scope').GetAdjective]"
+ hm_monarch_choice.2.e: "Wybór księcia Henryka VII Reuss z Köstritz może spowodować, że znajdziemy się pod ochroną Niemiec"
+ hm_monarch_choice.2.f: "Emanoil Vogoride-Conachi jest szanowanym szlachcicem w regionie i mógłby ograniczyć ingerencję zagraniczną"
+ hm_monarch_choice.2.g: "Aleksander Bogorydzki jest bułgarskim szlachcicem, jednak wybór jednej rodziny może wywołać zazdrość innych arystokratów"
+ hm_monarch_choice.2.h: "Ofiarowując tron [SCOPE.sCountry('rom_scope').GetAdjective|l] [SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle]owi [SCOPE.sCountry('rom_scope').GetRuler.GetFullName], moglibyśmy połączyć nasze narody w unii personalnej i wzmocnić nas oboje"
+ hm_monarch_choice.2.i: "Monarchia to archaiczna instytucja, powinniśmy przekazać władzę ludowi!"
+ 

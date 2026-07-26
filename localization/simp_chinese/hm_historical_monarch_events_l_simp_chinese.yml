@@ -1,0 +1,101 @@
+﻿l_simp_chinese:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName]成为[ROOT.GetCountry.GetNameNoFlag]的[concept_heir]"
+
+ # Netherlands
+ hm_netherlands.1.t: "$Willem$二世的加冕典礼"
+ hm_netherlands.1.d: "随着$Willem$一世统治的结束，他的长子[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Willem$二世。"
+ hm_netherlands.1.f: "尽管他与父亲一样倾向于保守主义，但他并不想像父亲那样深度干预政府事务。"
+ hm_netherlands.1.a: "国王万岁！"
+ 
+ hm_netherlands.2.t: "$Willem$三世的加冕典礼"
+ hm_netherlands.2.d: "随着$Willem$二世统治的结束，他的长子[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Willem$三世。"
+ hm_netherlands.2.f: "父亲去世时，他正作为克利夫兰公爵夫人的客人，下榻在拉比城堡。荷兰政府代表专程前往伦敦，迎接他们的新国王。$Willem$起初不愿返回，但最终被说服回国了。\n\n国王身材高大魁梧，嗓音洪亮。他时而温和仁慈，时而又会突然变得令人畏惧，甚至暴戾。他常对侍从们踢打殴打，还喜欢恐吓和羞辱朝臣。这位新国王对动物也十分残忍。他的大臣们都怕他。他身边的大多数人都认为，他在某种程度上有些疯癫。"
+ hm_netherlands.2.a: "国王万岁！"
+
+ hm_netherlands.3.t: "$Wilhelmina$亚女王的加冕礼"
+ hm_netherlands.3.d: "国王去世了。随着他年幼的女儿[SCOPE.sCharacter('queen_wilhelmina').GetFirstName]登基，王国一片欢腾，卢森堡王位也由此脱离了荷兰的控制。愿她长久统治！"
+ hm_netherlands.3.d2: "国王去世了。With the ascension of his young daughter [SCOPE.sCharacter('queen_wilhelmina').GetFirstName]登基，整个王国欢欣鼓舞。愿她长久统治！"
+ hm_netherlands.3.f: "“我宣誓，我将竭尽全力捍卫和维护王国的独立与领土，保护所有荷兰公民和居民的自由与权利，并运用法律赋予我的所有手段来维护和促进繁荣，这正是作为一位贤明而忠诚的君主应尽的职责。”\n\n$Wilhelmina$在阿姆斯特丹的新教堂宣誓就职。她深知民选代表对她的期望，但她是一位意志坚定、果敢干练的女性，言行皆直抒胸臆。她“憎恶”政客，却宣称自己热爱人民。"
+ hm_netherlands.3.a: "天佑女王！"
+ hm_netherlands.3.tt: "[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAdjective][concept_customs_union]成员离开了我们的经济圈。"
+
+ hm_netherlands.4.t: "$Wilhelmina$亚女王的加冕礼"
+ hm_netherlands.4.d: "大公已逝。随着他年幼的女儿$Wilhelmina$继位，卢森堡王位不再受荷兰控制。作为其父的第十七代远房表亲，[SCOPE.sCharacter('luxembourg_grand_duke').GetFullName]如今成为卢森堡的统治者。"
+ hm_netherlands.4.f: "[SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName]虽已年事已高，但他并不打算过多干预卢森堡的政治事务，而是将日常事务交由他的儿子——新任王位继承人——来处理。"
+ hm_netherlands.4.a: "大公万岁！"
+
+ hm_netherlands.5.t: "巴黎悲剧"
+ hm_netherlands.5.d: "[SCOPE.sCharacter('relevant_heir').GetFullName]被发现在[SCOPE.sCharacter('relevant_heir').GetHerHis]位于巴黎的公寓内死亡。"
+ hm_netherlands.5.f: "警方以热切而迅速的姿态封锁了该公寓的现场，并就[SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]的死因展开调查。由于[SCOPE.sCharacter('relevant_heir').GetHerHis]未能成婚，这位王子感到幻灭，从此沉溺于性、酗酒和赌博之中。经鉴定，其死因是极度疲惫、肝功能衰竭和斑疹伤寒共同作用的结果。"
+ hm_netherlands.5.a: "对王室来说是一场悲剧"
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName]死亡。"
+
+ # Belgium
+ hm_belgium.1.t: "$Leopold$二世的加冕典礼"
+ hm_belgium.1.d: "随着$Leopold$ I统治的结束，他的第二个儿子，也是在世的长子[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Leopold$二世。"
+ hm_belgium.1.f: "$Leopold$ 对政治充满兴趣，且游历广泛，长期以来一直倡导殖民扩张。这位新国王为国家设定的目标是，让国家“强大、繁荣，从而拥有属于自己的、美丽而安宁的殖民地”。"
+ hm_belgium.1.a: "国王万岁！"
+
+ hm_belgium.2.t: "王子的去世"
+ hm_belgium.2.d: "王室王子[SCOPE.sCharacter('relevant_heir').GetFullName]在跌入池塘后因肺炎去世。"
+ hm_belgium.2.f: "在[SCOPE.sCharacter('relevant_heir').GetHerHis]的葬礼上，[SCOPE.sCharacter('relevant_heir').GetHerHis]的父亲[ROOT.GetCountry.GetRuler.GetFirstName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]当众失态，在棺木旁跪倒在地，泣不成声。"
+ hm_belgium.2.a: "愿他安息"
+
+ hm_belgium.3.t: "一场王室悲剧"
+ hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetFullName]他是在探望生病的妹妹时感染了该病毒。"
+ hm_belgium.3.f: "他去世后，议会休会，剧院和公共机构也暂停开放，直至葬礼结束后才恢复。"
+ hm_belgium.3.a: "愿他安息"
+
+ hm_belgium.4.t: "$Albert$一世的加冕典礼"
+ hm_belgium.4.d: "[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Albert$一世。"
+ hm_belgium.4.f: "$Albert$ 为承担王位职责做了充分准备，并对工人阶级的处境深表关切。\n与以往的比利时国王不同，$Albert$在登基演说中不仅用法语，还用荷兰语发表了讲话。"
+ hm_belgium.4.a: "国王万岁！"
+ 
+ # Denmark
+ hm_denmark.1.t: "$Frederik$七世的加冕典礼"
+ hm_denmark.1.d: "随着$Christian$八世统治的结束，他唯一的合法儿子“亚历山大[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Frederik$七世。"
+ hm_denmark.1.f: "他是其父唯一的嫡子，尽管结过三次婚，却始终没有子嗣。他将成为奥尔登堡王朝最后一位丹麦国王，因为王位继承顺位下一位是他的二表弟格吕克斯堡的$Christian$亲王，后者是丹麦国王$Christian$三世的后裔。\n继承危机还将引发与石勒苏益格-荷尔斯泰因公国相关的问题，因为根据《萨利克法》，该公国的继承顺序应由奥古斯滕堡公爵$Frederik$继任下一任公爵。"
+ hm_denmark.1.f2: "他是其父唯一的嫡子，尽管结过三次婚，却始终没有子嗣。他将成为奥尔登堡王朝最后一位丹麦国王，因为王位继承顺位下一位是他的二表弟格吕克斯堡的$Christian$亲王，后者是丹麦国王$Christian$三世的后裔。"
+ hm_denmark.1.a: "国王万岁！"
+
+ hm_denmark.2.t: "The Coronation of $Christian$九世"
+ hm_denmark.2.d: "随着$Frederik$七世统治的结束，他的堂弟[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Christian$九世。"
+ hm_denmark.2.f: "随着奥尔登堡王朝的绝嗣，格吕克斯堡王朝如今统治着该王国，但统治过程并非一帆风顺。根据萨利克法，石勒苏益格-荷尔斯泰因公国本应由奥古斯滕堡公爵$Frederik$继承，而他已自封为石勒苏益格-荷尔斯泰因公爵的王位觊觎者。他得到了这些公国内德裔居民的支持，尤其是在荷尔斯泰因地区。"
+ hm_denmark.2.f2: "随着奥尔登堡国王血脉的断绝，格吕克斯堡家族现在统治着王国，但王朝的男性成员仍然很少，使得王室的未来充满不确定性。"
+ hm_denmark.2.a: "国王万岁！"
+
+ hm_denmark.3.t: "$Frederik$八世的加冕典礼"
+ hm_denmark.3.d: "随着$Christian$九世统治的结束，他的长子[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Frederik$八世。"
+ hm_denmark.3.f: "在父亲执政期间，$Frederik$基本上被排除在政治和权力圈之外，但他具备成为一位开明君主的潜质，既具有改革意识，又倾向于民主。"
+ hm_denmark.3.a: "国王万岁！"
+
+ hm_denmark.4.t: "$Christian$十世的加冕典礼"
+ hm_denmark.4.d: "随着$Frederik$八世统治的结束，他的长子[SCOPE.sCharacter('king_scope').GetFullName]登上[ROOT.GetCountry.GetAdjective]皇位，成为[ROOT.GetCountry.GetNameNoFormatting]国王$Christian$十世。"
+ hm_denmark.4.f: "与他那位自由派父亲不同，$Christian$不愿完全接受民主，这可能会在自由派和左翼民众中引发动荡。"
+ hm_denmark.4.a: "国王万岁！"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "王位的新君主"
+ hm_monarch_choice.1.desc: "随着我们刚刚获得独立，该由我们来决定邀请谁坐上[ROOT.GetCountry.GetName]的王位。"
+ hm_monarch_choice.1.f: "这一决定并不容易。首先，候选国应是与北欧国家有渊源的王室国家，且应拥有深厚的海军传统，以对瑞典形成威慑。\n一个颇具争议的人选，正是[SCOPE.sCountry('swe_scope').GetName]王室——$Bernadotte$王朝的一位王子，以此来安抚我们的邻国以及那些认为我们是革命者的周边国家。\n还有人投票支持一位来自友好中立国家的王子，希望一位公正无私的君主能够维护和平，并在国际上赢得尊重。\n最后，我国中最激进的势力完全拒绝君主制：共和派和社会主义者希望进行一场真正的革命，并与传统欧洲决裂。"
+ hm_monarch_choice.1.a: "让我们给贝纳多特家族一个机会，让我们的国家保持亲密关系"
+ hm_monarch_choice.1.b: "[SCOPE.sCountry('den_scope').GetAdjective]王子$Valdemar$——$Christian$九世九世的儿子——将是一位出色的中立候选人"
+ hm_monarch_choice.1.c: "[SCOPE.sCountry('den_scope').GetAdjective]王子$Carl$——$Frederik$八世九世的儿子——将是一位出色的中立候选人"
+ hm_monarch_choice.1.d: "康诺特公爵$Arthur$王子将使我们更接近[SCOPE.sCountry('gbr_scope').GetName]"
+ hm_monarch_choice.1.e: "君主制让我们失望了，让我们废除这些陈旧的制度吧！"
+
+ hm_monarch_choice.2.t: "保加利亚的新君主"
+ hm_monarch_choice.2.desc: "随着我们刚刚获得独立，我们有责任邀请一位备受尊敬的贵族来领导我们的国家。"
+ hm_monarch_choice.2.flavor: "这个选择绝非儿戏。长期以来，俄罗斯一直致力于在巴尔干地区扩大影响力并获取更多领土，而且他们为将一位友好的贵族扶上[ROOT.GetCountry.GetAdjective]王位投入了巨大精力。另一方面，[SCOPE.sCountry('gbr_scope').GetName]希望遏制[SCOPE.sCountry('rus_scope').GetName]的扩张，如果我们选择俄罗斯候选人，他们将会非常不满。我们也不应忘记曾经的统治者：[SCOPE.sCountry('tur_scope').GetName]同样有兴趣限制俄罗斯的影响力。此外，我们还可以选择保加利亚和罗马尼亚的候选人，他们将阻止这个大国干涉我们的内政。"
+ hm_monarch_choice.2.a: "沙皇提名的候选人$of_Battenberg$$Alexander$将确保获得[SCOPE.sCountry('rus_scope').GetName]的支持"
+ hm_monarch_choice.2.b: "$of_Saxe-Coburg-Gotha-Koháry$$Ferdinand$是确保我国主权的中立选择"
+ hm_monarch_choice.2.c: "沙皇提名的候选人$Dadiani$$Niko$将确保获得[SCOPE.sCountry('rus_scope').GetName]的支持"
+ hm_monarch_choice.2.d: "[SCOPE.sCountry('den_scope').GetName]王室的$Valdemar$王子是[SCOPE.sCountry('gbr_scope').GetName]的主要候选人"
+ hm_monarch_choice.2.e: "选择$von_Reuss$$Heinrich$七世王子可能会使我们置于[SCOPE.sCountry('pru_scope').GetName]的保护之下"
+ hm_monarch_choice.2.f: "$Vogoride-Conachi$$Emanoil$是该地区一位备受尊敬的贵族，他有望遏制外来干涉"
+ hm_monarch_choice.2.g: "$Bogoridi$$Alexander$是保加利亚贵族，但如果只选其中一个家族，可能会引起其他贵族的嫉妒"
+ hm_monarch_choice.2.h: "通过向[SCOPE.sCountry('rom_scope').GetName]的[SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle][SCOPE.sCountry('rom_scope').GetRuler.GetFullName]让出王位，我们可以使两国建立个人联合，从而增强双方的力量"
+ hm_monarch_choice.2.i: "君主制是一种过时的制度，我们应该将权力下放给人民！"
+ 

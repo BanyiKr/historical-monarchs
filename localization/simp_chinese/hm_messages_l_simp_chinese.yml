@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "[SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName]与[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName]的联合统治已经结束"
+ notification_wilhelmina_notification_desc: "国王威廉三世驾崩，由于各国间继承法的不同，这些国家的[concept_personal_union]随之终结。"

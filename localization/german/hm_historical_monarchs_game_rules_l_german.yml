@@ -1,0 +1,13 @@
+﻿l_german:
+
+ rule_hm_scripted_deaths: "Vorherbestimmte Todesfälle historischer Monarchen"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Historisch#!#!"
+ setting_enable_scripted_deaths_desc: "Aaktiviere vorprogrammierte Todesfälle für bestimmte Monarchen je nach Spieljahr"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Zufällig#!#!"
+ setting_disable_scripted_deaths_desc: "Deaktiviere vorprogrammierte Todesfälle für bestimmte Monarchen je nach Spieljahr"
+
+ rule_hm_heir_generation: "Generierung der historischen Erben"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Aggressiv#!#!"
+ setting_aggressive_heir_generation_desc: "Das Spiel versucht stets, einen historischen Erben zu generieren, selbst wenn dieser ein negatives Alter hätte. Dies trägt dazu bei, die Thronfolgeketten aufrechtzuerhalten"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc Historisch#!#!"
+ setting_historical_heir_generation_desc: "Das Spiel generiert historische Erben erst, nachdem diese historisch tatsächlich geboren wurden. Dadurch wird verhindert, dass Erben ein negatives Alter haben, doch die Thronfolgekette kann dauerhaft unterbrochen werden, wenn der Herrscher zuvor stirbt"

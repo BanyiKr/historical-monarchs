@@ -1,0 +1,5 @@
+﻿l_polish:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "[SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName] i [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName] – koniec unii"
+ notification_wilhelmina_notification_desc: "Po śmierci króla Wilhelma III różnice w prawach dotyczących dziedziczenia doprowadziły do rozwiązania [Concept('concept_personal_union', 'unii personalnej')] między tymi państwami."

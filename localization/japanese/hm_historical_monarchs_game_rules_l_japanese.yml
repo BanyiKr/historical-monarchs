@@ -1,0 +1,13 @@
+﻿l_japanese:
+
+ rule_hm_scripted_deaths: "あらかじめプログラムされた歴史的な君主の死の年"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc 史実#!#!"
+ setting_enable_scripted_deaths_desc: "ゲーム内の日付に基づいて、特定の君主に対してスクリプトによる死亡を有効にする"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc 無作為#!#!"
+ setting_disable_scripted_deaths_desc: "ゲーム内の日付に基づいて、特定の君主の「シナリオによる死亡」を無効にする"
+
+ rule_hm_heir_generation: "歴史的継承者の作成"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc 積極的#!#!"
+ setting_aggressive_heir_generation_desc: "この設定では、生成後に年齢がマイナスになってしまう場合でも、ゲームは常に各国の歴史的な後継者を生成しようとします。これにより、王位継承の連鎖を常に維持することができます"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc 史実#!#!"
+ setting_historical_heir_generation_desc: "The この設定では、ゲームは歴史上の相続人が実際に生まれた後にのみ、その人物を生成します。これにより、年齢がマイナスの相続人が生まれるのを防ぐことができますが、統治者がその前に死亡した場合、継承の連鎖が永久に途絶えてしまう可能性があります"

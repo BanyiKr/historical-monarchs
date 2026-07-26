@@ -1,0 +1,5 @@
+﻿l_english:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "[SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName]'s union with [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName] has ended"
+ notification_wilhelmina_notification_desc: "With the death of King William III, differing succession laws have ended the [concept_personal_union] between these nations."

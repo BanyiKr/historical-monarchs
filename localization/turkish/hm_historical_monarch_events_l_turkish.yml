@@ -1,0 +1,101 @@
+﻿l_turkish:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName] [concept_heir] olur"
+
+ # Netherlands
+ hm_netherlands.1.t: "II. Willem'ın Tahta Çıkışı"
+ hm_netherlands.1.d: "[SCOPE.sCharacter('king_scope').GetFullName], I. Willem'ın hükümdarlığının sona ermesiyle \"Hollanda Kralı\" II. Willem adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_netherlands.1.f: "Babasının muhafazakâr eğilimlerini paylaşmasına rağmen, babası kadar devlet işlerine karışmak istemiyor."
+ hm_netherlands.1.a: "Kral çok yaşasın!"
+ 
+ hm_netherlands.2.t: "III. Willem'ın Tahta Çıkışı"
+ hm_netherlands.2.d: "[SCOPE.sCharacter('king_scope').GetFullName], II. Willem'ın hükümdarlığının sona ermesiyle \"Hollanda Kralı\" III. Willem adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_netherlands.2.f: "Babası öldüğünde, o sırada Raby Kalesi'nde Cleveland Düşesi'nin misafiriydi. Hollanda hükümetinin temsilcileri yeni krallarıyla görüşmek üzere Londra'ya gittiler. Willem geri dönmek konusunda isteksizdi, ancak ikna edildi.\n\nKral, çok iri yapılı ve gür sesli bir adam. Nazik ve kibar olabiliyor, sonra aniden korkutucu ve hatta şiddet yanlısı hale gelebiliyor. Hizmetkârlarını tekmeliyor ve dövüyor. Saray mensuplarını terörize etmeye ve aşağılamaya meyilli. Yeni kral hayvanlara da acımasız davranıyor. Bakanları ondan korkuyor. Çevresindeki çoğu insan, bir dereceye kadar deli olduğu konusunda hemfikir."
+ hm_netherlands.2.a: "Kral çok yaşasın!"
+
+ hm_netherlands.3.t: "Kraliçe Wilhelmina'nın Tahta Çıkışı"
+ hm_netherlands.3.d: "Kral öldü. Genç kızı [SCOPE.sCharacter('queen_wilhelmina').GetFirstName]'nın tahta çıkmasıyla krallık sevinir ve Lüksemburg tahtı Hollanda'nın kontrolünden çıkar. Çok yaşa kraliçe!"
+ hm_netherlands.3.d2: "Kral öldü. Genç kızı [SCOPE.sCharacter('queen_wilhelmina').GetFirstName]'nın tahta çıkmasıyla krallık sevinç içindedir. Çok yaşa kraliçe!"
+ hm_netherlands.3.f: "\"Krallığın bağımsızlığını ve topraklarını elimden gelen en iyi şekilde savunacağıma ve koruyacağıma, tüm Hollanda vatandaşlarının ve sakinlerinin özgürlüklerini ve haklarını koruyacağıma ve iyi ve sadık bir Hükümdara düşen görevler doğrultusunda, kanunun bana verdiği tüm imkanları refahı korumak ve geliştirmek için kullanacağıma yemin ederim.\" Wilhelmina, Amsterdam'daki Nieuwe Kerk'te yemin etti. Seçilmiş temsilcilerden ne beklendiğinin farkında, ancak güçlü iradeli, kararlı ve aklından geçenleri söyleyen ve hareket eden bir kadın. Politikacılardan \"nefret ediyor\" ve bunun yerine halka olan sevgisini dile getiriyor."
+ hm_netherlands.3.a: "Tanrı kraliçeyi korusun!"
+ hm_netherlands.3.tt: "[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAdjective] [Concept('concept_customs_union', 'Gümrük Birliğinin')] üyeleri ekonomik etki alanımızdan çıktılar."
+
+ hm_netherlands.4.t: "Kraliçe Wilhelmina'nın Tahta Çıkışı"
+ hm_netherlands.4.d: "Büyük Dük öldü. Genç kızı Wilhelmina'nın tahta çıkmasıyla Lüksemburg tahtı Hollanda'nın kontrolünden çıktı. Babasının on yedinci kuşaktan kuzeni [SCOPE.sCharacter('luxembourg_grand_duke').GetFullName] artık Lüksemburg'u yönetiyor."
+ hm_netherlands.4.f: "Artık yaşlı bir adam olan [SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName], Lüksemburg siyasetine fazla müdahale etmeyi planlamıyor ve günlük işleri yeni veliaht olan oğluna bırakıyor."
+ hm_netherlands.4.a: "Büyük Dük çok yaşasın!"
+
+ hm_netherlands.5.t: "Paris'te trajedi"
+ hm_netherlands.5.d: "[SCOPE.sCharacter('relevant_heir').GetFullName], Paris'teki dairesinde ölü bulundu."
+ hm_netherlands.5.f: "Polis, büyük bir gayret ve aceleyle apartmanın çevresindeki olay yerini kordon altına aldı ve [SCOPE.sCharacter('relevant_heir').GetFirstNameNoFormatting]'in ölümünün koşullarını araştırmak üzere soruşturma başlattı. Prens, evlenememesinin ardından hayal kırıklığına uğramış ve kendini seks, içki ve kumara kaptırmıştı. Ölüm nedeni, aşırı bitkinlik, karaciğer yetmezliği ve tifüsün birleşimi olarak belirlendi."
+ hm_netherlands.5.a: "Kraliyet ailesi için trajik bir durum"
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName] ölür."
+
+ # Belgium
+ hm_belgium.1.t: "II. Leopold'ın Tahta Çıkışı"
+ hm_belgium.1.d: "[SCOPE.sCharacter('king_scope').GetFullName], I. Leopold'ın hükümdarlığının sona ermesiyle \"Belçikalıların Kralı\" II. Leopold adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_belgium.1.f: "Siyasetle ilgilenen ve çok seyahat etmiş olan Leopold, uzun zamandır sömürgecilik genişlemesinin savunucusu olmuştur. Yeni kralın ülke için hedefi, \"güçlü, müreffeh, dolayısıyla kendi kolonilerine sahip, güzel ve sakin\" bir ülke olmasıdır."
+ hm_belgium.1.a: "Kral çok yaşasın!"
+
+ hm_belgium.2.t: "Kraliyet Prensinin Ölümü"
+ hm_belgium.2.d: "Kraliyet prensi [SCOPE.sCharacter('relevant_heir').GetFullName], bir gölete düşmesinin ardından zatürreye yakalanarak hayatını kaybetti."
+ hm_belgium.2.f: "Cenaze töreninde babası [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName], halkın önünde yıkıldı, tabutun yanında dizlerinin üzerine çöktü ve kontrolsüzce hıçkıra hıçkıra ağladı."
+ hm_belgium.2.a: "Allah rahmet eylesin."
+
+ hm_belgium.3.t: "Kraliyet trajedisi"
+ hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName], hasta kız kardeşini ziyaret ederken kaptığı grip nedeniyle hayatını kaybetti."
+ hm_belgium.3.f: "Ölümün ardından Parlamento oturumuna ara verildi ve tiyatrolar ile kamu kurumları cenaze töreni sonrasına kadar kapalı kaldı."
+ hm_belgium.3.a: "Allah rahmet eylesin."
+
+ hm_belgium.4.t: "I. Albert'ın Tahta Çıkışı"
+ hm_belgium.4.d: "[SCOPE.sCharacter('king_scope').GetFullName] \"Belçikalıların Kralı\" I. Albert adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_belgium.4.f: "Albert, işçi sınıfının durumuna ciddi anlamda önem vererek, krallık görevine kendini yoğun bir şekilde hazırladı.\nÖnceki Belçika krallarının aksine, Albert tahta çıkış konuşmasını Fransızcanın yanı sıra Felemenkçe de yaptı."
+ hm_belgium.4.a: "Kral çok yaşasın!"
+ 
+ # Denmark
+ hm_denmark.1.t: "VII. Frederik'ın Tahta Çıkışı"
+ hm_denmark.1.d: "[SCOPE.sCharacter('king_scope').GetFullName], VIII. Christian'ın hükümdarlığının sona ermesiyle \"Danimarka Kralı\" VII. Frederik adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_denmark.1.f: "Babasının tek meşru oğlu ve üç kez evlenmesine rağmen çocuğu olmayan biridir. Tahta geçme sırasındaki bir sonraki kişi, Danimarka kralı III. Christian'ın soyundan gelen ikinci kuzeni Glücksburg Prensi Christian olduğu için, Oldenburg hanedanının son Danimarka kralı olacaktır.\nVeraset krizi, Salik yasasına göre bir sonraki dükün Augustenburg Dükü Frederik olması gerektiği için Schleswig-Holstein dükalıkları açısından da sorunlara yol açacaktır."
+ hm_denmark.1.f2: "Babasının tek meşru oğlu ve üç kez evlenmesine rağmen çocuğu olmayan biridir. Tahta geçme sırasındaki bir sonraki kişi, Danimarka kralı III. Christian'ın soyundan gelen ikinci kuzeni Glücksburg Prensi Christian olduğu için, Oldenburg hanedanının son Danimarka kralı olacaktır."
+ hm_denmark.1.a: "Kral çok yaşasın!"
+
+ hm_denmark.2.t: "IX. Christian'ın Tahta Çıkışı"
+ hm_denmark.2.d: "[SCOPE.sCharacter('king_scope').GetFullName], VII. Frederik'ın hükümdarlığının sona ermesiyle \"Danimarka Kralı\" IX. Christian , King of Denmark."
+ hm_denmark.2.f: "Oldenburg krallarının soyu tükenince, Glücksburg Hanedanı artık krallığı yönetiyor, ancak bu durum sorunsuz değil. Salik yasasına göre Schleswig-Holstein dükalıkları, kendisini Schleswig-Holstein Dükü ilan eden Augustenburg Dükü Frederik'e ait olmalıydı. Özellikle Holstein'da olmak üzere, dükalıkların Alman nüfusunun desteğine sahip."
+ hm_denmark.2.f2: "Oldenburg krallarının soyu tükenince, Glücksburg Hanedanı artık krallığı yönetiyor, ancak hanedanın erkek üyelerinin sayısı hâlâ az olduğundan, kraliyet ailesinin geleceği belirsizliğini koruyor."
+ hm_denmark.2.a: "Kral çok yaşasın!"
+
+ hm_denmark.3.t: "VIII. Frederik'ın Tahta Çıkışı"
+ hm_denmark.3.d: "[SCOPE.sCharacter('king_scope').GetFullName], IX. Christian'ın hükümdarlığının sona ermesiyle \"Danimarka Kralı\" VIII. Frederik adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_denmark.3.f: "Babası döneminde siyasetten ve iktidardan uzak tutulan Frederik, hem reformcu hem de demokratik eğilimli olmasıyla liberal bir hükümdarın özelliklerini taşıyor."
+ hm_denmark.3.a: "Kral çok yaşasın!"
+
+ hm_denmark.4.t: "X. Christian'ın Tahta Çıkışı"
+ hm_denmark.4.d: "[SCOPE.sCharacter('king_scope').GetFullName], Frederik VIII'ın hükümdarlığının sona ermesiyle \"Danimarka Kralı\" X. Christian adıyla [ROOT.GetCountry.GetAdjective] tahtına çıktı."
+ hm_denmark.4.f: "Liberal görüşlü babasının aksine, Christian demokrasiyi tam anlamıyla benimsemekte tereddüt ediyor; bu durum liberal ve solcu kesim arasında huzursuzluğa yol açabilir."
+ hm_denmark.4.a: "Kral çok yaşasın!"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "A King for the Throne"
+ hm_monarch_choice.1.desc: "Yeni kazandığımız bağımsızlığımızla birlikte, [ROOT.GetCountry.GetAdjective] tahtına kimi oturtacağımız seçimi bize düşüyor."
+ hm_monarch_choice.1.f: "Bu karar kolay değil. Birincisi, İskandinavya ile bağlantılı bir kraliyet ailesinden olmaları ve İsveç'i caydırmak için güçlü bir denizcilik geleneğine sahip olmaları gerekiyor.\nTartışmalı seçeneklerden biri de, komşularımızı ve bizi devrimci olarak gören çevremizdekileri yatıştırmak için [SCOPE.sCountry('swe_scope').GetAdjective] kraliyet ailesinden, Bernadotte Hanedanı'ndan bir prensin seçilmesidir.\nDiğerleri ise, tarafsız bir hükümdarın barışı koruyacağını ve uluslararası alanda saygı kazanacağını umarak, dostane ve tarafsız bir ülkeden bir prensin seçilmesine oy veriyor.\nSon olarak, ülkemizin en radikal unsurları monarşiyi tamamen reddediyor: Cumhuriyetçiler ve sosyalistler gerçek bir devrim ve geleneksel Avrupa'dan kopuş istiyorlar."
+ hm_monarch_choice.1.a: "Bernadotte ailesine, uluslarımızı yakın tutmak için bir şans verelim"
+ hm_monarch_choice.1.b: "[SCOPE.sCountry('den_scope').GetAdjective] Prensi Valdemar, IX. Christian'ın oğlu, mükemmel bir tarafsız aday olacaktır."
+ hm_monarch_choice.1.c: "[SCOPE.sCountry('den_scope').GetAdjective] Prensi Carl, VIII. Frederik'ın oğlu, mükemmel bir tarafsız aday olacaktır."
+ hm_monarch_choice.1.d: "Connaught Dükü Prens Arthur bizi [SCOPE.sCountry('gbr_scope').GetName]'ya daha da yaklaştıracak"
+ hm_monarch_choice.1.e: "Monarşi bizi hayal kırıklığına uğrattı, onun arkaik kurumlarından kurtulalım!"
+
+ hm_monarch_choice.2.t: "Yeni Bir Bulgar Hükümdarı"
+ hm_monarch_choice.2.desc: "Yeni kazandığımız bağımsızlığımızla birlikte, ulusumuzu yönetecek saygın bir soyluyu davet etmek bizim sorumluluğumuzdur."
+ hm_monarch_choice.2.flavor: "Seçim önemsiz değil. Rusya'nın uzun zamandır Balkanlar'da daha fazla nüfuz ve toprak elde etme hedefi var ve [ROOT.GetCountry.GetAdjective] tahtına dost bir soyluyu yerleştirmek için büyük çaba sarf ediyorlar. Öte yandan, [SCOPE.sCountry('gbr_scope').GetName]Rusya'nın yayılmasını sınırlamak istiyor ve [SCOPE.sCountry('rus_scope').GetAdjective] adayı seçmemiz durumunda bundan büyük memnuniyetsizlik duyacaktır. Eski efendilerimizi de unutmamalıyız: [SCOPE.sCountry('tur_scope').GetName]'nun çıkarları da Rusya'nın etkisini sınırlamakta yatmaktadır. Ayrıca, Büyük Gücün işlerimize karışmasını önleyecek Bulgar ve Romanya adayları arasından da seçim yapabiliriz."
+ hm_monarch_choice.2.a: "Çar'ın adayı Aleksandr von Battenberg, [SCOPE.sCountry('rus_scope').GetName]'nın desteğini sağlayacaktı"
+ hm_monarch_choice.2.b: "Ferdinand of Saxe-Coburg and Gotha-Koháry is the neutral choice to ensure our sovereignty"
+ hm_monarch_choice.2.c: "Çar'ın adayı Niko Dadiani, [SCOPE.sCountry('rus_scope').GetName]'nın desteğini sağlayacaktı"
+ hm_monarch_choice.2.d: "[SCOPE.sCountry('den_scope').GetAdjective] kraliyet ailesinden Prens Valdemar, [SCOPE.sCountry('gbr_scope').GetAdjective]'nın başlıca adayıdır"
+ hm_monarch_choice.2.e: "VII. Heinrich Reuss von Köstritz'i seçmek bizi [SCOPE.sCountry('pru_scope').GetAdjective] koruması altına alabilir"
+ hm_monarch_choice.2.f: "Emanoil Vogoride-Conachi, bölgede saygın bir soylu olup yabancı müdahalesini sınırlayabilirdi"
+ hm_monarch_choice.2.g: "Alexander Bogoridi Bulgar soylularındandır; ancak bir aileyi seçmesi diğer aristokratların kıskanmasına yol açabilir"
+ hm_monarch_choice.2.h: "[SCOPE.sCountry('rom_scope').GetName] [SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle|l] [SCOPE.sCountry('rom_scope').GetRuler.GetFullName]'a tahtı teklif ederek, uluslarımızı kişisel bir birlik içine sokabilir ve her ikimizi de güçlendirebiliriz"
+ hm_monarch_choice.2.i: "Monarşi çağ dışı bir kurumdur, gücü halka devretmeliyiz!"
+ 

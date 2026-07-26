@@ -1,0 +1,13 @@
+﻿l_polish:
+
+ rule_hm_scripted_deaths: "Z góry ustalone daty śmierci historycznych monarchów"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Historyczne#!#!"
+ setting_enable_scripted_deaths_desc: "Włącz zaprogramowane zgony niektórych monarchów w zależności od roku w grze"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Losowy#!#!"
+ setting_disable_scripted_deaths_desc: "Wyłącz zaprogramowane zgony niektórych monarchów w zależności od roku w grze"
+
+ rule_hm_heir_generation: "Tworzenie historycznych spadkobierców"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Agresywna#!#!"
+ setting_aggressive_heir_generation_desc: "Gra zawsze będzie próbowała wygenerować historycznego następcę tronu, nawet jeśli miałby on ujemny wiek. Pomaga to zachować ciągłość linii sukcesji"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc Historyczne#!#!"
+ setting_historical_heir_generation_desc: "Gra generuje historycznych spadkobierców dopiero po tym, jak faktycznie urodzili się oni w danym momencie historii. Zapobiega to pojawianiu się spadkobierców o ujemnym wieku, jednak łańcuchy sukcesji mogą ulec trwałemu przerwaniu, jeśli władca umrze wcześniej"

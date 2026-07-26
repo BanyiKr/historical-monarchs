@@ -1,0 +1,13 @@
+﻿l_spanish:
+
+ rule_hm_scripted_deaths: "Años de muerte őreestablecidos para los monarcas históricos"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Histórico#!#!"
+ setting_enable_scripted_deaths_desc: "Habilitar muertes programadas para determinados monarcas en función del año del juego"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Aleatorio#!#!"
+ setting_disable_scripted_deaths_desc: "Desactivar las muertes programadas de determinados monarcas en función del año del juego"
+
+ rule_hm_heir_generation: "Creación de herederos históricos"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Agresiva#!#!"
+ setting_aggressive_heir_generation_desc: "El juego siempre intentará generar un heredero histórico, incluso si este tuviera una edad negativa. Esto ayuda a mantener intactas las cadenas de sucesión"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc Histórico#!#!"
+ setting_historical_heir_generation_desc: "El juego solo generará herederos históricos una vez que estos hayan nacido en la realidad histórica. Esto evita que haya herederos con edad negativa, pero las cadenas de sucesión pueden romperse de forma permanente si el gobernante fallece antes de ese momento"

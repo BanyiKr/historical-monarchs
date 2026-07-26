@@ -1,0 +1,5 @@
+﻿l_korean:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "[SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName] 및 [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName] 사이의 동맹 종료"
+ notification_wilhelmina_notification_desc: "윌리엄 3세의 죽음을 기점으로 서로 다른 승계법에 따라 양국 간의 [concept_personal_union]이 종료되었다."

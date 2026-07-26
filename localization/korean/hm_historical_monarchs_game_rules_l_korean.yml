@@ -1,0 +1,13 @@
+﻿l_korean:
+
+ rule_hm_scripted_deaths: "역사 속 군주들의 미리 정해진 사망일"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc 역사적#!#!"
+ setting_enable_scripted_deaths_desc: "게임 내 연도에 따라 특정 군주에 대해 스크립트에 따른 사망을 활성화합니다"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc 무작위#!#!"
+ setting_disable_scripted_deaths_desc: "게임 내 연도에 따라 특정 군주의 스크립트 기반 사망을 비활성화합니다"
+
+ rule_hm_heir_generation: "역사적 상속자 생성"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc 공격적#!#!"
+ setting_aggressive_heir_generation_desc: "게임은 비록 나이가 마이너스가 되더라도 항상 역사적 후계자를 생성하려고 시도합니다. 이는 계승 체계를 온전하게 유지하는 데 도움이 됩니다"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc 역사적#!#!"
+ setting_historical_heir_generation_desc: "이 설정을 적용하면, 게임은 역사상 실제로 태어난 시점 이후에만 후계자를 생성합니다. 이를 통해 나이가 마이너스인 후계자가 생기는 것을 방지할 수 있지만, 통치자가 그 전에 사망할 경우 계승 체인이 영구적으로 끊어질 수 있습니다"

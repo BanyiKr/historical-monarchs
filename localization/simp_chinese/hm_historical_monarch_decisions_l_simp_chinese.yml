@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+
+ hm_british_windsor_name_change: "重命名王室"
+ hm_british_windsor_name_change_desc: "萨克森-科堡-哥达王朝是一个历史悠久、声望卓著的德国贵族世家。然而，当前的地缘政治局势导致国内外反德情绪高涨。鉴于此，加之欧洲各地君主制日益不受欢迎，明智之举是放弃所有隶属于德国王室的德国头衔和王朝名称，改用英语化名称，因此将该王室命名为“温莎王朝”。"
+ hm_british_windsor_name_change_tt.1: "任何在[GetGeographicRegion('geographic_region_europe').GetName]地区被列为[concept_major_power]或更高层级的国家，且其[Concept('concept_primary_cultures','$concept_primary_culture$')]为$north_german$的:\n$EFFECT_LIST_BULLET$与[ROOT.GetCountry.GetName]交战中\n$EFFECT_LIST_BULLET$的恶名大于或等于$infamy_notorious$\n$EFFECT_LIST_BULLET$与[ROOT.GetCountry.GetNameNoFlag]的关系小于$relations_neutral$"
+ hm_british_windsor_name_change_tt.2: "该统治王朝的所有$concept_characters$均将姓氏改为“$Windsor$”"
+
+ hm_house_of_belgium_name_change: "重命名王室"
+ hm_house_of_belgium_name_change_desc: "萨克森-科堡-哥达王朝是一个历史悠久、声望卓著的德国贵族世家。然而，当前的地缘政治局势导致国内外反德情绪高涨。鉴于此，加之欧洲各地君主制日益不受欢迎，明智之举是放弃所有隶属于德国王室的德国头衔和王朝名称，改用法语化的名称，从而将该王室命名为“比利时王朝”。"
+ hm_house_of_belgium_name_change_tt.1: "任何在[GetGeographicRegion('geographic_region_europe').GetName]地区被列为[concept_major_power]或更高层级的国家，且其[Concept('concept_primary_cultures','$concept_primary_culture$')]为$north_german$的:\n$EFFECT_LIST_BULLET$与[ROOT.GetCountry.GetName]交战中\n$EFFECT_LIST_BULLET$的恶名大于或等于$infamy_notorious$\n$EFFECT_LIST_BULLET$与[ROOT.GetCountry.GetNameNoFlag]的关系小于$relations_neutral$"
+ hm_house_of_belgium_name_change_tt.2: "该统治王朝的所有$concept_characters$均将姓氏改为“$de_Belgique$”"

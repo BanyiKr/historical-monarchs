@@ -1,0 +1,101 @@
+﻿l_korean:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName](이)가 [concept_heir]가 됨"
+
+ # Netherlands
+ hm_netherlands.1.t: "$Willem$ 2세의 대관식"
+ hm_netherlands.1.d: "$Willem$ 1세의 치세가 끝나면서, 그의 장남인 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Willem$ 2세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_netherlands.1.f: "비록 아버지와 마찬가지로 보수적인 성향을 지녔지만, 그는 아버지가 그랬던 것만큼 정부 업무에 깊이 개입하고 싶어 하지는 않는다."
+ hm_netherlands.1.a: "하느님, 폐하를 보호하소서!"
+ 
+ hm_netherlands.2.t: "$Willem$ 3세의 대관식"
+ hm_netherlands.2.d: "$Willem$ 2세의 치세가 끝나면서, 그의 장남인 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Willem$ 3세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_netherlands.2.f: "그의 아버지가 세상을 떠났을 때, 그는 마침 라비 성에서 클리블랜드 공작부인의 손님으로 머물고 있었다. 네덜란드 정부 대표단은 새로운 국왕을 만나기 위해 런던으로 향했다. $Willem$은 귀국을 꺼려했으나, 결국 설득을 받아 돌아오게 되었다.\n\n왕은 키가 매우 크고 목소리가 우렁찬 인물이다. 때로는 온화하고 친절하다가도, 갑자기 위협적으로 변하거나 심지어 폭력적으로 변하기도 한다. 그는 하인들을 발로 차고 주먹으로 때리곤 한다. 또한 신하들을 공포에 떨게 하고 모욕하는 것을 즐긴다. 새 왕은 동물들에게도 잔인하다. 대신들은 그를 두려워한다. 주변의 대다수 사람들은 그가 어느 정도 정신이 이상하다고 입을 모은다."
+ hm_netherlands.2.a: "하느님, 폐하를 보호하소서!"
+
+ hm_netherlands.3.t: "$Wilhelmina$ 여왕 대관식"
+ hm_netherlands.3.d: "국왕이 승하했다. 그의 어린 딸 [SCOPE.sCharacter('queen_wilhelmina').GetFirstName]가 즉위함에 따라 왕국은 환호에 휩싸였고, 룩셈부르크의 왕좌는 네덜란드의 지배권 밖으로 넘어갔다. 여왕 폐하께서 만수무강하시길!"
+ hm_netherlands.3.d2: "국왕이 승하했다. 어린 딸 [SCOPE.sCharacter('queen_wilhelmina').GetFirstName]가 왕위에 오르자, 왕국 전체가 환호하고 있다. 여왕 폐하께서 만수무강하시길!"
+ hm_netherlands.3.f: "“저는 제 모든 능력을 다해 왕국의 독립과 영토를 수호하고 보존하며, 모든 네덜란드 시민과 거주자의 자유와 권리를 보호하고, 선량하고 성실한 군주로서 마땅히 해야 할 바와 같이 법이 부여한 모든 수단을 동원하여 번영을 유지하고 증진할 것을 맹세합니다.”\n\n$Wilhelmina$는 암스테르담의 니우베 케르크에서 취임 선서를 했다. 그녀는 선출된 대표들이 무엇을 기대하는지 잘 알고 있지만, 자신의 생각을 거침없이 말하고 행동하는 의지가 강하고 당당한 여성이다. 그녀는 정치인들을 “혐오”하며, 대신 국민에 대한 사랑을 표명한다."
+ hm_netherlands.3.a: "하느님, 여왕 폐하를 보우하소서!"
+ hm_netherlands.3.tt: "[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAdjective] [concept_customs_union] 구성원이 우리나라 경제계를 떠남"
+
+ hm_netherlands.4.t: "$Wilhelmina$ 여왕 대관식"
+ hm_netherlands.4.d: "대공이 사망했다. 그의 어린 딸 $Wilhelmina$가 왕위에 오름에 따라 룩셈부르크 왕좌는 네덜란드의 지배권 밖으로 넘어갔다. 이제 그녀의 아버지의 17촌 1대 사촌인 [SCOPE.sCharacter('luxembourg_grand_duke').GetFullName]는 룩셈부르크를 통치하고 있다."
+ hm_netherlands.4.f: "이미 노년에 접어든 [SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName]은 룩셈부르크 정치에 크게 개입할 계획이 없으며, 일상적인 업무는 새로운 왕위 계승자인 아들에게 맡길 예정이다."
+ hm_netherlands.4.a: "하느님, 대공 폐하를 보호하소서!"
+
+ hm_netherlands.5.t: "파리의 비극"
+ hm_netherlands.5.d: "[SCOPE.sCharacter('relevant_heir').GetFullName]는 [SCOPE.sCharacter('relevant_heir').GetHerHis] 파리 아파트에서 숨진 채 발견되었다."
+ hm_netherlands.5.f: "경찰은 열정적이고 신속하게 아파트 현장을 봉쇄하고 [SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]의 사망 경위에 대한 수사에 착수했다. 는 왕자는 결혼에 실패한 후 환멸을 느끼고, 성관계와 음주, 도박에 빠진 삶을 살게 되었다. 사인은 극심한 피로, 간부전, 그리고 발진티푸스가 복합적으로 작용한 것으로 밝혀졌다."
+ hm_netherlands.5.a: "왕실에게는 비극적인 일"
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName](이)가 사망함"
+
+ # Belgium
+ hm_belgium.1.t: "$Leopold$ 2세의 대관식"
+ hm_belgium.1.d: "$Leopold$ 1세의 치세가 끝나면서, 생존한 장남인 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Leopold$ 2세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_belgium.1.f: "정치에 관심이 많고 해외 여행 경험이 풍부한 $Leopold$는 오랫동안 식민지 확장을 옹호해 왔다. 새 국왕이 국가에 대해 품고 있는 목표는 “강하고 번영하며, 그로 인해 아름답고 평온한 자국의 식민지를 보유하는 것”이다."
+ hm_belgium.1.a: "하느님, 폐하를 보호하소서!"
+
+ hm_belgium.2.t: "왕자의 죽음"
+ hm_belgium.2.d: "[SCOPE.sCharacter('relevant_heir').GetFullName] 왕자가 연못에 빠진 후 폐렴으로 사망했다."
+ hm_belgium.2.f: "[SCOPE.sCharacter('relevant_heir').GetHerHis] 장례식에서 [SCOPE.sCharacter('relevant_heir').GetHerHis] 아버지인 [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]는 대중 앞에서 감정을 주체하지 못하고 관 옆에서 무릎을 꿇은 채 통곡했다."
+ hm_belgium.2.a: 그분이 평안히 쉬시기를"
+
+ hm_belgium.3.t: "왕실의 비극"
+ hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName]이 병든 여동생을 문병하러 갔다가 독감에 걸려 사망했다."
+ hm_belgium.3.f: "그가 사망하자 의회는 휴회되었고, 장례식이 끝날 때까지 극장과 공공 기관들이 문을 닫았다."
+ hm_belgium.3.a: "그분이 평안히 쉬시기를"
+
+ hm_belgium.4.t: "$Albert$ 1세의 대관식"
+ hm_belgium.4.d: "[SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Albert$ 1세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_belgium.4.f: "$Albert$는 노동자 계급의 처지에 깊은 관심을 기울이며, 국왕으로서의 임무를 수행하기 위해 열심히 준비했다.\n이전의 벨기에 국왕들과는 달리, $Albert$는 즉위 연설을 프랑스어뿐만 아니라 네덜란드어로도 진행했다."
+ hm_belgium.4.a: "하느님, 폐하를 보호하소서!"
+ 
+ # Denmark
+ hm_denmark.1.t: "$Frederik$ 7세의 대관식"
+ hm_denmark.1.d: "$Christian$ 8세의 치세가 끝나면서, 그의 유일한 적자였던 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Frederik$ 7세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_denmark.1.f: "그는 아버지의 유일한 적자였으나, 세 번 결혼했음에도 자식이 없었다. 왕위 계승 서열 2위인 그의 2촌 사촌인 $of_Glücksburg$ $Christian$ 왕자는 덴마크의 $Christian$ 3세의 후손이므로, 그는 올덴부르크 왕조의 마지막 덴마크 국왕이 될 것이다.\n이 계승 위기는 슐레스비히-홀슈타인 공국과 관련된 문제도 야기할 것이다. 살리크법에 따르면, 이 공국의 차기 공작으로 아우구스텐부르크 공 $Frederik$이 지목되기 때문이다."
+ hm_denmark.1.f2: "그는 아버지의 유일한 적자였으나, 세 번 결혼했음에도 자식이 없었다. 왕위 계승 서열 2위인 그의 2촌 사촌인 $of_Glücksburg$ $Christian$ 왕자는 덴마크의 $Christian$ 3세의 후손이므로, 그는 올덴부르크 왕조의 마지막 덴마크 국왕이 될 것이다."
+ hm_denmark.1.a: "하느님, 폐하를 보호하소서!"
+
+ hm_denmark.2.t: "$Christian$ 9세의 대관식"
+ hm_denmark.2.d: "$Frederik$ 7세의 치세가 끝나면서, 그의 사촌인 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Christian$ 9세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_denmark.2.f: "올덴부르크 왕가가 단절됨에 따라, 현재 글뤽스부르크 가문이 왕국을 통치하고 있지만, 그 과정에 어려움이 없는 것은 아니다. 살리크법에 따르면 슐레스비히-홀슈타인 공국들은 아우구스텐부르크 공 $Frederik$에게 넘어가야 했으나, 그는 스스로를 슐레스비히-홀슈타인 공국의 왕위 주장자로 선언했다. 그는 공국 내, 특히 홀슈타인 지역의 독일인 주민들로부터 지지를 받고 있다."
+ hm_denmark.2.f2: "올덴부르크 왕조가 단절되면서 글뤽스부르크 가문이 왕국을 통치하게 되었지만, 가문의 남성 후손이 여전히 적어 왕실의 미래는 불확실하다."
+ hm_denmark.2.a: "하느님, 폐하를 보호하소서!"
+
+ hm_denmark.3.t: "$Frederik$ 8세의 대관식"
+ hm_denmark.3.d: "$Christian$ 9세의 치세가 끝나면서, 그의 장남인 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Frederik$ 8세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_denmark.3.f: "아버지의 재위 기간 동안 정치와 권력에서 다소 소외되었던 $Frederik$는 개혁적 사고를 지니고 민주적 성향을 띠고 있어, 자유주의적 군주가 될 자질을 갖추고 있다."
+ hm_denmark.3.a: "하느님, 폐하를 보호하소서!"
+
+ hm_denmark.4.t: "$Christian$ 10세의 대관식"
+ hm_denmark.4.d: "$Frederik$ 8세의 치세가 끝나면서, 그의 장남인 [SCOPE.sCharacter('king_scope').GetFullName](은)는 [ROOT.GetCountry.GetNameNoFormatting] 국왕 $Christian$ 10세로서 [ROOT.GetCountry.GetAdjective] 황위에 올랐다."
+ hm_denmark.4.f: "진보적인 아버지와는 대조적으로, $Christian$은 민주주의를 전적으로 받아들이는 데 주저하고 있으며, 이로 인해 진보 및 좌파 성향의 대중들 사이에서 불안감이 고조될 수 있다."
+ hm_denmark.4.a: "하느님, 폐하를 보호하소서!"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "왕좌를 차지할 왕"
+ hm_monarch_choice.1.desc: "새롭게 얻은 독립과 함께, [ROOT.GetCountry.GetAdjective] 왕좌에 누가 앉을지 결정할 권한은 우리에게 주어졌습니다."
+ hm_monarch_choice.1.f: "이 결정은 결코 쉬운 일이 아닙니다. 우선, 후보국은 북유럽과 연고가 있는 왕실 가문을 가진 나라여야 하며, 스웨덴을 견제할 수 있을 만큼 강력한 해군 전통을 갖춘 나라여야 합니다.\n논란의 여지가 있는 한 가지 선택지는 다름 아닌 [SCOPE.sCountry('swe_scope').GetAdjective] 왕가인 $Bernadotte$ 가문의 왕자로, 우리를 혁명가라고 여길 이웃 국가들과 주변 국가들을 달래기 위한 것이다.\n다른 이들은 우호적인 중립국의 왕자를 지지하며, 공정한 군주가 평화를 유지하고 국제적인 존경을 얻을 수 있기를 희망한다.\n마지막으로, 우리나라의 가장 급진적인 세력들은 군주제를 완전히 거부합니다. 공화주의자들과 사회주의자들은 진정한 혁명을 원하며, 전통적인 유럽과의 단절을 추구합니다."
+ hm_monarch_choice.1.a: "$Bernadotte$  가문에 기회를 주어, 우리 양국이 긴밀한 관계를 유지할 수 있도록 합시다"
+ hm_monarch_choice.1.b: "$Christian$ 9세의 아들인 [SCOPE.sCountry('den_scope').GetAdjective]의 왕자 $Valdemar$는 훌륭한 중립 후보가 될 것이다"
+ hm_monarch_choice.1.c: "$Frederik$ 8세의 [SCOPE.sCountry('den_scope').GetAdjective]의 왕자 $Carl$는 훌륭한 중립 후보가 될 것이다"
+ hm_monarch_choice.1.d: "코노트 공작 $Arthur$ 왕자가 우리를 [SCOPE.sCountry('gbr_scope').GetName]에 한 걸음 더 가까이 데려다줄 것입니다"
+ hm_monarch_choice.1.e: "군주제는 우리를 실망시켰다. 그 구시대적인 제도를 없애자!"
+
+ hm_monarch_choice.2.t: "불가리아의 새로운 군주"
+ hm_monarch_choice.2.desc: "새롭게 얻은 독립을 바탕으로, 존경받는 귀족을 초빙하여 우리 나라를 이끌어 나가게 하는 것이 우리의 책임입니다."
+ hm_monarch_choice.2.flavor: "이 선택은 결코 사소한 문제가 아니다. 발칸 반도에서 더 큰 영향력과 영토를 확보하는 것은 오랫동안 [SCOPE.sCountry('rus_scope').GetName]의 목표였으며, 그들은 [ROOT.GetCountry.GetAdjective] 왕좌에 우호적인 귀족을 앉히기 위해 막대한 노력을 기울여 왔다. 반면, [SCOPE.sCountry('gbr_scope').GetName]은 러시아의 세력 확장을 억제하고자 하며, 우리가 러시아 후보를 선택할 경우 크게 불쾌해할 것이다. 또한 우리의 옛 지배자들도 잊어서는 안 됩니다. [SCOPE.sCountry('tur_scope').GetName] 역시 러시아의 영향력을 제한하는 데 이해관계를 두고 있습니다. 또한 불가리아와 루마니아 출신 후보들 중에서도 선택할 수 있는데, 이들은 강대국이 우리 내정에 간섭하는 것을 막아줄 것입니다."
+ hm_monarch_choice.2.a: "차르가 지명한 후보인 $of_Battenberg$ $Alexander$는 [SCOPE.sCountry('rus_scope').GetName]의 지지를 확보할 것이다"
+ hm_monarch_choice.2.b: "$of_Saxe-Coburg-Gotha-Koháry$ $Ferdinand$는 우리의 주권을 보장하기 위한 중립적인 선택입니다"
+ hm_monarch_choice.2.c: "차르가 지명한 후보인 $Dadiani$ $Niko$는 [SCOPE.sCountry('rus_scope').GetName]의 지지를 확보할 것이다"
+ hm_monarch_choice.2.d: "[SCOPE.sCountry('den_scope').GetName] 왕가의 $Valdemar$ 왕자가 [SCOPE.sCountry('gbr_scope').GetName]의 유력한 후보입니다."
+ hm_monarch_choice.2.e: "$von_Reuss$ $Heinrich$ 7세를 선택하면 우리는 [SCOPE.sCountry('pru_scope').GetName] 아래 놓이게 될 수도 있다"
+ hm_monarch_choice.2.f: "$Vogoride-Conachi$ $Emanoil$은 이 지역에서 존경받는 귀족으로, 외세의 개입을 억제할 수 있을 것으로 보인다"
+ hm_monarch_choice.2.g: "$Bogoridi$ $Alexander$ 가문은 불가리아 귀족 가문이지만, 한 가문만을 선택하면 다른 귀족들이 질투할 수도 있다"
+ hm_monarch_choice.2.h: "[SCOPE.sCountry('rom_scope').GetName]의 [SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle]인 [SCOPE.sCountry('rom_scope').GetRuler.GetFullName]에게 왕위를 제안함으로써, 우리 양국을 개인 연합으로 묶고 양국 모두의 힘을 강화할 수 있을 것입니다 "
+ hm_monarch_choice.2.i: "군주제는 구시대적인 제도입니다. 우리는 권력을 국민에게 넘겨야 합니다!"
+ 

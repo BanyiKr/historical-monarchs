@@ -1,0 +1,13 @@
+﻿l_turkish:
+
+ rule_hm_scripted_deaths: "Tarihi Hükümdarların Önceden Belirlenmiş Ölüm Yılları"
+ setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Tarihsel#!#!"
+ setting_enable_scripted_deaths_desc: "Oyun içi yıla göre belirli hükümdarlar için önceden programlanmış ölümleri etkinleştir"
+ setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Rastgele#!#!"
+ setting_disable_scripted_deaths_desc: "Oyun içi yıla göre belirli hükümdarlar için önceden programlanmış ölümleri devre dışı bırak"
+
+ rule_hm_heir_generation: "Tarihsel Vâris Oluşumu"
+ setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Agresif#!#!"
+ setting_aggressive_heir_generation_desc: "Oyun, yaşları negatif olsa bile her zaman tarihi bir vâris oluşturmaya çalışacaktır. Bu, taht veraset zincirlerinin bozulmamasını sağlar"
+ setting_historical_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_historical_heir_generation_desc Tarihsel#!#!"
+ setting_historical_heir_generation_desc: "Oyun, tarihi vârisleri ancak tarihsel olarak doğduktan sonra oluşturacaktır. Bu, yaşları negatif olan varislerin ortaya çıkmasını önler; ancak hükümdar daha önce vefat ederse taht devri zinciri kalıcı olarak kopabilir"

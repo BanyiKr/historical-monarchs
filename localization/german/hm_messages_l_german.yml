@@ -1,0 +1,5 @@
+﻿l_german:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "Union [SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetAltName('VON')] mit [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetAltName('DAT')] ist beendet"
+ notification_wilhelmina_notification_desc: "Mit dem Tod von König Wilhelm haben abweichende Gesetze zur Nachfolgeregelung die [concept_personal_union] der beiden Nationen beendet."

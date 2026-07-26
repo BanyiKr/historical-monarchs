@@ -1,0 +1,11 @@
+﻿l_japanese:
+
+ hm_british_windsor_name_change: "王室の名称を変更する"
+ hm_british_windsor_name_change_desc: "ザクセン＝コブルク＝ゴータ家は、長い歴史と高い威信を誇るドイツの貴族家系である。しかし、現在の地政学的状況により、国内外で強い反ドイツ感情が生まれている。こうした状況を踏まえ、また欧州全域で君主制への支持が低下していることを考慮すれば、ドイツ王冠の下で保有しているすべてのドイツ語の称号および家名を放棄し、英語風に改めた名称を採用して、王室を「ウィンザー家」と名付けるのが賢明であろう。"
+ hm_british_windsor_name_change_tt.1: "[GetGeographicRegion('geographic_region_europe').GetName]に位置し、$north_german$を[Concept('concept_primary_cultures','$concept_primary_culture$')]とする[concept_major_power]以上のいずれかの国が、以下の条件を満たす場合：\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetName]と戦争中\n$EFFECT_LIST_BULLET$の悪名が$infamy_notorious$以上\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetNameNoFlag]との関係が$relations_neutral$未満"
+ hm_british_windsor_name_change_tt.2: "その統治王朝のすべての$concept_characters$の姓が「$Windsor$」に変更される"
+
+ hm_house_of_belgium_name_change: "王室の名称を変更する"
+ hm_house_of_belgium_name_change_desc: "ザクセン＝コブルク＝ゴータ家は、長い歴史と高い威信を誇るドイツの貴族家系である。しかし、現在の地政学的状況により、国内外で強い反ドイツ感情が生まれている。こうした状況を踏まえ、また欧州全域で君主制への支持が低下していることを考慮すれば、ドイツ王冠の下で保持しているすべてのドイツ語の称号および家名を放棄し、フランス語風に改めた名称を採用して、王家を『ベルギー家』と改称するのが賢明であろう。"
+ hm_house_of_belgium_name_change_tt.1: "[GetGeographicRegion('geographic_region_europe').GetName]に位置し、$north_german$を[Concept('concept_primary_cultures','$concept_primary_culture$')]とする[concept_major_power]以上のいずれかの国が、以下の条件を満たす場合：\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetName]と戦争中\n$EFFECT_LIST_BULLET$の悪名が$infamy_notorious$以上\n$EFFECT_LIST_BULLET$[ROOT.GetCountry.GetNameNoFlag]との関係が$relations_neutral$未満"
+ hm_house_of_belgium_name_change_tt.2: "その統治王朝のすべての$concept_characters$の姓が「$de_Belgique$」に変更される"

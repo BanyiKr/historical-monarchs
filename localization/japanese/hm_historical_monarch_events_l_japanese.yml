@@ -1,0 +1,101 @@
+﻿l_japanese:
+
+### Historical events
+ heir_becomes_heir_tt: "[SCOPE.sCharacter('heir_scope').GetFullName]が[concept_heir]になります"
+
+ # Netherlands
+ hm_netherlands.1.t: "$Willem$2世の戴冠式"
+ hm_netherlands.1.d: "$Willem$1世の治世が終わると、彼の長男である[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Willem$2世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_netherlands.1.f: "彼は父親と同じ保守的な傾向を持っているものの、父親ほど政府の政務に干渉しようとは考えていない。"
+ hm_netherlands.1.a: "国王陛下万歳！"
+ 
+ hm_netherlands.2.t: "$Willem$3世の戴冠式"
+ hm_netherlands.2.d: "$Willem$2世の治世が終わると、彼の長男である[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Willem$3世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_netherlands.2.f: "父が亡くなったとき、彼はちょうどレイビー城でクリーブランド公爵夫人の客として滞在していた。オランダ政府の代表団は、新国王に謁見するためロンドンを訪れた。$ウィレム$は帰国を渋っていたが、説得されて帰国することになった。\n\n王は巨体の男で、声は荒々しい。時には穏やかで親切な一面を見せるが、突然威圧的になり、時には暴力的になることもある。家来たちを蹴ったり殴ったりする。廷臣たちを恐怖に陥れ、屈辱を与えることを好む。新王は動物に対しても残酷である。大臣たちは彼を恐れている。周囲の人々の多くは、彼が多少なりとも正気を失っているという点で意見が一致している。"
+ hm_netherlands.2.a: "国王陛下万歳！"
+
+ hm_netherlands.3.t: "$Wilhelmina$女王の戴冠式"
+ hm_netherlands.3.d: "国王が死んだ。幼い娘の[SCOPE.sCharacter('queen_wilhelmina').GetFirstName]が即位したことを受け、王国は歓喜に包まれ、ルクセンブルクの王位はオランダの支配下から離れた。彼女が末永く統治することを願おう！"
+ hm_netherlands.3.d2: "国王が死んだ。幼い娘の[SCOPE.sCharacter('queen_wilhelmina').GetFirstName]が即位したことを受け、王国は歓喜に包まれている。彼女が末永く統治することを願おう！"
+ hm_netherlands.3.f: "「私は、良き忠実な君主として当然の責務である、王国の独立と領土を全力を尽くして守り、維持すること、すべてのオランダ国民および居住者の自由と権利を保護すること、そして法律によって私に与えられたあらゆる手段を駆使して繁栄を維持・促進することを誓います。」\n\n$Wilhelmina$は、アムステルダムの新教会で宣誓式を行った。彼女は、選出された代表者たちが何を期待しているかをよく理解しているが、意志が強く、力強い女性であり、自分の考えを率直に語り、行動に移す。彼女は政治家を「嫌悪」し、その代わりに国民への愛を表明している。"
+ hm_netherlands.3.a: "女王陛下万歳！"
+ hm_netherlands.3.tt: "[SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName][concept_customs_union]のメンバーは私たちの経済圏を離れる。"
+
+ hm_netherlands.4.t: "$Wilhelmina$女王の戴冠式"
+ hm_netherlands.4.d: "大公が亡くなった。幼い娘の$Wilhelmina$が即位したことで、ルクセンブルクの王位はオランダの支配下から外れることになった。彼女の父の17親等離れた従兄弟の孫にあたる[SCOPE.sCharacter('luxembourg_grand_duke').GetFullName]が、現在ルクセンブルクを統治している。"
+ hm_netherlands.4.f: "すでに高齢となった[SCOPE.sCharacter('luxembourg_grand_duke').GetFirstName]は、ルクセンブルクの政治にあまり関与するつもりはなく、日々の政務は新たな皇太子である息子に任せる方針だ。"
+ hm_netherlands.4.a: "大公万歳！"
+
+ hm_netherlands.5.t: "パリでの悲劇"
+ hm_netherlands.5.d: "[SCOPE.sCharacter('relevant_heir').GetFullName]がパリの自宅アパートで死亡しているのが発見された。"
+ hm_netherlands.5.f: "警察は熱意と迅速さをもって、アパートの現場を封鎖し、[SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]の死の経緯に関する捜査に乗り出した。同王子は結婚に失敗したことをきっかけに幻滅し、性、酒、ギャンブルに溺れる生活を送っていた。死因は、極度の疲労、肝不全、およびチフスの複合要因によるものと断定された"
+ hm_netherlands.5.a: "王室にとっては悲劇だ"
+ relevant_heir_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName]が死亡する。"
+
+ # Belgium
+ hm_belgium.1.t: "$Leopold$2世の戴冠式"
+ hm_belgium.1.d: "$Leopold$1世の治世が終わると、彼の2番目の息子で存命中の長男である[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Leopold$2世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_belgium.1.f: "政治に関心が高く、各地を広く旅してきた$Leopold$は、かねてより植民地拡大を提唱してきた。新国王が国に掲げる目標は、「強く、繁栄し、それゆえに独自の植民地を持ち、美しく、穏やかな国」となることである。"
+ hm_belgium.1.a: "国王陛下万歳！"
+
+ hm_belgium.2.t: "王子の死"
+ hm_belgium.2.d: "[SCOPE.sCharacter('relevant_heir').GetFullName]という名の王子が、池に転落した後、肺炎により亡くなりました。"
+ hm_belgium.2.f: "葬儀の席で、父である[ROOT.GetCountry.GetRuler.GetFirstName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は人前で感情を抑えきれず、棺のそばで膝をついて、抑えきれないほど激しく泣き崩れた。"
+ hm_belgium.2.a: "ご冥福をお祈りします"
+
+ hm_belgium.3.t: "王室の悲劇"
+ hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetFullName][SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle]が、病気の姉を見舞った際に感染したインフルエンザにより死去した。"
+ hm_belgium.3.f: "その死を受けて、議会は休会となり、劇場や公共施設は葬儀が終わるまで閉鎖された。"
+ hm_belgium.3.a: "ご冥福をお祈りします"
+
+ hm_belgium.4.t: "$Albert$1世の戴冠式"
+ hm_belgium.4.d: "[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Albert$1世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_belgium.4.f: "は、労働者階級の状況に真剣な関心を寄せ、王としての務めに備えて懸命に準備を重ねた。\nこれまでのベルギーの国王たちとは対照的に、$Albert$は即位演説をフランス語だけでなくオランダ語でも行った。"
+ hm_belgium.4.a: "国王陛下万歳！"
+ 
+ # Denmark
+ hm_denmark.1.t: "$Frederik$7世の戴冠式"
+ hm_denmark.1.d: "$Christian$8世の治世の終焉とともに、彼の唯一の嫡出子である[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Frederik$7世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_denmark.1.f: "父の唯一の嫡出子であり、3度の結婚を経たにもかかわらず子宝に恵まれなかった。彼はオルデンブルク王朝の最後のデンマーク国王となるだろう。というのも、王位継承順位で次に続くのは、デンマーク王$Christian$3世の子孫である、彼の従兄弟にあたるグリュックスブルク家の$Christian$王子だからである。\nこの王位継承危機は、シュレスヴィヒ＝ホルシュタイン公国をめぐる問題も引き起こすことになる。サリカ法によれば、同公国の次期公爵はアウグステンブルク公$Frederik$となるためである。"
+ hm_denmark.1.f2: "父の唯一の嫡出子であり、3度の結婚を経たにもかかわらず子宝に恵まれなかった。彼はオルデンブルク王朝の最後のデンマーク国王となるだろう。というのも、王位継承順位で次に続くのは、デンマーク王$Christian$3世の子孫である、彼の従兄弟にあたるグリュックスブルク家の$Christian$王子だからである。"
+ hm_denmark.1.a: "国王陛下万歳！"
+
+ hm_denmark.2.t: "$Christian$9世の戴冠式"
+ hm_denmark.2.d: "$Frederik$7世の治世の終焉とともに、オルデンブルク家の先祖は断絶した。こうして、故国王のいとこにあたる[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Christian$9世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_denmark.2.f: "オルデンブルク王家の血筋が絶えたため、現在はグルックスブルク家が王国を統治しているが、その過程にはいくつかの問題も生じている。サリカ法によれば、シュレスヴィヒ＝ホルシュタイン公国はアウグステンブルク公$Frederik$に継承されるべきであったが、同公は自らをシュレスヴィヒ＝ホルシュタイン公の王位継承権者であると宣言している。彼は、同公国、とりわけホルシュタインに住むドイツ系住民からの支持を得ている。"
+ hm_denmark.2.f2: "オルデンブルク家の王統が断絶したため、現在はグリュックスブルク家が王国を統治しているが、王朝の男性成員は依然として少なく、王家の将来は不透明である。"
+ hm_denmark.2.a: "国王陛下万歳！"
+
+ hm_denmark.3.t: "$Frederik$8世の戴冠式"
+ hm_denmark.3.d: "$Christian$9世の治世が終わると、彼の長男である[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Frederik$8世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_denmark.3.f: "父の治世中は政治や権力からむしろ疎外されていた$Frederik$は、改革志向であり、民主主義的な傾向も併せ持つ、リベラルな君主となる素質を備えている。"
+ hm_denmark.3.a: "国王陛下万歳！"
+
+ hm_denmark.4.t: "$Christian$10世の戴冠式"
+ hm_denmark.4.d: "$Frederik$8世の治世が終わると、彼の長男である[SCOPE.sCharacter('king_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]国王、$Christian$10世として[ROOT.GetCountry.GetAdjective]王位に就いた。"
+ hm_denmark.4.f: "リベラルな父親とは対照的に、$Christian$は民主主義を全面的に受け入れることに消極的であり、それがリベラル派や左派の民衆の間で動揺を招く恐れがある。"
+ hm_denmark.4.a: "国王陛下万歳！"
+
+### Monarch choice events
+ hm_monarch_choice.1.t: "王位を継ぐ王"
+ hm_monarch_choice.1.desc: "新たに独立を果たした今、[ROOT.GetCountry.GetName]の王座に誰を招くかという選択は、私たちに委ねられている。"
+ hm_monarch_choice.1.f: "この決定は容易なものではありません。第一に、候補国は北欧とのつながりを持つ王室を有し、スウェーデンを牽制するために、海軍の伝統が根強い国であるべきです。\n物議を醸している選択肢の一つは、他ならぬ[SCOPE.sCountry('swe_scope').GetName]王室、すなわち$Bernadotte$の王子を擁立し、隣国や、我々を革命家だと見なす周辺諸国をなだめるというものである。\nまた、友好的な中立国の王子を支持する者もおり、公平な君主であれば平和を維持し、国際的な尊敬を集めることができると期待している。\n最後に、わが国で最も過激な勢力は君主制を完全に否定している。共和主義者や社会主義者たちは、真の革命と伝統的なヨーロッパとの決別を求めている。"
+ hm_monarch_choice.1.a: "$Bernadotte$家にチャンスを与えて、両国の絆を深めましょう"
+ hm_monarch_choice.1.b: "$Christian$9世の息子である[SCOPE.sCountry('den_scope').GetName]の王子$Valdemar$は、中立的な候補者として最適だろう"
+ hm_monarch_choice.1.c: "$Frederik$8世の息子である[SCOPE.sCountry('den_scope').GetName]の王子$Carl$は、中立的な候補者として最適だろう"
+ hm_monarch_choice.1.d: "コノート公$Arthur$王子は、私たちを[SCOPE.sCountry('gbr_scope').GetName]にさらに近づけてくれるでしょう"
+ hm_monarch_choice.1.e: "君主制は私たちを裏切った。その時代遅れの制度を撤廃しよう！"
+
+ hm_monarch_choice.2.t: "ブルガリアの新国王"
+ hm_monarch_choice.2.desc: "新たに独立を果たした今、尊敬される貴族を招き、我が国を率いてもらうことが、私たちの責務です。"
+ hm_monarch_choice.2.flavor: "この選択は決して些細なものではない。[SCOPE.sCountry('rus_scope').GetName]'はかねてより、バルカン半島における影響力と領土の拡大を目標としており、[ROOT.GetCountry.GetName]の王位に友好的な貴族を就けることに多大な力を注いでいる。一方、[SCOPE.sCountry('gbr_scope').GetName]はロシアの拡大を抑制したいと考えており、もし私たちがロシアの候補者を選んだ場合、大いに不快に思うだろうかつての支配者たちについても忘れてはならない。[SCOPE.sCountry('tur_scope').GetName]もまた、ロシアの影響力を制限することに利害関係を持っている。また、ブルガリアやルーマニアの候補者たちも選択肢としてあり、彼らなら大国による我々の内政への干渉を防ぐことができるだろう。"
+ hm_monarch_choice.2.a: "皇帝が推す候補者である$of_Battenberg$$Alexander$は、[SCOPE.sCountry('rus_scope').GetName]側の支持を確実なものにするだろう"
+ hm_monarch_choice.2.b: "$of_Saxe-Coburg-Gotha-Koháry$$Ferdinand$は、我々の主権を確保するための中立的な選択肢である"
+ hm_monarch_choice.2.c: "皇帝が推す候補者である$Dadiani$$Niko$は、[SCOPE.sCountry('rus_scope').GetName]側の支持を確実なものにするだろう"
+ hm_monarch_choice.2.d: "[SCOPE.sCountry('den_scope').GetName]王室の$Valdemar$王子は、[SCOPE.sCountry('gbr_scope').GetName]の最有力候補である。"
+ hm_monarch_choice.2.e: "$von_Reuss$$Heinrich$7世を選べば、我々は[SCOPE.sCountry('pru_scope').GetName]の保護下に入る可能性がある"
+ hm_monarch_choice.2.f: "$Vogoride-Conachi$$Emanoil$はこの地域で尊敬されている貴族であり、外国からの干渉を抑制できる可能性がある"
+ hm_monarch_choice.2.g: "$Bogoridi$$Alexander$はブルガリアの貴族ですが、ある一族だけを選べば、他の貴族たちの嫉妬を招く恐れがあります"
+ hm_monarch_choice.2.h: "[SCOPE.sCountry('rom_scope').GetName]の[SCOPE.sCountry('rom_scope').GetRuler.GetPrimaryRoleTitle]である[SCOPE.sCountry('rom_scope').GetRuler.GetFullName]に王位を譲ることで、両国を個人連合に組み入れ、双方の国力を強化することができるだろう"
+ hm_monarch_choice.2.i: "君主制は時代遅れの制度だ。権力を国民に委ねるべきだ！"
+ 

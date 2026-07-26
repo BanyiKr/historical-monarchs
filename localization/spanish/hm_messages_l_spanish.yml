@@ -1,0 +1,5 @@
+﻿l_spanish:
+
+ notification_wilhelmina_notification_tooltip: "#header $notification_wilhelmina_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_wilhelmina_notification_desc$"
+ notification_wilhelmina_notification_name: "La unión de [SCOPE.sCountry('netherlands_wilhelmina_country_scope').GetName] con [SCOPE.sCountry('luxembourg_wilhelmina_scope').GetName] ha finalizado"
+ notification_wilhelmina_notification_desc: "Con la muerte del rey Guillermo III, las diferentes leyes de sucesión han puesto fin a la [concept_personal_union|l] entre estas naciones."

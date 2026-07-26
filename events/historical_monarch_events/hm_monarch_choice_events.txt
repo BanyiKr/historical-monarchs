@@ -1,0 +1,827 @@
+﻿namespace = hm_monarch_choice
+
+hm_monarch_choice.1 = { # Norway
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	title = hm_monarch_choice.1.t
+	desc = hm_monarch_choice.1.desc
+	flavor = hm_monarch_choice.1.f
+
+    event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	trigger = {
+		# Triggered by on_action
+	}
+
+	cancellation_trigger = {
+		OR = {
+			AND = {
+				is_subject = yes
+				is_subject_type = subject_type_personal_union
+			}
+			AND = {
+				country_has_monarchy_law = no
+				country_has_non_monarchy_law = yes
+			}
+		}
+	}
+
+	immediate = {
+		c:SWE = {
+			save_scope_as = swe_scope
+		}
+		c:DEN = {
+			save_scope_as = den_scope
+		}
+		c:GBR = {
+			save_scope_as = gbr_scope
+		}
+	}
+
+	option = { # Bernadotte offer
+		name = hm_monarch_choice.1.a
+		default_option = yes
+		trigger = {
+			exists = c:SWE
+			c:SWE = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				relations:root >= relations_threshold:neutral
+				NOT = {
+					ruler ?={
+						has_template = swe_oscar_ii_bernadotte_template # He refused
+					}
+				}
+				NOT = {
+					has_war_with = root
+				}
+			}
+		}
+		if = {
+			limit = {
+				game_date < 1852.9.24
+			}
+			create_character = {
+				template = SWE_prince_gustaf
+				ruler = yes
+			}
+			hidden_effect = {
+				create_character = {
+					template = SWE_prince_august
+					heir = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1852.9.24
+				game_date < 1873.3.4
+			}
+			create_character = {
+				template = SWE_prince_august
+				ruler = yes
+			}
+			hidden_effect = {
+				create_character = {
+					template = SWE_prince_carl
+					heir = yes
+				}
+			}
+		}
+		else = {
+			create_character = {
+				template = SWE_prince_carl
+				ruler = yes
+			}
+			hidden_effect = {
+				create_character = {
+					template = SWE_prince_carl_junior
+					heir = yes
+				}
+			}
+		}
+		change_relations = {
+			country = c:SWE
+			value = 30
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:SWE
+		}
+		change_infamy = -10
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Prince Valdemar
+		name = hm_monarch_choice.1.b
+		highlighted_option = yes
+		trigger = {
+			exists = c:DEN
+			c:DEN = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				relations:root >= relations_threshold:neutral
+				NOT = {
+					has_war_with = root
+				}
+				country_rank < rank_value:great_power
+			}
+			game_date >= 1874.10.27
+			game_date < 1888.8.3
+			NOT = {
+				is_template_used = DEN_prince_valdemar
+			}
+		}
+		create_character = {
+			template = DEN_prince_valdemar
+			ruler = yes
+		}
+		hidden_effect = {
+			create_character = {
+				template = DEN_prince_aage
+				heir = yes
+			}
+		}
+		change_relations = {
+			country = c:DEN
+			value = 25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:DEN
+		}
+		change_relations = {
+			country = c:SWE
+			value = -10
+		}
+		every_country = {
+        	limit = {
+	        	has_law = law_type:law_monarchy
+	        	country_rank >= rank_value:great_power
+	        	NOT = {
+	        		root = this
+	        	}
+	        }
+	        root = {
+				change_relations = {
+					country = prev
+					value = 10
+				}
+			}
+        }
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { # Prince Carl
+		name = hm_monarch_choice.1.c
+		highlighted_option = yes
+		trigger = {
+			exists = c:DEN
+			c:DEN = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				relations:root >= relations_threshold:neutral
+				NOT = {
+					has_war_with = root
+				}
+				country_rank < rank_value:great_power
+			}
+			game_date >= 1888.8.3
+		}
+		create_character = {
+			template = rr_NOR_haakon_vii
+			ruler = yes
+			on_created = {
+				set_first_name = Haakon
+			}
+		}
+		hidden_effect = {
+			create_character = {
+				template = rr_NOR_olav_v
+				heir = yes
+				on_created = {
+					set_first_name = Olav
+				}
+			}
+		}
+		change_relations = {
+			country = c:DEN
+			value = 30
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:DEN
+		}
+		change_relations = {
+			country = c:SWE
+			value = -10
+		}
+		every_country = {
+        	limit = {
+	        	has_law = law_type:law_monarchy
+	        	country_rank >= rank_value:great_power
+	        	NOT = {
+	        		root = this
+	        	}
+	        }
+	        root = {
+				change_relations = {
+					country = prev
+					value = 10
+				}
+			}
+        }
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { # Prince Arthur
+		name = hm_monarch_choice.1.d
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				relations:root >= relations_threshold:neutral
+				NOT = {
+					has_war_with = root
+				}
+				OR = {
+					country_rank < rank_value:great_power
+					ROOT = {
+						is_subject_of = c:GBR
+					}
+				}
+			}
+			game_date >= 1866.5.1
+		}
+		create_character = {
+			template = GBR_prince_arthur
+			ruler = yes
+		}
+		hidden_effect = {
+			create_character = {
+				template = GBR_prince_alastair
+				heir = yes
+			}
+		}
+		change_relations = {
+			country = c:GBR
+			value = 30
+		}
+		change_relations = {
+			country = c:SWE
+			value = -15
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:GBR
+		}
+		if = {
+			limit = {
+				c:GBR ?= {
+					country_rank >= rank_value:great_power
+				}
+			}
+			c:GBR ?= {
+				change_infamy = 30
+				every_rivaling_country = {
+					limit = {
+						NOT = {
+							root ?= this
+						}
+					}
+					change_relations = {
+						country = root
+						value = -30
+					}
+				}
+			}
+			change_infamy = 25
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Republic
+		name = hm_monarch_choice.1.e
+		trigger = {
+			any_interest_group = {
+				law_stance = {
+					law = law_type:law_parliamentary_republic
+					value > neutral
+				}
+				is_marginal = no
+			}
+		}
+		activate_law = law_type:law_parliamentary_republic
+		create_incident = {
+			country = c:SWE
+			value = 20
+		}
+		change_relations = {
+			country = c:SWE
+			value = -25
+		}
+		change_relations = {
+			country = c:DEN
+			value = -15
+		}
+		change_relations = {
+			country = c:GBR
+			value = -15
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hm_monarch_choice.2 = { # Bulgaria
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	title = hm_monarch_choice.2.t
+	desc = hm_monarch_choice.2.desc
+	flavor = hm_monarch_choice.2.flavor
+
+    event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	trigger = {
+		# Triggered by on_action
+	}
+
+	immediate = {
+		c:TUR = {
+			save_scope_as = tur_scope
+		}
+		c:ROM = {
+			save_scope_as = rom_scope
+		}
+		c:DEN = {
+			save_scope_as = den_scope
+		}
+		c:RUS = {
+			save_scope_as = rus_scope
+		}
+		c:GBR = {
+			save_scope_as = gbr_scope
+		}
+		random_country_in_europe = {
+			limit = {
+				OR = {
+					c:PRU ?= this
+					was_formed_from = PRU
+				}
+			}
+			save_scope_as = pru_scope
+		}
+	}
+
+	cancellation_trigger = {
+		OR = {
+			AND = {
+				is_subject = yes
+				is_subject_type = subject_type_personal_union
+			}
+			AND = {
+				country_has_monarchy_law = no
+				country_has_non_monarchy_law = yes
+			}
+		}
+	}
+
+	option = { # Alexander of Battenberg
+		name = hm_monarch_choice.2.a
+		default_option = yes
+		highlighted_option = yes
+		trigger = {
+			game_date >= 1875.8.5
+			game_date < 1893.11.17
+			NOT = {
+				is_template_used = rr_BUL_alexander_i
+			}
+		}
+		create_character = {
+			template = rr_BUL_alexander_i
+			ruler = yes
+		}
+		hidden_effect = {
+			create_character = {
+				template = rr_BUL_assen_hartenau
+				heir = yes
+			}
+		}
+		change_relations = {
+			country = c:RUS
+			value = 25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:RUS
+		}
+		change_relations = {
+			country = c:TUR
+			value = -25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:TUR
+		}
+		c:RUS.power_bloc ?= {
+			add_leverage = { target = root value = 250 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { # Ferdinand of Saxe-Coburg-Gotha-Koháry
+		name = hm_monarch_choice.2.b
+		default_option = yes
+		highlighted_option = yes
+		trigger = {
+			game_date >= 1879.2.26
+			game_date < 1948.9.26
+			is_template_used = rr_BUL_alexander_i
+		}
+		create_character = {
+			template = rr_BUL_ferdinand_i
+			ruler = yes
+		}
+		hidden_effect = {
+			create_character = {
+				template = rr_BUL_boris_iii
+				heir = yes
+			}
+		}
+		change_infamy = -10
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { # Niko Dadiani of Mingrelia
+		name = hm_monarch_choice.2.c
+		default_option = yes
+		highlighted_option = yes
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				NOT = {
+					has_war_with = root
+				}
+			}
+			game_date >= 1865.1.4
+			game_date < 1903.1.23
+		}
+		country_summon_character_effect = {
+			TEMPLATE = hm_niko_dadiani
+			ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+		}
+		country_summon_heir_effect = {
+			TEMPLATE = hm_prince_nikolay
+		}
+		change_relations = {
+			country = c:RUS
+			value = 25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:RUS
+		}
+		change_relations = {
+			country = c:TUR
+			value = -25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:TUR
+		}
+		c:RUS.power_bloc ?= {
+			add_leverage = { target = root value = 500 }
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Prince Valdemar
+		name = hm_monarch_choice.2.d
+		trigger = {
+			exists = c:DEN
+			c:DEN = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				relations:root >= relations_threshold:neutral
+				NOT = {
+					has_war_with = root
+				}
+				country_rank < rank_value:great_power
+			}
+			game_date >= 1874.10.27
+			game_date < 1888.8.3
+			NOT = {
+				is_template_used = DEN_prince_valdemar
+			}
+		}
+		create_character = {
+			template = DEN_prince_valdemar
+			ruler = yes
+		}
+		hidden_effect = {
+			create_character = {
+				template = DEN_prince_aage
+				heir = yes
+			}
+		}
+		change_relations = {
+			country = c:GBR
+			value = 25
+		}
+		change_relations = {
+			country = c:RUS
+			value = -25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:GBR
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:RUS
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Prince Heinrcih VII Reuss
+		name = hm_monarch_choice.2.e
+		trigger = {
+			OR = {
+				AND = {
+					exists = c:PRU
+					c:PRU = {
+						country_has_monarchy_law = yes
+						country_has_non_monarchy_law = no
+						NOT = {
+							has_war_with = root
+						}
+					}
+				}
+				AND = {
+					exists = c:GER
+					c:GER = {
+						country_has_monarchy_law = yes
+						country_has_non_monarchy_law = no
+						NOT = {
+							has_war_with = root
+						}
+					}
+				}
+			}
+			game_date >= 1843.7.14
+			game_date < 1906.5.2
+			trigger_if = {
+				limit = {
+					is_template_used = GER_Heinrich_VII_Reuss
+				}
+				any_character = {
+					has_template = GER_Heinrich_VII_Reuss
+					is_ruler_of_any_country = no
+				}
+			}
+		}
+		country_summon_character_effect = {
+			TEMPLATE = GER_Heinrich_VII_Reuss
+			ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+		}
+		country_summon_heir_effect = {
+			TEMPLATE = GER_Heinrich_XXXII_Reuss
+		}
+		if = {
+			limit = {
+				exists = c:PRU
+				c:PRU = {
+					country_has_monarchy_law = yes
+					country_has_non_monarchy_law = no
+					NOT = {
+						has_war_with = root
+					}
+				}
+			}
+			change_relations = {
+				country = c:PRU
+				value = 25
+			}
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = c:PRU
+			}
+			c:PRU = {
+				every_rivaling_country = {
+					change_relations = {
+						country = root
+						value = -25
+					}
+					root = {
+						create_diplomatic_catalyst = {
+							type = catalyst_event_negative
+							target = prev
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:GER
+				c:GER = {
+					country_has_monarchy_law = yes
+					country_has_non_monarchy_law = no
+					NOT = {
+						has_war_with = root
+					}
+				}
+			}
+			change_relations = {
+				country = c:GER
+				value = 25
+			}
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = c:GER
+			}
+			c:GER = {
+				every_rivaling_country = {
+					change_relations = {
+						country = root
+						value = -25
+					}
+					root = {
+						create_diplomatic_catalyst = {
+							type = catalyst_event_negative
+							target = prev
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Emanoil Bogoridi
+		name = hm_monarch_choice.2.f
+		trigger = {
+			game_date >= 1865.4.10
+			game_date < 1935.8.19
+		}
+		country_summon_character_effect = {
+			TEMPLATE = rr_BUL_Emanoil_Bogoridi
+			ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+		}
+		hidden_effect = {
+			create_character = {
+				template = rr_BUL_Constanin_Bogoridi
+				heir = yes
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Alexander Bogoridi
+		name = hm_monarch_choice.2.g
+		trigger = {
+			game_date >= 1884.5.16
+			game_date < 1910.7.17
+		}
+		country_summon_character_effect = {
+			TEMPLATE = rr_BUL_Alexander_Bogoridi
+			ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+		}
+		hidden_effect = {
+			country_summon_heir_effect = {
+				TEMPLATE = rr_BUL_Emanoil_Bogoridi
+			}
+		}
+		add_radicals = {
+			value = medium_radicals
+			pop_type = aristocrats
+		}
+		change_relations = {
+			country = c:RUS
+			value = -25
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:RUS
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Romania personal union
+		name = hm_monarch_choice.2.h
+		trigger = {
+			exists = c:ROM
+			c:ROM = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				relations:root >= relations_threshold:neutral
+				NOT = {
+					has_war_with = root
+				}
+				country_rank < rank_value:great_power
+			}
+		}
+		c:ROM = {
+			create_diplomatic_pact = {
+				country = root
+				type = personal_union
+			}
+		}
+		change_relations = {
+			country = c:ROM
+			value = 30
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_positive
+			target = c:ROM
+		}
+		change_relations = {
+			country = c:RUS
+			value = -40
+		}
+		change_relations = {
+			country = c:TUR
+			value = -40
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:RUS
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:TUR
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Republic
+		name = hm_monarch_choice.2.i
+		trigger = {
+			any_interest_group = {
+				law_stance = {
+					law = law_type:law_parliamentary_republic
+					value > neutral
+				}
+				is_marginal = no
+			}
+		}
+		activate_law = law_type:law_parliamentary_republic
+		create_incident = {
+			country = c:TUR
+			value = 30
+		}
+		change_relations = {
+			country = c:RUS
+			value = -30
+		}
+		change_relations = {
+			country = c:TUR
+			value = -30
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:RUS
+		}
+		create_diplomatic_catalyst = {
+			type = catalyst_event_negative
+			target = c:TUR
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
