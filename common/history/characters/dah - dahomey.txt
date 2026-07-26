@@ -1,0 +1,12 @@
+﻿CHARACTERS = {
+	c:DAH ?= {
+		create_character = {
+			template = DAH_ghezo
+			ruler = yes
+		}
+		create_character = {
+			template = DAH_glele
+			heir = yes
+		}
+	}
+}

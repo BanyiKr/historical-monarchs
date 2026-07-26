@@ -1,0 +1,12 @@
+﻿CHARACTERS = {
+	c:BRG ?= {
+		create_character = {
+			template = BRG_kisaru_kisan_dan_jibrim
+			ruler = yes
+		}
+		create_character = {
+			template = BRG_beraki_dan_jibrim
+			heir = yes
+		}
+	}
+}

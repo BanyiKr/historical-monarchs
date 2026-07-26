@@ -1,0 +1,8 @@
+﻿CHARACTERS = {
+	c:BOR ?= {
+		create_character = {
+			template = BOR_umar_al_kanemi
+			heir = yes
+		}
+	}
+}

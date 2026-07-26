@@ -1,0 +1,81 @@
+﻿BEN_osemwede = {
+	first_name = Osemwede
+	last_name = Eweka
+	historical = yes
+	noble = yes
+	ruler = yes
+	culture = cu:edo
+	age = 45
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_BENIN
+	traits = {
+		ambitious
+	}
+}
+
+BEN_adolo = {
+	first_name = Adolo
+	last_name = Eweka
+	historical = yes
+	noble = yes
+	culture = cu:edo
+	age = 30
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_BENIN
+}
+
+BEN_ovonramwen = {
+	first_name = Ovonramwen
+	last_name = Eweka
+	historical = yes
+	noble = yes
+	culture = cu:edo
+	birth_date = 1857.3.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_BENIN
+}
+
+BEN_eweka_ii = {
+	first_name = Eweka
+	last_name = Eweka
+	historical = yes
+	noble = yes
+	culture = cu:edo
+	birth_date = 1878.3.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_BENIN
+}
+
+BEN_akenzua = {
+	first_name = Akenzua
+	last_name = Eweka
+	historical = yes
+	noble = yes
+	culture = cu:edo
+	birth_date = 1899.1.7
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_BENIN
+	traits = {
+		erudite
+	}
+}
+
+BEN_erediauwa = {
+	first_name = Erediauwa
+	last_name = Eweka
+	historical = yes
+	noble = yes
+	culture = cu:edo
+	birth_date = 1923.6.22
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_BENIN
+	traits = {
+		charismatic
+	}
+}

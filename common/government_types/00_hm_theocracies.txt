@@ -1,0 +1,22 @@
+﻿gov_hm_fulbe_imamate = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_ALMAMI"
+	female_ruler = "RULER_TITLE_ALMAMI"
+
+	possible = {
+		has_law = law_type:law_theocracy
+		country_has_state_religion = rel:sunni
+		OR = {
+			AND = { exists = c:FTJ c:FTJ = ROOT }
+			AND = { exists = c:FTR c:FTR = ROOT }
+		}
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}

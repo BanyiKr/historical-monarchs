@@ -5,7 +5,7 @@
 		}	
 
 		create_character = {
-			template = rr_SIA_mogkut
+			template = SIA_mogkut
 		}
 	}
 }

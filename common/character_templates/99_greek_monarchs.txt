@@ -35,7 +35,6 @@ rr_GRE_constantine_i = { # King Konstantinos I of Greece
 	traits = {
 		traditionalist_commander
 		imperious
-		ambitious
 		reckless
 		tactful
 	}
@@ -78,7 +77,6 @@ rr_GRE_paul_i = { # King Pavlos I of Greece
 	traits = {
 		basic_naval_commander
 		imperious
-		ambitious
 		expensive_tastes
 		grifter
 	}

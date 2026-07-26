@@ -1,10 +1,47 @@
-﻿LUX_william_iv = { # Grand Duke William IV of Luxembourg
+﻿REPLACE:NAS_wilhelm_von_nassau_weilburg = {
+	# William, Duke of Nassau. His full given name was Georg Wilhelm August Heinrich Belgicus. Belgicus!
+	first_name = "Wilhelm"
+	last_name = "von_Nassau-Weilburg"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	age = 44
+    dna = dna_wilhelm_03_of_nassau
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_moderate
+	home_region = STATE_RHINELAND
+	traits = {
+		tactful
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:NAS_adolf_von_nassau_weilburg = {
+	# Adolf, future Grand Duke of Luxembourg
+	first_name = "Adolf"
+	last_name = "von_Nassau-Weilburg"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	age = 19
+    dna = dna_grand_duke_adolf
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_HESSE
+	traits = {
+		charismatic
+	}
+}
+
+LUX_william_iv = { # Grand Duke William IV of Luxembourg
     first_name = Guillaume
     last_name = of_Nassau_Weilburg
     historical = yes
 	culture = cu:north_german
     heir = yes
 	noble = yes
+    dna = dna_grand_duke_william_04
     birth_date = 1852.4.22
     interest_group = ig_landowners
     ideology = ideology_royalist
@@ -27,6 +64,7 @@ LUX_marie_adelaide_i = { # Grand Duchess Marie-Adelaide of Luxembourg
 	religion = rel:protestant
     heir = yes
 	noble = yes
+    dna = dna_grand_duchess_marie_adelaide
     birth_date = 1894.6.14
     interest_group = ig_devout
     ideology = ideology_traditionalist

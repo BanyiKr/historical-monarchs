@@ -1,0 +1,79 @@
+﻿REPLACE:BGI__uthman_burkomanda_kenga = {
+	#  'Uthman Burkomanda III al-Kabir ("the Great")
+	first_name = "_Uthman_Burkomanda"
+	last_name = "Kenga"
+	historical = yes
+	culture = cu:baguirmi
+	ruler = yes
+	age = 55
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CHAD
+	traits = {
+	}
+}
+
+BGI__abdul_qadir_ii_al_mahdi = {
+	first_name = "_Abdul_Qadir"
+	last_name = "Kenga"
+	historical = yes
+	culture = cu:baguirmi
+	age = 35
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CHAD
+	traits = {
+	}
+}
+
+BGI_abu_sekkin_mohammed_iv = {
+	first_name = "Mohammed"
+	last_name = "Kenga"
+	historical = yes
+	culture = cu:baguirmi
+	birth_date = 1834.5.5
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CHAD
+	traits = {
+	}
+}
+
+BGI__abd_ar_rahman_gaourang_ii = {
+	first_name = "Abd_al-Rahman_Gaourang"
+	last_name = "Kenga"
+	historical = yes
+	culture = cu:baguirmi
+	birth_date = 1858.5.5
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CHAD
+	traits = {
+	}
+}
+
+BGI__abdul_qadir_iii = {
+	first_name = "_Abdul_Qadir"
+	last_name = "Kenga"
+	historical = yes
+	culture = cu:baguirmi
+	birth_date = 1878.5.5
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CHAD
+	traits = {
+	}
+}
+
+BGI_youssuf = {
+	first_name = "Youssuf"
+	last_name = "Kenga"
+	historical = yes
+	culture = cu:baguirmi
+	birth_date = 1900.5.5
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CHAD
+	traits = {
+	}
+}

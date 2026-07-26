@@ -1,0 +1,8 @@
+﻿CHARACTERS = {
+	c:ASH ?= {
+		create_character = {
+			template = ASH_kofi_karikari_oyoko
+			heir = yes
+		}
+	}
+}

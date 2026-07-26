@@ -200,7 +200,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1797.3.22
 				}
 				create_character = {
-					template = rr_pru_wilhelm_I
+					template = PRU_wilhelm_I
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -223,7 +223,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1831.10.18
 				}
 				create_character = {
-					template = rr_pru_frederick_iii
+					template = PRU_frederick_iii
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -246,7 +246,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1859.1.27
 				}
 				create_character = {
-					template = rr_pru_wilhelm_II
+					template = PRU_wilhelm_II
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -269,7 +269,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1882.5.6
 				}
 				create_character = {
-					template = rr_pru_crown_prince_wilhelm
+					template = PRU_crown_prince_wilhelm
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -292,7 +292,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1906.7.4
 				}
 				create_character = {
-					template = rr_pru_prince_wilhelm
+					template = PRU_prince_wilhelm
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -376,7 +376,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1845.8.25
 				}
 				create_character = {
-					template = rr_BAV_ludwig_ii
+					template = BAV_ludwig_ii_von_bayern
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -398,7 +398,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1848.4.27
 				}
 				create_character = {
-					template = rr_BAV_otto_i
+					template = BAV_otto_i_von_bayern
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -420,7 +420,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1845.1.7
 				}
 				create_character = {
-					template = rr_BAV_ludwig_iii
+					template = BAV_ludwig_iii_von_bayern
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -442,7 +442,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1869.5.18
 				}
 				create_character = {
-					template = rr_BAV_prince_rupprecht
+					template = BAV_prince_rupprecht
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house

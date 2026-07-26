@@ -71,7 +71,6 @@ rr_NEJ_Abdulaziz_bin_Abdul_Rahman = {
 	ideology = ideology_traditionalist
 	home_region = STATE_NEJD
 	traits = {
-		ambitious
 		imperious
 		pious
 		persistent

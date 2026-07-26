@@ -78,768 +78,878 @@ on_become_independent = {
 # Root = Character
 historical_successions_on_new_ruler = {
 	trigger = {
-		is_ruler_of_own_country = yes
 		owner ?= {
 			has_gov_regency = no # Assigning a regent should never fire this on_action
-			country_has_monarchy_law = yes
-			country_has_non_monarchy_law = no # To handle an execution order issue
-			government_transfer_of_power = hereditary
 		}
 	}
 	effect = {
-		### British Monarchs
+		# Setup regencies
 		if = {
 			limit = {
 				owner = {
-					c:GBR ?= this
+					has_law = law_type:law_theocracy
+					OR = {
+						government_transfer_of_power = hereditary
+						c:TIB ?= this
+					}
+					has_gov_regency = no
+				}
+				is_adult = no
+				NOT = { has_variable = regency_complete }
+			}
+			owner = {
+				trigger_event = {
+					id = regency.1
+					popup = yes
 				}
 			}
-			character_britain_ruler_succession_chain_effect = yes
 		}
-		### Norwegian Monarchs
-		else_if = {
+		if = {
 			limit = {
-				owner ?= {
-					OR = {
-						c:NOR ?= this
-						was_formed_from = NOR
+				owner = {
+					country_has_monarchy_law = yes
+					country_has_non_monarchy_law = no # To handle an execution order issue
+					government_transfer_of_power = hereditary
+				}
+			}
+			### British monarchs
+			if = {
+				limit = {
+					owner = {
+						c:GBR ?= this
 					}
 				}
+				character_britain_ruler_succession_chain_effect = yes
 			}
-			character_norway_ruler_succession_chain_effect = yes
-		}
-		### Danish Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:DEN ?= this
-						was_formed_from = DEN
+			### Norwegian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:NOR ?= this
+							was_formed_from = NOR
+						}
 					}
 				}
+				character_norway_ruler_succession_chain_effect = yes
 			}
-			character_denmark_ruler_succession_chain_effect = yes
-		}
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SCH ?= this
-						was_formed_from = SCH
-						c:HOL ?= this
-						was_formed_from = HOL
+			### Danish monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:DEN ?= this
+							was_formed_from = DEN
+						}
 					}
 				}
+				character_denmark_ruler_succession_chain_effect = yes
 			}
-			character_schleswig_holstein_ruler_succession_chain_effect = yes
-		}
-		### Dutch Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:NET ?= this
-						was_formed_from = NET
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SCH ?= this
+							was_formed_from = SCH
+							c:HOL ?= this
+							was_formed_from = HOL
+						}
 					}
 				}
+				character_schleswig_holstein_ruler_succession_chain_effect = yes
 			}
-			character_netherlands_ruler_succession_chain_effect = yes
-		}
-		### Belgian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BEL ?= this
-						was_formed_from = BEL
+			### Dutch monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:NET ?= this
+							was_formed_from = NET
+						}
 					}
 				}
+				character_netherlands_ruler_succession_chain_effect = yes
 			}
-			character_belgium_ruler_succession_chain_effect = yes
-		}
-		### Sardinian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SAR ?= this
-						was_formed_from = SAR
+			### Belgian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BEL ?= this
+							was_formed_from = BEL
+						}
 					}
 				}
+				character_belgium_ruler_succession_chain_effect = yes
 			}
-			character_sardinia_ruler_succession_chain_effect = yes
-		}
-		### Luxembourgian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:NAS ?= this
-						was_formed_from = NAS
-						c:LUX ?= this
-						was_formed_from = LUX
+			### Sardinian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SAR ?= this
+							was_formed_from = SAR
+						}
 					}
 				}
+				character_sardinia_ruler_succession_chain_effect = yes
 			}
-			character_luxembourg_ruler_succession_chain_effect = yes
-		}
-		### Prussian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:PRU ?= this
-						was_formed_from = PRU
+			### Luxembourgian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:NAS ?= this
+							was_formed_from = NAS
+							c:LUX ?= this
+							was_formed_from = LUX
+						}
 					}
 				}
+				character_luxembourg_ruler_succession_chain_effect = yes
 			}
-			character_prussia_ruler_succession_chain_effect = yes
-		}
-		### Greek Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:GRE ?= this
-						was_formed_from = GRE
+			### Prussian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:PRU ?= this
+							was_formed_from = PRU
+						}
 					}
 				}
+				character_prussia_ruler_succession_chain_effect = yes
 			}
-			character_greece_ruler_succession_chain_effect = yes
-		}
-		### Montenegrin Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:MON ?= this
-						was_formed_from = MON
+			### Greek monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:GRE ?= this
+							was_formed_from = GRE
+						}
 					}
 				}
+				character_greece_ruler_succession_chain_effect = yes
 			}
-			character_montenegro_ruler_succession_chain_effect = yes
-		}
-		### Moldavan Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:MOL ?= this
-						was_formed_from = MOL
+			### Montenegrin monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:MON ?= this
+							was_formed_from = MON
+						}
 					}
 				}
+				character_montenegro_ruler_succession_chain_effect = yes
 			}
-			character_moldavia_ruler_succession_chain_effect = yes
-		}
-		### Wallachian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:WAL ?= this
-						was_formed_from = WAL
+			### Moldavian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:MOL ?= this
+							was_formed_from = MOL
+						}
 					}
 				}
+				character_moldavia_ruler_succession_chain_effect = yes
 			}
-			character_wallachia_ruler_succession_chain_effect = yes
-		}
-		### Bulgarian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BUL ?= this
-						was_formed_from = BUL
+			### Wallachian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:WAL ?= this
+							was_formed_from = WAL
+						}
 					}
 				}
+				character_wallachia_ruler_succession_chain_effect = yes
 			}
-			character_bulgaria_ruler_succession_chain_effect = yes
-		}
-		### Bavarian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BAV ?= this
-						was_formed_from = BAV
+			### Bulgarian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BUL ?= this
+							was_formed_from = BUL
+						}
 					}
 				}
+				character_bulgaria_ruler_succession_chain_effect = yes
 			}
-			character_bavaria_ruler_succession_chain_effect = yes
-		}
-		### Saxon Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SAX ?= this
-						was_formed_from = SAX
+			### Bavarian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BAV ?= this
+							was_formed_from = BAV
+						}
 					}
 				}
+				character_bavaria_ruler_succession_chain_effect = yes
 			}
-			character_saxony_ruler_succession_chain_effect = yes
-		}
-		### Württenberger Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:WUR ?= this
-						was_formed_from = WUR
+			### Saxon monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SAX ?= this
+							was_formed_from = SAX
+						}
 					}
 				}
+				character_saxony_ruler_succession_chain_effect = yes
 			}
-			character_wurttenberg_ruler_succession_chain_effect = yes
-		}
-		### Hanoverian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:HAN ?= this
-						was_formed_from = HAN
+			### Württemberger monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:WUR ?= this
+							was_formed_from = WUR
+						}
 					}
 				}
+				character_wurttenberg_ruler_succession_chain_effect = yes
 			}
-			character_hanover_ruler_succession_chain_effect = yes
-		}
-		### Baden Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BAD ?= this
-						was_formed_from = BAD
+			### Hanoverian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:HAN ?= this
+							was_formed_from = HAN
+						}
 					}
 				}
+				character_hanover_ruler_succession_chain_effect = yes
 			}
-			character_baden_ruler_succession_chain_effect = yes
-		}
-		### (Grand Duchy) Hessian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:HES ?= this
-						was_formed_from = HES
+			### Baden monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BAD ?= this
+							was_formed_from = BAD
+						}
 					}
 				}
+				character_baden_ruler_succession_chain_effect = yes
 			}
-			character_hesse_ruler_succession_chain_effect = yes
-		}
-		### (Electorte) Hesse-Kassel Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:HEK ?= this
-						was_formed_from = HEK
+			### (Grand Duchy) Hessian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:HES ?= this
+							was_formed_from = HES
+						}
 					}
 				}
+				character_hesse_ruler_succession_chain_effect = yes
 			}
-			character_hesse_kassel_ruler_succession_chain_effect = yes
-		}
-		### Oldenburg Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:OLD ?= this
-						was_formed_from = OLD
+			### (Electorate) Hesse-Kassel monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:HEK ?= this
+							was_formed_from = HEK
+						}
 					}
 				}
+				character_hesse_kassel_ruler_succession_chain_effect = yes
 			}
-			character_oldenburg_ruler_succession_chain_effect = yes
-		}
-		### Mecklenburg-Schwerin Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:MEC ?= this
-						was_formed_from = MEC
+			### Oldenburg monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:OLD ?= this
+							was_formed_from = OLD
+						}
 					}
 				}
+				character_oldenburg_ruler_succession_chain_effect = yes
 			}
-			character_mecklenburg_schwerin_ruler_succession_chain_effect = yes
-		}
-		### Mecklenburg-Starlitz Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:MST ?= this
-						was_formed_from = MST
+			### Mecklenburg-Schwerin monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:MEC ?= this
+							was_formed_from = MEC
+						}
 					}
 				}
+				character_mecklenburg_schwerin_ruler_succession_chain_effect = yes
 			}
-			character_mecklenburg_sterlitz_ruler_succession_chain_effect = yes
-		}
-		### Saxe-Weimar Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:WEI ?= this
-						was_formed_from = WEI
+			### Mecklenburg-Sterlitz monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:MST ?= this
+							was_formed_from = MST
+						}
 					}
 				}
+				character_mecklenburg_sterlitz_ruler_succession_chain_effect = yes
 			}
-			character_saxe_weimar_ruler_succession_chain_effect = yes
-		}
-		### Saxe-Cuburg-Gotha Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:COB ?= this
-						was_formed_from = COB
+			### Saxe-Weimar monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:WEI ?= this
+							was_formed_from = WEI
+						}
 					}
 				}
+				character_saxe_weimar_ruler_succession_chain_effect = yes
 			}
-			character_saxe_coburg_gotha_ruler_succession_chain_effect = yes
-		}
-		### Saxe-Meiningen Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:MEI ?= this
-						was_formed_from = MEI
+			### Saxe-Cuburg-Gotha monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:COB ?= this
+							was_formed_from = COB
+						}
 					}
 				}
+				character_saxe_coburg_gotha_ruler_succession_chain_effect = yes
 			}
-			character_saxe_meiningen_ruler_succession_chain_effect = yes
-		}
-		### Anhalt Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:ANH ?= this
-						was_formed_from = ANH
+			### Saxe-Meiningen monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:MEI ?= this
+							was_formed_from = MEI
+						}
 					}
 				}
+				character_saxe_meiningen_ruler_succession_chain_effect = yes
 			}
-			character_anhalt_ruler_succession_chain_effect = yes
-		}
-		### Lippe Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:LIP ?= this
-						was_formed_from = LIP
+			### Anhalt monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:ANH ?= this
+							was_formed_from = ANH
+						}
 					}
 				}
+				character_anhalt_ruler_succession_chain_effect = yes
 			}
-			character_lippe_ruler_succession_chain_effect = yes
-		}
-		### Persian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:PER ?= this
-						was_formed_from = PER
+			### Lippe monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:LIP ?= this
+							was_formed_from = LIP
+						}
 					}
 				}
+				character_lippe_ruler_succession_chain_effect = yes
 			}
-			character_persia_ruler_succession_chain_effect = yes
-		}
-		### Omani Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:OMA ?= this
-						was_formed_from = OMA
+			### Persian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:PER ?= this
+							was_formed_from = PER
+						}
 					}
 				}
+				character_persia_ruler_succession_chain_effect = yes
 			}
-			character_oman_ruler_succession_chain_effect = yes
-		}
-		### Egyptian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:EGY ?= this
-						was_formed_from = EGY
+			### Omani monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:OMA ?= this
+							was_formed_from = OMA
+						}
 					}
 				}
+				character_oman_ruler_succession_chain_effect = yes
 			}
-			character_egypt_ruler_succession_chain_effect = yes
-		}
-		### Saudi Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:NEJ ?= this
-						was_formed_from = NEJ
+			### Egyptian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:EGY ?= this
+							was_formed_from = EGY
+						}
 					}
 				}
+				character_egypt_ruler_succession_chain_effect = yes
 			}
-			character_nejd_ruler_succession_chain_effect = yes
-		}
-		### Hedjaz Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:HDJ ?= this
-						was_formed_from = HDJ
+			### Saudi monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:NEJ ?= this
+							was_formed_from = NEJ
+						}
 					}
 				}
+				character_nejd_ruler_succession_chain_effect = yes
 			}
-			character_hedjaz_ruler_succession_chain_effect = yes
-		}
-		### Zaidi Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:ZAI ?= this
-						was_formed_from = ZAI
+			### Hedjaz monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:HDJ ?= this
+							was_formed_from = HDJ
+						}
 					}
 				}
+				character_hedjaz_ruler_succession_chain_effect = yes
 			}
-			character_zaidi_ruler_succession_chain_effect = yes
-		}
-		### Bahraini Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BHN ?= this
-						was_formed_from = BHN
+			### Zaidi monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:ZAI ?= this
+							was_formed_from = ZAI
+						}
 					}
 				}
+				character_zaidi_ruler_succession_chain_effect = yes
 			}
-			character_bahrain_ruler_succession_chain_effect = yes
-		}
-		### Abu Dhabi Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:ABU ?= this
-						was_formed_from = ABU
+			### Bahraini monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BHN ?= this
+							was_formed_from = BHN
+						}
 					}
 				}
+				character_bahrain_ruler_succession_chain_effect = yes
 			}
-			character_abu_dhabi_ruler_succession_chain_effect = yes
-		}
-		### Tunisian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:TUN ?= this
-						was_formed_from = TUN
+			### Abu Dhabi monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:ABU ?= this
+							was_formed_from = ABU
+						}
 					}
 				}
+				character_abu_dhabi_ruler_succession_chain_effect = yes
 			}
-			character_tunis_ruler_succession_chain_effect = yes
-		}
-		### Chinese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:CHI ?= this
-						was_formed_from = CHI
+			### Tunisian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:TUN ?= this
+							was_formed_from = TUN
+						}
 					}
 				}
+				character_tunis_ruler_succession_chain_effect = yes
 			}
-			character_china_ruler_succession_chain_effect = yes
-		}
-		### Korean Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:KOR ?= this
-						was_formed_from = KOR
+			### Chinese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:CHI ?= this
+							was_formed_from = CHI
+						}
 					}
 				}
+				character_china_ruler_succession_chain_effect = yes
 			}
-			character_korea_ruler_succession_chain_effect = yes
-		}
-		### Vietnamese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:DAI ?= this
-						was_formed_from = DAI
+			### Korean monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:KOR ?= this
+							was_formed_from = KOR
+						}
 					}
 				}
+				character_korea_ruler_succession_chain_effect = yes
 			}
-			character_vietnam_ruler_succession_chain_effect = yes
-		}
-		### Lao Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:LUA ?= this
-						was_formed_from = LUA
+			### Vietnamese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:DAI ?= this
+							was_formed_from = DAI
+						}
 					}
 				}
+				character_vietnam_ruler_succession_chain_effect = yes
 			}
-			character_luang_prabang_ruler_succession_chain_effect = yes
-		}
-		### Cambodian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:CAM ?= this
-						was_formed_from = CAM
+			### Lao monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:LUA ?= this
+							was_formed_from = LUA
+						}
 					}
 				}
+				character_luang_prabang_ruler_succession_chain_effect = yes
 			}
-			character_cambodia_ruler_succession_chain_effect = yes
-		}
-		### Siamese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SIA ?= this
-						was_formed_from = SIA
+			### Cambodian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:CAM ?= this
+							was_formed_from = CAM
+						}
 					}
 				}
+				character_cambodia_ruler_succession_chain_effect = yes
 			}
-			character_siam_ruler_succession_chain_effect = yes
-		}
-		### Burmese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BUR ?= this
-						was_formed_from = BUR
+			### Siamese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SIA ?= this
+							was_formed_from = SIA
+						}
 					}
 				}
+				character_siam_ruler_succession_chain_effect = yes
 			}
-			character_burma_ruler_succession_chain_effect = yes
-		}
-		### Nepalese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:NEP ?= this
-						was_formed_from = NEP
+			### Burmese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BUR ?= this
+							was_formed_from = BUR
+						}
 					}
 				}
+				character_burma_ruler_succession_chain_effect = yes
 			}
-			character_nepal_ruler_succession_chain_effect = yes
-		}
-		### Bhutanese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:NEP ?= this
-						was_formed_from = NEP
+			### Nepalese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:NEP ?= this
+							was_formed_from = NEP
+						}
 					}
 				}
+				character_nepal_ruler_succession_chain_effect = yes
 			}
-			character_bhutan_ruler_succession_chain_effect = yes
-		}
-		### Bukharan Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BUK ?= this
-						was_formed_from = BUK
+			### Bhutanese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:NEP ?= this
+							was_formed_from = NEP
+						}
 					}
 				}
+				character_bhutan_ruler_succession_chain_effect = yes
 			}
-			character_bukhara_ruler_succession_chain_effect = yes
-		}
-		### Khivan Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:KHI ?= this
-						was_formed_from = KHI
+			### Bukharan monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BUK ?= this
+							was_formed_from = BUK
+						}
 					}
 				}
+				character_bukhara_ruler_succession_chain_effect = yes
 			}
-			character_khiva_ruler_succession_chain_effect = yes
-		}
-		### Kokand Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:KOK ?= this
-						was_formed_from = KOK
+			### Khivan monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:KHI ?= this
+							was_formed_from = KHI
+						}
 					}
 				}
+				character_khiva_ruler_succession_chain_effect = yes
 			}
-			character_kokand_ruler_succession_chain_effect = yes
-		}
-		### Kabuli Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:KAB ?= this
-						was_formed_from = KAB
+			### Kokand monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:KOK ?= this
+							was_formed_from = KOK
+						}
 					}
 				}
+				character_kokand_ruler_succession_chain_effect = yes
 			}
-			character_kabul_ruler_succession_chain_effect = yes
-		}
-		### Ethiopian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BGM ?= this
-						was_formed_from = BGM
+			### Kabuli monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:KAB ?= this
+							was_formed_from = KAB
+						}
 					}
 				}
+				character_kabul_ruler_succession_chain_effect = yes
 			}
-			character_begemder_ruler_succession_chain_effect = yes
-		}
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:TGR ?= this
-						was_formed_from = TGR
+			### Ethiopian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BGM ?= this
+							was_formed_from = BGM
+						}
 					}
 				}
+				character_begemder_ruler_succession_chain_effect = yes
 			}
-			character_tigray_ruler_succession_chain_effect = yes
-		}
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SHW ?= this
-						was_formed_from = SHW
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:TGR ?= this
+							was_formed_from = TGR
+						}
 					}
 				}
+				character_tigray_ruler_succession_chain_effect = yes
 			}
-			character_shewa_ruler_succession_chain_effect = yes
-		}
-		### Basuto Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BST ?= this
-						was_formed_from = BST
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SHW ?= this
+							was_formed_from = SHW
+						}
 					}
 				}
+				character_shewa_ruler_succession_chain_effect = yes
 			}
-			character_basutoland_ruler_succession_chain_effect = yes
-		}
-		### Swazi Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SWZ ?= this
-						was_formed_from = SWZ
+			### Basuto monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BST ?= this
+							was_formed_from = BST
+						}
 					}
 				}
+				character_basutoland_ruler_succession_chain_effect = yes
 			}
-			character_swaziland_ruler_succession_chain_effect = yes
-		}
-		### Burundi Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BRD ?= this
-						was_formed_from = BRD
+			### Swazi monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SWZ ?= this
+							was_formed_from = SWZ
+						}
 					}
 				}
+				character_swaziland_ruler_succession_chain_effect = yes
 			}
-			character_burundi_ruler_succession_chain_effect = yes
-		}
-		### Rwandan Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:RWD ?= this
-						was_formed_from = RWD
+			### Burundi monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BRD ?= this
+							was_formed_from = BRD
+						}
 					}
 				}
+				character_burundi_ruler_succession_chain_effect = yes
 			}
-			character_rwanda_ruler_succession_chain_effect = yes
-		}
-		### Sokoto Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SOK ?= this
-						was_formed_from = SOK
+			### Rwandan monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:RWD ?= this
+							was_formed_from = RWD
+						}
 					}
 				}
+				character_rwanda_ruler_succession_chain_effect = yes
 			}
-			character_sokoto_ruler_succession_chain_effect = yes
-		}
-		### Hawaiian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:HAW ?= this
-						was_formed_from = HAW
+			### Sokoto monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SOK ?= this
+							was_formed_from = SOK
+						}
 					}
 				}
+				character_sokoto_ruler_succession_chain_effect = yes
 			}
-			character_hawaii_ruler_succession_chain_effect = yes
-		}
-		### Bruneian Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:BRU ?= this
-						was_formed_from = BRU
+			### Hawaiian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:HAW ?= this
+							was_formed_from = HAW
+						}
 					}
 				}
+				character_hawaii_ruler_succession_chain_effect = yes
 			}
-			character_brunei_ruler_succession_chain_effect = yes
-		}
-		### Sulu Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:SUL ?= this
-						was_formed_from = SUL
+			### Bruneian monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BRU ?= this
+							was_formed_from = BRU
+						}
 					}
 				}
+				character_brunei_ruler_succession_chain_effect = yes
 			}
-			character_sulu_ruler_succession_chain_effect = yes
-		}
-		### Acehnese Monarchs
-		else_if = {
-			limit = {
-				owner ?= {
-					OR = {
-						c:ACE ?= this
-						was_formed_from = ACE
+			### Sulu monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SUL ?= this
+							was_formed_from = SUL
+						}
 					}
 				}
+				character_sulu_ruler_succession_chain_effect = yes
 			}
-			character_aceh_ruler_succession_chain_effect = yes
+			### Acehnese monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:ACE ?= this
+							was_formed_from = ACE
+						}
+					}
+				}
+				character_aceh_ruler_succession_chain_effect = yes
+			}
+			### Bornu monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BOR ?= this
+							was_formed_from = BOR
+						}
+					}
+				}
+				character_bornu_ruler_succession_chain_effect = yes
+			}
+			### Bagirmi monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BGI ?= this
+							was_formed_from = BGI
+						}
+					}
+				}
+				character_bagirmi_ruler_succession_chain_effect = yes
+			}
+			### Borgu monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BRG ?= this
+							was_formed_from = BRG
+						}
+					}
+				}
+				character_borgu_ruler_succession_chain_effect = yes
+			}
+			### Ashanti monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:ASH ?= this
+							was_formed_from = ASH
+						}
+					}
+				}
+				character_ashanti_ruler_succession_chain_effect = yes
+			}
+			### Dahomey monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:DAH ?= this
+							was_formed_from = DAH
+						}
+					}
+				}
+				character_dahomey_ruler_succession_chain_effect = yes
+			}
+			### Oyo monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:OYO ?= this
+							was_formed_from = OYO
+						}
+					}
+				}
+				character_oyo_ruler_succession_chain_effect = yes
+			}
+			### Benin monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BEN ?= this
+							was_formed_from = BEN
+						}
+					}
+				}
+				character_benin_ruler_succession_chain_effect = yes
+			}
 		}
 	}
 }
@@ -957,6 +1067,22 @@ historical_successions_on_character_death = {
 					}
 				}
 				character_wallachia_ruler_succession_chain_dictatorial_effect = yes
+			}
+			else_if = { # Baltic governors
+				limit = {
+					owner ?= {
+						exists = c:UBD
+						exists = c:RUS
+						c:UBD = ROOT
+						is_subject_of = c:RUS
+						c:RUS ?= {
+							has_law = law_type:law_monarchy
+						}
+						has_gov_regency = no
+						is_domain_alliance_gov = no
+					}
+				}
+				character_baltic_governorates_succession_chain_effect = yes
 			}
 		}
 		### German Empire Magnates
@@ -1091,6 +1217,22 @@ historical_successions_on_yearly_pulse_character = {
 				}
 			}
 			character_hungary_scripted_deaths_effect = yes
+		}
+		else_if = { # Baltic Governorates
+			limit = {
+				owner ?= {
+					exists = c:UBD
+					exists = c:RUS
+					c:UBD = this
+					is_subject_of = c:RUS
+					c:RUS ?= {
+						has_law = law_type:law_monarchy
+					}
+					has_gov_regency = no
+					is_domain_alliance_gov = no
+				}
+			}
+			charater_baltic_governorates_scripted_deaths_effect = yes
 		}
 		else_if = { # Prussia
 			limit = {
@@ -1375,81 +1517,139 @@ historical_successions_on_yearly_pulse_character = {
 # Root = Country
 historical_heirs_on_monthly_pulse_country = {
 	effect = {
-		if = { # Belgium
+		if = {
 			limit = {
-				OR = {
-					c:BEL ?= this
-					was_formed_from = BEL
+				has_gov_regency = no
+				ruler ?= {
+					is_adult = yes
 				}
-				can_generate_scripted_heirs = yes
 			}
-			belgium_generate_scripted_heirs = yes
-		}
-		else_if = { # Netherlands
-			limit = {
-				OR = {
-					c:NET ?= this
-					was_formed_from = NET
+			if = { # Belgium
+				limit = {
+					OR = {
+						c:BEL ?= this
+						was_formed_from = BEL
+					}
+					can_generate_scripted_heirs = yes
 				}
-				can_generate_scripted_heirs = yes
+				belgium_generate_scripted_heirs = yes
 			}
-			netherlands_generate_scripted_heirs = yes
-		}
-		else_if = { # Denmark
-			limit = {
-				OR = {
-					c:DEN ?= this
-					was_formed_from = DEN
+			else_if = { # Netherlands
+				limit = {
+					OR = {
+						c:NET ?= this
+						was_formed_from = NET
+					}
+					can_generate_scripted_heirs = yes
 				}
-				can_generate_scripted_heirs = yes
+				netherlands_generate_scripted_heirs = yes
 			}
-			denmark_generate_scripted_heirs = yes
-		}
-		else_if = { #Luxembourg-Nassau
-			limit = {
-				OR = {
-					c:NAS ?= this
-					was_formed_from = NAS
-					c:LUX ?= this
-					was_formed_from = LUX
+			else_if = { # Denmark
+				limit = {
+					OR = {
+						c:DEN ?= this
+						was_formed_from = DEN
+					}
+					can_generate_scripted_heirs = yes
 				}
-				can_generate_scripted_heirs = yes
+				denmark_generate_scripted_heirs = yes
 			}
-			luxembourg_generate_scripted_heirs = yes
-		}
-		else_if = { # Ottoman Empire
-			limit = {
-				c:TUR ?= this
-				can_generate_scripted_heirs = yes
-			}
-			ottoman_empire_generate_scripted_heirs = yes
-		}
-		else_if = { # Russia
-			limit = {
-				c:RUS ?= this
-				can_generate_scripted_heirs = yes
-			}
-			russia_generate_scripted_heirs = yes
-		}
-		else_if = { # Serbia
-			limit = {
-				OR = {
-					c:SER ?= this
-					was_formed_from = SER
+			else_if = { #Luxembourg-Nassau
+				limit = {
+					OR = {
+						c:NAS ?= this
+						was_formed_from = NAS
+						c:LUX ?= this
+						was_formed_from = LUX
+					}
+					can_generate_scripted_heirs = yes
 				}
-				can_generate_scripted_heirs = yes
+				luxembourg_generate_scripted_heirs = yes
 			}
-			serbia_generate_scripted_heirs = yes
-		}
-		else_if = { # Morocco
-			limit = {
-				OR = {
-					c:MOR ?= this
-					was_formed_from = MOR
+			else_if = { # Ottoman Empire
+				limit = {
+					c:TUR ?= this
+					can_generate_scripted_heirs = yes
 				}
-				can_generate_scripted_heirs = yes
+				ottoman_empire_generate_scripted_heirs = yes
 			}
-			morocco_generate_scripted_heirs = yes
+			else_if = { # Russia
+				limit = {
+					c:RUS ?= this
+					can_generate_scripted_heirs = yes
+				}
+				russia_generate_scripted_heirs = yes
+			}
+			else_if = { # Serbia
+				limit = {
+					OR = {
+						c:SER ?= this
+						was_formed_from = SER
+					}
+					can_generate_scripted_heirs = yes
+				}
+				serbia_generate_scripted_heirs = yes
+			}
+			else_if = { # Morocco
+				limit = {
+					OR = {
+						c:MOR ?= this
+						was_formed_from = MOR
+					}
+					can_generate_scripted_heirs = yes
+				}
+				morocco_generate_scripted_heirs = yes
+			}
+			else_if = { # Prussia
+				limit = {
+					OR = {
+						c:PRU ?= this
+						was_formed_from = PRU
+					}
+					can_generate_scripted_heirs = yes
+				}
+				prussia_generate_scripted_heirs = yes
+			}
+			else_if = { # Sardinia
+				limit = {
+					OR = {
+						c:SAR ?= this
+						was_formed_from = SAR
+					}
+					can_generate_scripted_heirs = yes
+				}
+				sardinia_generate_scripted_heirs = yes
+			}
+			else_if = { # China
+				limit = {
+					OR = {
+						c:CHI ?= this
+						was_formed_from = CHI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				china_generate_scripted_heirs = yes
+			}
+			else_if = { # Korea
+				limit = {
+					OR = {
+						c:KOR ?= this
+						was_formed_from = KOR
+					}
+					can_generate_scripted_heirs = yes
+				}
+				korea_generate_scripted_heirs = yes
+			}
+			else_if = { # Siam
+				limit = {
+					OR = {
+						c:SIA ?= this
+						was_formed_from = SIA
+					}
+					can_generate_scripted_heirs = yes
+				}
+				siam_generate_scripted_heirs = yes
+			}
 		}
 	}
 }

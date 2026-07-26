@@ -41,7 +41,7 @@
  hm_belgium.2.t: "왕자의 죽음"
  hm_belgium.2.d: "[SCOPE.sCharacter('relevant_heir').GetFullName] 왕자가 연못에 빠진 후 폐렴으로 사망했다."
  hm_belgium.2.f: "[SCOPE.sCharacter('relevant_heir').GetHerHis] 장례식에서 [SCOPE.sCharacter('relevant_heir').GetHerHis] 아버지인 [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]는 대중 앞에서 감정을 주체하지 못하고 관 옆에서 무릎을 꿇은 채 통곡했다."
- hm_belgium.2.a: 그분이 평안히 쉬시기를"
+ hm_belgium.2.a: "그분이 평안히 쉬시기를"
 
  hm_belgium.3.t: "왕실의 비극"
  hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName]이 병든 여동생을 문병하러 갔다가 독감에 걸려 사망했다."

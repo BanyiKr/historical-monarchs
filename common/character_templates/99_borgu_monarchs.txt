@@ -1,0 +1,110 @@
+﻿BRG_kisaru_kisan_dan_jibrim = {
+	first_name = "Kisaru_Kisan"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	ruler = yes
+	birth_date = 1791.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_beraki_dan_jibrim = {
+	first_name = "Beraki"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1794.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_waruko_gajere_dan_maikuka = {
+	first_name = "Waruko_Gajere"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1800.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_kigera_ii_jibrim_dan_toro_dan_kitoro = {
+	first_name = "Kigera_Jibrim_Dan_Toro"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1830.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro = {
+	first_name = "Woru_Yaro_Kisaru_Kisan_Dogo"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1840.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_kitoro_gani_kilisha_yerima_dan_dan_toro = {
+	first_name = "Kitoro_Gani_Kilisha_Yerima"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1850.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_jibrim_dan_dan_toro = {
+	first_name = "Jibrim"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1855.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro = {
+	first_name = "Muhammadu_Kitoro_Gani_Kilisha_Yenima"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1875.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_wuru_babaki_dan_dan_toro = {
+	first_name = "Wuru_Babaki"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1895.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}
+
+BRG_muhammadu_sani = {
+	first_name = "Muhammadi_Sani"
+	last_name = "Gbemusu"
+	historical = yes
+	culture = cu:mande
+	birth_date = 1905.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAUSALAND
+}

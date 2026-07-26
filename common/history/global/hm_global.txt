@@ -1,0 +1,8 @@
+﻿GLOBAL = {
+	c:FTR ?= {
+		activate_law = law_type:law_theocracy
+	}
+	c:FTJ ?= {
+		activate_law = law_type:law_theocracy
+	}
+}

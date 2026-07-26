@@ -27,7 +27,6 @@ rr_KAB_abdur_rahman_barakzai = {
 	ideology = ideology_authoritarian
 	home_region = STATE_KABUL
 	traits = {
-		ambitious
 		imperious
 		basic_diplomat
 	}

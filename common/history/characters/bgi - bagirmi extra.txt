@@ -1,0 +1,8 @@
+﻿CHARACTERS = {
+	c:BGI ?= {
+		create_character = {
+			template = BGI__abdul_qadir_ii_al_mahdi
+			heir = yes
+		}
+	}
+}

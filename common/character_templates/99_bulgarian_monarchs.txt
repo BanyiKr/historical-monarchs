@@ -12,7 +12,6 @@
 	traits = {
 		popular_commander
 		imperious
-		ambitious
 	}
 } # heir:
 rr_BUL_assen_hartenau = {

@@ -1,0 +1,7 @@
+﻿CHARACTERS = {
+	c:TIB ?= {
+		create_character = {
+			template = TIB_palden_tempai_nyima
+		}
+	}
+}

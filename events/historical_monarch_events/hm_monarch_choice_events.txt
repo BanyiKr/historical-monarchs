@@ -346,6 +346,27 @@ hm_monarch_choice.1 = { # Norway
 			base = 0
 		}
 	}
+	option = { # Randomized character
+		name = hm_monarch_choice.1.w
+		custom_tooltip = {
+			text = hm_monarch_choice.random.tt
+			create_character = {
+				name = Haakon
+				historical = no
+				noble = yes
+				female = no
+				culture = primary_culture
+				ruler = yes
+			}
+		}
+		change_relations = {
+			country = c:SWE
+			value = -10
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
 hm_monarch_choice.2 = { # Bulgaria

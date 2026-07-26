@@ -180,7 +180,6 @@ ROM_carol_ii = { # King Carol II
 	traits = {
 		hedonist
 		imperious
-		ambitious
 		charismatic
 		reckless
 		alcoholic
