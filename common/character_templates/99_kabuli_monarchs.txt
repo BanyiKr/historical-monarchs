@@ -1,0 +1,141 @@
+﻿rr_KAB_sher_ali_barakzai = {
+	first_name = "Sher_Ali"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	birth_date = 1825.1.1
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	home_region = STATE_KABUL
+	traits = {
+		ambitious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_abdur_rahman_barakzai = {
+	first_name = "Abdurrahman"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	birth_date = 1840.1.1
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	home_region = STATE_KABUL
+	traits = {
+		ambitious
+		imperious
+		basic_diplomat
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_habibullah_barakzai = {
+	first_name = "Habibullah"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	birth_date = 1872.7.2
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	home_region = STATE_KABUL
+	traits = {
+		innovative
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_nasrullah_barakzai = {
+	first_name = "Nasrullah"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	birth_date = 1874.4.7
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_KABUL
+	traits = {
+		pious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_amanullah_barakzai = {
+	first_name = "Amanullah"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	birth_date = 1892.6.1
+	interest_group = ig_landowners
+	ideology = ideology_liberal_leader
+	home_region = STATE_KABUL
+	traits = {
+		ambitious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_inayatullah_barakzai = {
+	first_name = "Inayatullah"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	birth_date = 1888.10.20
+	interest_group = ig_landowners
+	ideology = ideology_modernizer_leader
+	home_region = STATE_KABUL
+	traits = {
+		reserved
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_mohammad_nadir_musahiban = {
+	first_name = "Mohammad_Nadir"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	noble = yes
+	birth_date = 1888.10.20
+	interest_group = ig_landowners
+	ideology = ideology_modernizer_leader
+	home_region = STATE_KABUL
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KAB_mohammad_zahir_musahiban = {
+	first_name = "Mohammad_Zahir"
+	last_name = "Barakzai"
+	historical = yes
+	culture = cu:pashtun
+	heir = yes
+	noble = yes
+	birth_date = 1914.10.15
+	interest_group = ig_intelligentsia
+	ideology = ideology_modernizer_leader
+	home_region = STATE_KABUL
+	on_created = {
+        set_variable = is_married
+    }
+}

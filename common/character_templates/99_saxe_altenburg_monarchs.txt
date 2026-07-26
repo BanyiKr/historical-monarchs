@@ -1,0 +1,59 @@
+﻿SXA_joseph_von_sachsen_altenburg = {
+	first_name = "Joseph"
+	last_name = "von_Sachsen-Altenburg"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1789.8.27
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+}
+
+SXA_georg_von_sachsen_altenburg = {
+	first_name = "Georg"
+	last_name = "von_Sachsen-Altenburg"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1796.7.24
+	interest_group = ig_landowners
+	ideology = ideology_corporatist_leader
+	home_region = STATE_SAXONY
+}
+
+SXA_ernst_von_sachsen_altenburg = {
+	first_name = "Ernst"
+	last_name = "von_Sachsen-Altenburg"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1826.9.16
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+}
+
+SXA_ernst_ii_von_sachsen_altenburg = {
+	first_name = "Ernst"
+	last_name = "von_Sachsen-Altenburg"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1871.8.31
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+}
+
+SXA_georg_moritz_von_sachsen_altenburg = {
+	first_name = "Georg_Moritz"
+	last_name = "von_Sachsen-Altenburg"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1900.5.13
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_SAXONY
+}

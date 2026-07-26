@@ -1,0 +1,35 @@
+﻿rr_MON_Nikola_I = {
+	first_name = "Nikola"
+    last_name = "Petrovic_Njegos"
+    historical = yes
+    culture = primary_culture
+    heir = yes
+	noble = yes
+    birth_date = 1841.10.7
+    interest_group = ig_armed_forces
+    ideology = ideology_royalist
+    home_region = STATE_MONTENEGRO
+    traits = {
+		ambitious
+        romantic
+		literary
+		basic_diplomat
+		basic_offensive_planner
+    }
+}
+
+rr_MON_Prince_Danilo = {
+	first_name = "Danilo"
+    last_name = "Petrovic_Njegos"
+    historical = yes
+    culture = primary_culture
+    heir = yes
+	noble = yes
+    birth_date = 1871.6.29
+    interest_group = ig_armed_forces
+    ideology = ideology_royalist
+    home_region = STATE_MONTENEGRO
+    traits = {
+        reserved
+    }
+}

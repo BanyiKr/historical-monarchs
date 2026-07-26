@@ -1,0 +1,29 @@
+﻿CHARACTERS = {
+	c:BAD ?= {
+		create_character = {
+			template = BAD_leopold_von_baden
+			ruler = yes
+		}
+		
+		create_character = {
+			template = BAD_ludwig_von_baden
+			heir = yes
+		}
+
+		create_character = {
+			template = BAD_ludwig_georg_winter
+		}
+
+		create_character = {
+			template = BAD_friedrich_von_blittersdorf
+		}
+
+		create_character = {
+			template = BAD_karl_wilhelm_eugen_von_freydorf
+		}
+
+		create_character = {
+			template = BAD_friedrich_hoffmann
+		}
+	}
+}

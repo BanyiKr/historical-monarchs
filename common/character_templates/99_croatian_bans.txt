@@ -1,0 +1,77 @@
+﻿REPLACE:CRO_juraj_haulik = {
+    # Juraj Haulik de Váralya, future Ban of Croatia
+    first_name = "Juraj"
+    last_name = "Haulik"
+    historical = yes
+    culture = cu:slovak
+    religion = rel:catholic
+    ig_leader = yes
+    birth_date = 1788.4.20
+    interest_group = ig_devout
+    ideology = ideology_reformer
+    home_region = STATE_SLOVAKIA
+    traits = {
+		pious
+        basic_political_operator
+        cautious
+    }
+    on_created = {
+        set_variable = is_married
+    }
+}
+
+CRO_franz_haller = {
+	first_name = Ferenc
+	last_name = Haller
+	historical = yes
+	culture = cu:hungarian
+	religion = rel:protestant
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1796.3.24
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	home_region = STATE_NORTHERN_TRANSYLVANIA
+	traits = {
+		traditionalist_commander
+	}
+}
+
+CRO_johann_baptist_coronini_cronberg = {
+	first_name = Johann_Baptist
+	last_name = Coronini-Cronberg
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date =  1794.11.19
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_VENETIA
+	traits = {
+		traditionalist_commander
+		experienced_offensive_planner
+		experienced_artillery_commander
+	}
+}
+
+CRO_josip_sokcevic = {
+	first_name = Josip
+	last_name = Sokcevic
+	historical = yes
+	culture = cu:croat
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1811.3.7
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_SLAVONIA
+	traits = {
+		experienced_offensive_planner
+	}
+}

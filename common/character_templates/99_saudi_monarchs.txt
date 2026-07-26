@@ -1,0 +1,83 @@
+﻿rr_NEJ_Saud_bin_Faisal_Al_Saud = {
+	# Saud bin Faisal bin Turki
+	first_name = "Saud"
+	last_name = "al_Saud"
+	historical = yes
+	culture = cu:bedouin
+	birth_date = 1833.6.6
+	heir = yes
+	noble = yes
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_NEJD
+	traits = {
+		ambitious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_NEJ_Abdul_Rahman_bin_Faisal = {
+	first_name = "Abd_al-Rahman"
+	last_name = "al_Saud"
+	historical = yes
+	culture = cu:bedouin
+	birth_date = 1850.6.6
+	heir = yes
+	noble = yes
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_NEJD
+	traits = {
+		ambitious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_NEJ_Abdullah_bin_Faisal = {
+	first_name = "Abdullah"
+	last_name = "al_Saud"
+	historical = yes
+	culture = cu:bedouin
+	birth_date = 1831.6.6
+	heir = yes
+	noble = yes
+	interest_group = ig_devout
+	ideology = ideology_authoritarian
+	home_region = STATE_NEJD
+	traits = {
+		arrogant
+		brave
+		cruel
+		imperious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_NEJ_Abdulaziz_bin_Abdul_Rahman = {
+	first_name = "Abdulaziz"
+	last_name = "al_Saud"
+	historical = yes
+	culture = cu:bedouin
+	birth_date = 1876.1.15
+	heir = yes
+	noble = yes
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_NEJD
+	traits = {
+		ambitious
+		imperious
+		pious
+		persistent
+		charismatic
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}

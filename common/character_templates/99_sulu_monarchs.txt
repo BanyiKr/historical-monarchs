@@ -1,0 +1,73 @@
+﻿SUL_jamal_ul_azam_sulu = {
+	first_name = "Jamal_ul_Azam"
+	last_name = "Kiram"
+	historical = yes
+	culture = cu:moro
+	heir = yes
+	noble = yes
+	birth_date = 1830.12.6
+	home_region = STATE_MINDANAO
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		charismatic
+		basic_diplomat
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SUL_badarud_din_ii = {
+	first_name = "Badarud_Din"
+	last_name = "Kiram"
+	historical = yes
+	culture = cu:moro
+	heir = yes
+	noble = yes
+	birth_date = 1862.1.6
+	home_region = STATE_MINDANAO
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SUL_harun_ar_rashid = {
+	first_name = "Harun_ar-Rashid"
+	last_name = "Kiram"
+	historical = yes
+	culture = cu:moro
+	heir = yes
+	noble = yes
+	birth_date = 1869.1.6
+	home_region = STATE_MINDANAO
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		expensive_tastes
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SUL_jamalul_kiram_ii = {
+	first_name = "Jamalul_Kiram"
+	last_name = "Kiram"
+	historical = yes
+	culture = cu:moro
+	heir = yes
+	noble = yes
+	birth_date = 1868.3.27
+	home_region = STATE_MINDANAO
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		expensive_tastes
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

@@ -1,0 +1,3509 @@
+﻿character_britain_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = gbr_albert_edward_template
+		}
+		owner ?= {
+			create_character = {
+				template = gbr_george_v_template
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = gbr_george_v_template
+		}
+		owner ?= {
+			create_character = {
+				template = GBR_edward_viii
+			}
+		}
+	}
+}
+
+character_norway_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = rr_NOR_haakon_vii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_NOR_olav_v
+			}
+		}
+	}
+	# Bernadottes
+	else_if = {
+		limit = {
+			has_template = SWE_prince_august
+		}
+		owner ?= {
+			create_character = {
+				template = SWE_prince_carl
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SWE_prince_carl
+		}
+		owner ?= {
+			create_character = {
+				template = SWE_prince_carl_junior
+			}
+		}
+	}
+	# Rosenborg line
+	else_if = {
+		limit = {
+			has_template = DEN_prince_valdemar
+		}
+		owner ?= {
+			create_character = {
+				template = DEN_prince_aage
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_prince_aage
+		}
+		owner ?= {
+			create_character = {
+				template = DEN_count_valdemar
+			}
+		}
+	}
+}
+
+character_denmark_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = DEN_christian_von_oldenburg
+		}
+		owner ?= {
+			create_character = {
+				template = DEN_frederik_vii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_frederik_vii
+		}
+		owner ?= {
+			trigger_event = hm_denmark.1
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_christian_ix
+		}
+		owner ?= {
+			trigger_event = hm_denmark.2
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_frederik_viii
+		}
+		owner ?= {
+			trigger_event = hm_denmark.3
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_christian_x
+		}
+		owner ?= {
+			trigger_event = hm_denmark.4
+		}
+	}
+}
+
+character_schleswig_holstein_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SCH_christian_augusti_ii
+		}
+		owner ?= {
+			create_character = {
+				template = SCH_frederik_viii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCH_frederik_viii
+		}
+		owner ?= {
+			create_character = {
+				template = SCH_ernst_gunther_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCH_ernst_gunther_ii
+		}
+		owner ?= {
+			create_character = {
+				template = SCH_albert_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCH_albert_i
+		}
+		owner ?= {
+			create_character = {
+				template = SCH_friedrich_ferdinand
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCH_friedrich_ferdinand
+		}
+		owner ?= {
+			create_character = {
+				template = SCH_wilhelm_friedrich
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCH_wilhelm_friedrich
+		}
+		owner ?= {
+			create_character = {
+				template = SCH_peter_i
+				heir = yes
+			}
+		}
+	}
+}
+
+character_netherlands_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = NET_willem_ii_van_oranje_nassau
+		}
+		owner ?= {
+			trigger_event = hm_netherlands.1
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = NET_willem_iii
+		}
+		owner ?= {
+			trigger_event = hm_netherlands.2
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = NET_prince_willem
+		}
+		owner ?= {
+			create_character = {
+				template = NET_prince_alexander
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = NET_prince_alexander
+		}
+		owner ?= {
+			create_character = {
+				template = NET_wilhelmina_i
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = NET_wilhelmina_i
+		}
+		owner ?= {
+			trigger_event = hm_netherlands.3
+		}
+	}
+	# German dynasty
+	else_if = {
+		limit = {
+			has_template = GER_Heinrich_XXXII_Reuss
+		}
+		owner ?= {
+			create_character = {
+				template = GER_Heinrich_XXXIII_Reuss
+				heir = yes
+			}
+		}
+	}
+}
+
+character_belgium_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BEL_leopold_II_saxe_coburg_gotha_template
+		}
+		owner ?= {
+			trigger_event = hm_belgium.1
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BEL_Prince_Leopold
+		}
+		owner ?= {
+			create_character = {
+				template = BEL_Prince_Philippe
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BEL_Prince_Philippe
+		}
+		owner ?= {
+			create_character = {
+				template = BEL_Prince_Baudouin
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BEL_Prince_Baudouin
+		}
+		owner ?= {
+			create_character = {
+				template = BEL_albert_i
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BEL_albert_i
+		}
+		trigger_event = hm_belgium.4
+		owner ?= {
+			create_character = {
+				template = BEL_leopold_iii
+			}
+		}
+	}
+}
+
+character_sardinia_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = sar_victor_emmanuel_template
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAR_umberto_i
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAR_umberto_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAR_victor_emmanuel_iii
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAR_victor_emmanuel_iii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAR_umberto_ii
+			}
+		}
+	}
+}
+
+character_luxembourg_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = NAS_adolf_von_nassau_weilburg
+		}
+		if = {
+			limit = {
+				game_date >= 1852.4.22
+				game_date <= 1912.2.25
+			}
+			owner ?= {
+				set_variable = william_iv_heir_var
+				create_character = {
+					template = LUX_william_iv
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1912.2.25
+			}
+			owner ?= {
+				set_variable = marie_adelaide_heir_var
+				create_character = {
+					template = LUX_marie_adelaide_i
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = LUX_william_iv
+		}
+		if = {
+			limit = {
+				game_date >= 1912.2.25
+			}
+			owner ?= {
+				set_variable = marie_adelaide_heir_var
+				create_character = {
+					template = LUX_marie_adelaide_i
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = LUX_marie_adelaide_i
+		}
+		owner ?= {
+			create_character = {
+				template = LUX_charlotte_i
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = LUX_charlotte_i
+		}
+		owner ?= {
+			create_character = {
+				template = LUX_jean_i
+			}
+		}
+	}
+}
+
+character_prussia_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = pru_wilhelm_IV_hohenzollern_template
+		}
+		owner ?= {
+			create_character = {
+				template = rr_pru_wilhelm_I
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_pru_wilhelm_I
+		}
+		owner ?= {
+			create_character = {
+				template = rr_pru_frederick_iii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_pru_frederick_iii
+		}
+		add_trait = sickly
+		add_trait = cancer
+		owner ?= {
+			create_character = {
+				template = rr_pru_wilhelm_II
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_pru_wilhelm_II
+		}
+		owner ?= {
+			create_character = {
+				template = rr_pru_crown_prince_wilhelm
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_pru_crown_prince_wilhelm
+		}
+		owner ?= {
+			create_character = {
+				template = rr_pru_prince_wilhelm
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_BRANDENBURG ?= {
+			change_variable = { name = prussia_king_chain_id add = 1 }
+		}
+	}
+}
+
+character_greece_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = GRE_george_i_of_greece
+		}
+		owner ?= {
+			create_character = {
+				template = rr_GRE_constantine_i
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_GRE_constantine_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_GRE_geroge_II
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_GRE_geroge_II
+		}
+		owner ?= {
+			create_character = {
+				template = rr_GRE_paul_i
+			}
+		}
+	}
+}
+
+character_montenegro_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = mon_danilo_petrovic_njegos
+		}
+		owner ?= {
+			create_character = {
+				template = rr_MON_Nikola_I
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_MON_Nikola_I
+		}
+		owner ?= {
+			create_character = {
+				template = rr_MON_Prince_Danilo
+			}
+		}
+	}
+}
+
+character_moldavia_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = MOL_mihail_sturdza
+		}
+		owner ?= {
+			create_character = {
+				template = MOL_grigore_alexandru_ghica
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MOL_grigore_alexandru_ghica
+		}
+		owner ?= {
+			create_character = {
+				template = MOL_alexandru_cuza
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MOL_alexandru_cuza
+		}
+		owner ?= {
+			create_character = {
+				template = MOL_alexandru_cuza_jr
+				heir = yes
+			}
+		}
+	}
+	# Hohenzollern
+	else_if = {
+		limit = {
+			has_template = ROM_carol_i
+		}
+		owner ?= {
+			create_character = {
+				template = ROM_ferdinand_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ROM_ferdinand_i
+		}
+		owner ?= {
+			create_character = {
+				template = ROM_carol_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ROM_carol_ii
+		}
+		owner ?= {
+			create_character = {
+				template = ROM_mihai_i
+				heir = yes
+			}
+		}
+	}
+}
+
+character_moldavia_ruler_succession_chain_dictatorial_effect = {
+	if = {
+		limit = {
+			has_template = MOL_mihail_sturdza
+		}
+		owner ?= {
+			create_character = {
+				template = MOL_grigore_alexandru_ghica
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MOL_grigore_alexandru_ghica
+		}
+		owner ?= {
+			create_character = {
+				template = MOL_alexandru_cuza
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MOL_alexandru_cuza
+		}
+		owner ?= {
+			create_character = {
+				template = MOL_alexandru_cuza_jr
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_wallachia_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = WAL_alexandru_ghica
+		}
+		owner ?= {
+			create_character = {
+				template = WAL_gheorghe_bibescu
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = WAL_gheorghe_bibescu
+		}
+		owner ?= {
+			create_character = {
+				template = WAL_barbu_dimitrie_stribei
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = WAL_barbu_dimitrie_stribei
+		}
+		owner ?= {
+			create_character = {
+				template = WAL_alexandru_ghica
+				heir = yes
+			}
+		}
+	}
+	# Hohenzollern
+	else_if = {
+		limit = {
+			has_template = ROM_carol_i
+		}
+		owner ?= {
+			create_character = {
+				template = ROM_ferdinand_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ROM_ferdinand_i
+		}
+		owner ?= {
+			create_character = {
+				template = ROM_carol_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ROM_carol_ii
+		}
+		owner ?= {
+			create_character = {
+				template = ROM_mihai_i
+				heir = yes
+			}
+		}
+	}
+}
+
+character_wallachia_ruler_succession_chain_dictatorial_effect = {
+	if = {
+		limit = {
+			has_template = WAL_alexandru_ghica
+		}
+		owner ?= {
+			create_character = {
+				template = WAL_gheorghe_bibescu
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = WAL_gheorghe_bibescu
+		}
+		owner ?= {
+			create_character = {
+				template = WAL_barbu_dimitrie_stribei
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = WAL_barbu_dimitrie_stribei
+		}
+		owner ?= {
+			create_character = {
+				template = WAL_alexandru_ghica
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_bulgaria_ruler_succession_chain_effect = {
+	# Battenberg
+	if = {
+		limit = {
+			has_template = rr_BUL_alexander_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUL_assen_hartenau
+				heir = yes
+			}
+		}
+	}
+	# Saxe-Coburg-Gotha
+	if = {
+		limit = {
+			has_template = rr_BUL_ferdinand_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUL_boris_iii
+				heir = yes
+			}
+		}
+	}
+	# Rosenborg line
+	else_if = {
+		limit = {
+			has_template = DEN_prince_valdemar
+		}
+		owner ?= {
+			create_character = {
+				template = DEN_prince_aage
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_prince_aage
+		}
+		owner ?= {
+			create_character = {
+				template = DEN_count_valdemar
+				heir = yes
+			}
+		}
+	}
+	# Reuss line
+	else_if = {
+		limit = {
+			has_template = GER_Heinrich_XXXII_Reuss
+		}
+		owner ?= {
+			create_character = {
+				template = GER_Heinrich_XXXIII_Reuss
+				heir = yes
+			}
+		}
+	}
+}
+
+character_bavaria_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BAV_maximillian_von_bayern
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAV_ludwig_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAV_ludwig_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAV_otto_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAV_otto_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAV_ludwig_iii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAV_ludwig_iii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAV_prince_rupprecht
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_BAVARIA ?= {
+			change_variable = { name = bavaria_king_chain_id add = 1 }
+		}
+	}
+}
+
+character_saxony_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SAX_friedrich_august_von_wettin
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAX_johann_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_johann_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAX_albert_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_albert_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAX_georg_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_georg_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAX_friedrich_august_iii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_friedrich_august_iii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SAX_prince_georg
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_SAXONY ?= {
+			change_variable = { name = saxony_king_chain_id add = 1 }
+		}
+	}
+}
+
+character_wurttenberg_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = WUR_karl_von_wurttemberg
+		}
+		owner ?= {
+			create_character = {
+				template = rr_WUR_wilhelm_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_WUR_wilhelm_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_WUR_duke_nicholas
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_WUR_duke_nicholas
+		}
+		owner ?= {
+			create_character = {
+				template = rr_WUR_duke_philipp
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_WUR_duke_philipp
+		}
+		owner ?= {
+			create_character = {
+				template = rr_WUR_duke_albrecht
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_WUR_duke_albrecht
+		}
+		owner ?= {
+			create_character = {
+				template = rr_WUR_duke_philipp_albrecht
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_WURTTEMBERG ?= {
+			change_variable = { name = wurttemberg_king_chain_id add = 1 }
+		}
+	}
+}
+
+character_hanover_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HAN_george_hannover
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HAN_prince_ernest_august
+				home_region = STATE_HANNOVER
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HAN_prince_ernest_august
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HAN_prince_george_william
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HAN_prince_george_william
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HAN_duke_ernst_august
+				heir = yes
+			}
+		}
+	}
+}
+
+character_baden_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BAD_ludwig_von_baden
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAD_frederick_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAD_frederick_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAD_frederick_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAD_frederick_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAD_maximillian_of_baden
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAD_maximillian_of_baden
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BAD_bethold_of_baden
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_BADEN ?= {
+			change_variable = { name = baden_duke_chain_id add = 1 }
+		}
+	}
+}
+
+character_hesse_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HES_ludwig_iii_von_hessen_darmstadt
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HES_ludwig_iv_von_hessen_darmstadt
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HES_ludwig_iv_von_hessen_darmstadt
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HES_ernst_ludwig_i_von_hessen_darmstadt
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HES_ernst_ludwig_i_von_hessen_darmstadt
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HES_georg_donatus_i_von_hessen_darmstadt
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_HESSE ?= {
+			change_variable = { name = hesse_duke_chain_id add = 1 }
+		}
+	}
+}
+
+character_hesse_kassel_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HEK_frederick_william_von_hessen_kassel
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HEK_frederick_william_ii_von_hessen_kassel
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HEK_frederick_william_ii_von_hessen_kassel
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HEK_frederick_karl_von_hessen_kassel
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HEK_frederick_karl_von_hessen_kassel
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HEK_wolfgang_von_hessen_kassel
+				heir = yes
+			}
+		}
+	}
+}
+
+character_oldenburg_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = OLD_peter_von_holstein_gottorp
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OLD_frederick_augustus_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_OLD_frederick_augustus_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OLD_nikolaus
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_OLD_nikolaus
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OLD_anton_gunther
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_HANNOVER ?= {
+			change_variable = { name = oldenburg_duke_chain_id add = 1 }
+		}
+	}
+}
+
+character_mecklenburg_schwerin_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = MEC_paul_friedrich_von_mecklenburg_schwerin
+		}
+		owner ?= {
+			create_character = {
+				template = MEC_friedrich_franz_ii_von_mecklenburg_schwerin
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MEC_friedrich_franz_ii_von_mecklenburg_schwerin
+		}
+		owner ?= {
+			create_character = {
+				template = MEC_friedrich_franz_iii_von_mecklenburg_schwerin
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MEC_friedrich_franz_iii_von_mecklenburg_schwerin
+		}
+		owner ?= {
+			create_character = {
+				template = MEC_friedrich_franz_iv_von_mecklenburg_schwerin
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MEC_friedrich_franz_iv_von_mecklenburg_schwerin
+		}
+		owner ?= {
+			create_character = {
+				template = MEC_hereditary_duke_friedrich_franz_von_mecklenburg_schwerin
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_MECKLENBURG ?= {
+			change_variable = { name = mecklenburg_schwerin_duke_chain_id add = 1 }
+		}
+	}
+}
+
+character_mecklenburg_sterlitz_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = MST_frederick_william_von_mecklenburg_strelitz
+		}
+		owner ?= {
+			create_character = {
+				template = MST_adolf_friedrich_v_von_mecklenburg_strelitz
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MST_adolf_friedrich_v_von_mecklenburg_strelitz
+		}
+		owner ?= {
+			create_character = {
+				template = MST_adolf_friedrich_vi_von_mecklenburg_strelitz
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = MST_adolf_friedrich_vi_von_mecklenburg_strelitz
+		}
+		owner ?= {
+			create_character = {
+				template = MST_carl_michael_von_mecklenburg_strelitz
+				heir = yes
+			}
+		}
+	}
+}
+
+character_saxe_weimar_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = WEI_charles_alexander_von_sachsen_weimar_eisenach
+		}
+		owner ?= {
+			create_character = {
+				template = WEI_wilhelm_ernst_von_sachsen_weimar_eisenach
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = WEI_wilhelm_ernst_von_sachsen_weimar_eisenach
+		}
+		owner ?= {
+			create_character = {
+				template = WEI_carl_august_von_sachsen_weimar_eisenach
+				heir = yes
+			}
+		}
+	}
+}
+
+character_saxe_coburg_gotha_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = COB_ernst_ii_von_sachsen_coburg_gotha
+		}
+		owner ?= {
+			create_character = {
+				template = COB_alfred_von_sachsen_coburg_gotha
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = COB_alfred_von_sachsen_coburg_gotha
+		}
+		owner ?= {
+			create_character = {
+				template = COB_charles_edward_von_sachsen_coburg_gotha
+				heir = yes
+			}
+		}
+	}
+}
+
+character_saxe_meiningen_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = MEI_georg_von_sachsen_meiningen
+		}
+		owner ?= {
+			create_character = {
+				template = MEI_bernhard_iii_von_sachsen_meiningen
+				heir = yes
+			}
+		}
+	}
+}
+
+character_anhalt_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = ANH_friedrich_askanier
+		}
+		owner ?= {
+			create_character = {
+				template = ANH_friedrich_ii_askanier
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ANH_friedrich_ii_askanier
+		}
+		owner ?= {
+			create_character = {
+				template = ANH_eduard_askanier
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_ANHALT ?= {
+			change_variable = { name = anhalt_duke_chain_id add = 1 }
+		}
+	}
+}
+
+character_lippe_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = LIP_leopold_iii_von_lippe
+		}
+		owner ?= {
+			create_character = {
+				template = LIP_woldemar_von_lippe
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = LIP_woldemar_von_lippe
+		}
+		owner ?= {
+			create_character = {
+				template = LIP_alexander_von_lippe
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = LIP_alexander_von_lippe
+		}
+		owner ?= {
+			create_character = {
+				template = LIP_leopold_iv_von_lippe
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = LIP_leopold_iv_von_lippe
+		}
+		owner ?= {
+			create_character = {
+				template = LIP_ernst_von_lippe
+				heir = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			game_date >= 1836.1.2
+		}
+		s:STATE_WESTPHALIA ?= {
+			change_variable = { name = lippe_prince_chain_id add = 1 }
+		}
+	}
+}
+
+character_persia_ruler_succession_chain_effect = {
+	# Qajar dynasty
+	if = {
+		limit = {
+			has_template = per_nasir_al_din_qajar_template
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PER_mozaffar_ad_din_shah_qajar
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PER_mozaffar_ad_din_shah_qajar
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PER_mohammad_ali_shah_qajar
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PER_mohammad_ali_shah_qajar
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PER_ahmad_shah_qajar
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PER_ahmad_shah_qajar
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PER_prince_freydoun_qajar
+			}
+		}
+	}
+	# Pahlavi dynasty
+	if = {
+		limit = {
+			has_template = rr_PER_reza_pahlavi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PER_mohammad_reza_pahlavi
+			}
+		}
+	}
+}
+
+character_oman_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = oma_thuwaini_bin_said
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OMA_turki_bin_said
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_OMA_turki_bin_said
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OMA_faisal_bin_turki
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_OMA_faisal_bin_turki
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OMA_taimur_bin_feisal
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_OMA_taimur_bin_feisal
+		}
+		owner ?= {
+			create_character = {
+				template = rr_OMA_said_bin_taimur
+			}
+		}
+	}
+}
+
+character_egypt_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = egy_ibrahim_alawi_template
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_abbas_helmy
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_abbas_helmy
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_mohamed_said
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_mohamed_said
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_ismail_pasha
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_ismail_pasha
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_mohamed_tewfik
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_mohamed_tewfik
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_abbas_helmy_ii
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_abbas_helmy_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_hussein_kamel
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_hussein_kamel
+		}
+		owner ?= {
+			if = {
+				limit = {
+					is_subject = yes
+					overlord ?= {
+						is_in_geographic_region = geographic_region_europe
+						NOT = {
+							c:TUR ?= this
+						}
+					}
+				}
+				create_character = {
+					template = rr_EGY_fuad_i
+				}
+			}
+			else = {
+				create_character = {
+					template = rr_EGY_prince_kamal_el_dine
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_EGY_fuad_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_EGY_farouk_i
+			}
+		}
+	}
+}
+
+character_nejd_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = NEJ_saud_al_saud
+		}
+		owner ?= {
+			create_character = {
+				template = rr_NEJ_Saud_bin_Faisal_Al_Saud
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_NEJ_Saud_bin_Faisal_Al_Saud
+		}
+		owner ?= {
+			create_character = {
+				template = rr_NEJ_Abdul_Rahman_bin_Faisal
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_NEJ_Abdul_Rahman_bin_Faisal
+		}
+		owner ?= {
+			create_character = {
+				template = rr_NEJ_Abdullah_bin_Faisal
+			}
+		}
+	}
+}
+
+character_hedjaz_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HDJ_abd_al_muttalib_al_hashimi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HDJ_awn_ar_rafiq_al_hashimi
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HDJ_awn_ar_rafiq_al_hashimi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HDJ_ali_pasha_al_hashimi
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HDJ_ali_pasha_al_hashimi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HDJ_hussein_al_hashimi
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HDJ_hussein_al_hashimi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HDJ_ali_ibn_hussein_al_hashimi
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_HDJ_ali_ibn_hussein_al_hashimi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_HDJ_abd_al_ilah_al_hashimi
+			}
+		}
+	}
+}
+
+character_zaidi_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = ZAI_an_nasir_abdallah_al_qasim
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ZAI_al_hadi_muhammad_al_qasim
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ZAI_al_hadi_muhammad_al_qasim
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ZAI_al_mansur_ali_al_qasim
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ZAI_al_mansur_ali_al_qasim
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ZAI_al_mansur_muhammad_al_qasim
+			}
+		}
+	}
+}
+
+character_bahrain_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BHN_muhammad_al_khalifa
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BHN_isa_al_khalifa
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BHN_isa_al_khalifa
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BHN_hamad_al_khalifa
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BHN_hamad_al_khalifa
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BHN_salman_al_khalifa
+			}
+		}
+	}
+}
+
+character_abu_dhabi_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = ABU_saeed_al_nahyan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ABU_tahnoun_al_nahyan
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ABU_tahnoun_al_nahyan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ABU_hamdan_al_nahyan
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ABU_hamdan_al_nahyan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ABU_sultan_al_nahyan
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ABU_sultan_al_nahyan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ABU_saqr_al_nahyan
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ABU_saqr_al_nahyan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ABU_shakhbut_al_nahyan
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ABU_shakhbut_al_nahyan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ABU_zayed_al_nahyan
+			}
+		}
+	}
+}
+
+character_tunis_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = TUN_ahmad_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_muhammad_ii_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_muhammad_ii_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_muhammad_iii_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_muhammad_iii_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_ali_iii_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_ali_iii_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_muhammad_iv_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_muhammad_iv_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_muhammad_v_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_muhammad_v_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_muhammad_vi_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_muhammad_vi_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_ahmad_ii_al_husaini
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TUN_ahmad_ii_al_husaini
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TUN_muhammad_vii_al_husaini
+			}
+		}
+	}
+}
+
+character_china_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = chi_xianfeng_template
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CHI_tongzhi
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CHI_tongzhi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CHI_guangxu
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CHI_guangxu
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CHI_puyi
+				heir = yes
+			}
+		}
+	}
+}
+
+character_korea_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = KOR_yi_myongbok
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KOR_sunjong
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KOR_sunjong
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KOR_yi_un
+			}
+		}
+	}
+}
+
+character_vietnam_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = DAI_thieu_tri_nguyen_phuoc
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_tu_duc
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_tu_duc
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_duc_duc
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_duc_duc
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_hiep_hoa
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_hiep_hoa
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_kien_phuc
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_kien_phuc
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_ham_nghi
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_ham_nghi
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_dong_khanh
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_dong_khanh
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_thanh_thai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_thanh_thai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_duy_tan
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_duy_tan
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_khai_dinh
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_khai_dinh
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_bao_dai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_bao_dai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_DAI_bao_long
+				heir = yes
+			}
+		}
+	}
+}
+
+character_luang_prabang_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = LUA_suhhkasoem_chao
+		}
+		owner ?= {
+			create_character = {
+				template = rr_LUA_oun_kham
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_LUA_oun_kham
+		}
+		owner ?= {
+			create_character = {
+				template = rr_LUA_sakkarin
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_LUA_sakkarin
+		}
+		owner ?= {
+			create_character = {
+				template = rr_LUA_sisavang_vong
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_LUA_sisavang_vong
+		}
+		owner ?= {
+			create_character = {
+				template = rr_LUA_sisavang_vatthana
+				heir = yes
+			}
+		}
+	}
+}
+
+character_cambodia_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = CAM_ang_duong_varman
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CAM_norodom
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CAM_norodom
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CAM_ang_sar
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CAM_ang_sar
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CAM_monivong
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CAM_monivong
+		}
+		owner ?= {
+			create_character = {
+				template = rr_CAM_sihanouk
+				heir = yes
+			}
+		}
+	}
+}
+
+character_siam_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = rr_SIA_mogkut
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SIA_chulalongkorn
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SIA_chulalongkorn
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SIA_vajiravudh
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SIA_vajiravudh
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SIA_prajadhipok
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SIA_prajadhipok
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SIA_ananda_mahidol
+				heir = yes
+			}
+		}
+	}
+}
+
+character_burma_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BUR_tharrawaddy_konbaung
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUR_pagan_min_konbaung
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BUR_pagan_min_konbaung
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUR_mindon_min_konbaung
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BUR_mindon_min_konbaung
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUR_thibaw_min_konbaung
+				heir = yes
+			}
+		}
+	}
+}
+
+character_nepal_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = NEP_surendra_bikram_shah
+		}
+		owner ?= {
+			create_character = {
+				template = rr_NEP_prithbi_bir_bikram_shah
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_NEP_prithbi_bir_bikram_shah
+		}
+		owner ?= {
+			create_character = {
+				template = rr_NEP_tribhuvan_bir_bikram_shah
+				heir = yes
+			}
+		}
+	}
+}
+
+character_bhutan_druk_desi_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BHU_chhoki_gyaltshen
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Dorji_Norbu
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Dorji_Norbu
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Jigme_Norbu
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Jigme_Norbu
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Damchho_Lhundrup
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Damchho_Lhundrup
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Jamyang_Tenzin
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Jamyang_Tenzin
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Sherab_Tharchin
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Sherab_Tharchin
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Phuntsho_Namgyel
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Phuntsho_Namgyel
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Tshewang_Sithub
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Tshewang_Sithub
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Tsondul_Pekar
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Tsondul_Pekar
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Jigme_Namgyal
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Jigme_Namgyal
+		}
+		owner ?= {
+			create_character = {
+				#template = BHU_Dorji_Namgyal
+				#template = BHU_Chhogyel_Zangpo
+				template = BHU_Lam_Tshewang
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Dorji_Namgyal
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Chhogyel_Zangpo
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Chhogyel_Zangpo
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Lam_Tshewang
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Lam_Tshewang
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Gawa_Zangpo
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Gawa_Zangpo
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Sangay_Dorji
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Sangay_Dorji
+		}
+		owner ?= {
+			create_character = {
+				template = BHU_Yeshe_Ngodub
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_bhutan_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = rr_BHU_ugyen_wangchuck
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BHU_jigme_wangchuck
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BHU_jigme_wangchuck
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BHU_jigme_dorji_wangchuck
+				heir = yes
+			}
+		}
+	}
+}
+
+character_bukhara_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BUK_muzaffar_al_din_manghud
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUK_abd_al_ahad_khan_manghud
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BUK_abd_al_ahad_khan_manghud
+		}
+		owner ?= {
+			create_character = {
+				template = rr_BUK_muhammad_alim_khan_manghud
+				heir = yes
+			}
+		}
+	}
+}
+
+character_khiva_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = KHI_muhammad_qungrat
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KHI_muhammad_amin_bahadur_qungrat
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KHI_muhammad_amin_bahadur_qungrat
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KHI_sayyid_muhammad_qungrat
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KHI_sayyid_muhammad_qungrat
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KHI_muhammad_rahim_qungrat
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KHI_muhammad_rahim_qungrat
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KHI_isfandiyar_jurji_bahadur_qungrat
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KHI_isfandiyar_jurji_bahadur_qungrat
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KHI_sayid_abdullah_qungrat
+				heir = yes
+			}
+		}
+	}
+}
+
+character_kokand_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = KOK_shir_ali_ming
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KOK_muhammad_khudayar_ming
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KOK_muhammad_khudayar_ming
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KOK_nasruddin_ming
+				heir = yes
+			}
+		}
+	}
+}
+
+character_kabul_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = KAB_akbar_barakzai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_sher_ali_barakzai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KAB_sher_ali_barakzai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_abdur_rahman_barakzai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KAB_abdur_rahman_barakzai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_habibullah_barakzai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KAB_habibullah_barakzai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_nasrullah_barakzai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KAB_nasrullah_barakzai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_amanullah_barakzai
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KAB_amanullah_barakzai
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_inayatullah_barakzai
+				heir = yes
+			}
+		}
+	}
+	# Musahiban branch
+	else_if = {
+		limit = {
+			has_template = rr_KAB_mohammad_nadir_musahiban
+		}
+		owner ?= {
+			create_character = {
+				template = rr_KAB_mohammad_zahir_musahiban
+				heir = yes
+			}
+		}
+	}
+}
+
+character_begemder_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = eth_yohannes_iii_solomon
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ETH_tewodros_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ETH_tewodros_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ETH_tekle_giyorgis_ii
+				heir = yes
+			}
+		}
+	}
+}
+
+character_tigray_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = TGR_wube_haile_maryam
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TGR_yohannes_iv
+				heir = yes
+			}
+		}
+	}
+}
+
+character_shewa_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SHW_haile_melekot_solomon
+		}
+		owner ?= {
+			create_character = {
+				template = rr_SHW_menelik_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SHW_menelik_ii
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ETH_zewditu
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ETH_zewditu
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ETH_haile_selassie_i
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_ETH_haile_selassie_i
+		}
+		owner ?= {
+			create_character = {
+				template = rr_ETH_Amha_Selassie
+				heir = yes
+			}
+		}
+	}
+}
+
+character_basutoland_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BST_Moshoeshoe
+		}
+		owner ?= {
+			create_character = {
+				template = BST_Letsie_I
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BST_Letsie_I
+		}
+		owner ?= {
+			create_character = {
+				template = BST_Lerotholi_I
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BST_Lerotholi_I
+		}
+		owner ?= {
+			create_character = {
+				template = BST_Nathaniel_Griffith
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BST_Nathaniel_Griffith
+		}
+		owner ?= {
+			create_character = {
+				template = BST_Simon_Seeiso_Griffith
+				heir = yes
+			}
+		}
+	}
+}
+
+character_swaziland_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SWZ_mswati
+		}
+		owner ?= {
+			create_character = {
+				template = SWZ_ludvonga_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SWZ_ludvonga_ii
+		}
+		owner ?= {
+			create_character = {
+				template = SWZ_mbandzeni
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SWZ_mbandzeni
+		}
+		owner ?= {
+			create_character = {
+				template = SWZ_bhunu
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SWZ_bhunu
+		}
+		owner ?= {
+			create_character = {
+				template = SWZ_sobhuza_ii
+				heir = yes
+			}
+		}
+	}
+}
+
+character_burundi_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BRD_mwezi_iv_ntwero
+		}
+		owner ?= {
+			create_character = {
+				template = BRD_mutaga_iv_ntwero
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BRD_mutaga_iv_ntwero
+		}
+		owner ?= {
+			create_character = {
+				template = BRD_mwambutsa_iv_ntwero
+				heir = yes
+			}
+		}
+	}
+}
+
+character_rwanda_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = RWD_mutara_ii_abanyiginya
+		}
+		owner ?= {
+			create_character = {
+				template = RWD_kigeli_iv_abanyiginya
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = RWD_kigeli_iv_abanyiginya
+		}
+		owner ?= {
+			create_character = {
+				template = RWD_mibambwe_iv_abanyiginya
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = RWD_mibambwe_iv_abanyiginya
+		}
+		owner ?= {
+			create_character = {
+				template = RWD_yuhi_v_abanyiginya
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = RWD_yuhi_v_abanyiginya
+		}
+		owner ?= {
+			create_character = {
+				template = RWD_mutara_iii_abanyiginya
+				heir = yes
+			}
+		}
+	}
+}
+
+character_sokoto_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SOK_abu_bakr_atiku_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_ali_babba_dan_fodio
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_ali_babba_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_ahmadu_atiku_dan_fodio
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_ahmadu_atiku_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_ahmadu_rufai_dan_fodio
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_ahmadu_rufai_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_muazu_dan_fodio
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_muazu_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_umaru_dan_fodio
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_umaru_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_abd_al_rahman_dan_fodio
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_abd_al_rahman_dan_fodio
+		}
+		owner ?= {
+			create_character = {
+				template = SOK_muhammadu_attahiru_dan_fodio
+				heir = yes
+			}
+		}
+	}
+}
+
+character_hawaii_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HAW_kamehameha_iv
+		}
+		owner ?= {
+			create_character = {
+				template = HAW_kamehameha_v
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = HAW_kamehameha_v
+		}
+		owner ?= {
+			create_character = {
+				template = HAW_kalakaua
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = HAW_kalakaua
+		}
+		owner ?= {
+			create_character = {
+				template = HAW_liliuokalani
+				heir = yes
+			}
+		}
+	}
+}
+
+character_brunei_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BRU_abdul_momin_bolkiah
+		}
+		owner ?= {
+			create_character = {
+				template = BRU_hashim_jalilul_bolkiah
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BRU_hashim_jalilul_bolkiah
+		}
+		owner ?= {
+			create_character = {
+				template = BRU_muhammad_jamalul_alam_ii_bolkiah
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BRU_muhammad_jamalul_alam_ii_bolkiah
+		}
+		owner ?= {
+			create_character = {
+				template = BRU_ahmad_tajuddin_bolkiah
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BRU_ahmad_tajuddin_bolkiah
+		}
+		owner ?= {
+			create_character = {
+				template = BRU_omar_ali_saifuddien_iii
+				heir = yes
+			}
+		}
+	}
+}
+
+character_sulu_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SUL_mohammad_pulalun_kiram_sulu
+		}
+		owner ?= {
+			create_character = {
+				template = SUL_jamal_ul_azam_sulu
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SUL_jamal_ul_azam_sulu
+		}
+		owner ?= {
+			create_character = {
+				template = SUL_badarud_din_ii
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SUL_badarud_din_ii
+		}
+		owner ?= {
+			create_character = {
+				template = SUL_harun_ar_rashid
+				heir = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SUL_harun_ar_rashid
+		}
+		owner ?= {
+			create_character = {
+				template = SUL_jamalul_kiram_ii
+				heir = yes
+			}
+		}
+	}
+}
+
+character_aceh_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = ACE_alauddin_sulaiman_bugis
+		}
+		owner ?= {
+			create_character = {
+				template = ACE_alauddin_ibrahim_bugis
+				heir = yes
+			}
+		}
+	}
+}
+
+character_tibet_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = TIB_tsultrim_gyatso
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TIB_khedrup
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TIB_khedrup
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TIB_trinley
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TIB_trinley
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TIB_thubten
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_TIB_thubten
+		}
+		owner ?= {
+			create_character = {
+				template = rr_TIB_tenzin
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_papal_states_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = PAP_gregorius_cappellari
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PAP_pius_ix
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_pius_ix
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PAP_leo_XIII
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_leo_XIII
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PAP_pius_x
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_pius_x
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PAP_benedict_xv
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_benedict_xv
+		}
+		owner ?= {
+			create_character = {
+				template = rr_PAP_pius_xi
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_hungary_palatine_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HUN_joseph_of_habsburg-lorraine
+		}
+		owner ?= {
+			create_character = {
+				template = AUS_archduke_stephen
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AUS_archduke_stephen
+		}
+		owner ?= {
+			create_character = {
+				template = AUS_archduke_josef_karl
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AUS_archduke_josef_karl
+		}
+		owner ?= {
+			create_character = {
+				template = AUS_archduke_joseph_august
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AUS_archduke_joseph_august
+		}
+		owner ?= {
+			create_character = {
+				template = AUS_archduke_josef_franz
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_transylvania_governor_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = aus_ferdinand_karl_joseph_of_austria-este
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_janos_kornis
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_janos_kornis
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_jozsef_teleki
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_jozsef_teleki
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_imre_miko
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_imre_miko
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_miklos_vay
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_miklos_vay
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_ludwwig_von_wohlgemuth
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_ludwwig_von_wohlgemuth
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_karl_philipp_borromaus_zu_schwarzenberg
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_karl_philipp_borromaus_zu_schwarzenberg
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_friedrich_von_liechtenstein
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_friedrich_von_liechtenstein
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_franz_folliot_de_crenneville
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_franz_folliot_de_crenneville
+		}
+		owner ?= {
+			create_character = {
+				template = TRS_mano_pechy
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_croatia_ban_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = CRO_franjo_vlasic
+		}
+		owner ?= {
+			country_summon_character_effect = {
+				TEMPLATE = CRO_juraj_haulik
+				ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_juraj_haulik
+		}
+		owner ?= {
+			country_summon_character_effect = {
+				TEMPLATE = CRO_josip_jelacic
+				ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_josip_jelacic
+		}
+		owner ?= {
+			create_character = {
+				template = CRO_johann_baptist_coronini_cronberg
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_franz_haller
+		}
+		owner ?= {
+			create_character = {
+				template = CRO_johann_baptist_coronini_cronberg
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_johann_baptist_coronini_cronberg
+		}
+		owner ?= {
+			create_character = {
+				template = CRO_josip_sokcevic
+				ruler = yes
+			}
+		}
+	}
+}

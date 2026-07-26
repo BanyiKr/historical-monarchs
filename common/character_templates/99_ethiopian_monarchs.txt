@@ -1,0 +1,159 @@
+﻿rr_ETH_tewodros_ii = { # Tewodros II
+	first_name = Tewodros
+	last_name = Solomon
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1818.6.1
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_GONDER
+	traits = {
+		innovative
+		experienced_offensive_planner
+		traditionalist_commander
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}
+
+rr_ETH_tekle_giyorgis_ii = { # Tekle Giyorgis II
+	first_name = Tekle_Giyorgis
+	last_name = Solomon
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1836.6.1
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_GONDER
+	traits = {
+		pious
+		experienced_political_operator
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}
+
+### Tigray
+rr_TGR_yohannes_iv = { # Yohannes IV
+	first_name = Yohannes
+	last_name = Solomon
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1837.7.11
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_AMHARA
+	traits = {
+		imperious
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}
+
+###Shewa
+rr_SHW_menelik_ii = { # Menelik II
+	first_name = Menelik
+	last_name = Solomon
+	historical = yes
+	noble = yes
+	birth_date = 1844.8.17
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	home_region = STATE_OROMIA
+	traits = {
+		innovative
+		ambitious
+		tactful
+		meticulous
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}
+
+rr_ETH_zewditu = { # Zewditu
+	first_name = Zewditu
+	last_name = Solomon
+	historical = yes
+	noble = yes
+	female = yes
+	birth_date = 1876.4.29
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_OROMIA
+	traits = {
+		pious
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}
+
+rr_ETH_haile_selassie_i = { # Haile Selassie I
+	first_name = Haile_Selassie
+	last_name = Solomon
+	historical = yes
+	noble = yes
+	female = no
+	birth_date = 1892.7.23
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	home_region = STATE_OROMIA
+	traits = {
+		innovative
+		experienced_political_operator
+		experienced_diplomat
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}
+
+rr_ETH_Amha_Selassie = {
+	first_name = Amha_Selassie
+	last_name = Solomon
+	historical = yes
+	noble = yes
+	female = no
+	birth_date = 1916.7.27
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_OROMIA
+	traits = {
+		ambitious
+		persistent
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = ethiopian_emperor
+	}
+}

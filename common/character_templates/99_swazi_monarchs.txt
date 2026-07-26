@@ -1,0 +1,73 @@
+﻿SWZ_ludvonga_ii = {
+    first_name = "Ludvonga"
+    last_name = "Dlamini"
+    historical = yes
+	culture = cu:nguni
+	religion = rel:protestant
+    heir = yes
+	noble = yes
+    birth_date = 1855.1.1
+    home_region = STATE_TRANSVAAL
+    interest_group = ig_landowners
+    ideology = ideology_royalist
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+SWZ_mbandzeni = {
+    first_name = "Mbandzeni"
+    last_name = "Dlamini"
+    historical = yes
+	culture = cu:nguni
+	religion = rel:protestant
+    heir = yes
+	noble = yes
+    birth_date = 1855.1.1
+    home_region = STATE_TRANSVAAL
+    interest_group = ig_landowners
+    ideology = ideology_royalist
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+SWZ_bhunu = {
+    first_name = "Bhunu"
+    last_name = "Dlamini"
+    historical = yes
+	culture = cu:nguni
+	religion = rel:protestant
+    heir = yes
+	noble = yes
+    birth_date = 1876.5.11
+    home_region = STATE_TRANSVAAL
+    interest_group = ig_landowners
+    ideology = ideology_royalist
+	traits = {
+		cautious
+	}
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+SWZ_sobhuza_ii = {
+    first_name = "Sobhuza"
+    last_name = "Dlamini"
+    historical = yes
+	culture = cu:nguni
+	religion = rel:protestant
+    heir = yes
+	noble = yes
+    birth_date = 1899.7.22
+    home_region = STATE_TRANSVAAL
+    interest_group = ig_landowners
+    ideology = ideology_modernizer_leader
+	traits = {
+		ambitious
+	}
+    on_created = {
+		set_variable = is_married
+	}
+}

@@ -1,0 +1,37 @@
+﻿rr_KOK_muhammad_khudayar_ming = {
+	first_name = "Muhammad_Khudayar"
+	last_name = "Ming"
+	historical = yes
+	culture = cu:uzbek
+	heir = yes
+	noble = yes
+	birth_date = 1831.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_FERGANA
+	traits = {
+		ambitious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_KOK_nasruddin_ming = {
+	first_name = "Nasruddin"
+	last_name = "Ming"
+	historical = yes
+	culture = cu:uzbek
+	heir = yes
+	noble = yes
+	birth_date = 1850.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_FERGANA
+	traits = {
+		ambitious
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}

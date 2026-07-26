@@ -1,0 +1,127 @@
+﻿REPLACE:NET_willem_ii_van_oranje_nassau = {
+	# King William II of the Netherlands
+	first_name = "Willem"
+	last_name = "van_Oranje-Nassau"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1792.12.6
+	noble = yes
+	dna = dna_king_william_02
+	home_region = STATE_HOLLAND
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	traits = {
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+NET_willem_iii = {
+	# King Willem III
+	first_name = "Willem"
+	last_name = "van_Oranje-Nassau"
+	historical = yes
+	heir = yes
+	birth_date = 1817.2.19
+	dna = dna_king_william_03
+	noble = yes
+	culture = cu:dutch
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	home_region = STATE_HOLLAND
+	traits = {
+		arrogant
+		hedonist
+		imposing
+		imperious
+		cruel
+		wrathful
+	}
+}
+
+NET_prince_willem = {
+	# William, Prince of Orange
+	first_name = "Willem"
+	last_name = "van_Oranje-Nassau"
+	historical = yes
+	heir = yes
+	birth_date = 1840.9.4
+	dna = dna_prince_willem_oranje
+	noble = yes
+	culture = cu:dutch
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	home_region = STATE_HOLLAND
+	traits = {
+		hedonist
+		reckless
+		alcoholic
+	}
+}
+
+NET_prince_alexander = {
+	# Prince Alexander
+	first_name = "Alexander"
+	last_name = "van_Oranje-Nassau"
+	historical = yes
+	heir = yes
+	birth_date = 1851.8.25
+	dna = dna_prince_alexander_oranje
+	noble = yes
+	culture = cu:dutch
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	home_region = STATE_HOLLAND
+	traits = {
+		erudite
+		meticulous
+		sickly
+		reserved
+	}
+}
+
+NET_wilhelmina_i = {
+	# Queen Wilhelmina
+	first_name = "Wilhelmina"
+	last_name = "van_Oranje-Nassau"
+	historical = yes
+	female = yes
+	heir = yes
+	birth_date = 1880.8.31
+	dna = dna_queen_wilhelmina
+	noble = yes
+	culture = cu:dutch
+	interest_group = ig_industrialists
+	ideology = ideology_jingoist_leader
+	home_region = STATE_HOLLAND
+	traits = {
+		experienced_diplomat
+		tactful
+		meticulous
+		pious
+	}
+}
+
+NET_juliana_i = {
+	# Queen Juliana
+	first_name = "Juliana"
+	last_name = "van_Oranje-Nassau"
+	historical = yes
+	female = yes
+	heir = yes
+	birth_date = 1909.4.30
+	dna = dna_queen_juliana
+	noble = yes
+	culture = cu:dutch
+	interest_group = ig_devout
+	ideology = ideology_pacifist
+	home_region = STATE_HOLLAND
+	traits = {
+		erudite
+		pious
+		psychological_affliction
+	}
+}

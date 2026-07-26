@@ -1,0 +1,172 @@
+﻿REPLACE:per_mohammad_shah_qajar_template = {
+    # Mohammad Shah Qajar
+    is_general = yes
+    first_name = "Mohammad_Shah"
+    last_name = "Qajar"
+    historical = yes
+    culture = cu:azerbaijani
+    ruler = yes
+	noble = yes
+    birth_date = 1808.1.5
+    home_region = STATE_IRAKAJEMI
+    dna = dna_king_mohammad_shah_qajar
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    traits = {
+        imperious
+    }
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:per_nasir_al_din_qajar_template = {
+    # Nasir al-Din Shah
+    first_name = "Nasir_al-Din"
+    last_name = "Qajar"
+    historical = yes
+    culture = cu:azerbaijani
+    heir = yes
+	noble = yes
+    birth_date = 1831.7.16
+    home_region = STATE_IRAKAJEMI
+	dna = dna_naser_qajar
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    traits = {
+        trait_child
+    }
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
+	first_name = "Mozzafer_ed-Din"
+	last_name = "Qajar"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1853.3.25
+	culture = cu:azerbaijani
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_IRAKAJEMI
+	traits = {
+		hedonist
+		reserved
+		sickly
+		kidney_stones
+		inexperienced
+		expensive_tastes
+		aesthete
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
+	first_name = "Mohammad_Ali"
+	last_name = "Qajar"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1872.6.21
+	culture = cu:azerbaijani
+	interest_group = ig_landowners
+	ideology = ideology_authoritarian
+	home_region = STATE_IRAKAJEMI
+	traits = {
+		ambitious
+		imperious
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
+	first_name = "Ahmad"
+	last_name = "Qajar"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1898.1.21
+	culture = cu:azerbaijani
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_IRAKAJEMI
+	traits = {
+		ambitious
+		persistent
+		hedonist
+		inexperienced
+		sickly
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_PER_prince_freydoun_qajar = { # Freydoun Qajar
+	first_name = "Freydoun"
+	last_name = "Qajar"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1922.1.22
+	culture = cu:azerbaijani
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	home_region = STATE_IRAKAJEMI
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_PER_reza_pahlavi = { # Reza Shah Pahlavi
+	first_name = "Reza"
+	last_name = "Pahlavi"
+	historical = yes
+	ruler = yes
+	noble = yes
+	birth_date = 1878.3.15
+	interest_group = ig_armed_forces
+	ideology = ideology_modernizer_leader
+	culture = cu:mazanderani
+	home_region = STATE_MAZANDARAN
+	traits = {
+		ambitious
+		basic_diplomat
+		imperious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_PER_mohammad_reza_pahlavi = { # Mohammad Reza Shah Pahlavi
+	first_name = "Mohammad-Reza"
+	last_name = "Pahlavi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1919.10.26
+	interest_group = ig_industrialists
+	ideology = ideology_modernizer_leader
+	culture = cu:mazanderani
+	home_region = STATE_IRAKAJEMI
+	traits = {
+		ambitious
+		persistent
+		imperious
+		tactful
+		arrogant
+		pious
+		cruel
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

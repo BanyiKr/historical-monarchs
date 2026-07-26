@@ -1,0 +1,99 @@
+﻿REPLACE:PAP_gregorius_cappellari = { # Gregory XVI
+	first_name = "Gregorius"
+	last_name = "None"
+	historical = yes
+	ruler = yes
+	birth_date = 1765.9.18
+	dna = dna_pope_gregory_16
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	home_region = STATE_VENETIA
+	traits = {
+		imperious
+	}
+}
+
+rr_PAP_pius_ix = { # Pius IX
+	first_name = "Pius"
+	last_name = "None"
+	historical = yes
+	culture = cu:south_italian
+	birth_date = 1792.5.13
+	ruler = yes
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	home_region = STATE_UMBRIA
+	traits = {
+		reckless
+		imperious
+	}
+}
+
+rr_PAP_leo_XIII = { # Leo XIII
+	first_name = "Leo"
+	last_name = "None"
+	historical = yes
+	culture = cu:north_italian
+	birth_date = 1810.3.2
+	ig_leader = yes
+	ruler = yes
+	interest_group = ig_devout
+	ideology = ideology_corporatist_leader
+	home_region = STATE_LAZIO
+	traits = {
+		erudite
+		experienced_diplomat
+		pious
+	}
+}
+
+rr_PAP_pius_x = { # Pius X
+	first_name = "Pius"
+	last_name = "None"
+	historical = yes
+	culture = cu:north_italian
+	birth_date = 1835.6.2
+	ruler = yes
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_VENETIA
+	traits = {
+		literary
+		imperious
+	}
+}
+
+rr_PAP_benedict_xv = { # Benedict XV
+	first_name = "Benedictus"
+	last_name = "None"
+	historical = yes
+	culture = cu:north_italian
+	birth_date = 1854.11.21
+	ruler = yes
+	interest_group = ig_devout
+	ideology = ideology_pacifist
+	home_region = STATE_PIEDMONT
+	traits = {
+		literary
+		pious
+		basic_diplomat
+	}
+}
+
+rr_PAP_pius_xi = { # Pius XI
+	first_name = "Pius"
+	last_name = "None"
+	historical = yes
+	culture = cu:north_italian
+	birth_date = 1857.5.31
+	ruler = yes
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	home_region = STATE_LOMBARDY
+	traits = {
+		pious
+		direct
+		innovative
+		wrathful
+	}
+}

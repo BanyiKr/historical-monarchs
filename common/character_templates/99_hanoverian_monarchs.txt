@@ -1,0 +1,43 @@
+﻿rr_HAN_prince_ernest_august = {
+	first_name = Ernst_August
+	last_name = Hannover
+	historical = yes
+	noble = yes
+	culture = cu:north_german
+	birth_date = 1845.9.21
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_BRUNSWICK
+	traits = {
+		ambitious
+		persistent
+	}
+}
+
+rr_HAN_prince_george_william = {
+	first_name = Georg_Wilhelm
+	last_name = Hannover
+	historical = yes
+	noble = yes
+	culture = cu:north_german
+	birth_date = 1880.10.28
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_BRUNSWICK
+	traits = {
+		sickly
+	}
+}
+
+
+rr_HAN_duke_ernst_august = {
+	first_name = Ernst_August
+	last_name = Hannover
+	historical = yes
+	noble = yes
+	culture = cu:north_german
+	birth_date = 1887.11.17
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	home_region = STATE_BRUNSWICK
+}

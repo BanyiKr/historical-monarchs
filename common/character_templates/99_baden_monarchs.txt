@@ -1,0 +1,98 @@
+﻿REPLACE:BAD_leopold_von_baden = {
+	# Leopold, Grand Duke of Baden
+	first_name = "Leopold"
+	last_name = "von_Baden"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:protestant
+	age = 46
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	home_region = STATE_BADEN
+	traits = {
+		cautious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:BAD_ludwig_von_baden = {
+	# Louis II, Grande Duke of Baden
+	first_name = Ludwig
+	last_name = von_Baden
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:protestant
+	age = 12
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_BADEN
+	traits = {
+		trait_child
+		#psychological_affliction # "Nicht heilbaren Geisteskrankheit"
+	}
+}
+
+rr_BAD_frederick_i = {
+	# Frederick I, Grande Duke of Baden
+	first_name = Friedrich
+	last_name = von_Zahringen
+	historical = yes
+	culture = cu:south_german
+	religion = rel:protestant
+	noble = yes
+	birth_date = 1826.9.9
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	home_region = STATE_BADEN
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BAD_frederick_ii = {
+	# Frederick II, Grande Duke of Baden
+	first_name = Friedrich
+	last_name = von_Zahringen
+	historical = yes
+	culture = cu:south_german
+	religion = rel:protestant
+	noble = yes
+	birth_date = 1857.7.9
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_BADEN
+}
+
+rr_BAD_maximillian_of_baden = {
+	# Maximillian
+	first_name = Maximillian
+	last_name = von_Zahringen
+	historical = yes
+	culture = cu:south_german
+	religion = rel:protestant
+	noble = yes
+	birth_date = 1867.7.10
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	home_region = STATE_BADEN
+	traits = {
+		basic_political_operator
+	}
+}
+
+rr_BAD_bethold_of_baden = {
+	# Berthold
+	first_name = Berthold
+	last_name = von_Zahringen
+	historical = yes
+	culture = cu:south_german
+	religion = rel:protestant
+	noble = yes
+	birth_date = 1906.2.24
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_BADEN
+}

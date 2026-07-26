@@ -1,0 +1,80 @@
+﻿rr_OMA_turki_bin_said = { # Turki bin Said
+	first_name = "Turki"
+	last_name = "Al-Busaidi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1832.6.7
+	culture = cu:bedouin
+	religion = rel:ibadi
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OMAN
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_OMA_faisal_bin_turki = { # Faisal bin Turki
+	first_name = "Faisal"
+	last_name = "Al-Busaidi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1864.6.8
+	culture = cu:bedouin
+	religion = rel:ibadi
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OMAN
+	traits = {
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_OMA_taimur_bin_feisal = { # Taimur bin Feisal
+	first_name = "Taimur"
+	last_name = "Al-Busaidi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1886.6.8
+	culture = cu:bedouin
+	religion = rel:ibadi
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OMAN
+	traits = {
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_OMA_said_bin_taimur = { # Said bin Taimur
+	first_name = "Said"
+	last_name = "Al-Busaidi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1910.8.13
+	culture = cu:bedouin
+	religion = rel:ibadi
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OMAN
+	traits = {
+		reserved
+		erudite
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

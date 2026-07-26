@@ -1,0 +1,65 @@
+﻿character_is_german_federal_monarch = {
+    owner ?= {
+        is_german_federal_monarchy = yes
+    }
+    has_variable = ger_federal_monarch_var
+}
+
+german_federal_monarch_king_trigger = {
+	character_is_german_federal_monarch = yes
+	OR = {
+		var:ger_federal_monarch_var ?= s:STATE_BAVARIA
+		var:ger_federal_monarch_var ?= s:STATE_BRANDENBURG
+		var:ger_federal_monarch_var ?= s:STATE_SAXONY
+		var:ger_federal_monarch_var ?= s:STATE_WURTTEMBERG
+	}
+}
+
+german_federal_monarch_grand_duke_trigger = {
+	character_is_german_federal_monarch = yes
+	OR = {
+		var:ger_federal_monarch_var ?= s:STATE_BADEN
+		var:ger_federal_monarch_var ?= s:STATE_HANNOVER
+		AND = {
+			var:ger_federal_monarch_var ?= s:STATE_HESSE
+		}
+		AND = {
+			var:ger_federal_monarch_var ?= s:STATE_MECKLENBURG
+		}
+	}
+}
+
+german_federal_monarch_duke_trigger = {
+	character_is_german_federal_monarch = yes
+	OR = {
+		var:ger_federal_monarch_var ?= s:STATE_ANHALT
+		var:ger_federal_monarch_var ?= s:STATE_BRUNSWICK
+	}
+}
+
+german_federal_monarch_prince_trigger = {
+	character_is_german_federal_monarch = yes
+	OR = {
+		var:ger_federal_monarch_var ?= s:STATE_WESTPHALIA
+	}
+}
+
+is_german_federal_monarchy = {
+	country_has_monarchy_law = yes
+	country_has_non_monarchy_law = no
+	OR = {
+		c:GER ?= this
+		c:NGF ?= this
+		c:SGF ?= this
+		c:HRE ?= this
+		c:RHN ?= this
+	}
+}
+
+is_federal_monarchy = {
+	is_german_federal_monarchy = yes
+}
+
+character_is_federal_monarch = {
+	character_is_german_federal_monarch = yes	
+}

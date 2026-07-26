@@ -1,0 +1,63 @@
+﻿rr_SAR_umberto_i = { # Umberto I of Italy
+    first_name = "Umberto"
+    last_name = "di_Savoia"
+    historical = yes
+    heir = yes
+	noble = yes
+    birth_date = 1844.3.14
+	culture = cu:north_italian
+    interest_group = ig_armed_forces
+    ideology = ideology_jingoist_leader
+	home_region = STATE_PIEDMONT
+    traits = {
+        ambitious
+		traditionalist_commander
+		experienced_offensive_planner
+		imperious
+		cruel
+    }
+	on_created = {
+        set_variable = house_savoy
+    }
+}
+
+rr_SAR_victor_emmanuel_iii = { # Victor Emmanuel III of Italy
+    first_name = "Vittorio_Emanuele"
+    last_name = "di_Savoia"
+    historical = yes
+    heir = yes
+	noble = yes
+    birth_date = 1869.11.11
+	culture = cu:north_italian
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_jingoist_leader
+	home_region = STATE_CAMPANIA
+    traits = {
+        reserved
+		grifter
+    }
+	on_created = {
+        set_variable = house_savoy
+    }
+}
+
+rr_SAR_umberto_ii = { # Umberto II of Italy
+    first_name = "Umberto"
+    last_name = "di_Savoia"
+    historical = yes
+    heir = yes
+	noble = yes
+    birth_date = 1904.9.15
+	culture = cu:north_italian
+    interest_group = ig_armed_forces
+    ideology = ideology_royalist
+	home_region = STATE_PIEDMONT
+    traits = {
+        traditionalist_commander
+		basic_offensive_planner
+		arrogant
+    }
+	on_created = {
+        set_variable = house_savoy
+    }
+}

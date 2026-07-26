@@ -1,0 +1,31 @@
+﻿DFR_muhammad_iii_keira = {
+	first_name = "Muhammad"
+	last_name = "Keira"
+	historical = yes
+	culture = cu:fur
+	ruler = yes
+	noble = yes
+	age = 70
+	home_region = STATE_DARFUR
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DFR_muhammad_iv_keira = {
+	first_name = "Muhammad"
+	last_name = "Keira"
+	historical = yes
+	culture = cu:fur
+	heir = yes
+	noble = yes
+	age = 38
+	home_region = STATE_DARFUR
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}

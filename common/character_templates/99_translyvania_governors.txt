@@ -1,0 +1,185 @@
+﻿TRS_janos_kornis = {
+	# Kornis János, Governor of Transylvania
+	first_name = Janos
+	last_name = Kornis
+	historical = yes
+	culture = cu:hungarian
+	religion = rel:protestant
+	ruler = yes
+	noble = yes
+	birth_date = 1781.9.15
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_NORTHERN_TRANSYLVANIA
+	traits = {
+		master_bureaucrat
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+TRS_jozsef_teleki = {
+	# Teleki József, Governor of Transylvania
+	first_name = Jozsef
+	last_name = Teleki
+	historical = yes
+	culture = cu:hungarian
+	religion = rel:protestant
+	ruler = yes
+	noble = yes
+	birth_date = 1790.10.24
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_CENTRAL_HUNGARY
+	traits = {
+		master_bureaucrat
+		literary
+		erudite
+	}
+}
+
+TRS_imre_miko = {
+	# Mikó Imre, Governor of Transylvania
+	first_name = Imre
+	last_name = MikO_
+	historical = yes
+	culture = cu:hungarian
+	religion = rel:protestant
+	ruler = yes
+	noble = yes
+	birth_date = 1805.9.4
+	interest_group = ig_intelligentsia
+	ideology = ideology_liberal_leader
+	home_region = STATE_NORTHERN_TRANSYLVANIA
+	traits = {
+		master_bureaucrat
+		literary
+		erudite
+	}
+}
+
+TRS_miklos_vay = {
+	# Vay Miklós, Governor of Transylvania
+	first_name = MiklO_s
+	last_name = Vay
+	historical = yes
+	culture = cu:hungarian
+	religion = rel:protestant
+	ruler = yes
+	noble = yes
+	birth_date = 1805.9.4
+	interest_group = ig_devout # was only interested in religious matters
+	ideology = ideology_moderate
+	home_region = STATE_NORTHERN_TRANSYLVANIA
+	traits = {
+		master_bureaucrat
+		literary
+		erudite
+		reserved
+	}
+}
+
+TRS_ludwwig_von_wohlgemuth = {
+	# Ludwig von Wohlgemuth, Governor of Transylvania
+	first_name = Ludwig
+	last_name = von_Wohlgemuth
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1788.4.25
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_AUSTRIA
+	traits = {
+		erudite
+		traditionalist_commander
+		experienced_offensive_planner
+	}
+}
+
+TRS_karl_philipp_borromaus_zu_schwarzenberg = {
+	# Karl II, Prince of Schwarzenberg
+	first_name = Karl
+	last_name = zu_Schwarzenberg
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1802.1.21
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_AUSTRIA
+	traits = {
+		traditionalist_commander
+		experienced_artillery_commander
+		sickly
+	}
+}
+
+TRS_friedrich_von_liechtenstein = {
+	# Prince Friedrich of Lichtenstein
+	first_name = Friedrich
+	last_name = von_Liechtenstein
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1807.9.21
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_AUSTRIA
+	traits = {
+		traditionalist_commander
+		experienced_offensive_planner
+	}
+}
+
+TRS_franz_folliot_de_crenneville = {
+	# Franz Folliot de Crenneville
+	first_name = Franz_Folliot
+	last_name = de_Crenneville-Poutet
+	historical = yes
+	culture = cu:french
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1815.3.22
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_TRANSDANUBIA
+	traits = {
+		traditionalist_commander
+		experienced_offensive_planner
+	}
+}
+
+TRS_mano_pechy = {
+	# Péchy Manó, Governor of Translyvania
+	first_name = Mano
+	last_name = PE_chy
+	historical = yes
+	culture = cu:hungarian
+	religion = rel:catholic
+	ruler = yes
+	noble = yes
+	is_general = yes
+	birth_date = 1813.10.31
+	interest_group = ig_intelligentsia
+	ideology = ideology_liberal_leader
+	home_region = STATE_CENTRAL_HUNGARY
+	traits = {
+		reserved
+		literary
+		meticulous
+		master_bureaucrat
+	}
+}

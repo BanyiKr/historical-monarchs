@@ -1,0 +1,38 @@
+﻿rr_HEK_frederick_william_ii_von_hessen_kassel = {
+	first_name = Friedrich_Wilhelm
+	last_name = "von_Hessen-Kassel"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1820.11.26
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_ZEALAND
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_HEK_frederick_karl_von_hessen_kassel = {
+	first_name = Friedrich_Karl
+	last_name = von_Hessen-Kassel
+	historical = yes
+	noble = yes
+	birth_date = 1868.5.1
+	culture = cu:danish
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_ZEALAND
+}
+
+rr_HEK_wolfgang_von_hessen_kassel = {
+	first_name = Wolfgang
+	last_name = von_Hessen-Kassel
+	historical = yes
+	noble = yes
+	birth_date = 1896.11.6
+	culture = cu:danish
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	home_region = STATE_ZEALAND
+}

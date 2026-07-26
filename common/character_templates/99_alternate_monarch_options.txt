@@ -1,0 +1,371 @@
+﻿### Austrian princes
+# Polish line
+AUS_archduke_karl_stephan = {
+	# Archduke Charles Stephen of Austria
+	first_name = Karl_Stephan
+	last_name = von_Habsburg_Lothringen
+	historical = yes
+	noble = yes
+	birth_date = 1860.9.5
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_AUSTRIA
+	traits = {
+		experienced_naval_commander
+	}
+} # Heir:
+AUS_archduke_karl_albrecht = {
+	# Archduke Karl Albrecht of Austria-Teschen
+	first_name = Karl_Albrecht
+	last_name = von_Habsburg_Lothringen
+	historical = yes
+	noble = yes
+	birth_date = 1888.12.18
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_AUSTRIA
+	traits = {
+		basic_artillery_commander
+		honorable
+	}
+}
+
+# Hungarian line
+AUS_archduke_stephen = {
+	# Archduke Stephan of Austria
+	first_name = Stephan
+	last_name = von_Habsburg_Lothringen
+	historical = yes
+	noble = yes
+	birth_date = 1817.9.14
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_AUSTRIA
+	traits = {
+		erudite
+		traditionalist_commander
+	}
+} # unmarried and without issue
+AUS_archduke_josef_karl = {
+	# Archduke Joseph Karl of Austria
+	first_name = Josef_Karl
+	last_name = von_Habsburg_Lothringen
+	historical = yes
+	noble = yes
+	birth_date = 1833.3.2
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_TRANSDANUBIA
+	traits = {
+		traditionalist_commander
+	}
+}
+AUS_archduke_joseph_august = {
+	# Archduke Joseph August of Austria
+	first_name = Joseph_August
+	last_name = von_Habsburg_Lothringen
+	historical = yes
+	noble = yes
+	birth_date = 1872.8.9
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_TRANSDANUBIA
+	traits = {
+		popular_commander
+		erudite
+	}
+} # heir:
+AUS_archduke_josef_franz = {
+	# Archduke Joseph Francis of Austria
+	first_name = Josef_Franz
+	last_name = von_Habsburg_Lothringen
+	historical = yes
+	noble = yes
+	birth_date = 1895.3.28
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_TRANSDANUBIA
+}
+
+### Danish princes
+DEN_prince_valdemar = {
+	# Prince Valdemar of Denmark
+	first_name = Valdemar
+	last_name = of_Glucksburg
+	historical = yes
+	noble = yes
+	birth_date = 1858.10.27
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	culture = cu:danish
+	home_region = STATE_ZEALAND
+	traits = {
+		experienced_naval_commander
+		hedonist
+	}
+} # heir:
+DEN_prince_aage = {
+	# Prince Aage, Count of Rosenborg
+	first_name = Aage
+	last_name = of_Glucksburg
+	historical = yes
+	noble = yes
+	birth_date = 1887.6.10
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:danish
+	home_region = STATE_ZEALAND
+	traits = {
+		reckless
+
+	}
+} # heir:
+DEN_count_valdemar = {
+	# Count Valdemar of Rosenborg
+	first_name = Valdemar
+	last_name = of_Glucksburg
+	historical = yes
+	noble = yes
+	birth_date = 1915.1.3
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:danish
+	home_region = STATE_ZEALAND
+}
+
+### British princes
+GBR_prince_arthur = {
+	# Prince Arthur, Duke of Connaught
+	first_name = Arthur
+	last_name = of_Saxe-Coburg-Gotha
+	historical = yes
+	noble = yes
+	birth_date = 1850.5.1
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:british
+	home_region = STATE_HOME_COUNTIES
+	traits = {
+		traditionalist_commander
+		charismatic
+		tactful
+	}
+} # heir:
+GBR_prince_alastair = {
+	# Prince Alastair, Duke of Connaught
+	first_name = Alastair
+	last_name = of_Saxe-Coburg-Gotha
+	historical = yes
+	noble = yes
+	birth_date = 1914.8.9
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:british
+	home_region = STATE_HOME_COUNTIES
+	traits = {
+		reckless
+	}
+}
+
+### Swedish princes
+SWE_prince_gustaf = {
+	# Prince Gustaf, Duke of Uppland
+	first_name = Gustaf
+	last_name = Bernadotte
+	historical = yes
+	noble = yes
+	birth_date = 1827.6.18
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:swedish
+	home_region = STATE_SVEALAND
+	traits = {
+		erudite
+		aesthete
+	}
+}
+
+SWE_prince_august = {
+	# Prince August, Duke of Dalarna
+	first_name = August
+	last_name = Bernadotte
+	historical = yes
+	noble = yes
+	birth_date = 1831.8.24
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:swedish
+	home_region = STATE_SVEALAND
+	traits = {
+		basic_artillery_commander
+		innovative
+	}
+}
+SWE_prince_carl = {
+	# Prince Carl, Duke of Vastergotland
+	first_name = Carl
+	last_name = Bernadotte
+	historical = yes
+	noble = yes
+	birth_date = 1861.2.27
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:swedish
+	home_region = STATE_SVEALAND
+}
+SWE_prince_carl_junior = {
+	# Prince Carl, Duke of Östergötland
+	first_name = Carl
+	last_name = Bernadotte
+	historical = yes
+	noble = yes
+	birth_date = 1911.1.10
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:swedish
+	home_region = STATE_SVEALAND
+	traits = {
+		reckless
+	}
+}
+
+SWE_prince_wilhelm = {
+	# Prince Wilhelm, Duke of Söndermanland
+	first_name = Wilhelm
+	last_name = Bernadotte
+	historical = yes
+	noble = yes
+	birth_date = 1884.7.17
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	culture = cu:swedish
+	home_region = STATE_SVEALAND
+	traits = {
+		literary
+		reserved
+	}
+}
+
+### German princes
+# Reuss
+GER_Heinrich_VII_Reuss = {
+	# Heinrich VII, Prince Reuss of Köstritz
+	first_name = Heinrich
+	last_name = von_Reuss
+	historical = yes
+	noble = yes
+	birth_date = 1825.7.14
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:north_german
+	home_region = STATE_SAXONY
+	traits = {
+		experienced_diplomat
+		traditionalist_commander
+	}
+} # heir:
+GER_Heinrich_XXXII_Reuss = {
+	# Prince Heinrich XXXII Reuss of Köstritz
+	first_name = Heinrich
+	last_name = von_Reuss
+	historical = yes
+	noble = yes
+	birth_date = 1878.3.4
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	culture = cu:north_german
+	home_region = STATE_SAXONY
+	traits = {
+		basic_entrepreneur
+		persistent
+	}
+}
+GER_Heinrich_XXXIII_Reuss = {
+	# Prince Heinrich XXXIII Reuss of Köstritz
+	first_name = Heinrich
+	last_name = von_Reuss
+	historical = yes
+	noble = yes
+	birth_date = 1879.7.26
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	culture = cu:north_german
+	home_region = STATE_SAXONY
+	traits = {
+		erudite
+	}
+}
+
+# Leiningen
+hm_ernst_of_leiningen = {
+	# Ernst, Prince of Leiningen
+	first_name = Ernst
+	last_name = von_Leiningen
+	historical = yes
+	noble = yes
+	birth_date = 1830.11.9
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_FRANCONIA
+	traits = {
+		experienced_naval_commander
+	}
+}
+hm_emich_of_leiningen = {
+	# Emich, Prince of Leiningen
+	first_name = Emich
+	last_name = von_Leiningen
+	historical = yes
+	noble = yes
+	birth_date = 1866.1.18
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	culture = cu:south_german
+	home_region = STATE_FRANCONIA
+}
+
+### French princes
+# Orleanist
+FRA_prince_louis_dorleans_of_conde = {
+	# Prince Louis, Prince of Conde
+	first_name = Louis
+	last_name = d_Orleans
+	historical = yes
+	noble = yes
+	birth_date = 1845.11.15
+	interest_group = ig_armed_forces
+	ideology = ideology_orleanist
+	culture = cu:french
+	home_region = STATE_ILE_DE_FRANCE
+	traits = {
+		sickly
+	}
+	on_created = {
+		set_variable = house_orleans
+	}
+}
+FRA_duke_francous_dorleans = {
+	# Francois d'Orleans, Duke of Guise
+	first_name = Francois
+	last_name = d_Orleans
+	historical = yes
+	noble = yes
+	birth_date = 1854.1.5
+	interest_group = ig_armed_forces
+	ideology = ideology_orleanist
+	culture = cu:french
+	home_region = STATE_ILE_DE_FRANCE
+	traits = {
+		sickly
+	}
+	on_created = {
+		set_variable = house_orleans
+	}
+}

@@ -1,0 +1,10 @@
+﻿CHARACTERS = {
+	c:BRD ?= {
+		create_character = {
+			template = BRD_ntare_iv_ntwero
+		}
+		create_character = {
+			template = BRD_mwezi_iv_ntwero
+		}
+	}
+}

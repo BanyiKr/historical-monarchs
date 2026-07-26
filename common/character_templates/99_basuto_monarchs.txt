@@ -1,0 +1,71 @@
+﻿BST_Letsie_I = {
+	first_name = "Letsie"
+	last_name = "Bamokoteli"
+	historical = yes
+	culture = cu:sotho
+	religion = rel:catholic
+	heir = yes
+	noble = yes
+	birth_date = 1811.1.1
+	home_region = STATE_ZULULAND
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+BST_Lerotholi_I = {
+	first_name = "Lerotholi"
+	last_name = "Bamokoteli"
+	historical = yes
+	culture = cu:sotho
+	religion = rel:catholic
+	heir = yes
+	noble = yes
+	birth_date = 1836.1.1
+	home_region = STATE_ZULULAND
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		ambitious
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+BST_Nathaniel_Griffith = {
+	first_name = "Nathaniel"
+	last_name = "Bamokoteli"
+	historical = yes
+	culture = cu:sotho
+	religion = rel:catholic
+	heir = yes
+	noble = yes
+	birth_date = 1870.1.1
+	home_region = STATE_ZULULAND
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+BST_Simon_Seeiso_Griffith = {
+	first_name = "Seeiso"
+	last_name = "Bamokoteli"
+	historical = yes
+	culture = cu:sotho
+	religion = rel:catholic
+	heir = yes
+	noble = yes
+	birth_date = 1905.1.1
+	home_region = STATE_ZULULAND
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}

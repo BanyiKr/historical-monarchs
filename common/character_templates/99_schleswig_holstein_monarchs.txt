@@ -1,0 +1,124 @@
+﻿SCH_christian_augusti_ii = { 
+	# Duke Christian August II of Schleswig-Holstein
+	first_name = "Christian_August"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:danish
+	birth_date = 1798.7.19
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	traits = {
+		ambitious
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCH_frederik_viii = { 
+	# Duke Frederik VIII of Schleswig-Holstein
+	first_name = "Frederik"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:danish
+	birth_date = 1829.7.6
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCH_ernst_gunther_ii = { 
+	# Duke Ernst Günther II of Schleswig-Holstein
+	first_name = "Ernst_GU_nther"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:danish
+	birth_date = 1863.8.11
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCH_albert_i = { 
+	# Duke Albert of Schleswig-Holstein
+	first_name = "Albert"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:british
+	birth_date = 1869.2.26
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCH_friedrich_ferdinand = { 
+	# Duke Friedrich Ferdinand of Schleswig-Holstein
+	first_name = "Friedrich_Ferdinand"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:north_german
+	birth_date = 1855.10.12
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCH_wilhelm_friedrich = { 
+	# Duke Wilhelm Friedrich of Schleswig-Holstein
+	first_name = "Wilhelm_Friedrich"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:north_german
+	birth_date = 1891.8.23
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	traits = {
+		bigoted
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCH_peter_i = { 
+	# Duke Peter of Schleswig-Holstein
+	first_name = "Peter"
+	last_name = "of_Schleswig-Holstein-Sonderburg-Augustenburg"
+	historical = yes
+	noble = yes
+	culture = cu:north_german
+	birth_date = 1922.4.30
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	on_created = {
+		set_variable = is_married
+	}
+}

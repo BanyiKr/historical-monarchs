@@ -1,0 +1,47 @@
+﻿rr_BHN_isa_al_khalifa = {
+	first_name = "Isa"
+	last_name = "al_Khalifa"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date= 1848.11.27
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ABU_DHABI
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BHN_hamad_al_khalifa = {
+	first_name = "Hamad"
+	last_name = "al_Khalifa"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date= 1872.2.6
+	interest_group = ig_landowners
+	ideology = ideology_modernizer_leader
+	home_region = STATE_ABU_DHABI
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BHN_salman_al_khalifa = {
+	first_name = "Salman"
+	last_name = "al_Khalifa"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date= 1894.10.10
+	interest_group = ig_landowners
+	ideology = ideology_modernizer_leader
+	home_region = STATE_ABU_DHABI
+	on_created = {
+		set_variable = is_married
+	}
+}

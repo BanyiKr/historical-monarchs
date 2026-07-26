@@ -1,0 +1,95 @@
+﻿rr_ABU_tahnoun_al_nahyan = {
+	first_name = "Tahnoun"
+	last_name = "al_Nahyan"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1857.3.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ABU_DHABI
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_ABU_hamdan_al_nahyan = {
+	first_name = "Hamdan"
+	last_name = "al_Nahyan"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1862.3.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ABU_DHABI
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_ABU_sultan_al_nahyan = {
+	first_name = "Sultan"
+	last_name = "al_Nahyan"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1865.3.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ABU_DHABI
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_ABU_saqr_al_nahyan = {
+	first_name = "Saqr"
+	last_name = "al_Nahyan"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1869.3.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ABU_DHABI
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_ABU_shakhbut_al_nahyan = {
+	first_name = "Shakhbut"
+	last_name = "al_Nahyan"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1905.6.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ABU_DHABI
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_ABU_zayed_al_nahyan = {
+	first_name = "Zayed"
+	last_name = "al_Nahyan"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1918.5.6
+	interest_group = ig_intelligentsia
+	ideology = ideology_modernizer_leader
+	home_region = STATE_ABU_DHABI
+	on_created = {
+        set_variable = is_married
+    }
+}

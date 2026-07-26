@@ -1,0 +1,63 @@
+﻿rr_CHI_tongzhi = { # Tongzhi Emperor
+	first_name = "Tongzhi"
+	last_name = "Aisin_Gioro"
+	female = no
+	historical = yes
+	culture = cu:manchu
+	noble = yes
+	ideology = ideology_traditionalist
+	interest_group = ig_landowners
+	birth_date = 1856.4.27
+	home_region = STATE_BEIJING
+	traits = {
+		reserved
+		ambitious
+		sickly
+		arrogant
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_CHI_guangxu = { # Guangxu Emperor
+	first_name = "Guangxu"
+	last_name = "Aisin_Gioro"
+	female = no
+	historical = yes
+	culture = cu:manchu
+	noble = yes
+	ideology = ideology_modernizer_leader
+	interest_group = ig_intelligentsia
+	birth_date = 1871.8.14
+	home_region = STATE_BEIJING
+	traits = {
+		reserved
+		ambitious
+		inexperienced
+		direct
+		reckless
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_CHI_puyi = { # Emperor Puyi
+	first_name = "Puyi"
+	last_name = "Aisin_Gioro"
+	female = no
+	historical = yes
+	culture = cu:manchu
+	noble = yes
+	ideology = ideology_royalist
+	interest_group = ig_landowners
+	birth_date = 1906.2.7
+	home_region = STATE_BEIJING
+	traits = {
+		reserved
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}

@@ -1,0 +1,39 @@
+﻿rr_NOR_haakon_vii = { # Haakon VII of Norway
+	first_name = "Carl"
+	last_name = "of_Glucksburg"
+	historical = yes
+	noble = yes
+	birth_date = 1872.8.3
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	culture = cu:danish
+	home_region = STATE_ZEALAND
+	traits = {
+		reserved
+		honorable
+		experienced_naval_commander
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_NOR_olav_v = { # Olav V of Norway
+	first_name = "Alexander"
+	last_name = "of_Glucksburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1903.7.2
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	culture = cu:norwegian
+	home_region = STATE_EASTERN_NORWAY
+	traits = {
+		popular_commander
+		erudite
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}

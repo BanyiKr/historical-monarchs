@@ -1,0 +1,85 @@
+﻿REPLACE:GRE_george_i_of_greece = { # King Georgios I of Greece
+	first_name = Georgios
+	last_name = of_Glucksburg
+	historical = yes
+	culture = cu:danish
+	female = no
+	ruler = yes
+	noble = yes
+	dna = dna_george_i_of_greece
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	birth_date = 1845.12.24
+	home_region = STATE_ZEALAND
+	traits = {
+		basic_naval_commander
+		charismatic
+		cautious
+		basic_political_operator
+		basic_diplomat
+	}
+}
+
+rr_GRE_constantine_i = { # King Konstantinos I of Greece
+	first_name = Konstantinos
+	last_name = of_Glucksburg
+	historical = yes
+	culture = cu:greek
+	female = no
+	heir = yes
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	birth_date = 1868.8.2
+	home_region = STATE_ATTICA
+	traits = {
+		traditionalist_commander
+		imperious
+		ambitious
+		reckless
+		tactful
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_GRE_geroge_II = { # King Georgios II of Greece
+	first_name = Georgios
+	last_name = of_Glucksburg
+	historical = yes
+	culture = cu:greek
+	female = no
+	heir = yes
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	birth_date = 1890.7.19
+	home_region = STATE_ATTICA
+	traits = {
+		imperious
+		romantic
+		reserved
+	}
+}
+
+rr_GRE_paul_i = { # King Pavlos I of Greece
+	first_name = Pavlos
+	last_name = of_Glucksburg
+	historical = yes
+	culture = cu:greek
+	female = no
+	heir = yes
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	birth_date = 1901.12.14
+	home_region = STATE_ATTICA
+	traits = {
+		basic_naval_commander
+		imperious
+		ambitious
+		expensive_tastes
+		grifter
+	}
+}

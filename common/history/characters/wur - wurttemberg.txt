@@ -1,0 +1,24 @@
+﻿CHARACTERS = {
+	c:WUR ?= {
+		create_character = {
+			template = WUR_wilhelm_von_wurttemberg
+			ruler = yes
+		}	
+
+		create_character = {
+			template = WUR_karl_von_wurttemberg
+			heir = yes
+		}
+
+		#create_character = {
+		#	template = WUR_wilhelm_i_wurttemberg
+		#}
+		
+		create_character = {
+			template = WUR_prince_friedrich_von_wurttemberg
+		}
+		create_character = {
+			template = WUR_moriz_miller
+		}
+	}
+}

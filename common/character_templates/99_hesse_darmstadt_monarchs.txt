@@ -1,0 +1,79 @@
+﻿REPLACE:HES_ludwig_ii_von_hessen_darmstadt = {
+	# Louis II, Grand Duke of Hesse
+	first_name = "Ludwig"
+	last_name = "von_Hessen-Darmstadt"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 59
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_HESSE
+	traits = {
+		reserved
+		expensive_tastes
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:HES_ludwig_iii_von_hessen_darmstadt = {
+	# Louis III, Grand Duke of Hesse. You'll never guess what his successor's name was!
+	first_name = Ludwig
+	last_name = "von_Hessen-Darmstadt"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 30
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_HESSE
+	traits = {
+		tactful
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_HES_ludwig_iv_von_hessen_darmstadt = {
+	# Louis IV, Grand Duke of Hesse
+	first_name = Ludwig
+	last_name = "von_Hessen-Darmstadt"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1837.9.12
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_HESSE
+}
+
+rr_HES_ernst_ludwig_i_von_hessen_darmstadt = {
+	# Ernest Louis I, Grand Duke of Hesse
+	first_name = Ernst_Ludwig
+	last_name = "von_Hessen-Darmstadt"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1868.11.25
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_HESSE
+	traits = {
+		aesthete
+	}
+}
+
+rr_HES_georg_donatus_i_von_hessen_darmstadt = {
+	# Georg Donatus I, Grand Duke of Hesse
+	first_name = Georg_Donatus
+	last_name = "von_Hessen-Darmstadt"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1906.11.8
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_HESSE
+}

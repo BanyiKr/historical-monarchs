@@ -1,0 +1,640 @@
+﻿belgium_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1859.6.12
+			game_date < 1869.1.22
+			NOT = { is_template_used = BEL_Prince_Leopold }
+			ruler ?= {
+				has_template = BEL_leopold_II_saxe_coburg_gotha_template
+			}
+		}
+		create_character = {
+			template = BEL_Prince_Leopold
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.1.22
+			game_date < 1905.11.17
+			NOT = { is_template_used = BEL_Prince_Philippe }
+			ruler ?= {
+				has_template = BEL_leopold_II_saxe_coburg_gotha_template
+			}
+		}
+		create_character = {
+			template = BEL_Prince_Philippe
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1905.11.17
+			NOT = { is_template_used = BEL_albert_i }
+			ruler ?= {
+				has_template = BEL_leopold_II_saxe_coburg_gotha_template
+			}
+		}
+		create_character = {
+			template = BEL_albert_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.6.3
+			game_date < 1891.1.23
+			NOT = { is_template_used = BEL_Prince_Baudouin }
+			ruler ?= {
+				has_template = BEL_Prince_Philippe
+			}
+		}
+		create_character = {
+			template = BEL_Prince_Baudouin
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1901.11.03
+			NOT = { is_template_used = BEL_leopold_iii }
+			ruler ?= {
+				has_template = BEL_albert_i
+			}
+		}
+		create_character = {
+			template = BEL_leopold_iii
+			heir = yes
+		}
+	}
+}
+
+netherlands_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1840.9.4
+			game_date < 1879.7.11
+			NOT = { is_template_used = NET_prince_willem }
+			ruler ?= {
+				has_template = NET_willem_iii
+			}
+		}
+		create_character = {
+			template = NET_prince_willem
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1879.7.11
+			game_date < 1884.6.21
+			NOT = { is_template_used = NET_prince_alexander }
+			ruler ?= {
+				has_template = NET_willem_iii
+			}
+		}
+		create_character = {
+			template = NET_prince_alexander
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1884.6.21
+			NOT = { is_template_used = NET_wilhelmina_i }
+			ruler ?= {
+				has_template = NET_willem_iii
+			}
+		}
+		create_character = {
+			template = NET_wilhelmina_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1909.4.30
+			NOT = { is_template_used = NET_juliana_i }
+			ruler ?= {
+				has_template = NET_wilhelmina_i
+			}
+		}
+		create_character = {
+			template = NET_juliana_i
+			heir = yes
+		}
+	}
+}
+
+denmark_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1818.4.8
+			NOT = { is_template_used = DEN_christian_ix }
+			ruler ?= {
+				has_template = DEN_frederik_vii
+			}
+		}
+		create_character = {
+			template = DEN_christian_ix
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date < 1843.6.3
+			NOT = { is_template_used = DEN_prince_julius }
+			ruler ?= {
+				has_template = DEN_christian_ix
+			}
+		}
+		create_character = {
+			template = DEN_prince_julius
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1843.6.3
+			NOT = { is_template_used = DEN_frederik_viii }
+			ruler ?= {
+				has_template = DEN_christian_ix
+			}
+		}
+		create_character = {
+			template = DEN_frederik_viii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1858.10.27
+			game_date < 1870.9.26
+			NOT = { is_template_used = DEN_prince_valdemar }
+			ruler ?= {
+				has_template = DEN_frederik_viii
+			}
+		}
+		create_character = {
+			template = DEN_prince_valdemar
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1870.9.26
+			NOT = { is_template_used = DEN_christian_x }
+			ruler ?= {
+				has_template = DEN_frederik_viii
+			}
+		}
+		create_character = {
+			template = DEN_christian_x
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1886.9.26
+			game_date < 1899.3.11
+			NOT = { is_template_used = rr_NOR_haakon_vii }
+			ruler ?= {
+				has_template = DEN_christian_x
+			}
+		}
+		create_character = {
+			template = rr_NOR_haakon_vii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1899.3.11
+			NOT = { is_template_used = DEN_frederik_ix }
+			ruler ?= {
+				has_template = DEN_christian_x
+			}
+		}
+		create_character = {
+			template = DEN_frederik_ix
+			heir = yes
+		}
+	}
+}
+
+luxembourg_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1852.4.22
+			game_date <= 1912.2.25
+			NOT = { has_variable = william_iv_heir_var }
+			ruler ?= {
+				has_template = NAS_adolf_von_nassau_weilburg
+			}
+		}
+		set_variable = william_iv_heir_var
+		create_character = {
+			template = LUX_william_iv
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1912.2.25
+			NOT = { has_variable = marie_adelaide_heir_var }
+			ruler ?= {
+				has_template = NAS_adolf_von_nassau_weilburg
+			}
+		}
+		set_variable = marie_adelaide_heir_var
+		create_character = {
+			template = LUX_marie_adelaide_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1894.6.14
+			game_date < 1924.1.24
+			NOT = { has_variable = marie_adelaide_heir_var }
+			ruler ?= {
+				has_template = LUX_william_iv
+			}
+		}
+		set_variable = marie_adelaide_heir_var
+		create_character = {
+			template = LUX_marie_adelaide_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1924.1.24
+			NOT = { has_variable = charlotte_heir_var }
+			ruler ?= {
+				has_template = LUX_william_iv
+			}
+		}
+		set_variable = charlotte_heir_var
+		create_character = {
+			template = LUX_charlotte_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1896.1.23
+			NOT = { has_variable = charlotte_heir_var }
+			ruler ?= {
+				has_template = LUX_marie_adelaide_i
+			}
+		}
+		set_variable = charlotte_heir_var
+		create_character = {
+			template = LUX_charlotte_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1897.2.15
+			game_date < 1921.1.5
+			NOT = { has_variable = hilda_heir_var }
+			ruler ?= {
+				has_template = LUX_charlotte_i
+			}
+		}
+		set_variable = hilda_heir_var
+		create_character = {
+			template = LUX_princess_hilda
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1921.1.5
+			NOT = { has_variable = jean_heir_var }
+			ruler ?= {
+				has_template = LUX_charlotte_i
+			}
+		}
+		set_variable = jean_heir_var
+		create_character = {
+			template = LUX_jean_i
+			heir = yes
+		}
+	}
+}
+
+ottoman_empire_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date > 1842.2.8
+			game_date < 1876.5.30
+			NOT = { has_variable = abdulaziz_heir_var }
+			ruler ?= {
+				has_template = tur_abdulmecid_osmanoglu_template
+			}
+		}
+		set_variable = abdulaziz_heir_var
+		create_character = {
+			template = tur_abdulaziz_osmanoglu_template
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date > 1840.9.21
+			game_date < 1876.8.31
+			NOT = { has_variable = murad_v_heir_var }
+			ruler ?= {
+				has_template = tur_abdulaziz_osmanoglu_template
+			}
+		}
+		set_variable = murad_v_heir_var
+		create_character = {
+			template = tur_murad_v_osmanoglu_template
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date > 1842.9.21
+			game_date < 1909.4.27
+			NOT = { has_variable = abdulhamid_ii_heir_var }
+			ruler ?= {
+				has_template = tur_murad_v_osmanoglu_template
+			}
+		}
+		set_variable = abdulhamid_ii_heir_var
+		create_character = {
+			template = tur_abdulhamid_ii_osmanoglu_template
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date > 1844.11.2
+			game_date < 1918.6.3
+			NOT = { has_variable = reshad_heir_var }
+			ruler ?= {
+				has_template = tur_abdulhamid_ii_osmanoglu_template
+			}
+		}
+		set_variable = reshad_heir_var
+		create_character = {
+			template = tur_reshad_osmanoglu_template
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date > 1861.1.14
+			game_date < 1922.11.1
+			NOT = { has_variable = vahideddin_heir_var }
+			ruler ?= {
+				has_template = tur_reshad_osmanoglu_template
+			}
+		}
+		set_variable = vahideddin_heir_var
+		create_character = {
+			template = tur_vahideddin_osmanoglu_template
+			heir = yes
+		}
+	}
+}
+
+russia_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1843.9.8
+			game_date < 1848.1.1
+			NOT = { is_template_used = RUS_tsarevich_nicholas_alexandrovich }
+			ruler ?= {
+				has_template = RUS_alexander_ii
+			}
+		}
+		create_character = {
+			template = RUS_tsarevich_nicholas_alexandrovich
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1848.1.1
+			NOT = { is_template_used = RUS_alexander_iii }
+			ruler ?= {
+				has_template = RUS_alexander_ii
+			}
+		}
+		create_character = {
+			template = RUS_alexander_iii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1848.1.1
+			NOT = { is_template_used = RUS_alexander_iii }
+			ruler ?= {
+				has_template = RUS_tsarevich_nicholas_alexandrovich
+			}
+		}
+		create_character = {
+			template = RUS_alexander_iii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.1.1
+			NOT = { is_template_used = RUS_nicholas_ii }
+			ruler ?= {
+				has_template = RUS_alexander_iii
+			}
+		}
+		create_character = {
+			template = RUS_nicholas_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date < 1895.1.1
+			game_date >= 1871.1.1
+			NOT = { is_template_used = RUS_george_i }
+			ruler ?= {
+				has_template = RUS_nicholas_ii
+			}
+		}
+		create_character = {
+			template = RUS_george_i
+			heir = yes
+		}
+	}
+}
+
+serbia_generate_scripted_heirs = {
+	# Obrenovic
+	if = {
+		limit = {
+			game_date >= 1854.8.22
+			NOT = { is_template_used = SER_milan_iv_obrenovic }
+			ruler ?= {
+				has_template = SER_mihailo_obrenovic
+			}
+		}
+		create_character = {
+			template = SER_milan_iv_obrenovic
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1876.8.14
+			NOT = { is_template_used = SER_alexander_obrenovic }
+			ruler ?= {
+				has_template = SER_milan_iv_obrenovic
+			}
+		}
+		create_character = {
+			template = SER_alexander_obrenovic
+			heir = yes
+		}
+	}
+	# Karadordevic
+	else_if = {
+		limit = {
+			game_date >= 1844.8.14
+			NOT = { is_template_used = SER_petar_i_karadordevic }
+			ruler ?= {
+				has_template = SER_alexandar_karadordevic
+			}
+		}
+		create_character = {
+			template = SER_petar_i_karadordevic
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1887.9.8
+			NOT = { is_template_used = SER_george_karadordevic }
+			ruler ?= {
+				has_template = SER_petar_i_karadordevic
+			}
+		}
+		create_character = {
+			template = SER_george_karadordevic
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1888.12.16
+			NOT = { is_template_used = SER_alexander_i_karadordevic }
+			ruler ?= {
+				has_template = SER_george_karadordevic
+			}
+		}
+		create_character = {
+			template = SER_alexander_i_karadordevic
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1923.9.6
+			NOT = { is_template_used = SER_petar_ii_karadordevic }
+			ruler ?= {
+				has_template = SER_alexander_i_karadordevic
+			}
+		}
+		create_character = {
+			template = SER_petar_ii_karadordevic
+			heir = yes
+		}
+	}
+}
+
+morocco_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1894.6.9
+			NOT = { is_template_used = MOR_abdelaziz_al_alawi }
+			ruler ?= {
+				has_template = MOR_muhammad_al_alawi
+			}
+		}
+		create_character = {
+			template = MOR_abdelaziz_al_alawi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1881.9.21
+			NOT = { is_template_used = MOR_abdelaziz_al_alawi }
+			ruler ?= {
+				has_template = MOR_hasan_al_alawi
+			}
+		}
+		create_character = {
+			template = MOR_abdelaziz_al_alawi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1875.2.24
+			NOT = { is_template_used = MOR_abd_alhafid_al_alawi }
+			ruler ?= {
+				has_template = MOR_abdelaziz_al_alawi
+			}
+		}
+		create_character = {
+			template = MOR_abd_alhafid_al_alawi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date < 1927.11.17
+			game_date > 1881.1.1
+			NOT = { is_template_used = MOR_yusef_al_alawi }
+			ruler ?= {
+				has_template = MOR_abd_alhafid_al_alawi
+			}
+		}
+		create_character = {
+			template = MOR_yusef_al_alawi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1927.11.17
+			NOT = { is_template_used = MOR_muhammad_v_al_alawi }
+			ruler ?= {
+				has_template = MOR_abd_alhafid_al_alawi
+			}
+		}
+		create_character = {
+			template = MOR_muhammad_v_al_alawi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date > 1909.8.10
+			NOT = { is_template_used = MOR_muhammad_v_al_alawi }
+			ruler ?= {
+				has_template = MOR_yusef_al_alawi
+			}
+		}
+		create_character = {
+			template = MOR_muhammad_v_al_alawi
+			heir = yes
+		}
+	}
+}

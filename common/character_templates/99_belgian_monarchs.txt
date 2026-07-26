@@ -1,0 +1,127 @@
+﻿REPLACE:BEL_leopold_II_saxe_coburg_gotha_template = {
+	# Leopold II
+    first_name = "Leopold"
+    last_name = "of_Saxe-Coburg-Gotha"
+    historical = yes
+    culture = cu:wallonian
+    heir = yes
+	noble = yes
+    dna = dna_leopold_ii
+    birth_date = 1835.4.9
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_jingoist_leader
+    home_region = STATE_FLANDERS
+    traits = {
+		ruthless
+        bigoted
+		ambitious
+    }
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+BEL_Prince_Leopold = { # Prince Leopold
+	first_name = "Leopold"
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_prince_leopold_belgium
+	birth_date = 1859.6.12
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_child
+	culture = cu:wallonian
+    home_region = STATE_FLANDERS
+	traits = {
+		trait_child
+		sickly
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+BEL_Prince_Philippe = { # Prince Philippe
+	first_name = "Philippe"
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_prince_philippe_belgium
+	birth_date = 1837.3.24
+	interest_group = ig_armed_forces
+	ideology = ideology_reformer
+	culture = cu:wallonian
+    home_region = STATE_FLANDERS
+	traits = {
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+BEL_Prince_Baudouin = { # Prince Baudouin
+	first_name = "Baudouin"
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_prince_baudouin_belgium
+	birth_date = 1869.6.3
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:wallonian
+    home_region = STATE_FLANDERS
+	traits = {
+		honorable
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+BEL_albert_i = { # Albert I of Belgium
+	first_name = "Albert"
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_king_albert_01
+	birth_date = 1875.4.8
+	interest_group = ig_trade_unions
+	ideology = ideology_royalist
+	culture = cu:wallonian
+    home_region = STATE_FLANDERS
+	traits = {
+		pious
+		tactful
+		charismatic
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+BEL_leopold_iii = { # Leopold III of Belgium
+	first_name = "Leopold"
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_king_leopold_03
+	birth_date = 1875.4.8
+	interest_group = ig_armed_forces
+	ideology = ideology_pacifist
+	culture = cu:wallonian
+    home_region = STATE_FLANDERS
+	traits = {
+		reserved
+		grifter
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}

@@ -1,0 +1,56 @@
+﻿rr_ZAI_al_hadi_muhammad_al_qasim = {
+	first_name = "al-Hadi_Muhammad"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1798.1.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_ZAI_al_mansur_ali_al_qasim = {
+	first_name = "Al-Mansur_Ali"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1812.1.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_ZAI_al_mansur_muhammad_al_qasim = {
+	first_name = "al-Mansur_Muhammad"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1802.12.16
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

@@ -1,0 +1,103 @@
+﻿REPLACE:BAV_ludwig_i_von_bayern = {
+    first_name = "Ludwig_I"
+    last_name = "von_Bayern"
+    historical = yes
+	noble = yes
+    culture = primary_culture
+    age = 50
+    dna = dna_ludwig_von_bayern
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_BAVARIA
+    traits = {
+        romantic
+    }
+}
+
+REPLACE:BAV_maximillian_von_bayern = {
+    first_name = "Maximilian"
+    last_name = "von_Bayern"
+    historical = yes
+	noble = yes
+    culture = primary_culture
+    age = 25
+    dna = dna_maximillian_von_bayern
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    traits = {
+        tactful
+    }
+}
+
+rr_BAV_ludwig_ii = {
+    first_name = "Ludwig"
+    last_name = "von_Bayern"
+    historical = yes
+    culture = cu:south_german
+    noble = yes
+	birth_date = 1845.8.25
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    traits = {
+        reserved
+		aesthete
+		expensive_tastes
+		hedonist
+    }
+}
+
+rr_BAV_otto_i = {
+    first_name = "Otto"
+    last_name = "von_Bayern"
+    historical = yes
+    culture = cu:south_german
+    noble = yes
+	birth_date = 1848.4.27
+    interest_group = ig_armed_forces
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    traits = {
+        psychological_affliction
+		shellshocked
+		syphilis
+    }
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BAV_ludwig_iii = {
+    first_name = "Ludwig"
+    last_name = "von_Bayern"
+    historical = yes
+    culture = cu:south_german
+    noble = yes
+	birth_date = 1845.1.7
+    interest_group = ig_devout
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    traits = {
+        innovative
+		pious
+    }
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BAV_prince_rupprecht = {
+    first_name = "Rupprecht"
+    last_name = "von_Bayern"
+    historical = yes
+    culture = cu:south_german
+    noble = yes
+	birth_date = 1869.5.18
+    interest_group = ig_intelligentsia
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    traits = {
+        basic_offensive_planner
+    }
+}

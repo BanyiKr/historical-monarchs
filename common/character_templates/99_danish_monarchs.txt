@@ -1,0 +1,151 @@
+﻿REPLACE:DEN_christian_von_oldenburg = {
+	# the future Christian VIII of Denmark, half-first-cousin of Frederick VI
+	first_name = "Christian"
+	last_name = "von_Oldenburg"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	dna = dna_king_christian_08
+	noble = yes
+	birth_date = 1786.9.18
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ZEALAND
+	traits = {
+		basic_political_operator
+		cautious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DEN_frederik_vii = { # Frederik VII of Denmark
+	first_name = "Frederik"
+	last_name = "von_Oldenburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = cu:danish
+	dna = dna_king_fredrick_07
+	birth_date = 1808.10.6
+	interest_group = ig_intelligentsia
+	ideology = ideology_liberal_leader
+	home_region = STATE_ZEALAND
+	traits = {
+		hedonist
+		imperious
+		alcoholic
+		charismatic
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DEN_christian_ix = { # Christian IX of Denmark
+	first_name = "Christian"
+	last_name = "von_Glucksburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = cu:danish
+	dna = dna_king_christian_09
+	birth_date = 1818.4.8
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	traits = {
+		honorable
+		traditionalist_commander
+		reckless
+		imperious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DEN_prince_julius = { # Prince Julius of Glücksburg
+	first_name = "Julius"
+	last_name = "von_Glucksburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = cu:danish
+	dna = dna_prince_julius
+	birth_date = 1824.10.14
+	interest_group = ig_landowners
+	ideology = ideology_authoritarian
+	home_region = STATE_SCHLESWIG_HOLSTEIN
+	traits = {
+		basic_political_operator
+		reckless
+		imperious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DEN_frederik_viii = { # Frederik VIII of Denmark
+	first_name = "Frederik"
+	last_name = "von_Glucksburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_king_frederick_08
+	culture = cu:danish
+	birth_date = 1843.6.3
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	home_region = STATE_ZEALAND
+	traits = {
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DEN_christian_x = { # Christian X of Denmark
+	first_name = "Christian"
+	last_name = "von_Glucksburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_king_christian_10
+	culture = cu:danish
+	birth_date = 1870.9.26
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	home_region = STATE_ZEALAND
+	traits = {
+		imperious
+		arrogant
+		reckless
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+DEN_frederik_ix = { # Frederik IX of Denmark
+	first_name = "Frederik"
+	last_name = "von_Glucksburg"
+	historical = yes
+	heir = yes
+	noble = yes
+	dna = dna_king_frederick_09
+	culture = cu:danish
+	birth_date = 1899.3.11
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	home_region = STATE_ZEALAND
+	traits = {
+		basic_naval_commander
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

@@ -1,0 +1,20 @@
+﻿hm_scripted_deaths = {
+	default = enable_scripted_deaths
+
+	enable_scripted_deaths = {
+	}
+
+	disable_scripted_deaths = {
+	}
+}
+
+# Obsolete
+#hm_heir_generation = {
+#	default = aggressive_heir_generation
+#
+#	aggressive_heir_generation = {
+#	}
+#
+#	historical_heir_generation = {
+#	}
+#}

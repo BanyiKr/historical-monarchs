@@ -1,0 +1,35 @@
+﻿REPLACE:politician_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		AND = {
+			has_role_of_type = politician
+			is_ruler_of_own_country = no
+			character_is_federal_monarch = no
+		}
+	}
+}
+
+REPLACE:monarchy_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = owner
+		NOT = { culture = cu:griqua } # Griqua captains wear plainer clothing
+		OR = {
+			AND = {
+				OR = {
+					is_female = yes # Female Regents wear more stylish clothes than male ones, as female regents trend towards being royals themselves
+					owner ?= { has_gov_regency = no }
+				}
+				is_ruler_of_own_country = yes
+			}
+	     	is_heir_of_own_country = yes
+			character_is_federal_monarch = yes
+		}
+     	owner = {
+			OR = {
+     			has_law = law_type:law_monarchy
+     			has_law = law_type:law_social_monarchy
+			}
+     	}
+	}
+}

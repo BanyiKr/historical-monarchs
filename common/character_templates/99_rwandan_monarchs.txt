@@ -1,0 +1,107 @@
+﻿RWD_yuhi_iv_abanyiginya = {
+	first_name = "Yuhi"
+	last_name = "Abanyiginya"
+	historical = yes
+	culture = cu:ruanda
+	ruler = yes
+	age = 66 # Unknown
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+RWD_mutara_ii_abanyiginya = {
+	first_name = "Mutara"
+	last_name = "Abanyiginya"
+	historical = yes
+	culture = cu:ruanda
+	heir = yes
+	age = 34
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+RWD_kigeli_iv_abanyiginya = {
+	first_name = "Kigeli"
+	last_name = "Abanyiginya"
+	historical = yes
+	culture = cu:ruanda
+	heir = yes
+	birth_date = 1840.1.1
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	traits = {
+		innovative
+		basic_defensive_strategist
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+RWD_mibambwe_iv_abanyiginya = {
+	first_name = "Mibambwe"
+	last_name = "Abanyiginya"
+	historical = yes
+	culture = cu:ruanda
+	heir = yes
+	birth_date = 1859.1.1 # Unknown
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+RWD_yuhi_v_abanyiginya = {
+	first_name = "Yuhi"
+	last_name = "Abanyiginya"
+	historical = yes
+	culture = cu:ruanda
+	heir = yes
+	birth_date = 1883.1.1
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+RWD_mutara_iii_abanyiginya = {
+	first_name = "Mutara"
+	last_name = "Abanyiginya"
+	historical = yes
+	culture = cu:ruanda
+	religion = rel:catholic
+	heir = yes
+	birth_date = 1911.3.1
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	traits = {
+		charismatic
+		compliant
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

@@ -1,0 +1,204 @@
+﻿REPLACE:MOL_mihail_sturdza = {
+	# Mihail Sturdza, Prince of Moldavia
+	first_name = "Mihail"
+	last_name = "Sturdza"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	age = 41
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_royalist			# politically liberal for his time and position
+	home_region = STATE_MOLDAVIA
+	traits = {
+		meticulous
+	}
+}
+
+MOL_alexandru_cuza = { # Domnitor Alexandru Ioan Cuza
+	first_name = Alexandru_Ioan
+	last_name = Cuza
+	historical = yes
+	culture = primary_culture
+	birth_date = 1820.3.20
+	noble = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_authoritarian
+	home_region = STATE_MOLDAVIA
+	traits = {
+		imperious
+		ambitious
+		basic_political_operator
+		romantic
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+MOL_alexandru_cuza_jr = { # Son of Domnitor Alexandru Ioan Cuza
+	first_name = Alexandru_Ioan
+	last_name = Cuza
+	historical = yes
+	culture = primary_culture
+	birth_date = 1863.6.20 # between 1862 and 1864
+	noble = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_authoritarian
+	home_region = STATE_MOLDAVIA
+	traits = {
+		erudite
+		grifter
+	}
+}
+
+MOL_grigore_alexandru_ghica = { # Prince Grigore Alexandru Ghica
+	first_name = Grigore_Alexandru
+	last_name = Ghica
+	historical = yes
+	culture = primary_culture
+	age = 30
+	noble = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_abolitionist
+	home_region = STATE_MOLDAVIA
+	traits = {
+		experienced_political_operator
+		direct
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+REPLACE:WAL_alexandru_ghica = {
+	# Alexandru Ghica, Prince of Wallachia
+	first_name = "Alexandru"
+	last_name = "Ghica"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	age = 39
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_abolitionist
+	home_region = STATE_WALLACHIA
+	traits = {
+		cautious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+WAL_gheorghe_bibescu = { # Prince Gheorghe Bibescu
+	first_name = Gheorghe
+	last_name = Bibescu
+	historical = yes
+	birth_date = 1804.4.26
+	culture = primary_culture
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_authoritarian
+	home_region = STATE_WALLACHIA
+	traits = {
+		imperious
+		basic_diplomat
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+WAL_barbu_dimitrie_stribei = { # Prince Barbu Dimitrie Stribei
+	first_name = Barbu_Dimitrie
+	last_name = Stribei
+	historical = yes
+	culture = primary_culture
+	birth_date = 1799.8.13
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_abolitionist
+	home_region = STATE_WALLACHIA
+	traits = {
+		ambitious
+		cautious
+		experienced_political_operator
+	}
+	
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+ROM_carol_i = { # King Carol I
+	first_name = Karl
+	last_name = von_Hohenzollern_Sigmaringen
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	birth_date = 1839.4.20
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_WURTTEMBERG
+	traits = {
+		traditionalist_commander
+		meticulous
+		ambitious
+	}
+}
+
+ROM_ferdinand_i = { # King Ferdinand I
+	first_name = Ferdinand
+	last_name = von_Hohenzollern_Sigmaringen
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	birth_date = 1865.8.24
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_WURTTEMBERG
+	traits = {
+		tactful
+		honorable
+	}
+}
+
+ROM_carol_ii = { # King Carol II
+	first_name = Carol
+	last_name = of_Hohenzollern_Sigmaringen
+	historical = yes
+	culture = cu:romanian
+	birth_date = 1893.10.15
+	noble = yes
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_authoritarian
+	home_region = STATE_WALLACHIA
+	traits = {
+		hedonist
+		imperious
+		ambitious
+		charismatic
+		reckless
+		alcoholic
+	}
+}
+
+ROM_mihai_i = { # King Michael I
+	first_name = Mihai
+	last_name = of_Hohenzollern_Sigmaringen
+	historical = yes
+	culture = cu:romanian
+	birth_date = 1921.10.25
+	noble = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	home_region = STATE_WALLACHIA
+	traits = {
+		reckless
+		romantic
+	}
+}

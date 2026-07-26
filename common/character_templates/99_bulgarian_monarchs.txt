@@ -1,0 +1,145 @@
+﻿rr_BUL_alexander_i = { # Prince Alexander I von Battenberg of Bulgaria
+	first_name = Alexander
+	last_name = von_Battenberg
+	historical = yes
+	culture = cu:north_german
+	ruler = yes
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	birth_date = 1857.8.5
+	home_region = STATE_HESSE
+	traits = {
+		popular_commander
+		imperious
+		ambitious
+	}
+} # heir:
+rr_BUL_assen_hartenau = {
+	first_name = Assen
+	last_name = of_Battenberg
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	birth_date = 1890.1.16
+	home_region = STATE_BULGARIA
+	traits = {
+		erudite
+	}
+}
+
+rr_BUL_Alexander_Bogoridi = {
+	first_name = Alexander
+	last_name = Bogoridi
+	historical = yes
+	culture = cu:bulgarian
+	noble = yes
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_market_liberal
+	birth_date = 1822.4.5
+	home_region = STATE_EASTERN_THRACE
+	traits = {
+		master_bureaucrat
+		experienced_political_operator
+		basic_diplomat
+	}
+} # heir:
+rr_BUL_Emanoil_Bogoridi = {
+	first_name = Emanoil
+	last_name = Vogoride-Conachi
+	historical = yes
+	culture = cu:romanian
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	birth_date = 1847.4.10
+	home_region = STATE_MOLDAVIA
+	traits = {
+		expensive_tastes
+		ambitious
+	}
+}
+rr_BUL_Constanin_Bogoridi = {
+	first_name = Constantin
+	last_name = Vogoride-Conachi
+	historical = yes
+	culture = cu:romanian
+	female = no
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	birth_date = 1849.4.10
+	home_region = STATE_MOLDAVIA
+}
+
+hm_niko_dadiani = {
+	first_name = Nikoloz
+	last_name = Dadiani
+	historical = yes
+	culture = cu:georgian
+	noble = yes
+	birth_date = 1847.1.4
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_GREATER_CAUCASUS
+	traits = {
+		expensive_tastes
+	}
+} # heir:
+hm_prince_nikolay = {
+	first_name = Nikoloz
+	last_name = Dadiani
+	historical = yes
+	culture = cu:georgian
+	noble = yes
+	birth_date = 1876.12.30
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_GREATER_CAUCASUS
+}
+
+rr_BUL_ferdinand_i = { # Tsar Ferdinand I von Saxe-Coburg-Gotha of Bulgaria
+	first_name = Ferdinand
+	last_name = of_Saxe-Coburg-Gotha-KohA_ry
+	historical = yes
+	culture = cu:south_german
+	ruler = yes
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	birth_date = 1861.2.26
+	home_region = STATE_AUSTRIA
+	traits = {
+		traditionalist_commander
+		arrogant
+		hedonist
+		romantic
+		expensive_tastes
+		cruel
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+rr_BUL_boris_iii = { # Tsar Boris III von Saxe-Coburg-Gotha of Bulgaria
+	first_name = Boris
+	last_name = of_Saxe-Coburg-Gotha-KohA_ry
+	historical = yes
+	culture = cu:bulgarian
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_authoritarian
+	birth_date = 1894.1.30
+	home_region = STATE_BULGARIA
+	traits = {
+		imperious
+		basic_political_operator
+		basic_diplomat
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}

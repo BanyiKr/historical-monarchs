@@ -1,0 +1,42 @@
+﻿MST_adolf_friedrich_v_von_mecklenburg_strelitz = {
+	first_name = "Adolf_Friedrich"
+	last_name = "von_Mecklenburg-Strelitz"
+	historical = yes
+	culture = cu:north_german
+	birth_date = 1848.7.22
+	noble = yes
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+}
+
+MST_adolf_friedrich_vi_von_mecklenburg_strelitz = {
+	first_name = "Adolf_Friedrich"
+	last_name = "von_Mecklenburg-Strelitz"
+	historical = yes
+	culture = cu:north_german
+	birth_date = 1882.6.17
+	noble = yes
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+	traits = {
+		aesthete
+		reserved
+	}
+}
+
+MST_carl_michael_von_mecklenburg_strelitz = {
+	first_name = "Carl_Michael"
+	last_name = "von_Mecklenburg-Strelitz"
+	historical = yes
+	culture = cu:north_german
+	birth_date = 1863.6.17
+	noble = yes
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+	traits = {
+		erudite
+	}
+}

@@ -1,0 +1,102 @@
+﻿rr_SIA_mogkut = { 
+	first_name = "Mongkut"
+	last_name = "Chakri"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1804.10.18
+	culture = cu:thai
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	home_region = STATE_BANGKOK
+	traits = {
+		innovative
+		erudite
+		pious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SIA_chulalongkorn = {
+	first_name = "Chulalongkorn"
+	last_name = "Chakri"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1853.9.20
+	culture = cu:thai
+	interest_group = ig_armed_forces
+	ideology = ideology_abolitionist
+	home_region = STATE_BANGKOK
+	traits = {
+		erudite
+		reserved
+		tactful
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SIA_vajiravudh = {
+	first_name = "Vajiravudh"
+	last_name = "Chakri"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1881.1.1
+	culture = cu:thai
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_BANGKOK
+	traits = {
+		erudite
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SIA_prajadhipok = {
+	first_name = "Prajadhipok"
+	last_name = "Chakri"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1893.11.8
+	culture = cu:thai
+	interest_group = ig_armed_forces
+	ideology = ideology_humanitarian_royalist
+	home_region = STATE_BANGKOK
+	traits = {
+		erudite
+		basic_defensive_strategist
+		expensive_tastes
+		meticulous
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SIA_ananda_mahidol = {
+	first_name = "Ananda_Mahidol"
+	last_name = "Chakri"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1925.9.20
+	culture = cu:thai
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	home_region = STATE_BANGKOK
+	traits = {
+		erudite
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

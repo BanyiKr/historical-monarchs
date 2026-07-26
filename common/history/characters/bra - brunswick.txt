@@ -1,0 +1,10 @@
+﻿CHARACTERS = {
+	c:BRA ?= {
+		create_character = {
+			template = BRA_wilhelm_von_braunschweig
+			ruler = yes
+		}
+
+		# no clear heir	
+	}
+}

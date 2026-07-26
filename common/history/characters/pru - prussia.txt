@@ -1,0 +1,42 @@
+﻿CHARACTERS = {
+	c:PRU ?= {
+		create_character = {
+			template = pru_wilhelm_III_hohenzollern_template			
+			ruler = yes
+		}
+
+		create_character = {
+			template = pru_wilhelm_IV_hohenzollern_template
+			heir = yes
+		}
+
+		create_character = {
+			template = PRU_gustav_von_rauch
+		}
+
+		create_character = {
+			template = PRU_friedrich_ancillon
+		}
+
+		create_character = {
+			template = PRU_carl_heinrich_von_wylich_und_lottum
+		}
+
+		create_character = {
+			template = PRU_ludwig_gustav_von_thile
+		}
+
+		create_character = {
+			template = PRU_august_von_der_heydt
+		}
+
+		create_character = {
+			template = PRU_johann_diedrich_long_e
+		}
+		
+		## Executives ##
+		create_character = {
+			template = PRU_alfred_krupp
+		}
+	}
+}

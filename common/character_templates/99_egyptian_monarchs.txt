@@ -1,0 +1,202 @@
+﻿REPLACE:egy_ibrahim_alawi_template = {
+	# Ibrahim Pasha of Egypt
+	first_name = Ibrahim
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	dna = dna_ibrahim_pasha
+	culture = cu:albanian
+	is_general = yes
+	age = 47
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	hq = region_nile_basin
+	commander_rank = commander_rank_3
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		persistent
+		experienced_offensive_planner
+		pillager
+	}
+}
+
+rr_EGY_abbas_helmy = { # Abbas I of Egypt
+	first_name = "Abbas"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1812.7.1
+	culture = cu:albanian
+	interest_group = ig_landowners
+    ideology = ideology_protectionist
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		traditionalist_commander
+		hedonist
+		bigoted
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_mohamed_said = { # Sa'id I of Egypt
+	first_name = "Sa_id"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1822.1.17
+	culture = cu:albanian
+	interest_group = ig_intelligentsia
+    ideology = ideology_abolitionist
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		hedonist
+		expensive_tastes
+		charismatic
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_ismail_pasha = { # Isma'il I of Egypt
+	first_name = "Isma_il"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1830.1.12
+	culture = cu:albanian
+	interest_group = ig_industrialists
+    ideology = ideology_abolitionist
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		hedonist
+		expensive_tastes
+		innovative
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_mohamed_tewfik = { # Tewfik I of Egypt
+	first_name = "Tewfik"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = cu:albanian
+	birth_date = 1852.11.15
+	interest_group = ig_rural_folk
+    ideology = ideology_reformer
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		honorable
+		wrathful
+		charismatic
+		inexperienced
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_abbas_helmy_ii = { # Abbas II of Egypt
+	first_name = "Abbas"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = cu:albanian
+	birth_date = 1874.7.14
+	interest_group = ig_petty_bourgeoisie
+    ideology = ideology_traditionalist
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		reckless
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_hussein_kamel = { # Hussein Kamel of Egypt
+	first_name = "Hussein_Kamel"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1853.11.21
+	culture = cu:albanian
+	interest_group = ig_landowners
+    ideology = ideology_royalist
+	home_region = STATE_LOWER_EGYPT
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_prince_kamal_el_dine = { # Prince Kamal el Dine of Egypt
+	first_name = "Kamal_el_Dine"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = cu:albanian
+	birth_date = 1874.12.20
+	interest_group = ig_landowners
+    ideology = ideology_royalist
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		honorable
+		aesthete
+		explorer
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_fuad_i = { # Fuad I of Egypt
+	first_name = "Fuad"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1868.3.26
+	culture = cu:albanian
+	interest_group = ig_landowners
+    ideology = ideology_authoritarian
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		imperious
+		scarred
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_EGY_farouk_i = { # Farouk I of Egypt
+	first_name = "Farouk"
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1920.2.11
+	culture = cu:misri
+	interest_group = ig_devout
+    ideology = ideology_authoritarian
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		expensive_tastes
+		charismatic
+		hedonist
+		pious
+	}
+}

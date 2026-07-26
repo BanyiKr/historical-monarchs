@@ -1,0 +1,26 @@
+﻿WEI_wilhelm_ernst_von_sachsen_weimar_eisenach = {
+	first_name = "Wilhelm_Ernst"
+	last_name = "von_Sachsen-Weimar-Eisenach"
+	historical = yes
+	culture = primary_culture
+	noble = yes
+	birth_date = 1876.6.10
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+	traits = {
+		cruel
+	}
+}
+
+WEI_carl_august_von_sachsen_weimar_eisenach = {
+	first_name = "Carl_August"
+	last_name = "von_Sachsen-Weimar-Eisenach"
+	historical = yes
+	culture = primary_culture
+	noble = yes
+	birth_date = 1912.7.28
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+}

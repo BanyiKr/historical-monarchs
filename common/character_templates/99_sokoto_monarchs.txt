@@ -1,0 +1,124 @@
+﻿SOK_ali_babba_dan_fodio = {
+	first_name = Ali_Babba
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1804.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	traits = {
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_ahmadu_atiku_dan_fodio = {
+	first_name = Ahmadu_Atiku
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1807.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_ahmadu_rufai_dan_fodio = {
+	first_name = Ahmadu_Rufai
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1814.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_muazu_dan_fodio = {
+	first_name = Mu_azu
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1816.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_umaru_dan_fodio = {
+	first_name = Umaru
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1824.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_abd_al_rahman_dan_fodio = {
+	first_name = Abd_al-Rahman
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1828.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	traits = {
+		wrathful
+		reckless
+		direct
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_muhammadu_attahiru_dan_fodio = {
+	first_name = "Muhammadu_Attahiru"
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1840.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	traits = {
+		ambitious
+		persistent
+		reckless
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

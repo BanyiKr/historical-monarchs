@@ -1,0 +1,93 @@
+﻿rr_HDJ_awn_ar_rafiq_al_hashimi = {
+	# Awn ar-Rafiq ibn Muhammad
+	first_name = "Awn_ar_Rafiq"
+	last_name = "al_Hashimi"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1841.2.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_HEDJAZ
+	religion = rel:sunni
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_HDJ_ali_pasha_al_hashimi = {
+	# Awn ar-Rafiq ibn Abd Allah
+	first_name = "Ali"
+	last_name = "al_Hashimi"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1859.2.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_HEDJAZ
+	religion = rel:sunni
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_HDJ_hussein_al_hashimi = {
+	# Hussein ibn Ali
+	first_name = "Hussein"
+	last_name = "al_Hashimi"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1853.5.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_HEDJAZ
+	religion = rel:sunni
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_HDJ_ali_ibn_hussein_al_hashimi = {
+	# Ali ibn Hussein
+	first_name = "Ali"
+	last_name = "al_Hashimi"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1879.5.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_HEDJAZ
+	religion = rel:sunni
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_HDJ_abd_al_ilah_al_hashimi = {
+	# Abd al-Ilah
+	first_name = "Abd_al_Ilah"
+	last_name = "al_Hashimi"
+	historical = yes
+	culture = cu:bedouin
+	heir = yes
+	noble = yes
+	birth_date = 1913.11.14
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_HEDJAZ
+	religion = rel:sunni
+	traits = {
+		ambitious
+		hedonist
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

@@ -1,0 +1,14 @@
+﻿MEI_bernhard_iii_von_sachsen_meiningen = {
+	first_name = Bernhard
+	last_name = "von_Sachsen-Meiningen"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1851.4.1
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+	traits = {
+		reserved
+	}
+}

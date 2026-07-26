@@ -1,0 +1,35 @@
+﻿STATES = {
+	s:STATE_BRANDENBURG = {
+		set_variable = { name = prussia_king_chain_id value = 0 }
+	}
+	s:STATE_BAVARIA = {
+		set_variable = { name = bavaria_king_chain_id value = 0 }
+	}
+	s:STATE_ANHALT = {
+		set_variable = { name = anhalt_duke_chain_id value = 0 }
+	}
+	s:STATE_BRUNSWICK = {
+		set_variable = { name = brunswick_duke_chain_id value = 0 }
+	}
+	s:STATE_BADEN = {
+		set_variable = { name = baden_duke_chain_id value = 0 }
+	}
+	s:STATE_HESSE = {
+		set_variable = { name = hesse_duke_chain_id value = 0 }
+	}
+	s:STATE_SAXONY = {
+		set_variable = { name = saxony_king_chain_id value = 0 }
+	}
+	s:STATE_MECKLENBURG = {
+		set_variable = { name = mecklenburg_schwerin_duke_chain_id value = 0 }
+	}
+	s:STATE_WURTTEMBERG = {
+		set_variable = { name = wurttemberg_king_chain_id value = 0 }
+	}
+	s:STATE_HANNOVER = {
+		set_variable = { name = oldenburg_duke_chain_id value = 0 }
+	}
+	s:STATE_WESTPHALIA = {
+		set_variable = { name = lippe_prince_chain_id value = 0 }
+	}
+}

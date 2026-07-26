@@ -1,0 +1,10 @@
+﻿CHARACTERS = {
+	c:DFR ?= {
+		create_character = {
+			template = DFR_muhammad_iii_keira
+		}
+		create_character = {
+			template = DFR_muhammad_iv_keira
+		}
+	}
+}

@@ -1,0 +1,162 @@
+﻿REPLACE:TUN_mustafa_ibn_mahmud = {
+	# Mustafa ibn Mahmud
+	first_name = "Mustafa"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	ruler = yes
+	age = 50
+	noble = yes
+	home_region = STATE_TUNISIA
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		reserved
+	}
+}
+
+REPLACE:TUN_ahmad_al_husaini = {
+	# Abmad I ibn Mustafa
+	first_name = "Ahmad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	dna = dna_ahmad_i_ibn_mustafa
+	age = 31
+	home_region = STATE_TUNISIA
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	traits = {
+		ambitious
+	}
+}
+
+rr_TUN_muhammad_ii_al_husaini = {
+	first_name = "Muhammad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1811.9.18
+	home_region = STATE_TUNISIA
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	traits = {
+		ambitious
+		basic_political_operator
+		basic_diplomat
+	}
+}
+
+rr_TUN_muhammad_iii_al_husaini = {
+	first_name = "Muhammad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1813.2.7
+	home_region = STATE_TUNISIA
+	interest_group = ig_intelligentsia
+	ideology = ideology_modernizer_leader
+	traits = {
+		hedonist
+	}
+}
+
+rr_TUN_ali_iii_al_husaini = {
+	first_name = "Ali"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1817.9.14
+	home_region = STATE_TUNISIA
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	traits = {
+		reserved
+	}
+}
+
+rr_TUN_muhammad_iv_al_husaini = {
+	first_name = "Muhammad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1855.6.24
+	home_region = STATE_TUNISIA
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+}
+
+rr_TUN_muhammad_v_al_husaini = {
+	first_name = "Muhammad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1855.7.14
+	home_region = STATE_TUNISIA
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	traits = {
+		direct
+	}
+}
+
+rr_TUN_muhammad_vi_al_husaini = {
+	first_name = "Muhammad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1858.8.13
+	home_region = STATE_TUNISIA
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	traits = {
+		compliant
+	}
+}
+
+rr_TUN_ahmad_ii_al_husaini = {
+	first_name = "Ahmad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1862.4.13
+	home_region = STATE_TUNISIA
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	traits = {
+		compliant
+	}
+}
+
+rr_TUN_muhammad_vii_al_husaini = {
+	first_name = "Muhammad"
+	last_name = "al_Husaini"
+	historical = yes
+	culture = cu:turkish
+	heir = yes
+	noble = yes
+	birth_date = 1881.3.4
+	home_region = STATE_TUNISIA
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	traits = {
+		direct
+		honorable
+	}
+}

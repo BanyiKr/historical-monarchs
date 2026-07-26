@@ -1,0 +1,16 @@
+﻿REPLACE:can_generate_scripted_heirs = {
+    has_law = law_type:law_monarchy
+    #NAND = { # Has a historical heir
+    #    exists = heir
+    #    heir = {
+    #        is_historical = yes
+    #    }
+    #}
+    NAND = { # Austrian personal unions can cause some strange edge cases
+        exists = overlord
+        is_subject_type = subject_type_personal_union
+        any_primary_culture = {
+            is_primary_culture_of = overlord
+        }
+    }
+}

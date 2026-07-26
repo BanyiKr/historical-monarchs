@@ -1,0 +1,38 @@
+﻿CHARACTERS = {
+	c:SAX ?= {
+		create_character = {
+			template = SAX_anton_von_wettin
+			ruler = yes
+		}
+
+		create_character = {
+			template = SAX_friedrich_august_von_wettin
+			heir = yes
+		}
+
+		create_character = {
+			template = SAX_gustav_von_nostitz_wallwitz
+		}
+
+		# create_character = {
+			# name = "von Leysser"
+			# portrait = "gfx/portraits/Default_Portrait.dds"
+			# age = 65
+			# traits = {
+				# tactful
+				# elderly
+			# }
+		# }
+		
+		# create_character = {
+			# name = "von Zezschwitz"
+			# portrait = "gfx/portraits/Default_Portrait.dds"
+			# age = 57
+			# traits = {
+				# cautious
+				# school_of_defense
+			# }
+
+		# }	
+	}
+}

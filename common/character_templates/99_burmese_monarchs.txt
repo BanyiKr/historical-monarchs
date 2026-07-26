@@ -1,0 +1,59 @@
+﻿rr_BUR_pagan_min_konbaung = {
+    first_name = "Pagan"
+    last_name = "Konbaung"
+    historical = yes
+    culture = cu:burmese
+    heir = yes
+	noble = yes
+    birth_date = 1811.6.21
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_MANDALAY
+    traits = {
+        ambitious
+    }
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BUR_mindon_min_konbaung = {
+    first_name = "Mindon"
+    last_name = "Konbaung"
+    historical = yes
+    culture = cu:burmese
+    heir = yes
+	noble = yes
+    birth_date = 1808.7.8
+    interest_group = ig_landowners
+    ideology = ideology_modernizer_leader
+    home_region = STATE_MANDALAY
+    traits = {
+        ambitious
+		pious
+		compliant
+    }
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BUR_thibaw_min_konbaung = {
+    first_name = "Thibaw"
+    last_name = "Konbaung"
+    historical = yes
+    culture = cu:burmese
+    heir = yes
+	noble = yes
+    birth_date = 1859.1.1
+    interest_group = ig_landowners
+    ideology = ideology_jingoist_leader
+    home_region = STATE_MANDALAY
+    traits = {
+        ambitious
+		direct
+    }
+    on_created = {
+		set_variable = is_married
+	}
+}

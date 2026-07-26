@@ -1,0 +1,96 @@
+﻿hm_british_windsor_name_change = {
+	is_shown = {
+		country_has_primary_culture = cu:british
+		country_has_monarchy_law = yes
+		country_has_non_monarchy_law = no
+		ruler ?= {
+			is_monarch = yes
+			has_variable = house_saxe_coburg_gotha
+			has_culture = cu:british
+		}
+		any_country_in_europe = {
+			country_rank >= rank_value:major_power
+			country_has_primary_culture = cu:north_german
+			relations:root < relations_threshold:neutral
+		}
+		has_technology_researched = political_agitation
+	}
+	possible = {
+		custom_tooltip = {
+			text = hm_british_windsor_name_change_tt.1
+			any_country_in_europe = {
+				country_rank >= rank_value:major_power
+				country_has_primary_culture = cu:north_german
+				relations:root < relations_threshold:neutral
+				
+				has_war_with = root
+				infamy >= infamy_threshold:notorious
+			}
+		}
+	}
+	when_taken = {
+		custom_tooltip = {
+			text = hm_british_windsor_name_change_tt.2
+			every_scope_character = {
+				limit = {
+					has_variable = house_saxe_coburg_gotha
+					has_culture = cu:british
+				}
+				set_last_name = Windsor
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}
+
+hm_house_of_belgium_name_change = {
+	is_shown = {
+		OR = {
+			c:BEL ?= this
+			was_formed_from = BEL
+		}
+		country_has_monarchy_law = yes
+		country_has_non_monarchy_law = no
+		ruler ?= {
+			is_monarch = yes
+			has_variable = house_saxe_coburg_gotha
+			has_culture = cu:wallonian
+		}
+		any_country_in_europe = {
+			country_rank >= rank_value:major_power
+			country_has_primary_culture = cu:north_german
+			relations:root < relations_threshold:neutral
+		}
+		has_technology_researched = political_agitation
+	}
+	possible = {
+		custom_tooltip = {
+			text = hm_house_of_belgium_name_change_tt.1
+			any_country_in_europe = {
+				country_rank >= rank_value:major_power
+				country_has_primary_culture = cu:north_german
+				relations:root < relations_threshold:neutral
+				
+				has_war_with = root
+				infamy >= infamy_threshold:notorious
+			}
+		}
+	}
+	when_taken = {
+		custom_tooltip = {
+			text = hm_house_of_belgium_name_change_tt.2
+			every_scope_character = {
+				limit = {
+					has_variable = house_saxe_coburg_gotha
+					has_culture = cu:wallonian
+				}
+				set_last_name = de_Belgique
+			}
+		}
+	}
+	ai_chance = {
+		value = 100
+	}
+}

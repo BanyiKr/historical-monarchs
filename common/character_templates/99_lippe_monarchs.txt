@@ -1,0 +1,84 @@
+﻿REPLACE:LIP_leopold_ii_von_lippe = {
+	first_name = Leopold
+	last_name = "von_Lippe"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 39
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_WESTPHALIA
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:LIP_leopold_iii_von_lippe = {
+	first_name = Leopold
+	last_name = "von_Lippe"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 14
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_WESTPHALIA
+}
+
+LIP_woldemar_von_lippe = {
+	first_name = Woldemar
+	last_name = "von_Lippe"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1824.4.18
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_WESTPHALIA
+	traits = {
+		direct
+	}
+}
+
+LIP_alexander_von_lippe = {
+	first_name = Alexander
+	last_name = "von_Lippe"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1831.1.13
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_WESTPHALIA
+	traits = {
+		psychological_affliction
+		aesthete
+		reserved
+	}
+}
+
+LIP_leopold_iv_von_lippe = {
+	first_name = Leopold
+	last_name = "von_Lippe"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1871.5.30
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_WESTPHALIA
+}
+
+LIP_ernst_von_lippe = {
+	first_name = Ernst
+	last_name = "von_Lippe"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1902.5.30
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	home_region = STATE_WESTPHALIA
+	traits = {
+		bigoted
+	}
+}

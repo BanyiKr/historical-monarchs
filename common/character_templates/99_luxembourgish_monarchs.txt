@@ -1,0 +1,106 @@
+﻿LUX_william_iv = { # Grand Duke William IV of Luxembourg
+    first_name = Guillaume
+    last_name = of_Nassau_Weilburg
+    historical = yes
+	culture = cu:north_german
+    heir = yes
+	noble = yes
+    birth_date = 1852.4.22
+    interest_group = ig_landowners
+    ideology = ideology_royalist
+	home_region = STATE_HESSE
+    traits = {
+        reserved
+		tactful
+    }
+    on_created = {
+        set_variable = is_married
+    }
+}
+
+LUX_marie_adelaide_i = { # Grand Duchess Marie-Adelaide of Luxembourg
+    first_name = Marie_Adela_Ide # Marie-Adélaïde
+    last_name = of_Nassau_Weilburg
+	female = yes
+    historical = yes
+	culture = cu:wallonian
+	religion = rel:protestant
+    heir = yes
+	noble = yes
+    birth_date = 1894.6.14
+    interest_group = ig_devout
+    ideology = ideology_traditionalist
+	home_region = STATE_WALLONIA
+    traits = {
+        pious
+		sickly
+		direct
+		imperious
+		arrogant
+    }
+}
+
+LUX_charlotte_i = { # Grand Duchess Charlotte of Luxembourg
+    first_name = Charlotte
+    last_name = of_Nassau_Weilburg
+	female = yes
+    historical = yes
+	culture = cu:wallonian
+	religion = rel:catholic
+    heir = yes
+	noble = yes
+    birth_date = 1896.1.23
+    interest_group = ig_devout
+    ideology = ideology_royalist
+	home_region = STATE_WALLONIA
+    traits = {
+        cautious
+		tactful
+		persistent
+		experienced_diplomat
+    }
+}
+
+LUX_princess_hilda = { # Princess Hilda of Luxembourg
+    first_name = Hilda
+    last_name = of_Nassau_Weilburg
+	female = yes
+    historical = yes
+	culture = cu:wallonian
+	religion = rel:catholic
+    heir = yes
+	noble = yes
+    birth_date = 1897.2.15
+    interest_group = ig_rural_folk
+    ideology = ideology_royalist
+	home_region = STATE_WALLONIA
+    traits = {
+        erudite
+        reserved
+    }
+}
+
+LUX_jean_i = { # Grand Duke Jean of Luxembourg
+    first_name = Jean
+    last_name = of_Luxembourg-Nassau
+    historical = yes
+	culture = cu:wallonian
+	religion = rel:catholic
+    heir = yes
+	noble = yes
+    birth_date = 1921.1.5
+    interest_group = ig_industrialists
+    ideology = ideology_royalist
+	home_region = STATE_WALLONIA
+    traits = {
+        traditionalist_commander
+		basic_offensive_planner
+		tactful
+		honorable
+		innovative
+		experienced_diplomat
+    }
+    on_created = {
+        set_variable = is_married
+    }
+}

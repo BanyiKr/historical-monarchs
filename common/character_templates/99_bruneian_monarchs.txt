@@ -1,0 +1,60 @@
+﻿BRU_hashim_jalilul_bolkiah = {
+	first_name = "Hashim_Jalilul"
+	last_name = "Bolkiah"
+	historical = yes
+	culture = cu:bornean
+	heir = yes
+	noble = yes
+	birth_date = 1825.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_NORTH_BORNEO
+}
+
+BRU_muhammad_jamalul_alam_ii_bolkiah = {
+	first_name = "Muhammad_Jamalul_Alam"
+	last_name = "Bolkiah"
+	historical = yes
+	culture = cu:bornean
+	heir = yes
+	noble = yes
+	birth_date = 1889.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_NORTH_BORNEO
+	traits = {
+		basic_diplomat
+	}
+}
+
+BRU_ahmad_tajuddin_bolkiah = {
+	first_name = "Ahmad_Tajuddin"
+	last_name = "Bolkiah"
+	historical = yes
+	culture = cu:bornean
+	heir = yes
+	noble = yes
+	birth_date = 1912.8.22
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_NORTH_BORNEO
+	traits = {
+		charismatic
+	}
+}
+
+BRU_omar_ali_saifuddien_iii = {
+	first_name = "Omar_Ali_Saifuddien"
+	last_name = "Bolkiah"
+	historical = yes
+	culture = cu:bornean
+	heir = yes
+	noble = yes
+	birth_date = 1914.9.23
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_NORTH_BORNEO
+	traits = {
+		literary
+	}
+}

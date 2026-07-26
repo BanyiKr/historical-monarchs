@@ -1,0 +1,1603 @@
+﻿character_netherlands_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = NET_willem_i_van_oranje_nassau
+			year >= 1840
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = NET_willem_ii_van_oranje_nassau
+			year >= 1849
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = { # Alexander, Prince of Orange
+		limit = {
+			has_template = NET_prince_alexander
+			year >= 1884
+		}
+		if = { # Replace heir if still heir
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			kill_character = { hidden = no }
+			owner ?= {
+				create_character = {
+					template = NET_wilhelmina_i
+					heir = yes
+				}
+			}
+		}
+		else = {
+			kill_character = { hidden = no }
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = NET_willem_iii
+			year >= 1890
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_belgium_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = BEL_leopold_saxe_coburg_gotha_template
+			year >= 1865
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BEL_leopold_II_saxe_coburg_gotha_template
+			year >= 1909
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = { # Prince Philippe, Count of Flanders
+		limit = {
+			has_template = BEL_Prince_Philippe
+			year >= 1905
+		}
+		if = { # Replace heir if still heir
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			kill_character = { hidden = no }
+			owner ?= {
+				if = {
+					limit = {
+						game_date < 1891.1.23
+					}
+					create_character = {
+						template = BEL_Prince_Baudouin
+						heir = yes
+					}
+				}
+				else = {
+					create_character = {
+						template = BEL_albert_i
+						heir = yes
+					}
+				}
+			}
+		}
+		else = {
+			kill_character = { hidden = no }
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BEL_albert_i
+			year >= 1934
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_sweden_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = swe_karl_johan_bernadotte_template
+			year >= 1844
+		}
+		kill_character = { hidden = no }
+	}
+	# Others handled by event
+}
+
+character_denmark_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = DEN_frederik_von_oldenburg
+			year >= 1839
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_christian_von_oldenburg
+			year >= 1848
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_frederik_vii
+			year >= 1863
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_christian_ix
+			year >= 1906
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = DEN_frederik_viii
+			year >= 1912
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_wallachia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = WAL_alexandru_ghica
+			year >= 1842
+		}
+		owner ?= {
+			if = {
+				limit = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_organic_regulation
+					government_transfer_of_power = dictatorial
+				}
+				create_character = {
+					template = WAL_gheorghe_bibescu
+					ruler = yes
+				}
+			}
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = WAL_gheorghe_bibescu
+			year >= 1848
+		}
+		owner ?= {
+			if = {
+				limit = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_organic_regulation
+					government_transfer_of_power = dictatorial
+				}
+				create_character = {
+					template = WAL_barbu_dimitrie_stribei
+					ruler = yes
+				}
+			}
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = WAL_barbu_dimitrie_stribei
+			year >= 1853
+		}
+		owner ?= {
+			if = {
+				limit = {
+					country_has_monarchy_law = yes
+					country_has_non_monarchy_law = no
+					is_player = no
+					exists = c:MOL
+					c:MOL = {
+						country_has_monarchy_law = yes
+						country_has_non_monarchy_law = no
+					}
+					trigger_if = {
+						limit = {
+							is_subject = yes
+						}
+						c:MOL = { is_subject = yes }
+						top_overlord = {
+							THIS = c:MOL.top_overlord
+						}
+					}
+					NOR = {
+						is_subject_of = c:MOL
+						c:MOL = {
+							is_subject_of = c:WAL
+						}
+					}
+				}
+				c:MOL = {
+					set_variable = {
+						name = ROM_united_principality
+					}
+					create_diplomatic_pact = {
+						country = c:WAL
+						type = personal_union
+					}
+					set_variable = {
+						name = romanian_union_var
+						value = 0
+					}
+					add_journal_entry = { type = je_all_for_one }
+				}
+				set_variable = {
+					name = romania_union_partner
+				}
+			}
+		}
+	}
+}
+
+character_moldavia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = MOL_mihail_sturdza
+			year >= 1849
+		}
+		owner ?= {
+			if = {
+				limit = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_organic_regulation
+					government_transfer_of_power = dictatorial
+				}
+				create_character = {
+					template = MOL_grigore_alexandru_ghica
+					ruler = yes
+				}
+			}
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = MOL_grigore_alexandru_ghica
+			year >= 1856
+		}
+		owner ?= {
+			if = {
+				limit = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_organic_regulation
+					government_transfer_of_power = dictatorial
+				}
+				create_character = {
+					template = MOL_alexandru_cuza
+					ruler = yes
+				}
+			}
+		}
+		resign_and_retire = yes
+	}
+}
+
+character_prussia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = pru_wilhelm_III_hohenzollern_template
+			year >= 1840
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = pru_wilhelm_IV_hohenzollern_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_pru_wilhelm_I
+			year >= 1888
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_pru_frederick_iii
+			is_ruler_of_own_country = yes
+			year >= 1888
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_transylvania_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = aus_ferdinand_karl_joseph_of_austria-este
+			year >= 1837
+		}
+		resign_and_retire = yes
+		owner ?= {
+			create_character = {
+				template = TRS_janos_kornis
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_janos_kornis
+			year >= 1840
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_jozsef_teleki
+			year >= 1848
+		}
+		resign_and_retire = yes
+		owner ?= {
+			create_character = {
+				template = TRS_imre_miko
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_imre_miko
+			year >= 1848
+		}
+		remove_character_role = ruler
+		owner ?= {
+			create_character = {
+				template = TRS_miklos_vay
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_miklos_vay
+			year >= 1849
+		}
+		resign_and_retire = yes
+		owner ?= {
+			create_character = {
+				template = TRS_ludwwig_von_wohlgemuth
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_ludwwig_von_wohlgemuth
+			year >= 1851
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_karl_philipp_borromaus_zu_schwarzenberg
+			year >= 1858
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_friedrich_von_liechtenstein
+			year >= 1861
+		}
+		resign_and_retire = yes
+		owner ?= {
+			create_character = {
+				template = TRS_franz_folliot_de_crenneville
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = TRS_franz_folliot_de_crenneville
+			year >= 1867
+		}
+		resign_and_retire = yes
+		owner ?= {
+			create_character = {
+				template = TRS_mano_pechy
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_croatia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = CRO_franjo_vlasic
+			year >= 1840
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_juraj_haulik
+			year >= 1842
+			NOT = {
+				is_template_used = CRO_franz_haller
+			}
+		}
+		remove_character_role = ruler
+		set_as_interest_group_leader = yes
+		owner ?= {
+			create_character = {
+				template = CRO_franz_haller
+				ruler = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_franz_haller
+			year >= 1845
+		}
+		resign_and_retire = yes
+		owner ?= {
+			country_summon_character_effect = {
+				TEMPLATE = CRO_juraj_haulik
+				ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_juraj_haulik
+			year >= 1848
+			is_template_used = CRO_franz_haller
+		}
+		remove_character_role = ruler
+		set_as_interest_group_leader = yes
+		owner ?= {
+			country_summon_character_effect = {
+				TEMPLATE = CRO_josip_jelacic
+				ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+			}
+			ruler = {
+				add_character_role = general
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_josip_jelacic
+			year >= 1859
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = CRO_johann_baptist_coronini_cronberg
+			year >= 1860
+		}
+		resign_and_retire = yes
+		owner ?= {
+			create_character = {
+				template = CRO_josip_sokcevic
+				ruler = yes
+			}
+		}
+	}
+}
+
+character_hungary_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = HUN_joseph_of_habsburg-lorraine
+			year >= 1847
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_saxony_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = SAX_anton_von_wettin
+			year >= 1836
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SAX_friedrich_august_von_wettin
+			year >= 1854
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_johann_i
+			year >= 1873
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_albert_i
+			year >= 1902
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_georg_i
+			year >= 1904
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAX_friedrich_august_iii
+			year >= 1932
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_bavaria_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = BAV_ludwig_i_von_bayern
+			year >= 1848
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = BAV_maximillian_von_bayern
+			year >= 1864
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAV_ludwig_ii
+			year >= 1886
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAV_otto_i
+			year >= 1913
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAV_ludwig_iii
+			year >= 1921
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_wurttemberg_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = WUR_wilhelm_von_wurttemberg
+			year >= 1864
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = WUR_karl_von_wurttemberg
+			year >= 1891
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_WUR_wilhelm_ii
+			year >= 1921
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_baden_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = BAD_leopold_von_baden
+			year >= 1852
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BAD_ludwig_von_baden
+			year >= 1858
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAD_frederick_i
+			year >= 1907
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_BAD_frederick_ii
+			year >= 1928
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_oldenburg_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = OLD_augustus_von_holstein_gottorp
+			year >= 1853
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = OLD_peter_von_holstein_gottorp
+			year >= 1900
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_OLD_frederick_augustus_ii
+			year >= 1931
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_sardinia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = sar_charles_albert_sardinia_template
+			year >= 1849
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = sar_victor_emmanuel_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = sar_victor_emmanuel_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAR_umberto_i
+			year >= 1878
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SAR_victor_emmanuel_iii
+			year >= 1900
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_austria_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = aus_franz_josef_I_habsburg_template
+			year >= 1916
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = aus_karl_I_habsburg
+			year >= 1922
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_great_britain_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = gbr_queen_victoria_template
+			year >= 1901
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = gbr_albert_edward_template
+			year >= 1910
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_russia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = RUS_nicholas_i
+			year >= 1855
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = RUS_alexander_ii
+			year >= 1881
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = RUS_tsarevich_nicholas_alexandrovich
+			year >= 1865
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = RUS_alexander_iii
+			year >= 1894
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_china_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = chi_daoguang_template
+			year >= 1850
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = chi_xianfeng_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CHI_tongzhi
+			year >= 1875
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CHI_guangxu
+			year >= 1908
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_korea_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = KOR_yi_hwan
+			year >= 1849
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = KOR_yi_byeon
+			year >= 1864
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = KOR_yi_myongbok
+			year >= 1907
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = rr_KOR_sunjong
+			year >= 1926
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_japan_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = JAP_kokaku_yamato
+			year >= 1840
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_ninko_yamato
+			year >= 1846
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_komei_yamato
+			year >= 1867
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_meiji_yamato
+			year >= 1912
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_taisho_yamato
+			year >= 1926
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_ienari_tokugawa
+			year >= 1841
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_ieyoshi_tokugawa
+			year >= 1853
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_iesada_tokugawa
+			year >= 1858
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_iemochi_tokugawa
+			year >= 1866
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = JAP_yoshinobu_tokugawa
+			year >= 1913
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_dai_viet_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = DAI_minh_mang_nguyen_phuoc
+			year >= 1841
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = DAI_thieu_tri_nguyen_phuoc
+			year >= 1847
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_tu_duc
+			year >= 1883
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_duc_duc
+			is_ruler_of_own_country = yes
+			year >= 1883
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_hiep_hoa
+			year >= 1883
+			owner ?= {
+				is_subject = yes
+			}
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_kien_phuc
+			year >= 1884
+		}
+		if = {
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			create_character = {
+				template = rr_DAI_ham_nghi
+			}
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_ham_nghi
+			owner ?= {
+				is_subject = yes
+			}
+			year >= 1885
+		}
+		if = {
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			create_character = {
+				template = rr_DAI_dong_khanh
+			}
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_dong_khanh
+			year >= 1889
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_DAI_thanh_thai
+			year >= 1907
+			owner ?= {
+				is_subject = yes
+			}
+		}
+		resign_and_retire = yes
+	}
+}
+
+character_siam_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = SIA_nangklao_chakri
+			year >= 1851
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SIA_mogkut
+			year >= 1868
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SIA_chulalongkorn
+			year >= 1910
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_SIA_vajiravudh
+			year >= 1925
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_cambodia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = CAM_ang_mey_varman
+			year >= 1846
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = CAM_ang_duong_varman
+			year >= 1860
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CAM_norodom
+			year >= 1904
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_CAM_ang_sar
+			year >= 1906
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_tibet_scripted_deaths_effect = {
+	if = { # 10th Dalai Lama
+		limit = {
+			has_template = TIB_tsultrim_gyatso
+			year >= 1837
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = { # 11th Dalai Lama
+		limit = {
+			has_template = rr_TIB_khedrup
+			year >= 1856
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = { # 12th Dalai Lama
+		limit = {
+			has_template = rr_TIB_trinley
+			year >= 1875
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = { # 13th Dalai Lama
+		limit = {
+			has_template = rr_TIB_thubten
+			year >= 1933
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_papal_states_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = PAP_gregorius_cappellari
+			year >= 1846
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_pius_ix
+			year >= 1878
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_leo_XIII
+			year >= 1903
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = rr_PAP_pius_x
+			year >= 1914
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_bhutan_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = BHU_chhoki_gyaltshen
+			year >= 1838
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Dorji_Norbu
+			year >= 1850
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Jigme_Norbu
+			year >= 1852
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Damchho_Lhundrup
+			year >= 1854
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Jamyang_Tenzin
+			year >= 1856
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Sherab_Tharchin
+			year >= 1860
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Phuntsho_Namgyel
+			year >= 1863
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Tshewang_Sithub
+			year >= 1867
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Tsondul_Pekar
+			year >= 1870
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Jigme_Namgyal
+			year >= 1881
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Lam_Tshewang
+			year >= 1883
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Gawa_Zangpo
+			year >= 1885
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Sangay_Dorji
+			year >= 1901
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = BHU_Yeshe_Ngodub
+			year >= 1917
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_serbia_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = SER_mihailo_obrenovic
+			year >= 1868
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SER_mihailo_obrenovic
+			year >= 1860
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SER_milan_obrenovic
+			year >= 1839
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SER_milan_iv_obrenovic
+		}
+		if = {
+			limit = {
+				is_ruler_of_own_country = yes
+				year >= 1889
+			}
+			resign_and_retire = yes
+		}
+		if = {
+			limit = {
+				year >= 1901
+			}
+			kill_character = { hidden = no }
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SER_alexander_obrenovic
+			year >= 1903
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SER_alexandar_karadordevic
+		}
+		if = {
+			limit = {
+				is_ruler_of_own_country = yes
+				year >= 1858
+			}
+			resign_and_retire = yes
+		}
+		if = {
+			limit = {
+				year >= 1885
+			}
+			kill_character = { hidden = no }
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SER_petar_i_karadordevic
+			year >= 1921
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SER_alexander_i_karadordevic
+			year >= 1934
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_ottoman_empire_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = tur_mahmut_osmanoglu_template
+			year >= 1839
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = tur_abdulmecid_osmanoglu_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	#else_if = {
+	#	limit = {
+	#		has_template = tur_abdulaziz_osmanoglu_template
+	#		year >= 1876
+	#	}
+	#	kill_character = { hidden = no }
+	#}
+	else_if = {
+		limit = {
+			has_template = tur_murad_v_osmanoglu_template
+			year >= 1904
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = tur_abdulhamid_ii_osmanoglu_template
+			year >= 1918
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_morocco_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = MOR_abd_al_rahman_al_alawi
+			year >= 1859
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = MOR_muhammad_al_alawi
+			year >= 1873
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = MOR_hasan_al_alawi
+			year >= 1894
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = MOR_abd_alhafid_al_alawi
+			year >= 1912
+		}
+		resign_and_retire = yes
+	}
+	else_if = {
+		limit = {
+			has_template = MOR_yusef_al_alawi
+			year >= 1927
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_portugal_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = POR_maria_ii_de_braganca
+			year >= 1853
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = POR_pedro_v_de_braganca_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = POR_luis_i_de_braganca_template
+			year >= 1889
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = POR_carlos_i_de_braganca_template
+			year >= 1908
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = POR_manuel_ii_de_braganca_template
+			year >= 1932
+		}
+		kill_character = { hidden = no }
+	}
+	# Miguelist
+	else_if = {
+		limit = {
+			has_template = POR_miguel_i_de_braganca_template
+			year >= 1866
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = POR_miguel_januario_de_braganca_template
+			year >= 1927
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = POR_miguel_maximiliano_de_braganca_template
+			year >= 1923
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_spain_scripted_deaths_effect = {
+	if = {
+		limit = {
+			has_template = spa_maria_cristina_template
+			year >= 1878
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = spa_isabel_de_borbon_template
+			year >= 1904
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = spa_amadeo_i_de_savoy_template
+			year >= 1890
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = spa_luisa_fernanda_de_borbon_template
+			year >= 1897
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = spa_isabel_francisca_de_borbon_template
+			year >= 1931
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = spa_alfonso_xii_de_borbon_template
+			year >= 1885
+		}
+		kill_character = { hidden = no }
+	}
+	# Carlist
+	else_if = {
+		limit = {
+			has_template = SPC_carlos_v_de_borbon_template
+			year >= 1855
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SPC_carlos_vi_de_borbon_template
+			year >= 1861
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SPC_juan_iii_de_borbon_template
+			year >= 1887
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SPC_carlos_vii_de_borbon_template
+			year >= 1909
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = SPC_jaime_iii_de_borbon_template
+			year >= 1931
+		}
+		kill_character = { hidden = no }
+	}
+}
+
+character_france_scripted_deaths_effect = {
+	# Orleanist
+	if = {
+		limit = {
+			has_template = FRA_louis_philippe
+			year >= 1850
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_ferdinand_philippe
+			year >= 1842
+		}
+		if = {
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			owner ?= {
+				create_character = {
+					template = FRA_philippe_de_orleans_of_paris
+					heir = yes
+				}
+			}
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_philippe_de_orleans_of_paris
+			year >= 1894
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_philippe_de_orleans_of_orleans
+			year >= 1926
+		}
+		kill_character = { hidden = no }
+	}
+	# Legitimist
+	else_if = {
+		limit = {
+			has_template = FRA_louis_antoine_de_bourbon
+			year >= 1844
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_henri_de_bourbon
+			year >= 1883
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_jean_de_bourbon
+			year >= 1887
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_carlos_de_bourbon
+			year >= 1909
+		}
+		kill_character = { hidden = no }
+	}
+	else_if = {
+		limit = {
+			has_template = FRA_jacques_de_bourbon
+			year >= 1931
+		}
+		kill_character = { hidden = no }
+	}
+}

@@ -1,0 +1,32 @@
+﻿CHARACTERS = {
+	c:BAV ?= {
+		create_character = {
+			template = BAV_ludwig_i_von_bayern
+			ruler = yes
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			template = BAV_maximillian_von_bayern
+			heir = yes
+		}	
+
+		create_character = {
+			template = BAV_friedrich_august_von_gise
+		}
+
+		create_character = {
+			template = BAV_joseph_anton_von_maffei
+		}
+
+		create_character = {
+			template = BAV_jakob_von_washington
+		}
+		
+		create_character = {
+			template = BAV_karl_von_heideck
+		}
+	}
+}

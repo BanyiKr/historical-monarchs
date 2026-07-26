@@ -1,0 +1,248 @@
+﻿### Druk Desi
+BHU_Dorji_Norbu = {
+	first_name = "Dorji"
+	last_name = "Norbu"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1785.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Jigme_Norbu = {
+	first_name = "Jigme"
+	last_name = "Norbu"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1790.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Damchho_Lhundrup = {
+	first_name = "Damchho"
+	last_name = "Lhundrup"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1795.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Jamyang_Tenzin = {
+	first_name = "Jamyang"
+	last_name = "Tenzin"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1800.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Sherab_Tharchin = {
+	first_name = "Sherab"
+	last_name = "Tharchin"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1805.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Phuntsho_Namgyel = {
+	first_name = "Phuntsho"
+	last_name = "Namgyal"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1810.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Tshewang_Sithub = {
+	first_name = "Tshewang"
+	last_name = "Sithub"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1815.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Tsondul_Pekar = {
+	first_name = "Tsondul"
+	last_name = "Pekar"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1820.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Jigme_Namgyal = {
+	first_name = "Jigme"
+	last_name = "Namgyal"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1825.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+	traits = {
+		tactful
+		experienced_diplomat
+	}
+}
+
+BHU_Dorji_Namgyal = {
+	first_name = "Dorji"
+	last_name = "Namgyal"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1830.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Chhogyel_Zangpo = {
+	first_name = "Chhogyel"
+	last_name = "Zangpo"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1835.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Lam_Tshewang = {
+	first_name = "Lam"
+	last_name = "Tshewang"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1836.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Gawa_Zangpo = {
+	first_name = "Gawa"
+	last_name = "Zangpo"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1840.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Sangay_Dorji = {
+	first_name = "Sangay"
+	last_name = "Dorji"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1845.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+BHU_Yeshe_Ngodub = {
+	first_name = "Yeshe"
+	last_name = "Ngodub"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1851.1.1
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_EASTERN_HIMALAYAS
+}
+
+### Druk Gyalpo
+rr_BHU_ugyen_wangchuck = {
+	first_name = "Ugyen"
+	last_name = "Wangchuck"
+	historical = yes
+	noble = yes
+	birth_date = 1862.6.11
+	culture = primary_culture
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_EASTERN_HIMALAYAS
+	traits = {
+		ambitious
+		persistent
+		traditionalist_commander
+		pious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BHU_jigme_wangchuck = {
+	first_name = "Jigme"
+	last_name = "Wangchuck"
+	historical = yes
+	noble = yes
+	heir = yes
+	birth_date = 1905.6.11
+	culture = primary_culture
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_EASTERN_HIMALAYAS
+	traits = {
+		innovative
+		reserved
+		basic_diplomat
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_BHU_jigme_dorji_wangchuck = {
+	first_name = "Jigme_Dorji"
+	last_name = "Wangchuck"
+	historical = yes
+	noble = yes
+	heir = yes
+	birth_date = 1928.5.2
+	culture = primary_culture
+	interest_group = ig_landowners
+	ideology = ideology_modernizer_leader
+	home_region = STATE_EASTERN_HIMALAYAS
+	traits = {
+		basic_diplomat
+		innovative
+		meticulous
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

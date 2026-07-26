@@ -1,0 +1,73 @@
+﻿rr_LUA_oun_kham = { 
+	first_name = "Oun_Kham"
+	last_name = "Chao"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1811.10.1
+	culture = cu:lao
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_LUA_sakkarin = {
+	first_name = "Sakkarin"
+	last_name = "Chao"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1840.7.16
+	culture = cu:lao
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+		experienced_defensive_strategist
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_LUA_sisavang_vong = {
+	first_name = "Sisavang_Vong"
+	last_name = "Chao"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1885.7.14
+	culture = cu:lao
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+		grifter
+		reserved
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+rr_LUA_sisavang_vatthana = {
+	first_name = "Sisavang_Vatthana"
+	last_name = "Chao"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1907.11.13
+	culture = cu:lao
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+		persistent
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}

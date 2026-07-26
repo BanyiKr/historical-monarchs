@@ -1,0 +1,13 @@
+﻿CHARACTERS = {
+	c:HES ?= {
+		create_character = {
+			template = HES_ludwig_ii_von_hessen_darmstadt
+			ruler = yes
+		}	
+
+		create_character = {
+			template = HES_ludwig_iii_von_hessen_darmstadt
+			heir = yes
+		}
+	}
+}

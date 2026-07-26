@@ -1,0 +1,72 @@
+﻿REPLACE:OLD_augustus_von_holstein_gottorp = {
+	# Augustus, Grand Duke of Oldenburg
+	first_name = "Augustus"
+	last_name = "von_Holstein-Gottorp"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 53
+	home_region = STATE_HANNOVER
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_moderate
+	traits = {
+		cautious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:OLD_peter_von_holstein_gottorp = {
+	# Peter II, Grand Duke of Oldenburg
+	first_name = Peter
+	last_name = "von_Holstein-Gottorp"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 9
+	home_region = STATE_HANNOVER
+	interest_group = ig_landowners
+	traits = {
+		trait_child
+	}
+}
+
+rr_OLD_frederick_augustus_ii = {
+	first_name = "Friedrich_August"
+	last_name = "von_Holstein-Gottorp"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1852.11.16
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	home_region = STATE_HANNOVER
+	traits = {
+		basic_naval_commander
+		charismatic
+	}
+}
+
+rr_OLD_nikolaus = {
+	first_name = "Nikolaus"
+	last_name = "von_Holstein-Gottorp"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1897.8.10
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_HANNOVER
+}
+
+rr_OLD_anton_gunther = {
+	first_name = Anton-GU_nther
+	last_name = "von_Holstein-Gottorp"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1923.1.16
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_HANNOVER
+}

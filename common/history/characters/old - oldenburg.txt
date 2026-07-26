@@ -1,0 +1,13 @@
+﻿CHARACTERS = {
+	c:OLD ?= {
+		create_character = {
+			template = OLD_augustus_von_holstein_gottorp
+			ruler = yes
+		}	
+
+		create_character = {
+			template = OLD_peter_von_holstein_gottorp
+			heir = yes
+		}
+	}
+}

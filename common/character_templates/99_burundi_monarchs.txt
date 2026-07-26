@@ -1,0 +1,70 @@
+﻿BRD_ntare_iv_ntwero = {
+	first_name = "Ntare"
+	last_name = "Ntwero"
+	historical = yes
+	culture = cu:rundi
+	ruler = yes
+	noble = yes
+	age = 40
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_TANGANYIKA
+	traits = {
+		ambitious
+		innovative
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+BRD_mwezi_iv_ntwero = {
+	first_name = "Mwezi"
+	last_name = "Ntwero"
+	historical = yes
+	culture = cu:rundi
+	heir = yes
+	noble = yes
+	age = 0
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_TANGANYIKA
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+BRD_mutaga_iv_ntwero = {
+	first_name = "Mutaga"
+	last_name = "Ntwero"
+	historical = yes
+	culture = cu:rundi
+	heir = yes
+	noble = yes
+	birth_date = 1892.1.1
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_TANGANYIKA
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+BRD_mwambutsa_iv_ntwero = {
+	first_name = "Mwambutsa"
+	last_name = "Ntwero"
+	historical = yes
+	culture = cu:rundi
+	heir = yes
+	noble = yes
+	birth_date = 1912.5.6
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_TANGANYIKA
+	traits = {
+		reserved
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}

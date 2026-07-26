@@ -1,0 +1,68 @@
+﻿
+REPLACE:HAW_kamehameha_iv = {
+	# Kamehameha IV
+	first_name = "Kamehameha"
+	last_name = "Kamehameha"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	age = 2
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_HAWAIIAN_ISLANDS
+	traits = {
+		wrathful
+		sickly
+	}
+}
+
+HAW_kamehameha_v = {
+	# Kamehameha V
+	first_name = "Kamehameha"
+	last_name = "Kamehameha"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1830.12.11
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_HAWAIIAN_ISLANDS
+}
+
+HAW_kalakaua = {
+	first_name = "Kalakaua"
+	last_name = "Kamehameha"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1836.11.16
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_HAWAIIAN_ISLANDS
+	traits = {
+		charismatic
+		expensive_tastes
+		ambitious
+		imperious
+	}
+}
+
+HAW_liliuokalani = {
+	first_name = "Lili_uokalani"
+	last_name = "Kamehameha"
+	female = yes
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1838.9.2
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_HAWAIIAN_ISLANDS
+	traits = {
+		direct
+	}
+}

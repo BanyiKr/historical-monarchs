@@ -1,0 +1,90 @@
+﻿rr_KHI_muhammad_amin_bahadur_qungrat = {
+	first_name = "Muhammad_Amin_Bahadur"
+	last_name = "Qungrat"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1817.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_KHIVA
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_KHI_sayyid_muhammad_qungrat = {
+	first_name = "Sayyid_Muhammad"
+	last_name = "Qungrat"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1823.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_KHIVA
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_KHI_muhammad_rahim_qungrat = {
+	first_name = "Muhammad_Rahim"
+	last_name = "Qungrat"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1847.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_KHIVA
+	traits = {
+		literary
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_KHI_isfandiyar_jurji_bahadur_qungrat = {
+	first_name = "Isfandiyar_Jurji_Bahadur"
+	last_name = "Qungrat"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1871.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_KHIVA
+	traits = {
+		literary
+		inexperienced
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_KHI_sayid_abdullah_qungrat = {
+	first_name = "Sayid_Abdullah"
+	last_name = "Qungrat"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	noble = yes
+	birth_date = 1873.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_KHIVA
+	traits = {
+		literary
+		inexperienced
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

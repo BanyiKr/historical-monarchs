@@ -1,0 +1,71 @@
+﻿rr_CAM_norodom = { 
+	first_name = "Ang_Voddey"
+	last_name = "Norodom"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1834.2.3
+	culture = cu:khmer
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_CAMBODIA
+	traits = {
+		romantic
+		reserved
+	}
+}
+
+rr_CAM_ang_sar = {
+	first_name = "Ang_Sar"
+	last_name = "Sisowath"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1840.9.7
+	culture = cu:khmer
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CAMBODIA
+	traits = {
+		tactful
+	}
+}
+
+rr_CAM_monivong = {
+	first_name = "Monivong"
+	last_name = "Sisowath"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1875.12.27
+	culture = cu:khmer
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CAMBODIA
+	traits = {
+		basic_offensive_planner
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_CAM_sihanouk = {
+	first_name = "Sihanouk"
+	last_name = "Norodom"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1922.10.31
+	culture = cu:khmer
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_CAMBODIA
+	traits = {
+		imperious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

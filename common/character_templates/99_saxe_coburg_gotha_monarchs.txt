@@ -1,0 +1,33 @@
+﻿COB_alfred_von_sachsen_coburg_gotha = {
+	first_name = Alfred
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	culture = cu:british
+	noble = yes
+	birth_date = 1844.8.6
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}
+
+COB_charles_edward_von_sachsen_coburg_gotha = {
+	first_name = Charles_Edward
+	last_name = "of_Saxe-Coburg-Gotha"
+	historical = yes
+	culture = cu:british
+	noble = yes
+	birth_date = 1884.7.19
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_royalist
+	home_region = STATE_SAXONY
+	traits = {
+		bigoted
+		basic_diplomat
+	}
+	on_created = {
+		set_variable = house_saxe_coburg_gotha
+	}
+}

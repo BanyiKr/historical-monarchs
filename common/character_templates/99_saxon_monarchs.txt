@@ -1,0 +1,135 @@
+﻿REPLACE:SAX_anton_von_wettin = {
+	# Anthony of Saxony, the Kingony of Middle Germany
+	first_name = "Anton"
+	last_name = "von_Wettin"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:catholic
+	age = 81 # died June 6th, 1836
+	home_region = STATE_SAXONY
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	traits = {
+		reserved # dude was old and did nothing
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:SAX_friedrich_august_von_wettin = {
+	# Frederick Augustus II of Saxony
+	first_name = "Friedrich_August"
+	last_name = "von_Wettin"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:catholic
+	age = 29
+	home_region = STATE_SAXONY
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_moderate
+	traits = {
+		meticulous
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SAX_johann_i = {
+	# John I of Saxony
+	first_name = "Johann"
+	last_name = "von_Wettin"
+	historical = yes
+	culture = primary_culture
+	religion = rel:catholic
+	noble = yes
+	birth_date = 1801.12.12
+	home_region = STATE_SAXONY
+	interest_group = ig_industrialists
+	ideology = ideology_royalist
+	traits = {
+		literary
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SAX_albert_i = {
+	# Albert I of Saxony
+	first_name = "Albert"
+	last_name = "von_Wettin"
+	historical = yes
+	culture = primary_culture
+	religion = rel:catholic
+	noble = yes
+	birth_date = 1828.4.23
+	home_region = STATE_SAXONY
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	traits = {
+		traditionalist_commander
+		basic_offensive_planner
+		meticulous
+		reserved
+	}
+}
+
+rr_SAX_georg_i = {
+	# George I of Saxony
+	first_name = "Georg"
+	last_name = "von_Wettin"
+	historical = yes
+	culture = primary_culture
+	religion = rel:catholic
+	noble = yes
+	birth_date = 1832.8.8
+	home_region = STATE_SAXONY
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	traits = {
+		basic_offensive_planner
+		imperious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_SAX_friedrich_august_iii = {
+	# Frederick Augustus III of Saxony
+	first_name = "Friedrich_August"
+	last_name = "von_Wettin"
+	historical = yes
+	culture = primary_culture
+	religion = rel:catholic
+	noble = yes
+	birth_date = 1865.5.25
+	home_region = STATE_SAXONY
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	traits = {
+		basic_offensive_planner
+		reserved
+	}
+}
+
+rr_SAX_prince_georg = {
+	# Prince George of Saxony
+	first_name = "Georg"
+	last_name = "von_Wettin"
+	historical = yes
+	culture = primary_culture
+	religion = rel:catholic
+	noble = yes
+	birth_date = 1893.1.15
+	home_region = STATE_SAXONY
+	interest_group = ig_devout
+	ideology = ideology_corporatist_leader
+	traits = {
+		pious
+		honorable
+	}
+}

@@ -1,0 +1,100 @@
+﻿REPLACE:MEC_friedrich_franz_von_mecklenburg_schwerin = {
+	# Freddy Frank, Grand Duke of Mecklenburg-Schwerin
+	first_name = "Friedrich_Franz"
+	last_name = "von_Mecklenburg-Schwerin"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 80 # died February 1st, 1837
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_MECKLENBURG
+	traits = {
+		arrogant
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+REPLACE:MEC_paul_friedrich_von_mecklenburg_schwerin = {
+	# Paul Frederick
+	first_name = "Paul_Friedrich"
+	last_name = "von_Mecklenburg-Schwerin"
+	historical = yes
+	noble = yes
+	culture = primary_culture
+	age = 36
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_MECKLENBURG
+	traits = {
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+MEC_friedrich_franz_ii_von_mecklenburg_schwerin = {
+	first_name = "Friedrich_Franz"
+	last_name = "von_Mecklenburg-Schwerin"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1823.2.28
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+	traits = {
+		basic_offensive_planner
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+MEC_friedrich_franz_iii_von_mecklenburg_schwerin = {
+	first_name = "Friedrich_Franz"
+	last_name = "von_Mecklenburg-Schwerin"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1851.3.19
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+	traits = {
+		sickly
+		hedonist
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+MEC_friedrich_franz_iv_von_mecklenburg_schwerin = {
+	first_name = "Friedrich_Franz"
+	last_name = "von_Mecklenburg-Schwerin"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1882.4.9
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+	traits = {
+		erudite
+	}
+}
+
+MEC_hereditary_duke_friedrich_franz_von_mecklenburg_schwerin = {
+	first_name = "Friedrich_Franz"
+	last_name = "von_Mecklenburg-Schwerin"
+	historical = yes
+	culture = cu:north_german
+	noble = yes
+	birth_date = 1910.4.22
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_MECKLENBURG
+}

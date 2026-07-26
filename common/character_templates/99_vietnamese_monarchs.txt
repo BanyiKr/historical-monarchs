@@ -1,0 +1,228 @@
+﻿rr_DAI_tu_duc = { # Tu Duc
+	first_name = "Tu_Duc"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1829.9.22
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	traits = {
+		erudite
+		pious
+		romantic
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_duc_duc = { # Dục Đức
+	first_name = "Duc_Duc"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1852.2.23
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	traits = {
+		hedonist
+		reckless
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_hiep_hoa = { # Hiệp Hòa
+	first_name = "Hiep_Hoa"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1847.11.1
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_kien_phuc = { # Kiến Phúc
+	first_name = "Kien_Phuc"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1869.2.12
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	traits = {
+		cancer
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_ham_nghi = { # Hàm Nghi
+	first_name = "Ham_Nghi"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1871.8.3
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_ANNAM
+	traits = {
+		reckless
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_dong_khanh = { # Dong Khánh
+	first_name = "Dong_Khanh"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1864.2.28
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_ANNAM
+	traits = {
+		expensive_tastes
+		romantic
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_thanh_thai = { # Thanh Thái
+	first_name = "Thanh_Thai"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1879.3.14
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_ANNAM
+	traits = {
+		erudite
+		romantic
+		tactful
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_duy_tan = { # Duy Tan
+	first_name = "Duy_Tan"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1900.9.5
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_ANNAM
+	traits = {
+		reserved
+		reckless
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_khai_dinh = { # Khai Dinh
+	first_name = "Khai_Dinh"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1885.10.8
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_ANNAM
+	traits = {
+		reserved
+		expensive_tastes
+		hedonist
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_bao_dai = { # Bao Dai
+	first_name = "Bao_Dai"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1913.10.22
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_ANNAM
+	traits = {
+		erudite
+		expensive_tastes
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+rr_DAI_bao_long = {
+	first_name = "Bao_Long"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1936.1.4
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_ANNAM
+	traits = {
+		erudite
+		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

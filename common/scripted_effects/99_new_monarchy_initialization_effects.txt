@@ -1,0 +1,345 @@
+﻿country_initialize_monarch_effect = {
+	### Starting monarch(s)
+	if = { # NOR
+		limit = {
+			c:NOR ?= this
+		}
+		trigger_event = {
+			id = hm_monarch_choice.1
+			popup = yes
+		}
+	}
+	else_if = { # BUL
+		limit = {
+			c:BUL ?= this
+		}
+		trigger_event = {
+			id = hm_monarch_choice.2
+			popup = yes
+		}
+	}
+	else_if = { # FIN
+		limit = {
+			c:FIN ?= this
+			NOR = {
+				exists = c:HEK
+				any_country = {
+					was_formed_from = HEK
+				}
+			}
+		}
+		if = {
+			limit = {
+				year < 1884
+			}
+			create_character = {
+				template = rr_HEK_frederick_william_ii_von_hessen_kassel
+				ruler = yes
+			}
+		}
+		else = {
+			create_character = {
+				template = rr_HEK_frederick_karl_von_hessen_kassel
+				ruler = yes
+			}
+		}
+	}
+	else_if = { # LUX
+		limit = {
+			c:LUX ?= this
+		}
+		if = {
+			limit = {
+				NOR = {
+					exists = c:NAS
+					any_country = {
+						was_formed_from = NAS
+					}
+				}
+			}
+			if = {
+				limit = {
+					year < 1866
+				}
+				country_summon_character_effect = {
+					TEMPLATE = NAS_adolf_von_nassau_weilburg
+					ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+				}
+			}
+			else_if = {
+				limit = {
+					year < 1912
+				}
+				country_summon_character_effect = {
+					TEMPLATE = LUX_william_iv
+					ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+				}
+			}
+			else_if = {
+				limit = {
+					year < 1919
+				}
+				country_summon_character_effect = {
+					TEMPLATE = LUX_marie_adelaide_i
+					ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+				}
+			}
+			else = {
+				country_summon_character_effect = {
+					TEMPLATE = LUX_charlotte_i
+					ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+				}
+			}
+		}
+		else = {
+			random_country = {
+				limit = {
+					OR = {
+						c:NAS ?= this
+						was_formed_from = NAS
+					}
+				}
+				create_diplomatic_pact = {
+					country = scope:target
+					type = personal_union
+				}
+			}
+		}
+	}
+	else_if = { # SCH
+		limit = {
+			c:SCH ?= this
+		}
+		if = {
+			limit = {
+				game_date < 1869.3.11
+			}
+			create_character = {
+				template = SCH_christian_augusti_ii
+				ruler = yes
+			}
+			create_character = {
+				template = SCH_frederik_viii
+				heir = yes
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1869.3.11
+				game_date < 1880.1.14
+			}
+			create_character = {
+				template = SCH_frederik_viii
+				ruler = yes
+			}
+			create_character = {
+				template = SCH_ernst_gunther_ii
+				heir = yes
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1880.1.14
+				game_date < 1921.2.22
+			}
+			create_character = {
+				template = SCH_ernst_gunther_ii
+				ruler = yes
+			}
+			create_character = {
+				template = SCH_albert_i
+				heir = yes
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1921.2.22
+			}
+			if = {
+				limit = {
+					exists = c:HOL
+					c:HOL = {
+						country_has_monarchy_law = yes
+						country_has_non_monarchy_law = no
+						trigger_if = {
+							limit = {
+								is_subject = yes
+							}
+							NOT = {
+								is_subject_type = subject_type_personal_union
+							}
+							can_have_subjects = yes
+						}
+					}
+				}
+				c:HOL = {
+					create_diplomatic_pact = {
+						country = c:SCH
+						type = personal_union
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						game_date < 1931.4.27
+					}
+					create_character = {
+						template = SCH_albert_i
+						ruler = yes
+					}
+					create_character = {
+						template = SCH_friedrich_ferdinand
+						heir = yes
+					}
+				}
+				else_if = {
+					limit = {
+						game_date >= 1931.4.27
+						game_date < 1934.1.21
+					}
+					create_character = {
+						template = SCH_friedrich_ferdinand
+						ruler = yes
+					}
+					create_character = {
+						template = SCH_wilhelm_friedrich
+						heir = yes
+					}
+				}
+				else_if = {
+					limit = {
+						game_date >= 1934.1.21
+					}
+					create_character = {
+						template = SCH_wilhelm_friedrich
+						ruler = yes
+					}
+					create_character = {
+						template = SCH_peter_i
+						heir = yes
+					}
+				}
+			}
+		}
+	}
+	else_if = { # HOL
+		limit = {
+			c:HOL ?= this
+		}
+		if = {
+			limit = {
+				game_date < 1921.2.22
+			}
+			if = {
+				limit = {
+					exists = c:SCH
+					c:SCH = {
+						country_has_monarchy_law = yes
+						country_has_non_monarchy_law = no
+						trigger_if = {
+							limit = {
+								is_subject = yes
+							}
+							NOT = {
+								is_subject_type = subject_type_personal_union
+							}
+							can_have_subjects = yes
+						}
+					}
+				}
+				c:SCH = {
+					create_diplomatic_pact = {
+						country = c:HOL
+						type = personal_union
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						game_date < 1869.3.11
+					}
+					create_character = {
+						template = SCH_christian_augusti_ii
+						ruler = yes
+					}
+					create_character = {
+						template = SCH_frederik_viii
+						heir = yes
+					}
+				}
+				else_if = {
+					limit = {
+						game_date >= 1869.3.11
+						game_date < 1880.1.14
+					}
+					create_character = {
+						template = SCH_frederik_viii
+						ruler = yes
+					}
+					create_character = {
+						template = SCH_ernst_gunther_ii
+						heir = yes
+					}
+				}
+				else_if = {
+					limit = {
+						game_date >= 1880.1.14
+						game_date < 1921.2.22
+					}
+					create_character = {
+						template = SCH_ernst_gunther_ii
+						ruler = yes
+					}
+					create_character = {
+						template = SCH_albert_i
+						heir = yes
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					game_date < 1931.4.27
+				}
+				create_character = {
+					template = SCH_albert_i
+					ruler = yes
+				}
+				create_character = {
+					template = SCH_friedrich_ferdinand
+					heir = yes
+				}
+			}
+			else_if = {
+				limit = {
+					game_date >= 1931.4.27
+					game_date < 1934.1.21
+				}
+				create_character = {
+					template = SCH_friedrich_ferdinand
+					ruler = yes
+				}
+				create_character = {
+					template = SCH_wilhelm_friedrich
+					heir = yes
+				}
+			}
+			else_if = {
+				limit = {
+					game_date >= 1934.1.21
+				}
+				create_character = {
+					template = SCH_wilhelm_friedrich
+					ruler = yes
+				}
+				create_character = {
+					template = SCH_peter_i
+					heir = yes
+				}
+			}
+		}
+	}
+}

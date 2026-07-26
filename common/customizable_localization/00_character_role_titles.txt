@@ -1,0 +1,254 @@
+﻿character_role_magnate_custom_loc = {
+	type = character
+	random_valid = yes
+
+	text = {
+		trigger = {
+			character_is_taikun = yes
+		}
+		localization_key = character_title_taikun
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = yes
+		}
+		localization_key = character_title_daimyo
+	}
+	text = {
+		trigger = {
+			german_federal_monarch_king_trigger = yes
+		}
+		localization_key = RULER_TITLE_KING
+	}
+	text = {
+		trigger = {
+			german_federal_monarch_grand_duke_trigger = yes
+		}
+		localization_key = RULER_TITLE_GRAND_DUKE
+	}
+	text = {
+		trigger = {
+			german_federal_monarch_duke_trigger = yes
+		}
+		localization_key = RULER_TITLE_DUKE
+	}
+	text = {
+		trigger = {
+			german_federal_monarch_prince_trigger = yes
+		}
+		localization_key = RULER_TITLE_PRINCE
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = yes
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_lady
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = yes
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_baroness
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = yes
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_countess
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = yes
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_marquess
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = no
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_lord
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = no
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_baron
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = no
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_count
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = no
+			is_noble = yes
+			owner ?= {
+				country_has_nobility = yes
+			}
+		}
+		localization_key = character_title_marquis
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = yes
+			OR = {
+				is_noble = no
+				owner ?= {
+					country_has_nobility = no
+				}
+			}
+		}
+		localization_key = character_title_gentlewoman
+	}
+	text = {
+		trigger = {
+			character_is_taikun = no
+			character_is_daimyo = no
+			character_is_german_federal_monarch = no
+			is_female = no
+			OR = {
+				is_noble = no
+				owner ?= {
+					country_has_nobility = no
+				}
+			}
+		}
+		localization_key = character_title_gentleman
+	}
+}
+
+character_role_general_custom_loc = {
+	type = character
+
+	text = {
+		trigger = {
+			commander_rank = 1
+		}
+		localization_key = commander_rank_1_general
+	}
+	text = {
+		trigger = {
+			commander_rank = 2
+		}
+		localization_key = commander_rank_2_general
+	}
+	text = {
+		trigger = {
+			commander_rank = 3
+		}
+		localization_key = commander_rank_3_general
+	}
+	text = {
+		trigger = {
+			commander_rank = 4
+		}
+		localization_key = commander_rank_4_general
+	}
+	text = {
+		trigger = {
+			commander_rank = 5
+		}
+		localization_key = commander_rank_5_general
+	}
+	text = {
+		localization_key = character_role_general_title
+		fallback = yes
+	}
+}
+
+character_role_admiral_custom_loc = {
+	type = character
+
+	text = {
+		trigger = {
+			commander_rank = 1
+		}
+		localization_key = commander_rank_1_admiral
+	}
+	text = {
+		trigger = {
+			commander_rank = 2
+		}
+		localization_key = commander_rank_2_admiral
+	}
+	text = {
+		trigger = {
+			commander_rank = 3
+		}
+		localization_key = commander_rank_3_admiral
+	}
+	text = {
+		trigger = {
+			commander_rank = 4
+		}
+		localization_key = commander_rank_4_admiral
+	}
+	text = {
+		trigger = {
+			commander_rank = 5
+		}
+		localization_key = commander_rank_5_admiral
+	}
+	text = {
+		localization_key = character_role_admiral_title
+		fallback = yes
+	}
+}
