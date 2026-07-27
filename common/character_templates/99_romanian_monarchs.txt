@@ -26,8 +26,6 @@ MOL_alexandru_cuza = { # Domnitor Alexandru Ioan Cuza
 	ideology = ideology_authoritarian
 	home_region = STATE_MOLDAVIA
 	traits = {
-		imperious
-		ambitious
 		basic_political_operator
 		romantic
 	}
@@ -179,8 +177,6 @@ ROM_carol_ii = { # King Carol II
 	home_region = STATE_WALLACHIA
 	traits = {
 		hedonist
-		imperious
-		ambitious
 		charismatic
 		reckless
 		alcoholic

@@ -30,10 +30,11 @@ REPLACE:per_nasir_al_din_qajar_template = {
     birth_date = 1831.7.16
     home_region = STATE_IRAKAJEMI
 	dna = dna_naser_qajar
-    interest_group = ig_landowners
+    interest_group = ig_petty_bourgeoisie
     ideology = ideology_traditionalist
     traits = {
-        trait_child
+        cautious
+		expensive_tastes
     }
 	on_created = {
 		set_variable = is_married

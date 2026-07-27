@@ -28,7 +28,7 @@ rr_EGY_abbas_helmy = { # Abbas I of Egypt
 	noble = yes
 	birth_date = 1812.7.1
 	culture = cu:albanian
-	interest_group = ig_landowners
+	interest_group = ig_devout
     ideology = ideology_protectionist
 	home_region = STATE_LOWER_EGYPT
 	traits = {
@@ -50,7 +50,7 @@ rr_EGY_mohamed_said = { # Sa'id I of Egypt
 	birth_date = 1822.1.17
 	culture = cu:albanian
 	interest_group = ig_intelligentsia
-    ideology = ideology_abolitionist
+    ideology = ideology_bonapartist
 	home_region = STATE_LOWER_EGYPT
 	traits = {
 		hedonist
@@ -91,13 +91,12 @@ rr_EGY_mohamed_tewfik = { # Tewfik I of Egypt
 	noble = yes
 	culture = cu:albanian
 	birth_date = 1852.11.15
-	interest_group = ig_rural_folk
-    ideology = ideology_reformer
+	interest_group = ig_landowners
+    ideology = ideology_moderate
 	home_region = STATE_LOWER_EGYPT
 	traits = {
-		honorable
 		wrathful
-		charismatic
+		ruthless
 		inexperienced
 	}
 	on_created = {
@@ -114,7 +113,7 @@ rr_EGY_abbas_helmy_ii = { # Abbas II of Egypt
 	culture = cu:albanian
 	birth_date = 1874.7.14
 	interest_group = ig_petty_bourgeoisie
-    ideology = ideology_traditionalist
+    ideology = ideology_reformer
 	home_region = STATE_LOWER_EGYPT
 	traits = {
 		reckless
@@ -136,12 +135,16 @@ rr_EGY_hussein_kamel = { # Hussein Kamel of Egypt
 	interest_group = ig_landowners
     ideology = ideology_royalist
 	home_region = STATE_LOWER_EGYPT
+	traits = {
+		compliant
+		reserved
+	}
 	on_created = {
 		set_variable = is_married
 	}
 }
 
-rr_EGY_prince_kamal_el_dine = { # Prince Kamal el Dine of Egypt
+rr_EGY_prince_kamal_el_dine = { # Prince Kamal el Din of Egypt
 	first_name = "Kamal_el_Dine"
 	last_name = "al-_Alawi"
 	historical = yes
@@ -149,13 +152,13 @@ rr_EGY_prince_kamal_el_dine = { # Prince Kamal el Dine of Egypt
 	noble = yes
 	culture = cu:albanian
 	birth_date = 1874.12.20
-	interest_group = ig_landowners
+	interest_group = ig_devout
     ideology = ideology_royalist
 	home_region = STATE_LOWER_EGYPT
 	traits = {
 		honorable
 		aesthete
-		explorer
+		pious
 	}
 	on_created = {
 		set_variable = is_married
@@ -190,7 +193,7 @@ rr_EGY_farouk_i = { # Farouk I of Egypt
 	noble = yes
 	birth_date = 1920.2.11
 	culture = cu:misri
-	interest_group = ig_devout
+	interest_group = ig_intelligentsia
     ideology = ideology_authoritarian
 	home_region = STATE_LOWER_EGYPT
 	traits = {

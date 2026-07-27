@@ -6,15 +6,13 @@
 	noble = yes
     birth_date = 1844.3.14
 	culture = cu:north_italian
-    interest_group = ig_armed_forces
+    interest_group = ig_petty_bourgeoisie
     ideology = ideology_jingoist_leader
 	home_region = STATE_PIEDMONT
     traits = {
-        ambitious
-		traditionalist_commander
-		experienced_offensive_planner
-		imperious
+ 		wrathful
 		cruel
+		direct	
     }
 	on_created = {
         set_variable = house_savoy
