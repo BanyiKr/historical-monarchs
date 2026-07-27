@@ -26,8 +26,6 @@ MOL_alexandru_cuza = { # Domnitor Alexandru Ioan Cuza
 	ideology = ideology_authoritarian
 	home_region = STATE_MOLDAVIA
 	traits = {
-		imperious
-		ambitious
 		basic_political_operator
 		romantic
 	}

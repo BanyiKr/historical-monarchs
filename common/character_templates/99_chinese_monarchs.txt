@@ -49,7 +49,6 @@ CHI_guangxu = { # Guangxu Emperor
 	home_region = STATE_BEIJING
 	traits = {
 		reserved
-		ambitious
 		inexperienced
 		direct
 		reckless

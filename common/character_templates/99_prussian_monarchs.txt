@@ -47,7 +47,7 @@ PRU_wilhelm_I = { # William I of Prussia
     historical = yes
 	noble = yes
     birth_date = 1797.3.22
-    interest_group = ig_armed_forces
+    interest_group = ig_landowners
     ideology = ideology_royalist
 	home_region = STATE_BRANDENBURG
     traits = {
@@ -68,13 +68,14 @@ PRU_frederick_iii = { # Frederick III of Prussia
 	noble = yes
     birth_date = 1831.10.18
     interest_group = ig_intelligentsia
-    ideology = ideology_reformer
+    ideology = ideology_liberal_leader
 	home_region = STATE_BRANDENBURG
     traits = {
-        ambitious
-		honorable
+ 		honorable
 		erudite
 		popular_commander
+		cancer
+		sickly
     }
     on_created = {
         set_variable = is_married
@@ -93,10 +94,9 @@ PRU_wilhelm_II = { # William II of Prussia
 	home_region = STATE_BRANDENBURG
     traits = {
         imperious
-		ambitious
-		arrogant
-		reckless
-		innovative
+		wrathful
+		direct
+		experienced_colonial_administrator
     }
     on_created = {
         set_variable = is_married
@@ -114,7 +114,7 @@ PRU_crown_prince_wilhelm = { # Crown Prince Wilhelm of Prussia
     ideology = ideology_royalist
 	home_region = STATE_BRANDENBURG
     traits = {
-        ambitious
+		imperious
 		traditionalist_commander
 		basic_diplomat
     }
@@ -133,6 +133,10 @@ PRU_prince_wilhelm = { # Prince Wilhelm of Prussia
     interest_group = ig_armed_forces
     ideology = ideology_royalist
 	home_region = STATE_BRANDENBURG
+	traits = {
+	trait_child
+		basic_diplomat
+    }
 	on_created = {
 		set_variable = house_hohenzollern
 	}
