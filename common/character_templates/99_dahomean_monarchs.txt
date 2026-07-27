@@ -1,0 +1,62 @@
+﻿DAH_ghezo = {
+	first_name = "Ghezo"
+	last_name = "Aladaxonou"
+	historical = yes
+	noble = yes
+	culture = cu:fon
+	age = 49
+	interest_group = ig_landowners
+	ideology = ideology_slaver
+	home_region = STATE_DAHOMEY
+	traits = {
+		ambitious
+		aesthete
+	}
+}
+
+DAH_glele = {
+	first_name = "Glele"
+	last_name = "Aladaxonou"
+	historical = yes
+	noble = yes
+	culture = cu:fon
+	age = 22
+	interest_group = ig_landowners
+	ideology = ideology_slaver
+	home_region = STATE_DAHOMEY
+	traits = {
+		ambitious
+		wrathful
+	}
+}
+
+DAH_gbehanzin = {
+	first_name = "Gbehanzin"
+	last_name = "Aladaxonou"
+	historical = yes
+	noble = yes
+	culture = cu:fon
+	birth_date = 1845.4.4
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_DAHOMEY
+	traits = {
+		ambitious
+		direct
+	}
+}
+
+DAH_agoli_agbo = {
+	first_name = "Agoli-agbo"
+	last_name = "Aladaxonou"
+	historical = yes
+	noble = yes
+	culture = cu:fon
+	birth_date = 1850.4.4
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_DAHOMEY
+	traits = {
+		compliant
+	}
+}

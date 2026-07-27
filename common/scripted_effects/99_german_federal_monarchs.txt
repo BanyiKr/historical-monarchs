@@ -200,7 +200,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1797.3.22
 				}
 				create_character = {
-					template = rr_pru_wilhelm_I
+					template = PRU_wilhelm_I
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -223,7 +223,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1831.10.18
 				}
 				create_character = {
-					template = rr_pru_frederick_iii
+					template = PRU_frederick_iii
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -246,7 +246,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1859.1.27
 				}
 				create_character = {
-					template = rr_pru_wilhelm_II
+					template = PRU_wilhelm_II
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -269,7 +269,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1882.5.6
 				}
 				create_character = {
-					template = rr_pru_crown_prince_wilhelm
+					template = PRU_crown_prince_wilhelm
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -292,7 +292,7 @@ GER_character_generate_prussia_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1906.7.4
 				}
 				create_character = {
-					template = rr_pru_prince_wilhelm
+					template = PRU_prince_wilhelm
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -376,7 +376,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1845.8.25
 				}
 				create_character = {
-					template = rr_BAV_ludwig_ii
+					template = BAV_ludwig_ii_von_bayern
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -398,7 +398,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1848.4.27
 				}
 				create_character = {
-					template = rr_BAV_otto_i
+					template = BAV_otto_i_von_bayern
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -420,7 +420,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1845.1.7
 				}
 				create_character = {
-					template = rr_BAV_ludwig_iii
+					template = BAV_ludwig_iii_von_bayern
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -442,7 +442,7 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 					game_date >= 1869.5.18
 				}
 				create_character = {
-					template = rr_BAV_prince_rupprecht
+					template = BAV_prince_rupprecht
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -611,7 +611,7 @@ GER_character_generate_brunswick_federal_monarch = { # Owner = country, ROOT = p
 					game_date >= 1845.9.21
 				}
 				create_character = {
-					template = rr_HAN_prince_ernest_august
+					template = HAN_prince_ernest_august
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -633,7 +633,7 @@ GER_character_generate_brunswick_federal_monarch = { # Owner = country, ROOT = p
 					game_date >= 1880.10.28
 				}
 				create_character = {
-					template = rr_HAN_prince_george_william
+					template = HAN_prince_george_william
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -655,7 +655,7 @@ GER_character_generate_brunswick_federal_monarch = { # Owner = country, ROOT = p
 					game_date >= 1887.11.17
 				}
 				create_character = {
-					template = rr_HAN_duke_ernst_august
+					template = HAN_duke_ernst_august
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -738,7 +738,7 @@ GER_character_generate_baden_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1826.9.9
 				}
 				create_character = {
-					template = rr_BAD_frederick_i
+					template = BAD_frederick_i
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -760,7 +760,7 @@ GER_character_generate_baden_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1857.7.9
 				}
 				create_character = {
-					template = rr_BAD_frederick_ii
+					template = BAD_frederick_ii
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -782,7 +782,7 @@ GER_character_generate_baden_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1867.7.10
 				}
 				create_character = {
-					template = rr_BAD_maximillian_of_baden
+					template = BAD_maximillian_of_baden
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -804,7 +804,7 @@ GER_character_generate_baden_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1906.2.24
 				}
 				create_character = {
-					template = rr_BAD_bethold_of_baden
+					template = BAD_bethold_of_baden
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -887,7 +887,7 @@ GER_character_generate_hesse_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1837.9.12
 				}
 				create_character = {
-					template = rr_HES_ludwig_iv_von_hessen_darmstadt
+					template = HES_ludwig_iv_von_hessen_darmstadt
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -909,7 +909,7 @@ GER_character_generate_hesse_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1868.11.25
 				}
 				create_character = {
-					template = rr_HES_ernst_ludwig_i_von_hessen_darmstadt
+					template = HES_ernst_ludwig_i_von_hessen_darmstadt
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -931,7 +931,7 @@ GER_character_generate_hesse_federal_monarch = { # Owner = country, ROOT = prede
 					game_date >= 1906.11.8
 				}
 				create_character = {
-					template = rr_HES_georg_donatus_i_von_hessen_darmstadt
+					template = HES_georg_donatus_i_von_hessen_darmstadt
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1014,7 +1014,7 @@ GER_character_generate_saxony_federal_monarch = { # Owner = country, ROOT = pred
 					game_date >= 1801.12.12
 				}
 				create_character = {
-					template = rr_SAX_johann_i
+					template = SAX_johann_i
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1036,7 +1036,7 @@ GER_character_generate_saxony_federal_monarch = { # Owner = country, ROOT = pred
 					game_date >= 1828.4.23
 				}
 				create_character = {
-					template = rr_SAX_albert_i
+					template = SAX_albert_i
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1058,7 +1058,7 @@ GER_character_generate_saxony_federal_monarch = { # Owner = country, ROOT = pred
 					game_date >= 1832.8.8
 				}
 				create_character = {
-					template = rr_SAX_georg_i
+					template = SAX_georg_i
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1080,7 +1080,7 @@ GER_character_generate_saxony_federal_monarch = { # Owner = country, ROOT = pred
 					game_date >= 1865.5.25
 				}
 				create_character = {
-					template = rr_SAX_friedrich_august_iii
+					template = SAX_friedrich_august_iii
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1102,7 +1102,7 @@ GER_character_generate_saxony_federal_monarch = { # Owner = country, ROOT = pred
 					game_date >= 1893.1.15
 				}
 				create_character = {
-					template = rr_SAX_prince_georg
+					template = SAX_prince_georg
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1334,7 +1334,7 @@ GER_character_generate_wurttemberg_federal_monarch = { # Owner = country, ROOT =
 					game_date >= 1848.2.25
 				}
 				create_character = {
-					template = rr_WUR_wilhelm_ii
+					template = WUR_wilhelm_ii
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1356,7 +1356,7 @@ GER_character_generate_wurttemberg_federal_monarch = { # Owner = country, ROOT =
 					game_date >= 1833.3.1
 				}
 				create_character = {
-					template = rr_WUR_duke_nicholas
+					template = WUR_duke_nicholas
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1378,7 +1378,7 @@ GER_character_generate_wurttemberg_federal_monarch = { # Owner = country, ROOT =
 					game_date >= 1838.7.30
 				}
 				create_character = {
-					template = rr_WUR_duke_philipp
+					template = WUR_duke_philipp
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1400,7 +1400,7 @@ GER_character_generate_wurttemberg_federal_monarch = { # Owner = country, ROOT =
 					game_date >= 1865.12.23
 				}
 				create_character = {
-					template = rr_WUR_duke_albrecht
+					template = WUR_duke_albrecht
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1422,7 +1422,7 @@ GER_character_generate_wurttemberg_federal_monarch = { # Owner = country, ROOT =
 					game_date >= 1893.11.14
 				}
 				create_character = {
-					template = rr_WUR_duke_philipp_albrecht
+					template = WUR_duke_philipp_albrecht
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1505,7 +1505,7 @@ GER_character_generate_oldenburg_federal_monarch = { # Owner = country, ROOT = p
 					game_date >= 1852.11.16
 				}
 				create_character = {
-					template = rr_OLD_frederick_augustus_ii
+					template = OLD_frederick_augustus_ii
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house
@@ -1527,7 +1527,7 @@ GER_character_generate_oldenburg_federal_monarch = { # Owner = country, ROOT = p
 					game_date >= 1897.8.10
 				}
 				create_character = {
-					template = rr_OLD_nikolaus
+					template = OLD_nikolaus
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house

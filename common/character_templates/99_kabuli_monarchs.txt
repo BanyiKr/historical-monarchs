@@ -1,4 +1,4 @@
-﻿rr_KAB_sher_ali_barakzai = {
+﻿KAB_sher_ali_barakzai = {
 	first_name = "Sher_Ali"
 	last_name = "Barakzai"
 	historical = yes
@@ -16,7 +16,7 @@
     }
 }
 
-rr_KAB_abdur_rahman_barakzai = {
+KAB_abdur_rahman_barakzai = {
 	first_name = "Abdurrahman"
 	last_name = "Barakzai"
 	historical = yes
@@ -27,7 +27,6 @@ rr_KAB_abdur_rahman_barakzai = {
 	ideology = ideology_authoritarian
 	home_region = STATE_KABUL
 	traits = {
-		ambitious
 		imperious
 		basic_diplomat
 	}
@@ -36,7 +35,7 @@ rr_KAB_abdur_rahman_barakzai = {
     }
 }
 
-rr_KAB_habibullah_barakzai = {
+KAB_habibullah_barakzai = {
 	first_name = "Habibullah"
 	last_name = "Barakzai"
 	historical = yes
@@ -54,7 +53,7 @@ rr_KAB_habibullah_barakzai = {
     }
 }
 
-rr_KAB_nasrullah_barakzai = {
+KAB_nasrullah_barakzai = {
 	first_name = "Nasrullah"
 	last_name = "Barakzai"
 	historical = yes
@@ -72,7 +71,7 @@ rr_KAB_nasrullah_barakzai = {
     }
 }
 
-rr_KAB_amanullah_barakzai = {
+KAB_amanullah_barakzai = {
 	first_name = "Amanullah"
 	last_name = "Barakzai"
 	historical = yes
@@ -90,7 +89,7 @@ rr_KAB_amanullah_barakzai = {
     }
 }
 
-rr_KAB_inayatullah_barakzai = {
+KAB_inayatullah_barakzai = {
 	first_name = "Inayatullah"
 	last_name = "Barakzai"
 	historical = yes
@@ -108,7 +107,7 @@ rr_KAB_inayatullah_barakzai = {
     }
 }
 
-rr_KAB_mohammad_nadir_musahiban = {
+KAB_mohammad_nadir_musahiban = {
 	first_name = "Mohammad_Nadir"
 	last_name = "Barakzai"
 	historical = yes
@@ -124,7 +123,7 @@ rr_KAB_mohammad_nadir_musahiban = {
     }
 }
 
-rr_KAB_mohammad_zahir_musahiban = {
+KAB_mohammad_zahir_musahiban = {
 	first_name = "Mohammad_Zahir"
 	last_name = "Barakzai"
 	historical = yes

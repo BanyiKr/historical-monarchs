@@ -1,5 +1,21 @@
-﻿rr_CHI_tongzhi = { # Tongzhi Emperor
-	first_name = "Tongzhi"
+﻿REPLACE:chi_xianfeng_template = {
+    # Prince Yizhu, the future Xianfeng Emperor
+    first_name = "Yizhu"
+    last_name = "Aisin_Gioro"
+    historical = yes
+    heir = yes
+    birth_date = 1831.7.17
+    culture = cu:manchu
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_BEIJING
+    traits = {
+        trait_child
+    }
+}
+
+CHI_tongzhi = { # Tongzhi Emperor
+	first_name = "Zaichun"
 	last_name = "Aisin_Gioro"
 	female = no
 	historical = yes
@@ -20,8 +36,8 @@
     }
 }
 
-rr_CHI_guangxu = { # Guangxu Emperor
-	first_name = "Guangxu"
+CHI_guangxu = { # Guangxu Emperor
+	first_name = "Zaitian"
 	last_name = "Aisin_Gioro"
 	female = no
 	historical = yes
@@ -42,7 +58,7 @@ rr_CHI_guangxu = { # Guangxu Emperor
     }
 }
 
-rr_CHI_puyi = { # Emperor Puyi
+CHI_puyi = { # Emperor Puyi
 	first_name = "Puyi"
 	last_name = "Aisin_Gioro"
 	female = no
@@ -55,6 +71,69 @@ rr_CHI_puyi = { # Emperor Puyi
 	home_region = STATE_BEIJING
 	traits = {
 		reserved
+	}
+	on_created = {
+        set_variable = is_married
+    }
+}
+
+### Regents
+REPLACE:chi_cixi_template = {
+    first_name = Cixi
+    last_name = Yehe_Nara
+    historical = yes
+    culture = cu:manchu
+    female = yes
+	noble = yes
+    ideology = ideology_modernizer_leader
+    home_region = STATE_BEIJING
+    birth_date = 1835.11.29
+    dna = dna_empress_dowager_cixi
+    traits = {
+       ambitious
+       reckless
+       experienced_political_operator
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:CHI
+            c:CHI ?= THIS
+            c:CHI ?= {
+				country_has_monarchy_law = yes
+			}
+            has_dlc_feature = ep1_content
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            is_interest_group_type = ig_landowners
+            NOR = {
+                has_variable = communist_ig_var
+                has_variable = chose_vanguardism
+                has_variable = chose_fascism
+                has_variable = chose_conservatism
+                has_variable = chose_ethno_nationalism
+            }
+        }
+        earliest_usage_date = 1852.6.26 # the day she entered the Forbidden City
+        latest_usage_date = 1898.1.1
+        #guaranteed to spawn if possible
+    }
+}
+
+CHI_zaifeng = {
+    first_name = "Zaifeng"
+	last_name = "Aisin_Gioro"
+	female = no
+	historical = yes
+	culture = cu:manchu
+	noble = yes
+    ideology = ideology_modernizer_leader
+	interest_group = ig_landowners
+    birth_date = 1883.2.12
+    home_region = STATE_BEIJING
+    traits = {
+		ambitious
+        reckless
 	}
 	on_created = {
         set_variable = is_married

@@ -1,4 +1,4 @@
-﻿rr_HDJ_awn_ar_rafiq_al_hashimi = {
+﻿HDJ_awn_ar_rafiq_al_hashimi = {
 	# Awn ar-Rafiq ibn Muhammad
 	first_name = "Awn_ar_Rafiq"
 	last_name = "al_Hashimi"
@@ -16,7 +16,7 @@
 	}
 }
 
-rr_HDJ_ali_pasha_al_hashimi = {
+HDJ_ali_pasha_al_hashimi = {
 	# Awn ar-Rafiq ibn Abd Allah
 	first_name = "Ali"
 	last_name = "al_Hashimi"
@@ -34,7 +34,7 @@ rr_HDJ_ali_pasha_al_hashimi = {
 	}
 }
 
-rr_HDJ_hussein_al_hashimi = {
+HDJ_hussein_al_hashimi = {
 	# Hussein ibn Ali
 	first_name = "Hussein"
 	last_name = "al_Hashimi"
@@ -52,7 +52,7 @@ rr_HDJ_hussein_al_hashimi = {
 	}
 }
 
-rr_HDJ_ali_ibn_hussein_al_hashimi = {
+HDJ_ali_ibn_hussein_al_hashimi = {
 	# Ali ibn Hussein
 	first_name = "Ali"
 	last_name = "al_Hashimi"
@@ -70,7 +70,7 @@ rr_HDJ_ali_ibn_hussein_al_hashimi = {
 	}
 }
 
-rr_HDJ_abd_al_ilah_al_hashimi = {
+HDJ_abd_al_ilah_al_hashimi = {
 	# Abd al-Ilah
 	first_name = "Abd_al_Ilah"
 	last_name = "al_Hashimi"

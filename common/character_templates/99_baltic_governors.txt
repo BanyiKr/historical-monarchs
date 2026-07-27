@@ -1,0 +1,118 @@
+﻿UBD_yevgeny_golovin = {
+	first_name = Yevgeny
+	last_name = Golovin
+	historical = yes
+	ruler = yes
+	is_general = yes
+	hq = region_eastern_europe
+	commander_rank = commander_rank_3
+	culture = cu:russian
+	birth_date = 1782.5.1
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_MOSCOW
+	traits = {
+		traditionalist_commander
+	}
+}
+
+UBD_alexander_suvorov = {
+	first_name = Alexander
+	last_name = Suvorov
+	historical = yes
+	ruler = yes
+	noble = yes
+	is_general = yes
+	hq = region_eastern_europe
+	commander_rank = commander_rank_3
+	culture = cu:russian
+	birth_date = 1804.5.13
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_INGRIA
+	traits = {
+		traditionalist_commander
+		erudite
+		experienced_diplomat
+	}
+}
+
+UBD_wilhelm_heinrich_von_lieven = {
+	first_name = Wilhelm_Heinrich
+	last_name = von_Lieven
+	historical = yes
+	ruler = yes
+	noble = yes
+	is_general = yes
+	hq = region_eastern_europe
+	commander_rank = commander_rank_3
+	culture = cu:east_german
+	birth_date = 1800.9.29
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_COURLAND
+	traits = {
+		traditionalist_commander
+		experienced_offensive_planner
+	}
+}
+
+UBD_pyotr_shuvalov = {
+	first_name = Pyotr
+	last_name = Shuvalov
+	historical = yes
+	ruler = yes
+	noble = yes
+	is_general = yes
+	hq = region_eastern_europe
+	commander_rank = commander_rank_3
+	culture = cu:russian
+	birth_date = 1827.7.27
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	home_region = STATE_INGRIA
+	traits = {
+		traditionalist_commander
+	}
+}
+
+UBD_pyotr_albedinsky = {
+	first_name = Pyotr
+	last_name = Albendinsky
+	historical = yes
+	ruler = yes
+	noble = yes
+	is_general = yes
+	hq = region_eastern_europe
+	commander_rank = commander_rank_3
+	culture = cu:russian
+	birth_date = 1826.9.4
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_SMOLENSK
+	traits = {
+		traditionalist_commander
+		basic_diplomat
+	}
+}
+
+UBD_pyotr_bagratoni = {
+	first_name = Pyotr
+	last_name = Bagration
+	historical = yes
+	ruler = yes
+	noble = yes
+	is_general = yes
+	hq = region_eastern_europe
+	commander_rank = commander_rank_3
+	culture = cu:georgian
+	birth_date = 1818.9.24
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	home_region = STATE_INGRIA
+	traits = {
+		traditionalist_commander
+		innovative
+		erudite
+	}
+}

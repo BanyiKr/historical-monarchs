@@ -1,0 +1,12 @@
+﻿CHARACTERS = {
+	c:BEN ?= {
+		create_character = {
+			template = BEN_osemwede
+			ruler = yes
+		}
+		create_character = {
+			template = BEN_adolo
+			heir = yes
+		}
+	}
+}

@@ -1,4 +1,4 @@
-﻿rr_KHI_muhammad_amin_bahadur_qungrat = {
+﻿KHI_muhammad_amin_bahadur_qungrat = {
 	first_name = "Muhammad_Amin_Bahadur"
 	last_name = "Qungrat"
 	historical = yes
@@ -14,7 +14,7 @@
 	}
 }
 
-rr_KHI_sayyid_muhammad_qungrat = {
+KHI_sayyid_muhammad_qungrat = {
 	first_name = "Sayyid_Muhammad"
 	last_name = "Qungrat"
 	historical = yes
@@ -30,7 +30,7 @@ rr_KHI_sayyid_muhammad_qungrat = {
 	}
 }
 
-rr_KHI_muhammad_rahim_qungrat = {
+KHI_muhammad_rahim_qungrat = {
 	first_name = "Muhammad_Rahim"
 	last_name = "Qungrat"
 	historical = yes
@@ -49,7 +49,7 @@ rr_KHI_muhammad_rahim_qungrat = {
 	}
 }
 
-rr_KHI_isfandiyar_jurji_bahadur_qungrat = {
+KHI_isfandiyar_jurji_bahadur_qungrat = {
 	first_name = "Isfandiyar_Jurji_Bahadur"
 	last_name = "Qungrat"
 	historical = yes
@@ -69,7 +69,7 @@ rr_KHI_isfandiyar_jurji_bahadur_qungrat = {
 	}
 }
 
-rr_KHI_sayid_abdullah_qungrat = {
+KHI_sayid_abdullah_qungrat = {
 	first_name = "Sayid_Abdullah"
 	last_name = "Qungrat"
 	historical = yes

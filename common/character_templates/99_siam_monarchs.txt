@@ -1,4 +1,4 @@
-﻿rr_SIA_mogkut = { 
+﻿SIA_mogkut = { 
 	first_name = "Mongkut"
 	last_name = "Chakri"
 	historical = yes
@@ -19,7 +19,7 @@
 	}
 }
 
-rr_SIA_chulalongkorn = {
+SIA_chulalongkorn = {
 	first_name = "Chulalongkorn"
 	last_name = "Chakri"
 	historical = yes
@@ -40,7 +40,7 @@ rr_SIA_chulalongkorn = {
 	}
 }
 
-rr_SIA_vajiravudh = {
+SIA_vajiravudh = {
 	first_name = "Vajiravudh"
 	last_name = "Chakri"
 	historical = yes
@@ -60,7 +60,7 @@ rr_SIA_vajiravudh = {
 	}
 }
 
-rr_SIA_prajadhipok = {
+SIA_prajadhipok = {
 	first_name = "Prajadhipok"
 	last_name = "Chakri"
 	historical = yes
@@ -82,7 +82,7 @@ rr_SIA_prajadhipok = {
 	}
 }
 
-rr_SIA_ananda_mahidol = {
+SIA_ananda_mahidol = {
 	first_name = "Ananda_Mahidol"
 	last_name = "Chakri"
 	historical = yes
@@ -95,6 +95,45 @@ rr_SIA_ananda_mahidol = {
 	home_region = STATE_BANGKOK
 	traits = {
 		erudite
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+### Regents
+SIA_sri_suriwongse = {
+	first_name = "Chuang"
+	last_name = "Bunnag"
+	historical = yes
+	noble = yes
+	birth_date = 1808.12.23
+	culture = cu:thai
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	home_region = STATE_BANGKOK
+	traits = {
+		experienced_political_operator
+		basic_naval_commander
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SIA_aditya_dibabha = {
+	first_name = "Aditya_Dibabha"
+	last_name = "Abhakara"
+	historical = yes
+	noble = yes
+	birth_date = 1900.7.27
+	culture = cu:thai
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	home_region = STATE_BANGKOK
+	traits = {
+		erudite
+		literary
 	}
 	on_created = {
 		set_variable = is_married

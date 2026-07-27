@@ -197,13 +197,13 @@ denmark_generate_scripted_heirs = {
 		limit = {
 			game_date >= 1886.9.26
 			game_date < 1899.3.11
-			NOT = { is_template_used = rr_NOR_haakon_vii }
+			NOT = { is_template_used = NOR_haakon_vii }
 			ruler ?= {
 				has_template = DEN_christian_x
 			}
 		}
 		create_character = {
-			template = rr_NOR_haakon_vii
+			template = NOR_haakon_vii
 			heir = yes
 		}
 	}
@@ -634,6 +634,240 @@ morocco_generate_scripted_heirs = {
 		}
 		create_character = {
 			template = MOR_muhammad_v_al_alawi
+			heir = yes
+		}
+	}
+}
+
+prussia_generate_scripted_heirs = {
+	if = {
+		limit = {
+			NOT = { is_template_used = PRU_wilhelm_I }
+			ruler ?= {
+				has_template = pru_wilhelm_IV_hohenzollern_template
+			}
+		}
+		create_character = {
+			template = PRU_wilhelm_I
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { is_template_used = PRU_frederick_iii }
+			ruler ?= {
+				has_template = PRU_wilhelm_I
+			}
+		}
+		create_character = {
+			template = PRU_frederick_iii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1859.1.27
+			NOT = { is_template_used = PRU_wilhelm_II }
+			ruler ?= {
+				has_template = PRU_frederick_iii
+			}
+		}
+		create_character = {
+			template = PRU_wilhelm_II
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1882.5.6
+			NOT = { is_template_used = PRU_crown_prince_wilhelm }
+			ruler ?= {
+				has_template = PRU_wilhelm_II
+			}
+		}
+		create_character = {
+			template = PRU_crown_prince_wilhelm
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1906.7.4
+			NOT = { is_template_used = PRU_prince_wilhelm }
+			ruler ?= {
+				has_template = PRU_crown_prince_wilhelm
+			}
+		}
+		create_character = {
+			template = PRU_prince_wilhelm
+			heir = yes
+		}
+	}
+}
+
+sardinia_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1844.3.14
+			NOT = { is_template_used = SAR_umberto_i }
+			ruler ?= {
+				has_template = sar_victor_emmanuel_template
+			}
+		}
+		create_character = {
+			template = SAR_umberto_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.11.11
+			NOT = { is_template_used = SAR_victor_emmanuel_iii }
+			ruler ?= {
+				has_template = SAR_umberto_i
+			}
+		}
+		create_character = {
+			template = SAR_victor_emmanuel_iii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1904.9.15
+			NOT = { is_template_used = SAR_umberto_ii }
+			ruler ?= {
+				has_template = SAR_victor_emmanuel_iii
+			}
+		}
+		create_character = {
+			template = SAR_umberto_ii
+			heir = yes
+		}
+	}
+}
+
+china_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1856.4.27
+			NOT = { is_template_used = CHI_tongzhi }
+			ruler ?= {
+				has_template = chi_xianfeng_template
+			}
+		}
+		create_character = {
+			template = CHI_tongzhi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.8.14
+			NOT = { is_template_used = CHI_guangxu }
+			ruler ?= {
+				has_template = CHI_tongzhi
+			}
+		}
+		create_character = {
+			template = CHI_guangxu
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1906.2.7
+			NOT = { is_template_used = CHI_puyi }
+			ruler ?= {
+				has_template = CHI_guangxu
+			}
+		}
+		create_character = {
+			template = CHI_puyi
+			heir = yes
+		}
+	}
+}
+
+korea_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1874.3.25
+			NOT = { is_template_used = KOR_sunjong }
+			ruler ?= {
+				has_template = KOR_yi_myongbok
+			}
+		}
+		create_character = {
+			template = KOR_sunjong
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1887.10.20
+			NOT = { is_template_used = KOR_yi_un }
+			ruler ?= {
+				has_template = KOR_sunjong
+			}
+		}
+		create_character = {
+			template = KOR_yi_un
+			heir = yes
+		}
+	}
+}
+
+siam_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1853.9.20
+			NOT = { is_template_used = SIA_chulalongkorn }
+			ruler ?= {
+				has_template = SIA_mogkut
+			}
+		}
+		create_character = {
+			template = SIA_chulalongkorn
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1881.1.1
+			NOT = { is_template_used = SIA_vajiravudh }
+			ruler ?= {
+				has_template = SIA_chulalongkorn
+			}
+		}
+		create_character = {
+			template = SIA_vajiravudh
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1893.11.8
+			NOT = { is_template_used = SIA_prajadhipok }
+			ruler ?= {
+				has_template = SIA_vajiravudh
+			}
+		}
+		create_character = {
+			template = SIA_prajadhipok
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1925.9.20
+			NOT = { is_template_used = SIA_ananda_mahidol }
+			ruler ?= {
+				has_template = SIA_prajadhipok
+			}
+		}
+		create_character = {
+			template = SIA_ananda_mahidol
 			heir = yes
 		}
 	}

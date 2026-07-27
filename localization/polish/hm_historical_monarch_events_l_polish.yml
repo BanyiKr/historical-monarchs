@@ -77,6 +77,9 @@
  hm_denmark.4.a: "Niech żyje Król!"
 
 ### Monarch choice events
+ hm_monarch_choice.random.tt: "Losowo wygenerowana [ROOT.GetCountry.GetAdjectiveNoFormatting|l] [concept_character] zostanie [concept_ruler]"
+ hm_monarch_choice.x.w: "Nie obcokrajowiec, lecz [ROOT.GetCountry.GetAdjectiveNoFormatting|l] szlachcic będzie zasiadał na tronie!"
+
  hm_monarch_choice.1.t: "Poszukiwanie króla"
  hm_monarch_choice.1.desc: "Wraz z uzyskaniem niepodległości, to my sami musimy wybrać, kogo zaprosić na tron [ROOT.GetCountry.GetAdjective|l]."
  hm_monarch_choice.1.f: "Decyzja nie jest łatwa. Po pierwsze, powinni pochodzić z rodziny królewskiej, mieć powiązania z krajami nordyckimi i silne tradycje morskie, aby odstraszyć Szwecję.\nJedną z kontrowersyjnych opcji jest nikt inny, jak tylko książę ze [SCOPE.sCountry('swe_scope').GetAdjective|l] rodziny królewskiej, dynastii Bernadotte, który miałby uspokoić naszych sąsiadów i osoby wokół nas, które mogłyby nas uznać za rewolucjonistów.\nInni głosują na księcia pochodzącego z przyjaznego i neutralnego kraju, mając nadzieję, że bezstronny monarcha utrzyma pokój i zyska szacunek na arenie międzynarodowej.\nWreszcie, najbardziej radykalne grupy w naszym kraju całkowicie odrzucają monarchię: republikanie i socjaliści pragną prawdziwej rewolucji i zerwania z tradycyjną Europą."

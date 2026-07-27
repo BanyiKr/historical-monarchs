@@ -1,4 +1,4 @@
-﻿rr_HAN_prince_ernest_august = {
+﻿HAN_prince_ernest_august = {
 	first_name = Ernst_August
 	last_name = Hannover
 	historical = yes
@@ -14,7 +14,7 @@
 	}
 }
 
-rr_HAN_prince_george_william = {
+HAN_prince_george_william = {
 	first_name = Georg_Wilhelm
 	last_name = Hannover
 	historical = yes
@@ -30,7 +30,7 @@ rr_HAN_prince_george_william = {
 }
 
 
-rr_HAN_duke_ernst_august = {
+HAN_duke_ernst_august = {
 	first_name = Ernst_August
 	last_name = Hannover
 	historical = yes

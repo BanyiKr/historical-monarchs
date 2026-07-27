@@ -1,4 +1,4 @@
-﻿rr_BUK_abd_al_ahad_khan_manghud = {
+﻿BUK_abd_al_ahad_khan_manghud = {
 	first_name = "Abd_al_Ahad_Khan"
 	last_name = "Manghud"
 	historical = yes
@@ -17,7 +17,7 @@
     }
 }
 
-rr_BUK_muhammad_alim_khan_manghud = {
+BUK_muhammad_alim_khan_manghud = {
 	first_name = "Muhammad_Alim_Khan"
 	last_name = "Manghud"
 	historical = yes

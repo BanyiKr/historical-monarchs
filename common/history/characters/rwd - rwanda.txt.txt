@@ -1,0 +1,12 @@
+﻿CHARACTERS = {
+	c:RWD ?= {
+		create_character = {
+			template = RWD_yuhi_iv_abanyiginya
+			ruler = yes
+		}
+		create_character = {
+			template = RWD_mutara_ii_abanyiginya
+			heir = yes
+		}
+	}
+}

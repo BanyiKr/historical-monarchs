@@ -1,21 +1,24 @@
-﻿rr_BUL_alexander_i = { # Prince Alexander I von Battenberg of Bulgaria
-	first_name = Alexander
-	last_name = von_Battenberg
-	historical = yes
-	culture = cu:north_german
-	ruler = yes
+﻿REPLACE:BUL_alexander_i = {
+    #  Alexander Joseph von Battenberg
+    first_name = "Alexander"
+    last_name = "of_Battenberg"
+    historical = yes
+    culture = cu:south_german
+    religion = rel:catholic
+    is_general = yes
 	noble = yes
-	interest_group = ig_armed_forces
-	ideology = ideology_jingoist_leader
-	birth_date = 1857.8.5
-	home_region = STATE_HESSE
-	traits = {
-		popular_commander
+    birth_date = 1857.8.5
+    interest_group = ig_armed_forces
+    ideology = ideology_jingoist_leader
+    home_region = STATE_HESSE
+    traits = {
+        popular_commander
+        basic_diplomat
+        persistent
 		imperious
-		ambitious
-	}
+    }
 } # heir:
-rr_BUL_assen_hartenau = {
+BUL_assen_hartenau = {
 	first_name = Assen
 	last_name = of_Battenberg
 	historical = yes
@@ -30,7 +33,7 @@ rr_BUL_assen_hartenau = {
 	}
 }
 
-rr_BUL_Alexander_Bogoridi = {
+BUL_Alexander_Bogoridi = {
 	first_name = Alexander
 	last_name = Bogoridi
 	historical = yes
@@ -46,7 +49,7 @@ rr_BUL_Alexander_Bogoridi = {
 		basic_diplomat
 	}
 } # heir:
-rr_BUL_Emanoil_Bogoridi = {
+BUL_Emanoil_Bogoridi = {
 	first_name = Emanoil
 	last_name = Vogoride-Conachi
 	historical = yes
@@ -61,7 +64,7 @@ rr_BUL_Emanoil_Bogoridi = {
 		ambitious
 	}
 }
-rr_BUL_Constanin_Bogoridi = {
+BUL_Constanin_Bogoridi = {
 	first_name = Constantin
 	last_name = Vogoride-Conachi
 	historical = yes
@@ -100,37 +103,42 @@ hm_prince_nikolay = {
 	home_region = STATE_GREATER_CAUCASUS
 }
 
-rr_BUL_ferdinand_i = { # Tsar Ferdinand I von Saxe-Coburg-Gotha of Bulgaria
+REPLACE:BUL_ferdinand_i = {
+    #  Ferdinand Maximilian Karl Leopold Maria von Saxe-Coburg-Gotha
 	first_name = Ferdinand
 	last_name = of_Saxe-Coburg-Gotha-KohA_ry
 	historical = yes
 	culture = cu:south_german
+    religion = rel:catholic
+    is_general = yes
 	ruler = yes
 	noble = yes
-	interest_group = ig_landowners
+	interest_group = ig_armed_forces
 	ideology = ideology_jingoist_leader
 	birth_date = 1861.2.26
 	home_region = STATE_AUSTRIA
 	traits = {
-		traditionalist_commander
+		popular_commander
 		arrogant
 		hedonist
 		romantic
 		expensive_tastes
 		cruel
+		direct
 	}
 	on_created = {
 		set_variable = house_saxe_coburg_gotha
 	}
 }
 
-rr_BUL_boris_iii = { # Tsar Boris III von Saxe-Coburg-Gotha of Bulgaria
+REPLACE:BUL_boris_iii = {
+    # or Boris Klemens Robert Maria Pius Ludwig Stanislaus Xaver as his friends call him
 	first_name = Boris
 	last_name = of_Saxe-Coburg-Gotha-KohA_ry
 	historical = yes
 	culture = cu:bulgarian
 	noble = yes
-	interest_group = ig_landowners
+	interest_group = ig_armed_forces
 	ideology = ideology_authoritarian
 	birth_date = 1894.1.30
 	home_region = STATE_BULGARIA
@@ -138,6 +146,8 @@ rr_BUL_boris_iii = { # Tsar Boris III von Saxe-Coburg-Gotha of Bulgaria
 		imperious
 		basic_political_operator
 		basic_diplomat
+		basic_offensive_planner
+		cautious
 	}
 	on_created = {
 		set_variable = house_saxe_coburg_gotha

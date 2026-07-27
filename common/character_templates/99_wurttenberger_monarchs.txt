@@ -34,7 +34,7 @@ REPLACE:WUR_karl_von_wurttemberg = {
 	}
 }
 
-rr_WUR_wilhelm_ii = {
+WUR_wilhelm_ii = {
 	# William II of Wurttemberg
 	first_name = Wilhelm
 	last_name = "von_Wurttemberg"
@@ -51,7 +51,7 @@ rr_WUR_wilhelm_ii = {
 	}
 }
 
-rr_WUR_duke_nicholas = {
+WUR_duke_nicholas = {
 	# Duke Nicholas of Wurttemberg
 	first_name = Philipp
 	last_name = "von_Wurttemberg"
@@ -65,7 +65,7 @@ rr_WUR_duke_nicholas = {
 	home_region = STATE_LOWER_SILESIA
 }
 
-rr_WUR_duke_philipp = {
+WUR_duke_philipp = {
 	# Duke Philipp of Wurttemberg
 	first_name = Philipp
 	last_name = "von_Wurttemberg"
@@ -79,7 +79,7 @@ rr_WUR_duke_philipp = {
 	home_region = STATE_ILE_DE_FRANCE
 }
 
-rr_WUR_duke_albrecht = {
+WUR_duke_albrecht = {
 	# Duke Albrecht of Wurttemberg
 	first_name = Albrecht
 	last_name = "von_Wurttemberg"
@@ -93,7 +93,7 @@ rr_WUR_duke_albrecht = {
 	home_region = STATE_WURTTEMBERG
 }
 
-rr_WUR_duke_philipp_albrecht = {
+WUR_duke_philipp_albrecht = {
 	# Duke Philipp Albrecht of Wurttemberg
 	first_name = Philipp_Albrecht
 	last_name = "von_Wurttemberg"

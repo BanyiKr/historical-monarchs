@@ -41,7 +41,7 @@
  hm_belgium.2.t: "왕자의 죽음"
  hm_belgium.2.d: "[SCOPE.sCharacter('relevant_heir').GetFullName] 왕자가 연못에 빠진 후 폐렴으로 사망했다."
  hm_belgium.2.f: "[SCOPE.sCharacter('relevant_heir').GetHerHis] 장례식에서 [SCOPE.sCharacter('relevant_heir').GetHerHis] 아버지인 [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]는 대중 앞에서 감정을 주체하지 못하고 관 옆에서 무릎을 꿇은 채 통곡했다."
- hm_belgium.2.a: 그분이 평안히 쉬시기를"
+ hm_belgium.2.a: "그분이 평안히 쉬시기를"
 
  hm_belgium.3.t: "왕실의 비극"
  hm_belgium.3.d: "[SCOPE.sCharacter('relevant_heir').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_heir').GetFullName]이 병든 여동생을 문병하러 갔다가 독감에 걸려 사망했다."
@@ -77,6 +77,9 @@
  hm_denmark.4.a: "하느님, 폐하를 보호하소서!"
 
 ### Monarch choice events
+ hm_monarch_choice.random.tt: "무작위로 생성된 [ROOT.GetCountry.GetAdjectiveNoFormatting] [concept_character]가 [concept_ruler] 가 됩니다"
+ hm_monarch_choice.x.w: "외국인이 아닌, [ROOT.GetCountry.GetAdjectiveNoFormatting] 귀족이 왕좌에 앉을 것이다!"
+
  hm_monarch_choice.1.t: "왕좌를 차지할 왕"
  hm_monarch_choice.1.desc: "새롭게 얻은 독립과 함께, [ROOT.GetCountry.GetAdjective] 왕좌에 누가 앉을지 결정할 권한은 우리에게 주어졌습니다."
  hm_monarch_choice.1.f: "이 결정은 결코 쉬운 일이 아닙니다. 우선, 후보국은 북유럽과 연고가 있는 왕실 가문을 가진 나라여야 하며, 스웨덴을 견제할 수 있을 만큼 강력한 해군 전통을 갖춘 나라여야 합니다.\n논란의 여지가 있는 한 가지 선택지는 다름 아닌 [SCOPE.sCountry('swe_scope').GetAdjective] 왕가인 $Bernadotte$ 가문의 왕자로, 우리를 혁명가라고 여길 이웃 국가들과 주변 국가들을 달래기 위한 것이다.\n다른 이들은 우호적인 중립국의 왕자를 지지하며, 공정한 군주가 평화를 유지하고 국제적인 존경을 얻을 수 있기를 희망한다.\n마지막으로, 우리나라의 가장 급진적인 세력들은 군주제를 완전히 거부합니다. 공화주의자들과 사회주의자들은 진정한 혁명을 원하며, 전통적인 유럽과의 단절을 추구합니다."

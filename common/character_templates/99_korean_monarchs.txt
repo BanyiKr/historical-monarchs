@@ -1,4 +1,4 @@
-﻿rr_KOR_sunjong = { # Emperor Sunjong
+﻿KOR_sunjong = { # Emperor Sunjong
 	first_name = Cheok
 	last_name = Yi
 	historical = yes
@@ -17,13 +17,13 @@
     }
 }
 
-rr_KOR_yi_un = { # Crown Prince Yi Un
+KOR_yi_un = { # Crown Prince Yi Un
 	first_name = Un
 	last_name = Yi
 	historical = yes
 	heir = yes
 	noble = yes
-	birth_date = 1874.3.25
+	birth_date = 1887.10.20
 	culture = cu:korean
 	interest_group = ig_landowners
 	ideology = ideology_royalist

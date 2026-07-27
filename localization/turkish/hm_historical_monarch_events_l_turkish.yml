@@ -77,7 +77,10 @@
  hm_denmark.4.a: "Kral çok yaşasın!"
 
 ### Monarch choice events
- hm_monarch_choice.1.t: "A King for the Throne"
+ hm_monarch_choice.random.tt: "Rastgele oluşturulmuş bir [ROOT.GetCountry.GetAdjectiveNoFormatting]li [concept_character] [concept_ruler] olacak"
+ hm_monarch_choice.x.w: "Tahta yabancı biri değil, [ROOT.GetCountry.GetAdjectiveNoFormatting]li bir soylu oturacak!"
+
+ hm_monarch_choice.1.t: "Taht İçin Bir Kral"
  hm_monarch_choice.1.desc: "Yeni kazandığımız bağımsızlığımızla birlikte, [ROOT.GetCountry.GetAdjective] tahtına kimi oturtacağımız seçimi bize düşüyor."
  hm_monarch_choice.1.f: "Bu karar kolay değil. Birincisi, İskandinavya ile bağlantılı bir kraliyet ailesinden olmaları ve İsveç'i caydırmak için güçlü bir denizcilik geleneğine sahip olmaları gerekiyor.\nTartışmalı seçeneklerden biri de, komşularımızı ve bizi devrimci olarak gören çevremizdekileri yatıştırmak için [SCOPE.sCountry('swe_scope').GetAdjective] kraliyet ailesinden, Bernadotte Hanedanı'ndan bir prensin seçilmesidir.\nDiğerleri ise, tarafsız bir hükümdarın barışı koruyacağını ve uluslararası alanda saygı kazanacağını umarak, dostane ve tarafsız bir ülkeden bir prensin seçilmesine oy veriyor.\nSon olarak, ülkemizin en radikal unsurları monarşiyi tamamen reddediyor: Cumhuriyetçiler ve sosyalistler gerçek bir devrim ve geleneksel Avrupa'dan kopuş istiyorlar."
  hm_monarch_choice.1.a: "Bernadotte ailesine, uluslarımızı yakın tutmak için bir şans verelim"

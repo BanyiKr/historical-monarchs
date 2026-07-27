@@ -1,4 +1,4 @@
-﻿rr_ABU_tahnoun_al_nahyan = {
+﻿ABU_tahnoun_al_nahyan = {
 	first_name = "Tahnoun"
 	last_name = "al_Nahyan"
 	historical = yes
@@ -14,7 +14,7 @@
     }
 }
 
-rr_ABU_hamdan_al_nahyan = {
+ABU_hamdan_al_nahyan = {
 	first_name = "Hamdan"
 	last_name = "al_Nahyan"
 	historical = yes
@@ -30,7 +30,7 @@ rr_ABU_hamdan_al_nahyan = {
     }
 }
 
-rr_ABU_sultan_al_nahyan = {
+ABU_sultan_al_nahyan = {
 	first_name = "Sultan"
 	last_name = "al_Nahyan"
 	historical = yes
@@ -46,7 +46,7 @@ rr_ABU_sultan_al_nahyan = {
     }
 }
 
-rr_ABU_saqr_al_nahyan = {
+ABU_saqr_al_nahyan = {
 	first_name = "Saqr"
 	last_name = "al_Nahyan"
 	historical = yes
@@ -62,7 +62,7 @@ rr_ABU_saqr_al_nahyan = {
     }
 }
 
-rr_ABU_shakhbut_al_nahyan = {
+ABU_shakhbut_al_nahyan = {
 	first_name = "Shakhbut"
 	last_name = "al_Nahyan"
 	historical = yes
@@ -78,7 +78,7 @@ rr_ABU_shakhbut_al_nahyan = {
     }
 }
 
-rr_ABU_zayed_al_nahyan = {
+ABU_zayed_al_nahyan = {
 	first_name = "Zayed"
 	last_name = "al_Nahyan"
 	historical = yes

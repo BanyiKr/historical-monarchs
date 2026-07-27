@@ -30,7 +30,7 @@ REPLACE:BAV_maximillian_von_bayern = {
     }
 }
 
-rr_BAV_ludwig_ii = {
+BAV_ludwig_ii_von_bayern = {
     first_name = "Ludwig"
     last_name = "von_Bayern"
     historical = yes
@@ -48,7 +48,7 @@ rr_BAV_ludwig_ii = {
     }
 }
 
-rr_BAV_otto_i = {
+BAV_otto_i_von_bayern = {
     first_name = "Otto"
     last_name = "von_Bayern"
     historical = yes
@@ -68,7 +68,25 @@ rr_BAV_otto_i = {
 	}
 }
 
-rr_BAV_ludwig_iii = {
+BAV_luitpold_von_bayern = {
+    first_name = "Luitpold"
+    last_name = "von_Bayern"
+    historical = yes
+    culture = cu:south_german
+    noble = yes
+	birth_date = 1821.3.12
+    interest_group = ig_landowners
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    traits = {
+        charismatic
+    }
+    on_created = {
+		set_variable = is_married
+	}
+}
+
+BAV_ludwig_iii_von_bayern = {
     first_name = "Ludwig"
     last_name = "von_Bayern"
     historical = yes
@@ -87,7 +105,7 @@ rr_BAV_ludwig_iii = {
 	}
 }
 
-rr_BAV_prince_rupprecht = {
+BAV_prince_rupprecht = {
     first_name = "Rupprecht"
     last_name = "von_Bayern"
     historical = yes

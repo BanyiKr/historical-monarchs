@@ -1,0 +1,12 @@
+﻿CHARACTERS = {
+	c:OYO ?= {
+		create_character = {
+			template = OYO_atiba_atobatele
+			ruler = yes
+		}
+		create_character = {
+			template = OYO_olujide_adelu_anguloye
+			heir = yes
+		}
+	}
+}

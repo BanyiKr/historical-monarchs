@@ -45,7 +45,6 @@ HAW_kalakaua = {
 	traits = {
 		charismatic
 		expensive_tastes
-		ambitious
 		imperious
 	}
 }

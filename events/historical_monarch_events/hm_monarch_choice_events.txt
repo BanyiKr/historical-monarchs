@@ -200,7 +200,7 @@ hm_monarch_choice.1 = { # Norway
 			game_date >= 1888.8.3
 		}
 		create_character = {
-			template = rr_NOR_haakon_vii
+			template = NOR_haakon_vii
 			ruler = yes
 			on_created = {
 				set_first_name = Haakon
@@ -208,7 +208,7 @@ hm_monarch_choice.1 = { # Norway
 		}
 		hidden_effect = {
 			create_character = {
-				template = rr_NOR_olav_v
+				template = NOR_olav_v
 				heir = yes
 				on_created = {
 					set_first_name = Olav
@@ -346,6 +346,27 @@ hm_monarch_choice.1 = { # Norway
 			base = 0
 		}
 	}
+	option = { # Randomized character
+		name = hm_monarch_choice.x.w
+		custom_tooltip = {
+			text = hm_monarch_choice.random.tt
+			create_character = {
+				name = Haakon
+				historical = no
+				noble = yes
+				female = no
+				culture = primary_culture
+				ruler = yes
+			}
+		}
+		change_relations = {
+			country = c:SWE
+			value = -10
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
 hm_monarch_choice.2 = { # Bulgaria
@@ -418,16 +439,16 @@ hm_monarch_choice.2 = { # Bulgaria
 			game_date >= 1875.8.5
 			game_date < 1893.11.17
 			NOT = {
-				is_template_used = rr_BUL_alexander_i
+				is_template_used = BUL_alexander_i
 			}
 		}
 		create_character = {
-			template = rr_BUL_alexander_i
+			template = BUL_alexander_i
 			ruler = yes
 		}
 		hidden_effect = {
 			create_character = {
-				template = rr_BUL_assen_hartenau
+				template = BUL_assen_hartenau
 				heir = yes
 			}
 		}
@@ -461,15 +482,15 @@ hm_monarch_choice.2 = { # Bulgaria
 		trigger = {
 			game_date >= 1879.2.26
 			game_date < 1948.9.26
-			is_template_used = rr_BUL_alexander_i
+			is_template_used = BUL_alexander_i
 		}
 		create_character = {
-			template = rr_BUL_ferdinand_i
+			template = BUL_ferdinand_i
 			ruler = yes
 		}
 		hidden_effect = {
 			create_character = {
-				template = rr_BUL_boris_iii
+				template = BUL_boris_iii
 				heir = yes
 			}
 		}
@@ -696,12 +717,12 @@ hm_monarch_choice.2 = { # Bulgaria
 			game_date < 1935.8.19
 		}
 		country_summon_character_effect = {
-			TEMPLATE = rr_BUL_Emanoil_Bogoridi
+			TEMPLATE = BUL_Emanoil_Bogoridi
 			ON_CREATED_EFFECT = summon_generic_make_ruler_effect
 		}
 		hidden_effect = {
 			create_character = {
-				template = rr_BUL_Constanin_Bogoridi
+				template = BUL_Constanin_Bogoridi
 				heir = yes
 			}
 		}
@@ -716,12 +737,12 @@ hm_monarch_choice.2 = { # Bulgaria
 			game_date < 1910.7.17
 		}
 		country_summon_character_effect = {
-			TEMPLATE = rr_BUL_Alexander_Bogoridi
+			TEMPLATE = BUL_Alexander_Bogoridi
 			ON_CREATED_EFFECT = summon_generic_make_ruler_effect
 		}
 		hidden_effect = {
 			country_summon_heir_effect = {
-				TEMPLATE = rr_BUL_Emanoil_Bogoridi
+				TEMPLATE = BUL_Emanoil_Bogoridi
 			}
 		}
 		add_radicals = {
@@ -819,6 +840,29 @@ hm_monarch_choice.2 = { # Bulgaria
 		create_diplomatic_catalyst = {
 			type = catalyst_event_negative
 			target = c:TUR
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = { # Randomized character
+		name = hm_monarch_choice.x.w
+		trigger = {
+			game_date < 1865.4.10
+		}
+		custom_tooltip = {
+			text = hm_monarch_choice.random.tt
+			create_character = {
+				historical = no
+				noble = yes
+				female = no
+				culture = primary_culture
+				ruler = yes
+			}
+		}
+		change_relations = {
+			country = c:SWE
+			value = -10
 		}
 		ai_chance = {
 			base = 0

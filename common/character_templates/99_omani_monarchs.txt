@@ -1,4 +1,4 @@
-﻿rr_OMA_turki_bin_said = { # Turki bin Said
+﻿OMA_turki_bin_said = { # Turki bin Said
 	first_name = "Turki"
 	last_name = "Al-Busaidi"
 	historical = yes
@@ -18,7 +18,7 @@
 	}
 }
 
-rr_OMA_faisal_bin_turki = { # Faisal bin Turki
+OMA_faisal_bin_turki = { # Faisal bin Turki
 	first_name = "Faisal"
 	last_name = "Al-Busaidi"
 	historical = yes
@@ -38,7 +38,7 @@ rr_OMA_faisal_bin_turki = { # Faisal bin Turki
 	}
 }
 
-rr_OMA_taimur_bin_feisal = { # Taimur bin Feisal
+OMA_taimur_bin_feisal = { # Taimur bin Feisal
 	first_name = "Taimur"
 	last_name = "Al-Busaidi"
 	historical = yes
@@ -58,7 +58,7 @@ rr_OMA_taimur_bin_feisal = { # Taimur bin Feisal
 	}
 }
 
-rr_OMA_said_bin_taimur = { # Said bin Taimur
+OMA_said_bin_taimur = { # Said bin Taimur
 	first_name = "Said"
 	last_name = "Al-Busaidi"
 	historical = yes

@@ -1,0 +1,80 @@
+﻿OYO_atiba_atobatele = {
+	first_name = Atiba
+	last_name = Oryanan
+	historical = yes
+	noble = yes
+	ruler = yes
+	culture = cu:yoruba
+	age = 38
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	home_region = STATE_YORUBA_STATES
+	traits = {
+		bandit
+		ambitious
+		innovative
+	}
+}
+
+OYO_olujide_adelu_anguloye = {
+	first_name = Adelu
+	last_name = Oryanan
+	historical = yes
+	noble = yes
+	culture = cu:yoruba
+	age = 0
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_YORUBA_STATES
+}
+
+OYO_adeyemi_alowolodu = {
+	first_name = Adeyemi
+	last_name = Oryanan
+	historical = yes
+	noble = yes
+	culture = cu:yoruba
+	birth_date = 1840.2.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_YORUBA_STATES
+	traits = {
+		experienced_diplomat
+	}
+}
+
+OYO_lawani_amubieya_agogoja = {
+	first_name = Agogoja
+	last_name = Oryanan
+	historical = yes
+	noble = yes
+	culture = cu:yoruba
+	birth_date = 1860.2.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_YORUBA_STATES
+}
+
+OYO_siyanbola_ladigbolu = {
+	first_name = Ladigbolu
+	last_name = Oryanan
+	historical = yes
+	noble = yes
+	culture = cu:yoruba
+	birth_date = 1872.2.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_YORUBA_STATES
+}
+
+OYO_adeyemi_ii_adeniran = {
+	first_name = Adeyemi
+	last_name = Oryanan
+	historical = yes
+	noble = yes
+	culture = cu:yoruba
+	birth_date = 1875.2.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_YORUBA_STATES
+}

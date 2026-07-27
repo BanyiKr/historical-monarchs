@@ -177,6 +177,7 @@ ROM_carol_ii = { # King Carol II
 	home_region = STATE_WALLACHIA
 	traits = {
 		hedonist
+		imperious
 		charismatic
 		reckless
 		alcoholic

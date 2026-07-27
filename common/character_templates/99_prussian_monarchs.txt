@@ -41,7 +41,7 @@ REPLACE:pru_wilhelm_IV_hohenzollern_template = {
     }
 }
 
-rr_pru_wilhelm_I = { # William I of Prussia
+PRU_wilhelm_I = { # William I of Prussia
     first_name = "Wilhelm"
     last_name = "von_Hohenzollern"
     historical = yes
@@ -61,7 +61,7 @@ rr_pru_wilhelm_I = { # William I of Prussia
     }
 }
 
-rr_pru_frederick_iii = { # Frederick III of Prussia
+PRU_frederick_iii = { # Frederick III of Prussia
     first_name = "Friedrich"
     last_name = "von_Hohenzollern"
     historical = yes
@@ -83,7 +83,7 @@ rr_pru_frederick_iii = { # Frederick III of Prussia
     }
 }
 
-rr_pru_wilhelm_II = { # William II of Prussia
+PRU_wilhelm_II = { # William II of Prussia
     first_name = "Wilhelm"
     last_name = "von_Hohenzollern"
     historical = yes
@@ -104,7 +104,7 @@ rr_pru_wilhelm_II = { # William II of Prussia
     }
 }
 
-rr_pru_crown_prince_wilhelm = { # Crown Prince Wilhelm of Prussia
+PRU_crown_prince_wilhelm = { # Crown Prince Wilhelm of Prussia
     first_name = "Wilhelm"
     last_name = "von_Hohenzollern"
     historical = yes
@@ -124,7 +124,7 @@ rr_pru_crown_prince_wilhelm = { # Crown Prince Wilhelm of Prussia
     }
 }
 
-rr_pru_prince_wilhelm = { # Prince Wilhelm of Prussia
+PRU_prince_wilhelm = { # Prince Wilhelm of Prussia
     first_name = "Wilhelm"
     last_name = "von_Hohenzollern"
     historical = yes

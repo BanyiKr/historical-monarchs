@@ -33,7 +33,7 @@ REPLACE:TUN_ahmad_al_husaini = {
 	}
 }
 
-rr_TUN_muhammad_ii_al_husaini = {
+TUN_muhammad_ii_al_husaini = {
 	first_name = "Muhammad"
 	last_name = "al_Husaini"
 	historical = yes
@@ -51,7 +51,7 @@ rr_TUN_muhammad_ii_al_husaini = {
 	}
 }
 
-rr_TUN_muhammad_iii_al_husaini = {
+TUN_muhammad_iii_al_husaini = {
 	first_name = "Muhammad"
 	last_name = "al_Husaini"
 	historical = yes
@@ -67,7 +67,7 @@ rr_TUN_muhammad_iii_al_husaini = {
 	}
 }
 
-rr_TUN_ali_iii_al_husaini = {
+TUN_ali_iii_al_husaini = {
 	first_name = "Ali"
 	last_name = "al_Husaini"
 	historical = yes
@@ -83,7 +83,7 @@ rr_TUN_ali_iii_al_husaini = {
 	}
 }
 
-rr_TUN_muhammad_iv_al_husaini = {
+TUN_muhammad_iv_al_husaini = {
 	first_name = "Muhammad"
 	last_name = "al_Husaini"
 	historical = yes
@@ -96,7 +96,7 @@ rr_TUN_muhammad_iv_al_husaini = {
 	ideology = ideology_royalist
 }
 
-rr_TUN_muhammad_v_al_husaini = {
+TUN_muhammad_v_al_husaini = {
 	first_name = "Muhammad"
 	last_name = "al_Husaini"
 	historical = yes
@@ -112,7 +112,7 @@ rr_TUN_muhammad_v_al_husaini = {
 	}
 }
 
-rr_TUN_muhammad_vi_al_husaini = {
+TUN_muhammad_vi_al_husaini = {
 	first_name = "Muhammad"
 	last_name = "al_Husaini"
 	historical = yes
@@ -128,7 +128,7 @@ rr_TUN_muhammad_vi_al_husaini = {
 	}
 }
 
-rr_TUN_ahmad_ii_al_husaini = {
+TUN_ahmad_ii_al_husaini = {
 	first_name = "Ahmad"
 	last_name = "al_Husaini"
 	historical = yes
@@ -144,7 +144,7 @@ rr_TUN_ahmad_ii_al_husaini = {
 	}
 }
 
-rr_TUN_muhammad_vii_al_husaini = {
+TUN_muhammad_vii_al_husaini = {
 	first_name = "Muhammad"
 	last_name = "al_Husaini"
 	historical = yes

@@ -1,4 +1,4 @@
-﻿rr_HEK_frederick_william_ii_von_hessen_kassel = {
+﻿HEK_frederick_william_ii_von_hessen_kassel = {
 	first_name = Friedrich_Wilhelm
 	last_name = "von_Hessen-Kassel"
 	historical = yes
@@ -13,7 +13,7 @@
 	}
 }
 
-rr_HEK_frederick_karl_von_hessen_kassel = {
+HEK_frederick_karl_von_hessen_kassel = {
 	first_name = Friedrich_Karl
 	last_name = von_Hessen-Kassel
 	historical = yes
@@ -25,7 +25,7 @@ rr_HEK_frederick_karl_von_hessen_kassel = {
 	home_region = STATE_ZEALAND
 }
 
-rr_HEK_wolfgang_von_hessen_kassel = {
+HEK_wolfgang_von_hessen_kassel = {
 	first_name = Wolfgang
 	last_name = von_Hessen-Kassel
 	historical = yes

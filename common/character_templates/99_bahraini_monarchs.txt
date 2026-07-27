@@ -1,4 +1,4 @@
-﻿rr_BHN_isa_al_khalifa = {
+﻿BHN_isa_al_khalifa = {
 	first_name = "Isa"
 	last_name = "al_Khalifa"
 	historical = yes
@@ -14,7 +14,7 @@
 	}
 }
 
-rr_BHN_hamad_al_khalifa = {
+BHN_hamad_al_khalifa = {
 	first_name = "Hamad"
 	last_name = "al_Khalifa"
 	historical = yes
@@ -30,7 +30,7 @@ rr_BHN_hamad_al_khalifa = {
 	}
 }
 
-rr_BHN_salman_al_khalifa = {
+BHN_salman_al_khalifa = {
 	first_name = "Salman"
 	last_name = "al_Khalifa"
 	historical = yes

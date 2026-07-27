@@ -77,6 +77,9 @@
  hm_denmark.4.a: "Long live the King!"
 
 ### Monarch choice events
+ hm_monarch_choice.random.tt: "A randomly generated [ROOT.GetCountry.GetAdjectiveNoFormatting] [concept_character] will become the [concept_ruler]"
+ hm_monarch_choice.x.w: "Not a foreigner, but a [ROOT.GetCountry.GetAdjectiveNoFormatting] noble shat sit on throne!"
+
  hm_monarch_choice.1.t: "A King for the Throne"
  hm_monarch_choice.1.desc: "With our newly gained independence, the choice fall to us who to invite to sit on the [ROOT.GetCountry.GetAdjective] throne."
  hm_monarch_choice.1.f: "The decision is not an easy one. For one, they should be of a royal family with Nordic relations, and they should be of a strong naval tradition, to deter Sweden.\nOne controversial option is none other, than a prince of the [SCOPE.sCountry('swe_scope').GetAdjective] royal family, the House of Bernadotte, to placate our neighbors and those around us who would think us revolutionaries.\nOthers vote in favor of a prince from a friendly neutral nation, hoping an impartial monarch will keep the peace and earn respect internationally.\nLastly, the most radical elements of our country reject the monarchy entirely: the republicans and socialists want a real revolution and a break with traditional Europe."

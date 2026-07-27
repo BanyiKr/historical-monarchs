@@ -41,7 +41,7 @@ REPLACE:per_nasir_al_din_qajar_template = {
 	}
 }
 
-rr_PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
+PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
 	first_name = "Mozzafer_ed-Din"
 	last_name = "Qajar"
 	historical = yes
@@ -66,7 +66,7 @@ rr_PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
 	}
 }
 
-rr_PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
+PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
 	first_name = "Mohammad_Ali"
 	last_name = "Qajar"
 	historical = yes
@@ -78,7 +78,6 @@ rr_PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
 	ideology = ideology_authoritarian
 	home_region = STATE_IRAKAJEMI
 	traits = {
-		ambitious
 		imperious
 		persistent
 	}
@@ -87,7 +86,7 @@ rr_PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
 	}
 }
 
-rr_PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
+PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
 	first_name = "Ahmad"
 	last_name = "Qajar"
 	historical = yes
@@ -110,7 +109,7 @@ rr_PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
 	}
 }
 
-rr_PER_prince_freydoun_qajar = { # Freydoun Qajar
+PER_prince_freydoun_qajar = { # Freydoun Qajar
 	first_name = "Freydoun"
 	last_name = "Qajar"
 	historical = yes
@@ -126,28 +125,53 @@ rr_PER_prince_freydoun_qajar = { # Freydoun Qajar
 	}
 }
 
-rr_PER_reza_pahlavi = { # Reza Shah Pahlavi
-	first_name = "Reza"
-	last_name = "Pahlavi"
+# Reza Shah Pahlavi
+REPLACE:PER_reza_pahlavi = {
+	first_name = Reza
+	last_name = Pahlavi
 	historical = yes
-	ruler = yes
-	noble = yes
-	birth_date = 1878.3.15
+	culture = cu:mazanderani
 	interest_group = ig_armed_forces
 	ideology = ideology_modernizer_leader
-	culture = cu:mazanderani
+	role = character_role_politician
+	birth_date = 1878.3.15
 	home_region = STATE_MAZANDARAN
+	dna = dna_reza_shah_pahlavi
 	traits = {
 		ambitious
+		direct
+		popular_commander
 		basic_diplomat
 		imperious
 	}
-	on_created = {
-		set_variable = is_married
+	trait_generation = { }
+
+	commander_usage = {
+		country_trigger = {
+			exists = c:PER
+			c:PER ?= THIS
+		}
+		role = general
+		earliest_usage_date = 1915.1.1 # colonel
+		latest_usage_date = 1936.1.1
+		chance = 50
 	}
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:PER
+            c:PER ?= THIS
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1919.1.1 # Minister of War
+        latest_usage_date = 1936.1.1
+        #guaranteed to spawn if possible
+    }
 }
 
-rr_PER_mohammad_reza_pahlavi = { # Mohammad Reza Shah Pahlavi
+PER_mohammad_reza_pahlavi = { # Mohammad Reza Shah Pahlavi
 	first_name = "Mohammad-Reza"
 	last_name = "Pahlavi"
 	historical = yes
@@ -159,7 +183,6 @@ rr_PER_mohammad_reza_pahlavi = { # Mohammad Reza Shah Pahlavi
 	culture = cu:mazanderani
 	home_region = STATE_IRAKAJEMI
 	traits = {
-		ambitious
 		persistent
 		imperious
 		tactful

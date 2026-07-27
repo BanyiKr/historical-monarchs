@@ -1,4 +1,4 @@
-﻿rr_NEP_prithbi_bir_bikram_shah = {
+﻿NEP_prithbi_bir_bikram_shah = {
 	first_name = "Prithvi_Bir_Bikram"
 	last_name = "Shah"
 	historical = yes
@@ -14,7 +14,7 @@
 	}
 }
 
-rr_NEP_tribhuvan_bir_bikram_shah = {
+NEP_tribhuvan_bir_bikram_shah = {
 	first_name = "Tribhuvan_Bir_Bikram"
 	last_name = "Shah"
 	historical = yes

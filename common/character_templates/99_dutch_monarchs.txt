@@ -125,3 +125,22 @@ NET_juliana_i = {
 		psychological_affliction
 	}
 }
+
+### Regents
+NET_emma_of_waldeck_and_pyrmont = {
+	first_name = Emma
+	last_name = von_Waldeck_und_Pyrmont
+	historical = yes
+	female = yes
+	dna = dna_emma_of_waldeck
+	culture = cu:north_german
+	interest_group = ig_intelligentsia
+	ideology = ideology_jingoist_leader
+	birth_date = 1885.8.2
+	home_region = STATE_HESSE
+	traits = {
+		charismatic
+		tactful
+		meticulous
+	}
+}

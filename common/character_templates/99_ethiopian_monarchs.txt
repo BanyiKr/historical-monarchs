@@ -1,4 +1,4 @@
-﻿rr_ETH_tewodros_ii = { # Tewodros II
+﻿ETH_tewodros_ii = { # Tewodros II
 	first_name = Tewodros
 	last_name = Solomon
 	historical = yes
@@ -21,7 +21,7 @@
 	}
 }
 
-rr_ETH_tekle_giyorgis_ii = { # Tekle Giyorgis II
+ETH_tekle_giyorgis_ii = { # Tekle Giyorgis II
 	first_name = Tekle_Giyorgis
 	last_name = Solomon
 	historical = yes
@@ -44,7 +44,7 @@ rr_ETH_tekle_giyorgis_ii = { # Tekle Giyorgis II
 }
 
 ### Tigray
-rr_TGR_yohannes_iv = { # Yohannes IV
+TGR_yohannes_iv = { # Yohannes IV
 	first_name = Yohannes
 	last_name = Solomon
 	historical = yes
@@ -67,7 +67,7 @@ rr_TGR_yohannes_iv = { # Yohannes IV
 }
 
 ###Shewa
-rr_SHW_menelik_ii = { # Menelik II
+SHW_menelik_ii = { # Menelik II
 	first_name = Menelik
 	last_name = Solomon
 	historical = yes
@@ -90,7 +90,7 @@ rr_SHW_menelik_ii = { # Menelik II
 	}
 }
 
-rr_ETH_zewditu = { # Zewditu
+ETH_zewditu = { # Zewditu
 	first_name = Zewditu
 	last_name = Solomon
 	historical = yes
@@ -112,7 +112,7 @@ rr_ETH_zewditu = { # Zewditu
 	}
 }
 
-rr_ETH_haile_selassie_i = { # Haile Selassie I
+ETH_haile_selassie_i = { # Haile Selassie I
 	first_name = Haile_Selassie
 	last_name = Solomon
 	historical = yes
@@ -135,7 +135,7 @@ rr_ETH_haile_selassie_i = { # Haile Selassie I
 	}
 }
 
-rr_ETH_Amha_Selassie = {
+ETH_Amha_Selassie = {
 	first_name = Amha_Selassie
 	last_name = Solomon
 	historical = yes

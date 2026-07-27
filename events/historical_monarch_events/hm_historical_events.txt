@@ -280,41 +280,77 @@ hm_netherlands.3 = { # Coronation of Queen Wilhelmina
 				}
 			}
 		}
-		hidden_effect = {
-			if = {
-				limit = {
-					game_date >= 1896.8.31
-					game_date < 1909.4.30
+		custom_tooltip = hm_netherlands.3.tt
+		if = {
+			limit = {
+				game_date < 1896.8.31
+			}
+			set_variable = { name = hide_ruler_change_notification days = 3 }
+			add_modifier = modifier_regency
+			hidden_effect = {
+				create_character = {
+					template = NET_emma_of_waldeck_and_pyrmont
+					save_scope_as = regent_scope
+					on_created = {
+						set_character_as_ruler = yes
+						designate_character_as_regent = {
+							YEARS = 8
+						}
+					}
 				}
+			}
+			show_as_tooltip = {
+				scope:regent_scope = {
+					set_character_as_ruler = yes
+					designate_character_as_regent = {
+						YEARS = 8
+					}
+				}
+			}
+			set_heir = scope:queen_wilhelmina
+		}
+		else_if = {
+			limit = {
+				game_date >= 1896.8.31
+				game_date < 1909.4.30
+			}
+			hidden_effect = {
 				create_character = {
 					template = GER_Heinrich_XXXII_Reuss
 					heir = yes
 					save_scope_as = heir_scope
 				}
 			}
-			else_if = {
-				limit = {
-					game_date >= 1909.4.30
+			show_as_tooltip = {
+				scope:queen_wilhelmina = {
+					set_character_as_ruler = yes
 				}
+			}
+		}
+		else_if = {
+			limit = {
+				game_date >= 1909.4.30
+			}
+			hidden_effect = {
 				create_character = {
 					template = NET_juliana_i
 					heir = yes
 					save_scope_as = heir_scope
 				}
 			}
-		}
-		custom_tooltip = hm_netherlands.3.tt
-		show_as_tooltip = {
-			scope:queen_wilhelmina = {
-				set_character_as_ruler = yes
-			}
-			if = {
-				limit = {
-					exists = scope:heir_scope
+			show_as_tooltip = {
+				scope:queen_wilhelmina = {
+					set_character_as_ruler = yes
 				}
-				set_heir = scope:heir_scope
+				if = {
+					limit = {
+						exists = scope:heir_scope
+					}
+					set_heir = scope:heir_scope
+				}
 			}
 		}
+		
 		hidden_effect = {
 			c:LUX ?= {
 				trigger_event = {
@@ -1133,7 +1169,7 @@ hm_denmark.4 = { # Accession of Christian X
 				game_date < 1899.3.11
 			}
 			create_character = {
-				template = rr_NOR_haakon_vii
+				template = NOR_haakon_vii
 				heir = yes
 				save_scope_as = heir_scope
 			}

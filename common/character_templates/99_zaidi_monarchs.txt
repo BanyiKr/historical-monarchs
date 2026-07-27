@@ -1,4 +1,4 @@
-﻿rr_ZAI_al_hadi_muhammad_al_qasim = {
+﻿ZAI_al_hadi_muhammad_al_qasim = {
 	first_name = "al-Hadi_Muhammad"
 	last_name = "al_Qasim"
 	historical = yes
@@ -17,7 +17,8 @@
 	}
 }
 
-rr_ZAI_al_mansur_ali_al_qasim = {
+REPLACE:ZAI_al_mansur_ali_al_qasim = {
+	# Al-Mansur Ali II, Imam of Yemen
 	first_name = "Al-Mansur_Ali"
 	last_name = "al_Qasim"
 	historical = yes
@@ -30,13 +31,14 @@ rr_ZAI_al_mansur_ali_al_qasim = {
 	home_region = STATE_YEMEN
 	traits = {
 		ambitious
+		expensive_tastes
 	}
 	on_created = {
 		set_variable = is_married
 	}
 }
 
-rr_ZAI_al_mansur_muhammad_al_qasim = {
+ZAI_al_mansur_muhammad_al_qasim = {
 	first_name = "al-Mansur_Muhammad"
 	last_name = "al_Qasim"
 	historical = yes

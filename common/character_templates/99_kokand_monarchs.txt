@@ -1,4 +1,4 @@
-﻿rr_KOK_muhammad_khudayar_ming = {
+﻿KOK_muhammad_khudayar_ming = {
 	first_name = "Muhammad_Khudayar"
 	last_name = "Ming"
 	historical = yes
@@ -17,7 +17,7 @@
     }
 }
 
-rr_KOK_nasruddin_ming = {
+KOK_nasruddin_ming = {
 	first_name = "Nasruddin"
 	last_name = "Ming"
 	historical = yes

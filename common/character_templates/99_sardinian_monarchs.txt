@@ -1,4 +1,4 @@
-﻿rr_SAR_umberto_i = { # Umberto I of Italy
+﻿SAR_umberto_i = { # Umberto I of Italy
     first_name = "Umberto"
     last_name = "di_Savoia"
     historical = yes
@@ -19,7 +19,7 @@
     }
 }
 
-rr_SAR_victor_emmanuel_iii = { # Victor Emmanuel III of Italy
+SAR_victor_emmanuel_iii = { # Victor Emmanuel III of Italy
     first_name = "Vittorio_Emanuele"
     last_name = "di_Savoia"
     historical = yes
@@ -39,7 +39,7 @@ rr_SAR_victor_emmanuel_iii = { # Victor Emmanuel III of Italy
     }
 }
 
-rr_SAR_umberto_ii = { # Umberto II of Italy
+SAR_umberto_ii = { # Umberto II of Italy
     first_name = "Umberto"
     last_name = "di_Savoia"
     historical = yes

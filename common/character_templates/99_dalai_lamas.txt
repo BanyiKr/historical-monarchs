@@ -3,8 +3,8 @@
 	first_name = "Tsultrim"
 	last_name = "Gyatso"
 	historical = yes
-	culture = primary_culture
 	ruler = yes
+	culture = cu:tibetan
 	birth_date = 1816.5.25
 	home_region = STATE_LHASA
 	interest_group = ig_devout
@@ -14,11 +14,11 @@
 	}
 }
 
-rr_TIB_khedrup = { # 11th Dalai Lama
+TIB_khedrup_gyatso = { # 11th Dalai Lama
 	first_name = "Khedrup"
 	last_name = "Gyatso"
 	historical = yes
-	ruler = yes
+	culture = cu:tibetan
 	birth_date = 1838.11.1
 	interest_group = ig_devout
 	ideology = ideology_theocrat
@@ -30,11 +30,11 @@ rr_TIB_khedrup = { # 11th Dalai Lama
 	}
 }
 
-rr_TIB_trinley = { # 12th Dalai Lama
+TIB_trinley_gyatso = { # 12th Dalai Lama
 	first_name = "Trinley"
 	last_name = "Gyatso"
 	historical = yes
-	ruler = yes
+	culture = cu:tibetan
 	birth_date = 1856.12.28
 	interest_group = ig_devout
 	ideology = ideology_theocrat
@@ -45,11 +45,11 @@ rr_TIB_trinley = { # 12th Dalai Lama
 	}
 }
 
-rr_TIB_thubten = { # 13th Dalai Lama
+TIB_thubten_gyatso = { # 13th Dalai Lama
 	first_name = "Thubten"
 	last_name = "Gyatso"
 	historical = yes
-	ruler = yes
+	culture = cu:tibetan
 	birth_date = 1876.2.12
 	interest_group = ig_devout
 	ideology = ideology_corporatist_leader
@@ -61,11 +61,11 @@ rr_TIB_thubten = { # 13th Dalai Lama
 	}
 }
 
-rr_TIB_tenzin = { # 14th Dalai Lama
+TIB_tenzin_gyatso = { # 14th Dalai Lama
 	first_name = "Tenzin"
 	last_name = "Gyatso"
 	historical = yes
-	ruler = yes
+	culture = cu:tibetan
 	birth_date = 1935.7.6
 	interest_group = ig_devout
 	ideology = ideology_pacifist
@@ -77,5 +77,68 @@ rr_TIB_tenzin = { # 14th Dalai Lama
 	}
 	on_created = {
 		set_character_immortal = yes
+	}
+}
+
+###Panchen lamas
+TIB_palden_tempai_nyima = {
+	first_name = "Palden_Tempai_Nyima"
+	last_name = None
+	ig_leader = yes
+	historical = yes
+	culture = cu:tibetan
+	birth_date = 1782.1.1
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	home_region = STATE_LHASA
+}
+
+TIB_tempai_nyima_wangchuk = {
+	first_name = "Tempai_Wangchuk"
+	last_name = None
+	ig_leader = yes
+	historical = yes
+	noble = yes
+	culture = cu:tibetan
+	birth_date = 1855.1.1
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	home_region = STATE_LHASA
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:TIB ?= this
+			has_law = law_type:law_theocracy
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1871.1.1
+		latest_usage_date = 1882.12.1
+		#guaranteed to spawn if possible
+	}
+}
+
+TIB_thubten_chokyi_nyima = {
+	first_name = "Thubten_Chokyi_Nyima"
+	last_name = None
+	ig_leader = yes
+	historical = yes
+	noble = yes
+	culture = cu:tibetan
+	birth_date = 1883.2.19
+	interest_group = ig_devout
+	ideology = ideology_modernizer_leader
+	home_region = STATE_LHASA
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:TIB ?= this
+			has_law = law_type:law_theocracy
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1899.2.19
+		latest_usage_date = 1937.12.1
+		#guaranteed to spawn if possible
 	}
 }

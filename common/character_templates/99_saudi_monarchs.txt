@@ -1,4 +1,4 @@
-﻿rr_NEJ_Saud_bin_Faisal_Al_Saud = {
+﻿NEJ_Saud_bin_Faisal_Al_Saud = {
 	# Saud bin Faisal bin Turki
 	first_name = "Saud"
 	last_name = "al_Saud"
@@ -18,7 +18,7 @@
     }
 }
 
-rr_NEJ_Abdul_Rahman_bin_Faisal = {
+NEJ_Abdul_Rahman_bin_Faisal = {
 	first_name = "Abd_al-Rahman"
 	last_name = "al_Saud"
 	historical = yes
@@ -37,7 +37,7 @@ rr_NEJ_Abdul_Rahman_bin_Faisal = {
     }
 }
 
-rr_NEJ_Abdullah_bin_Faisal = {
+NEJ_Abdullah_bin_Faisal = {
 	first_name = "Abdullah"
 	last_name = "al_Saud"
 	historical = yes
@@ -59,7 +59,7 @@ rr_NEJ_Abdullah_bin_Faisal = {
     }
 }
 
-rr_NEJ_Abdulaziz_bin_Abdul_Rahman = {
+NEJ_Abdulaziz_bin_Abdul_Rahman = {
 	first_name = "Abdulaziz"
 	last_name = "al_Saud"
 	historical = yes
@@ -71,7 +71,6 @@ rr_NEJ_Abdulaziz_bin_Abdul_Rahman = {
 	ideology = ideology_traditionalist
 	home_region = STATE_NEJD
 	traits = {
-		ambitious
 		imperious
 		pious
 		persistent

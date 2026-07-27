@@ -1,0 +1,84 @@
+﻿REPLACE:ASH_kwaku_dua_bretuo = {
+	#  Kwaku Dua I, Asantehene of the Ashanti Empire
+	first_name = "Kwaku_Dua"
+	last_name = "Oyoko"
+	historical = yes
+	culture = cu:akan
+	ruler = yes
+	age = 39
+	is_general = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_GOLD_COAST
+	traits = {
+		ambitious
+		basic_political_operator
+		persistent
+	}
+}
+
+ASH_kofi_karikari_oyoko = {
+	#  Kofi Karikari, Asantehene of the Ashanti Empire
+	first_name = "Kofi_Karikari"
+	last_name = "Oyoko"
+	historical = yes
+	culture = cu:akan
+	age = 0
+	interest_group = ig_landowners
+	ideology = ideology_pacifist
+	home_region = STATE_GOLD_COAST
+}
+
+ASH_mensa_bonsu_oyoko = {
+	#  Mensa Bonsu, Asantehene of the Ashanti Empire
+	first_name = "Mensa_Bonsu"
+	last_name = "Oyoko"
+	historical = yes
+	culture = cu:akan
+	birth_date = 1840.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_GOLD_COAST
+	traits = {
+		expensive_tastes
+	}
+}
+
+ASH_kwaku_dua_ii_oyoko = {
+	#  Kwaku Dua II, Asantehene of the Ashanti Empire
+	first_name = "Kwaku_Dua"
+	last_name = "Oyoko"
+	historical = yes
+	culture = cu:akan
+	birth_date = 1860.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_GOLD_COAST
+	traits = {
+		sickly
+	}
+}
+
+ASH__kwaku_dua_iii_oyoko = {
+	#  Prempeh I, Asantehene of the Ashanti Empire
+	first_name = "Kwaku_Dua"
+	last_name = "Oyoko"
+	historical = yes
+	culture = cu:akan
+	birth_date = 1870.12.18
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_GOLD_COAST
+}
+
+ASH__prempeh_ii_oyoko = {
+	#  Prempeh II, Asantehene of the Ashanti Empire
+	first_name = "Prempeh"
+	last_name = "Oyoko"
+	historical = yes
+	culture = cu:akan
+	birth_date = 1892.5.18
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_GOLD_COAST
+}
