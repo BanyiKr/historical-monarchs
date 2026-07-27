@@ -1169,7 +1169,7 @@ hm_denmark.4 = { # Accession of Christian X
 				game_date < 1899.3.11
 			}
 			create_character = {
-				template = rr_NOR_haakon_vii
+				template = NOR_haakon_vii
 				heir = yes
 				save_scope_as = heir_scope
 			}

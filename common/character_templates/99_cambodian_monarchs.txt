@@ -1,4 +1,4 @@
-﻿rr_CAM_norodom = { 
+﻿CAM_norodom = { 
 	first_name = "Ang_Voddey"
 	last_name = "Norodom"
 	historical = yes
@@ -15,7 +15,7 @@
 	}
 }
 
-rr_CAM_ang_sar = {
+CAM_ang_sar = {
 	first_name = "Ang_Sar"
 	last_name = "Sisowath"
 	historical = yes
@@ -31,7 +31,7 @@ rr_CAM_ang_sar = {
 	}
 }
 
-rr_CAM_monivong = {
+CAM_monivong = {
 	first_name = "Monivong"
 	last_name = "Sisowath"
 	historical = yes
@@ -51,7 +51,7 @@ rr_CAM_monivong = {
 	}
 }
 
-rr_CAM_sihanouk = {
+CAM_sihanouk = {
 	first_name = "Sihanouk"
 	last_name = "Norodom"
 	historical = yes

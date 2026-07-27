@@ -1,4 +1,4 @@
-﻿rr_LUA_oun_kham = { 
+﻿LUA_oun_kham = { 
 	first_name = "Oun_Kham"
 	last_name = "Chao"
 	historical = yes
@@ -14,7 +14,7 @@
     }
 }
 
-rr_LUA_sakkarin = {
+LUA_sakkarin = {
 	first_name = "Sakkarin"
 	last_name = "Chao"
 	historical = yes
@@ -33,7 +33,7 @@ rr_LUA_sakkarin = {
     }
 }
 
-rr_LUA_sisavang_vong = {
+LUA_sisavang_vong = {
 	first_name = "Sisavang_Vong"
 	last_name = "Chao"
 	historical = yes
@@ -53,7 +53,7 @@ rr_LUA_sisavang_vong = {
     }
 }
 
-rr_LUA_sisavang_vatthana = {
+LUA_sisavang_vatthana = {
 	first_name = "Sisavang_Vatthana"
 	last_name = "Chao"
 	historical = yes

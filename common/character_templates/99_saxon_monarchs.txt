@@ -37,7 +37,7 @@ REPLACE:SAX_friedrich_august_von_wettin = {
 	}
 }
 
-rr_SAX_johann_i = {
+SAX_johann_i = {
 	# John I of Saxony
 	first_name = "Johann"
 	last_name = "von_Wettin"
@@ -57,7 +57,7 @@ rr_SAX_johann_i = {
 	}
 }
 
-rr_SAX_albert_i = {
+SAX_albert_i = {
 	# Albert I of Saxony
 	first_name = "Albert"
 	last_name = "von_Wettin"
@@ -77,7 +77,7 @@ rr_SAX_albert_i = {
 	}
 }
 
-rr_SAX_georg_i = {
+SAX_georg_i = {
 	# George I of Saxony
 	first_name = "Georg"
 	last_name = "von_Wettin"
@@ -98,7 +98,7 @@ rr_SAX_georg_i = {
 	}
 }
 
-rr_SAX_friedrich_august_iii = {
+SAX_friedrich_august_iii = {
 	# Frederick Augustus III of Saxony
 	first_name = "Friedrich_August"
 	last_name = "von_Wettin"
@@ -116,7 +116,7 @@ rr_SAX_friedrich_august_iii = {
 	}
 }
 
-rr_SAX_prince_georg = {
+SAX_prince_georg = {
 	# Prince George of Saxony
 	first_name = "Georg"
 	last_name = "von_Wettin"

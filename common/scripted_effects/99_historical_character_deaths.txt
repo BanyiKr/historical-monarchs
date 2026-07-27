@@ -599,28 +599,28 @@ character_saxony_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_SAX_johann_i
+			has_template = SAX_johann_i
 			year >= 1873
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_SAX_albert_i
+			has_template = SAX_albert_i
 			year >= 1902
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_SAX_georg_i
+			has_template = SAX_georg_i
 			year >= 1904
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_SAX_friedrich_august_iii
+			has_template = SAX_friedrich_august_iii
 			year >= 1932
 		}
 		kill_character = { hidden = no }
@@ -706,7 +706,7 @@ character_wurttemberg_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_WUR_wilhelm_ii
+			has_template = WUR_wilhelm_ii
 			year >= 1921
 		}
 		kill_character = { hidden = no }
@@ -730,14 +730,14 @@ character_baden_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_BAD_frederick_i
+			has_template = BAD_frederick_i
 			year >= 1907
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_BAD_frederick_ii
+			has_template = BAD_frederick_ii
 			year >= 1928
 		}
 		kill_character = { hidden = no }
@@ -761,7 +761,7 @@ character_oldenburg_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_OLD_frederick_augustus_ii
+			has_template = OLD_frederick_augustus_ii
 			year >= 1931
 		}
 		kill_character = { hidden = no }
@@ -902,6 +902,7 @@ character_china_scripted_deaths_effect = {
 					heir = yes
 					on_created = {
 						set_first_name = Guangxu
+						set_last_name = None
 					}
 				}
 			}
@@ -1040,14 +1041,14 @@ character_dai_viet_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_tu_duc
+			has_template = DAI_tu_duc
 			year >= 1883
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_duc_duc
+			has_template = DAI_duc_duc
 			is_ruler_of_own_country = yes
 			year >= 1883
 		}
@@ -1055,7 +1056,7 @@ character_dai_viet_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_hiep_hoa
+			has_template = DAI_hiep_hoa
 			year >= 1883
 			owner ?= {
 				is_subject = yes
@@ -1065,7 +1066,7 @@ character_dai_viet_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_kien_phuc
+			has_template = DAI_kien_phuc
 			year >= 1884
 		}
 		if = {
@@ -1073,14 +1074,14 @@ character_dai_viet_scripted_deaths_effect = {
 				is_heir_of_own_country = yes
 			}
 			create_character = {
-				template = rr_DAI_ham_nghi
+				template = DAI_ham_nghi
 			}
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_ham_nghi
+			has_template = DAI_ham_nghi
 			owner ?= {
 				is_subject = yes
 			}
@@ -1091,21 +1092,21 @@ character_dai_viet_scripted_deaths_effect = {
 				is_heir_of_own_country = yes
 			}
 			create_character = {
-				template = rr_DAI_dong_khanh
+				template = DAI_dong_khanh
 			}
 		}
 		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_dong_khanh
+			has_template = DAI_dong_khanh
 			year >= 1889
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_DAI_thanh_thai
+			has_template = DAI_thanh_thai
 			year >= 1907
 			owner ?= {
 				is_subject = yes
@@ -1163,14 +1164,14 @@ character_cambodia_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_CAM_norodom
+			has_template = CAM_norodom
 			year >= 1904
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_CAM_ang_sar
+			has_template = CAM_ang_sar
 			year >= 1906
 		}
 		kill_character = { hidden = no }
@@ -1218,21 +1219,21 @@ character_papal_states_scripted_deaths_effect = {
 	}
 	else_if = {
 		limit = {
-			has_template = rr_PAP_pius_ix
+			has_template = PAP_pius_ix
 			year >= 1878
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_PAP_leo_XIII
+			has_template = PAP_leo_XIII
 			year >= 1903
 		}
 		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
-			has_template = rr_PAP_pius_x
+			has_template = PAP_pius_x
 			year >= 1914
 		}
 		kill_character = { hidden = no }

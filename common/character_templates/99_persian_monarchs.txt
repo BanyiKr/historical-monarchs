@@ -40,7 +40,7 @@ REPLACE:per_nasir_al_din_qajar_template = {
 	}
 }
 
-rr_PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
+PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
 	first_name = "Mozzafer_ed-Din"
 	last_name = "Qajar"
 	historical = yes
@@ -65,7 +65,7 @@ rr_PER_mozaffar_ad_din_shah_qajar = { # Mozaffar ad-Din Shah Qajar
 	}
 }
 
-rr_PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
+PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
 	first_name = "Mohammad_Ali"
 	last_name = "Qajar"
 	historical = yes
@@ -85,7 +85,7 @@ rr_PER_mohammad_ali_shah_qajar = { # Mohammad Ali Shah Qajar
 	}
 }
 
-rr_PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
+PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
 	first_name = "Ahmad"
 	last_name = "Qajar"
 	historical = yes
@@ -108,7 +108,7 @@ rr_PER_ahmad_shah_qajar = { # Ahmad Shah Qajar
 	}
 }
 
-rr_PER_prince_freydoun_qajar = { # Freydoun Qajar
+PER_prince_freydoun_qajar = { # Freydoun Qajar
 	first_name = "Freydoun"
 	last_name = "Qajar"
 	historical = yes
@@ -124,7 +124,7 @@ rr_PER_prince_freydoun_qajar = { # Freydoun Qajar
 	}
 }
 
-rr_PER_reza_pahlavi = { # Reza Shah Pahlavi
+PER_reza_pahlavi = { # Reza Shah Pahlavi
 	first_name = "Reza"
 	last_name = "Pahlavi"
 	historical = yes
@@ -145,7 +145,7 @@ rr_PER_reza_pahlavi = { # Reza Shah Pahlavi
 	}
 }
 
-rr_PER_mohammad_reza_pahlavi = { # Mohammad Reza Shah Pahlavi
+PER_mohammad_reza_pahlavi = { # Mohammad Reza Shah Pahlavi
 	first_name = "Mohammad-Reza"
 	last_name = "Pahlavi"
 	historical = yes

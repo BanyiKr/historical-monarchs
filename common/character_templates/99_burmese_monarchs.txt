@@ -1,4 +1,4 @@
-﻿rr_BUR_pagan_min_konbaung = {
+﻿BUR_pagan_min_konbaung = {
     first_name = "Pagan"
     last_name = "Konbaung"
     historical = yes
@@ -17,7 +17,7 @@
 	}
 }
 
-rr_BUR_mindon_min_konbaung = {
+BUR_mindon_min_konbaung = {
     first_name = "Mindon"
     last_name = "Konbaung"
     historical = yes
@@ -38,7 +38,7 @@ rr_BUR_mindon_min_konbaung = {
 	}
 }
 
-rr_BUR_thibaw_min_konbaung = {
+BUR_thibaw_min_konbaung = {
     first_name = "Thibaw"
     last_name = "Konbaung"
     historical = yes

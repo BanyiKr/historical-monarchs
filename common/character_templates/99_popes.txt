@@ -13,7 +13,7 @@
 	}
 }
 
-rr_PAP_pius_ix = { # Pius IX
+PAP_pius_ix = { # Pius IX
 	first_name = "Pius"
 	last_name = "None"
 	historical = yes
@@ -29,7 +29,7 @@ rr_PAP_pius_ix = { # Pius IX
 	}
 }
 
-rr_PAP_leo_XIII = { # Leo XIII
+PAP_leo_XIII = { # Leo XIII
 	first_name = "Leo"
 	last_name = "None"
 	historical = yes
@@ -47,7 +47,7 @@ rr_PAP_leo_XIII = { # Leo XIII
 	}
 }
 
-rr_PAP_pius_x = { # Pius X
+PAP_pius_x = { # Pius X
 	first_name = "Pius"
 	last_name = "None"
 	historical = yes
@@ -63,7 +63,7 @@ rr_PAP_pius_x = { # Pius X
 	}
 }
 
-rr_PAP_benedict_xv = { # Benedict XV
+PAP_benedict_xv = { # Benedict XV
 	first_name = "Benedictus"
 	last_name = "None"
 	historical = yes
@@ -80,7 +80,7 @@ rr_PAP_benedict_xv = { # Benedict XV
 	}
 }
 
-rr_PAP_pius_xi = { # Pius XI
+PAP_pius_xi = { # Pius XI
 	first_name = "Pius"
 	last_name = "None"
 	historical = yes

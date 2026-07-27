@@ -77,6 +77,9 @@
  hm_denmark.4.a: "国王陛下万歳！"
 
 ### Monarch choice events
+ hm_monarch_choice.random.tt: "ランダムに生成された[ROOT.GetCountry.GetAdjectiveNoFormatting]の[concept_character]が[concept_ruler]となる"
+ hm_monarch_choice.x.w: "外国人ではなく、[ROOT.GetCountry.GetAdjectiveNoFormatting]の貴族が王位に就くのだ！"
+
  hm_monarch_choice.1.t: "王位を継ぐ王"
  hm_monarch_choice.1.desc: "新たに独立を果たした今、[ROOT.GetCountry.GetName]の王座に誰を招くかという選択は、私たちに委ねられている。"
  hm_monarch_choice.1.f: "この決定は容易なものではありません。第一に、候補国は北欧とのつながりを持つ王室を有し、スウェーデンを牽制するために、海軍の伝統が根強い国であるべきです。\n物議を醸している選択肢の一つは、他ならぬ[SCOPE.sCountry('swe_scope').GetName]王室、すなわち$Bernadotte$の王子を擁立し、隣国や、我々を革命家だと見なす周辺諸国をなだめるというものである。\nまた、友好的な中立国の王子を支持する者もおり、公平な君主であれば平和を維持し、国際的な尊敬を集めることができると期待している。\n最後に、わが国で最も過激な勢力は君主制を完全に否定している。共和主義者や社会主義者たちは、真の革命と伝統的なヨーロッパとの決別を求めている。"

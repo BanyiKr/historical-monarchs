@@ -1,4 +1,4 @@
-﻿rr_MON_Nikola_I = {
+﻿MON_Nikola_I = {
 	first_name = "Nikola"
     last_name = "Petrovic_Njegos"
     historical = yes
@@ -18,7 +18,7 @@
     }
 }
 
-rr_MON_Prince_Danilo = {
+MON_Prince_Danilo = {
 	first_name = "Danilo"
     last_name = "Petrovic_Njegos"
     historical = yes

@@ -1,4 +1,4 @@
-﻿rr_ZAI_al_hadi_muhammad_al_qasim = {
+﻿ZAI_al_hadi_muhammad_al_qasim = {
 	first_name = "al-Hadi_Muhammad"
 	last_name = "al_Qasim"
 	historical = yes
@@ -17,7 +17,7 @@
 	}
 }
 
-rr_ZAI_al_mansur_ali_al_qasim = {
+ZAI_al_mansur_ali_al_qasim = {
 	first_name = "Al-Mansur_Ali"
 	last_name = "al_Qasim"
 	historical = yes
@@ -36,7 +36,7 @@ rr_ZAI_al_mansur_ali_al_qasim = {
 	}
 }
 
-rr_ZAI_al_mansur_muhammad_al_qasim = {
+ZAI_al_mansur_muhammad_al_qasim = {
 	first_name = "al-Mansur_Muhammad"
 	last_name = "al_Qasim"
 	historical = yes

@@ -1,4 +1,4 @@
-﻿rr_NOR_haakon_vii = { # Haakon VII of Norway
+﻿NOR_haakon_vii = { # Haakon VII of Norway
 	first_name = "Carl"
 	last_name = "of_Glucksburg"
 	historical = yes
@@ -18,7 +18,7 @@
     }
 }
 
-rr_NOR_olav_v = { # Olav V of Norway
+NOR_olav_v = { # Olav V of Norway
 	first_name = "Alexander"
 	last_name = "of_Glucksburg"
 	historical = yes

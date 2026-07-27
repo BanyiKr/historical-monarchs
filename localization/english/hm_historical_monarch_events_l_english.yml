@@ -78,6 +78,7 @@
 
 ### Monarch choice events
  hm_monarch_choice.random.tt: "A randomly generated [ROOT.GetCountry.GetAdjectiveNoFormatting] [concept_character] will become the [concept_ruler]"
+ hm_monarch_choice.x.w: "Not a foreigner, but a [ROOT.GetCountry.GetAdjectiveNoFormatting] noble shat sit on throne!"
 
  hm_monarch_choice.1.t: "A King for the Throne"
  hm_monarch_choice.1.desc: "With our newly gained independence, the choice fall to us who to invite to sit on the [ROOT.GetCountry.GetAdjective] throne."
@@ -87,7 +88,6 @@
  hm_monarch_choice.1.c: "The [SCOPE.sCountry('den_scope').GetAdjective] Prince Carl, son of Frederick VIII will make an excellent neutral candidate"
  hm_monarch_choice.1.d: "Prince Arthur, Duke of Connaught will bring us closer to [SCOPE.sCountry('gbr_scope').GetName]"
  hm_monarch_choice.1.e: "The monarchy has failed us, let's get rid of its archaic institutions!"
- hm_monarch_choice.1.w: "Not a foreigner, but a [ROOT.GetCountry.GetAdjectiveNoFormatting] noble shat sit on throne!"
 
  hm_monarch_choice.2.t: "A New Bulgarian Monarch"
  hm_monarch_choice.2.desc: "With our newly gained independence, it is our responsibility to invite a respected nobleman to lead our nation."

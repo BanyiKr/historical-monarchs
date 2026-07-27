@@ -77,6 +77,9 @@
  hm_denmark.4.a: "Es lebe der König!"
 
 ### Monarch choice events
+ hm_monarch_choice.random.tt: "Eine zufällig generierte [ROOT.GetCountry.GetAdjectiveNoFormatting|l] [concept_character] wird zum [concept_ruler]"
+ hm_monarch_choice.x.w: "Nicht ein Ausländer, sondern ein [ROOT.GetCountry.GetAdjectiveNoFormatting|l] Adliger soll auf dem Thron sitzen!"
+
  hm_monarch_choice.1.t: "A King for the Throne"
  hm_monarch_choice.1.desc: "Mit unserer neu gewonnenen Unabhängigkeit liegt es nun an uns, zu entscheiden, wen wir auf den [ROOT.GetCountry.GetAdjective|l]en Thron berufen wollen."
  hm_monarch_choice.1.f: "Die Entscheidung fällt nicht leicht. Zum einen sollten sie aus einer Königsfamilie mit Verbindungen zu den nordischen Ländern stammen, zum anderen sollten sie über eine starke Seefahrertradition verfügen, um Schweden abzuschrecken.\nEine umstrittene Option ist kein Geringerer als ein Prinz der [SCOPE.sCountry('swe_scope').GetAdjective|l]en Königsfamilie, des Hauses Bernadotte, um unsere Nachbarn und diejenigen in unserem Umfeld zu besänftigen, die uns für Revolutionäre halten würden.\nAndere sprechen sich für einen Prinzen aus einem befreundeten neutralen Land aus, in der Hoffnung, dass ein unparteiischer Monarch den Frieden wahren und international Respekt erlangen wird.\nSchließlich lehnen die radikalsten Kräfte unseres Landes die Monarchie gänzlich ab: Die Republikaner und Sozialisten streben eine echte Revolution und einen Bruch mit dem traditionellen Europa an."

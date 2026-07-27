@@ -197,13 +197,13 @@ denmark_generate_scripted_heirs = {
 		limit = {
 			game_date >= 1886.9.26
 			game_date < 1899.3.11
-			NOT = { is_template_used = rr_NOR_haakon_vii }
+			NOT = { is_template_used = NOR_haakon_vii }
 			ruler ?= {
 				has_template = DEN_christian_x
 			}
 		}
 		create_character = {
-			template = rr_NOR_haakon_vii
+			template = NOR_haakon_vii
 			heir = yes
 		}
 	}

@@ -33,13 +33,13 @@
 				year < 1884
 			}
 			create_character = {
-				template = rr_HEK_frederick_william_ii_von_hessen_kassel
+				template = HEK_frederick_william_ii_von_hessen_kassel
 				ruler = yes
 			}
 		}
 		else = {
 			create_character = {
-				template = rr_HEK_frederick_karl_von_hessen_kassel
+				template = HEK_frederick_karl_von_hessen_kassel
 				ruler = yes
 			}
 		}

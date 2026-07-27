@@ -77,6 +77,9 @@
  hm_denmark.4.a: "Viva o Rei!"
 
 ### Monarch choice events
+ hm_monarch_choice.random.tt: "Um [concept_character] [ROOT.GetCountry.GetAdjectiveNoFormatting|l] gerado aleatoriamente se tornará o [concept_ruler]"
+ hm_monarch_choice.x.w: "Não um estrangeiro, mas um nobre [ROOT.GetCountry.GetAdjectiveNoFormatting|l] deverá sentar-se no trono!"
+
  hm_monarch_choice.1.t: "Um Rei para o Trono"
  hm_monarch_choice.1.desc: "Com nossa recém-conquistada independência, cabe a nós decidir quem convidar para ocupar o trono da [ROOT.GetCountry.GetNameNoFormatting]."
  hm_monarch_choice.1.f: "A decisão não é fácil. Por um lado, o candidato deveria pertencer a uma família real com laços nórdicos e ter uma sólida tradição naval, a fim de dissuadir a Suécia.\nUma opção controversa é nada menos do que um príncipe da família real [SCOPE.sCountry('swe_scope').GetAdjective], a Casa de Bernadotte, para apaziguar nossos vizinhos e aqueles ao nosso redor que nos considerariam revolucionários.\nOutros votam a favor de um príncipe de uma nação neutra e amiga, na esperança de que um monarca imparcial mantenha a paz e conquiste respeito internacionalmente.\nPor fim, os setores mais radicais do nosso país rejeitam totalmente a monarquia: os republicanos e socialistas querem uma verdadeira revolução e uma ruptura com a Europa tradicional."

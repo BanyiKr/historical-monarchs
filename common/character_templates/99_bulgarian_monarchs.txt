@@ -1,4 +1,4 @@
-﻿rr_BUL_alexander_i = { # Prince Alexander I von Battenberg of Bulgaria
+﻿BUL_alexander_i = { # Prince Alexander I von Battenberg of Bulgaria
 	first_name = Alexander
 	last_name = von_Battenberg
 	historical = yes
@@ -14,7 +14,7 @@
 		imperious
 	}
 } # heir:
-rr_BUL_assen_hartenau = {
+BUL_assen_hartenau = {
 	first_name = Assen
 	last_name = of_Battenberg
 	historical = yes
@@ -29,7 +29,7 @@ rr_BUL_assen_hartenau = {
 	}
 }
 
-rr_BUL_Alexander_Bogoridi = {
+BUL_Alexander_Bogoridi = {
 	first_name = Alexander
 	last_name = Bogoridi
 	historical = yes
@@ -45,7 +45,7 @@ rr_BUL_Alexander_Bogoridi = {
 		basic_diplomat
 	}
 } # heir:
-rr_BUL_Emanoil_Bogoridi = {
+BUL_Emanoil_Bogoridi = {
 	first_name = Emanoil
 	last_name = Vogoride-Conachi
 	historical = yes
@@ -60,7 +60,7 @@ rr_BUL_Emanoil_Bogoridi = {
 		ambitious
 	}
 }
-rr_BUL_Constanin_Bogoridi = {
+BUL_Constanin_Bogoridi = {
 	first_name = Constantin
 	last_name = Vogoride-Conachi
 	historical = yes
@@ -99,7 +99,7 @@ hm_prince_nikolay = {
 	home_region = STATE_GREATER_CAUCASUS
 }
 
-rr_BUL_ferdinand_i = { # Tsar Ferdinand I von Saxe-Coburg-Gotha of Bulgaria
+BUL_ferdinand_i = { # Tsar Ferdinand I von Saxe-Coburg-Gotha of Bulgaria
 	first_name = Ferdinand
 	last_name = of_Saxe-Coburg-Gotha-KohA_ry
 	historical = yes
@@ -123,7 +123,7 @@ rr_BUL_ferdinand_i = { # Tsar Ferdinand I von Saxe-Coburg-Gotha of Bulgaria
 	}
 }
 
-rr_BUL_boris_iii = { # Tsar Boris III von Saxe-Coburg-Gotha of Bulgaria
+BUL_boris_iii = { # Tsar Boris III von Saxe-Coburg-Gotha of Bulgaria
 	first_name = Boris
 	last_name = of_Saxe-Coburg-Gotha-KohA_ry
 	historical = yes

@@ -36,7 +36,7 @@ REPLACE:HES_ludwig_iii_von_hessen_darmstadt = {
 	}
 }
 
-rr_HES_ludwig_iv_von_hessen_darmstadt = {
+HES_ludwig_iv_von_hessen_darmstadt = {
 	# Louis IV, Grand Duke of Hesse
 	first_name = Ludwig
 	last_name = "von_Hessen-Darmstadt"
@@ -49,7 +49,7 @@ rr_HES_ludwig_iv_von_hessen_darmstadt = {
 	home_region = STATE_HESSE
 }
 
-rr_HES_ernst_ludwig_i_von_hessen_darmstadt = {
+HES_ernst_ludwig_i_von_hessen_darmstadt = {
 	# Ernest Louis I, Grand Duke of Hesse
 	first_name = Ernst_Ludwig
 	last_name = "von_Hessen-Darmstadt"
@@ -65,7 +65,7 @@ rr_HES_ernst_ludwig_i_von_hessen_darmstadt = {
 	}
 }
 
-rr_HES_georg_donatus_i_von_hessen_darmstadt = {
+HES_georg_donatus_i_von_hessen_darmstadt = {
 	# Georg Donatus I, Grand Duke of Hesse
 	first_name = Georg_Donatus
 	last_name = "von_Hessen-Darmstadt"

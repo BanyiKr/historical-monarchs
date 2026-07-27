@@ -31,7 +31,7 @@ REPLACE:OLD_peter_von_holstein_gottorp = {
 	}
 }
 
-rr_OLD_frederick_augustus_ii = {
+OLD_frederick_augustus_ii = {
 	first_name = "Friedrich_August"
 	last_name = "von_Holstein-Gottorp"
 	historical = yes
@@ -47,7 +47,7 @@ rr_OLD_frederick_augustus_ii = {
 	}
 }
 
-rr_OLD_nikolaus = {
+OLD_nikolaus = {
 	first_name = "Nikolaus"
 	last_name = "von_Holstein-Gottorp"
 	historical = yes
@@ -59,7 +59,7 @@ rr_OLD_nikolaus = {
 	home_region = STATE_HANNOVER
 }
 
-rr_OLD_anton_gunther = {
+OLD_anton_gunther = {
 	first_name = Anton-GU_nther
 	last_name = "von_Holstein-Gottorp"
 	historical = yes
