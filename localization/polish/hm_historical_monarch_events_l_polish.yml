@@ -35,10 +35,10 @@
  # Belgium
  hm_belgium.1.t: "Koronacja Leopolda II"
  hm_belgium.1.d: "Wraz z końcem panowania Leopolda I na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Belgii Leopold II."
- hm_belgium.1.f: "Zainteresowany polityką i podróżnik, Leopold od dawna opowiadał się za ekspansją kolonialną. Celem nowego króla jest, aby kraj był „silny, zamożny, a co za tym idzie, posiadał własne kolonie, piękne i spokojne”."
+ hm_belgium.1.f: "Zainteresowany polityką i podróżnik, Leopold od dawna opowiadał się za ekspansją kolonialną. Celem nowego króla jest, aby kraj był „silny, zamożny, a co za tym idzie, posiadał własne kolonie,”."
  hm_belgium.1.a: "Niech żyje Król!"
 
- hm_belgium.2.t: "Śmierć Księcia Królewskiego"
+ hm_belgium.2.t: "Śmierć Księcia"
  hm_belgium.2.d: "Książę [SCOPE.sCharacter('relevant_heir').GetFullName] zmarł na zapalenie płuc po tym, jak wpadł do stawu."
  hm_belgium.2.f: "Podczas [SCOPE.sCharacter('relevant_heir').GetCustom('PL_jego_jej')] pogrzebu [SCOPE.sCharacter('relevant_heir').GetCustom('PL_jego_jej')] ojciec, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFirstName], publicznie wybuchnął płaczem, osunął się na kolana obok trumny i zaczął niekontrolowanie szlochać."
  hm_belgium.2.a: "Niech spoczywa w pokoju"
@@ -77,7 +77,7 @@
  hm_denmark.4.a: "Niech żyje Król!"
 
 ### Monarch choice events
- hm_monarch_choice.1.t: "A King for the Throne"
+ hm_monarch_choice.1.t: "Poszukiwanie króla"
  hm_monarch_choice.1.desc: "Wraz z uzyskaniem niepodległości, to my sami musimy wybrać, kogo zaprosić na tron [ROOT.GetCountry.GetAdjective|l]."
  hm_monarch_choice.1.f: "Decyzja nie jest łatwa. Po pierwsze, powinni pochodzić z rodziny królewskiej, mieć powiązania z krajami nordyckimi i silne tradycje morskie, aby odstraszyć Szwecję.\nJedną z kontrowersyjnych opcji jest nikt inny, jak tylko książę ze [SCOPE.sCountry('swe_scope').GetAdjective|l] rodziny królewskiej, dynastii Bernadotte, który miałby uspokoić naszych sąsiadów i osoby wokół nas, które mogłyby nas uznać za rewolucjonistów.\nInni głosują na księcia pochodzącego z przyjaznego i neutralnego kraju, mając nadzieję, że bezstronny monarcha utrzyma pokój i zyska szacunek na arenie międzynarodowej.\nWreszcie, najbardziej radykalne grupy w naszym kraju całkowicie odrzucają monarchię: republikanie i socjaliści pragną prawdziwej rewolucji i zerwania z tradycyjną Europą."
  hm_monarch_choice.1.a: "Dajmy Bernadotte'om szansę, aby nasze narody pozostały blisko"
