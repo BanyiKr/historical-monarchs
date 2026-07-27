@@ -56,7 +56,7 @@ OYO_lawani_amubieya_agogoja = {
 }
 
 OYO_siyanbola_ladigbolu = {
-	first_name = Ladigbula
+	first_name = Ladigbolu
 	last_name = Oryanan
 	historical = yes
 	noble = yes
