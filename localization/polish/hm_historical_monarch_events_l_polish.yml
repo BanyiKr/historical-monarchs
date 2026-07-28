@@ -35,7 +35,7 @@
  # Belgium
  hm_belgium.1.t: "Koronacja Leopolda II"
  hm_belgium.1.d: "Wraz z końcem panowania Leopolda I na tron państwa o nazwie [ROOT.GetCountry.GetName] wstępuje [SCOPE.sCharacter('king_scope').GetFullName], znany od tej pory jako król Belgii Leopold II."
- hm_belgium.1.f: "Zainteresowany polityką i podróżnik, Leopold od dawna opowiadał się za ekspansją kolonialną. Celem nowego króla jest, aby kraj był „silny, zamożny, a co za tym idzie, posiadał własne kolonie,”."
+ hm_belgium.1.f: "Zainteresowany polityką i podróżnik, Leopold od dawna opowiadał się za ekspansją kolonialną. Celem nowego króla jest, aby kraj był „silny, zamożny, a co za tym idzie, posiadał własne kolonie”."
  hm_belgium.1.a: "Niech żyje Król!"
 
  hm_belgium.2.t: "Śmierć Księcia"

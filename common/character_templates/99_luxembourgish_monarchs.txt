@@ -87,6 +87,7 @@ LUX_charlotte_i = { # Grand Duchess Charlotte of Luxembourg
 	religion = rel:catholic
     heir = yes
 	noble = yes
+	dna = dna_grand_duchess_charlotte
     birth_date = 1896.1.23
     interest_group = ig_devout
     ideology = ideology_royalist

@@ -80,7 +80,7 @@
  hm_monarch_choice.random.tt: "Un [concept_character] [ROOT.GetCountry.GetAdjectiveNoFormatting|l] generado aleatoriamente se convertirá en el [concept_ruler]"
  hm_monarch_choice.x.w: "¡No un extranjero, sino un noble [ROOT.GetCountry.GetAdjectiveNoFormatting|l] se sentará en el trono!"
 
- hm_monarch_choice.1.t: "A King for the Throne"
+ hm_monarch_choice.1.t: "Un rey para el trono"
  hm_monarch_choice.1.desc: "Con nuestra recién adquirida independencia, nos corresponde a nosotros elegir a quién invitar a sentarse en el trono [ROOT.GetCountry.GetAdjective]."
  hm_monarch_choice.1.f: "La decisión no es fácil. Para empezar, deben pertenecer a una familia real con vínculos nórdicos y tener una sólida tradición naval, para disuadir a Suecia.\nUna opción controvertida no es otra que la de un príncipe de la familia real [SCOPE.sCountry('swe_scope').GetAdjective], la Casa de Bernadotte, para apaciguar a nuestros vecinos y a quienes nos rodean y que nos consideran revolucionarios.\nOtros votan a favor de un príncipe de una nación neutral y amiga, con la esperanza de que un monarca imparcial mantenga la paz y se gane el respeto internacional.\nPor último, los elementos más radicales de nuestro país rechazan la monarquía por completo: los republicanos y socialistas quieren una verdadera revolución y una ruptura con la Europa tradicional."
  hm_monarch_choice.1.a: "Demos una oportunidad a los Bernadottes para mantener cerca a nuestras naciones"
