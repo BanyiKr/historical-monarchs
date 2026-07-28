@@ -2013,8 +2013,21 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = chi_xianfeng_template
 		}
-		set_first_name = Xianfeng
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Xianfeng
+			set_last_name = None
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+					
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2032,8 +2045,21 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = CHI_tongzhi
 		}
-		set_first_name = Tongzhi
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Tongzhi
+			set_last_name = None
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+					
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2079,8 +2105,21 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = CHI_guangxu
 		}
-		set_first_name = Guangxu
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Guangxu
+			set_last_name = None
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+					
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2120,8 +2159,21 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = CHI_puyi
 		}
-		set_first_name = Xuantong
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Xuantong
+			set_last_name = None
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+					
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = no
@@ -2147,10 +2199,29 @@ character_china_ruler_succession_chain_effect = {
 character_korea_ruler_succession_chain_effect = {
 	if = {
 		limit = {
+			has_template = KOR_yi_byeon
+		}
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
+	}
+	else_if = {
+		limit = {
 			has_template = KOR_yi_myongbok
 		}
-		set_first_name = Gwangmu
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2167,8 +2238,14 @@ character_korea_ruler_succession_chain_effect = {
 		limit = {
 			has_template = KOR_sunjong
 		}
-		set_first_name = Yunghui
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2177,6 +2254,162 @@ character_korea_ruler_succession_chain_effect = {
 			owner ?= {
 				create_character = {
 					template = KOR_yi_un
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = KOR_yi_un
+		}
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
+	}
+}
+
+korean_monarch_set_era_name_based_on_china = {
+	if = {
+		limit = {
+			exists = c:CHI
+			c:CHI = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				trigger_if = {
+					limit = {
+						has_gov_regency = no
+					}
+					ruler = {
+						is_historical = yes
+					}
+				}
+				trigger_else = {
+					heir ?= {
+						is_historical = yes
+					}
+				}
+			}
+		}
+		set_last_name = None
+		if = {
+			limit = {
+				c:CHI = {
+					has_gov_regency = no
+				}
+			}
+			if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = chi_daoguang_template
+					}
+				}
+				set_first_name = Dogwang
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = chi_xianfeng_template
+					}
+				}
+				set_first_name = Hampung
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = CHI_tongzhi
+					}
+				}
+				set_first_name = Dongchi
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = CHI_guangxu
+					}
+				}
+				set_first_name = Gwangseo
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = CHI_puyi
+					}
+				}
+				set_first_name = Seontong
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = chi_daoguang_template
+					}
+				}
+				set_first_name = Dogwang
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = chi_xianfeng_template
+					}
+				}
+				set_first_name = Hampung
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = CHI_tongzhi
+					}
+				}
+				set_first_name = Dongchi
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = CHI_guangxu
+					}
+				}
+				set_first_name = Gwangseo
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = CHI_puyi
+					}
+				}
+				set_first_name = Seontong
+			}
+		}
+	}
+}
+
+korean_monarch_update_era_name_based_on_china = {
+	if = {
+		limit = {
+			exists = c:KOR
+			c:KOR = {
+				is_subject_of = c:CHI
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+			}
+		}
+		c:KOR = {
+			if = {
+				limit = {
+					has_gov_regency = no
+				}
+				ruler = {
+					korean_monarch_set_era_name_based_on_china = yes
+				}
+			}
+			else = {
+				heir ?= {
+					korean_monarch_set_era_name_based_on_china = yes
 				}
 			}
 		}
