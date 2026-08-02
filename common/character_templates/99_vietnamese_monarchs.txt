@@ -1,5 +1,38 @@
-﻿DAI_tu_duc = { # Tu Duc
-	first_name = "Tu_Duc"
+﻿REPLACE:DAI_minh_mang_nguyen_phuoc = {
+	# Posthumous name Minh Mang
+	first_name = "Dam"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1791.5.25
+	dna = dna_emperor_minh_mang
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	traits = {
+		imperious
+	}
+}
+
+REPLACE:DAI_thieu_tri_nguyen_phuoc = {
+	# Posthumous name Thieu Tri
+	first_name = "Mien_Tong"
+	last_name = "Nguyen_Phuoc"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1807.6.6
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	traits = {
+		arrogant
+	}
+}
+
+DAI_tu_duc = { # Tu Duc
+	first_name = "Hong_Nham"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -21,7 +54,7 @@
 }
 
 DAI_duc_duc = { # Dục Đức
-	first_name = "Duc_Duc"
+	first_name = "Ung_Chan"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -42,7 +75,7 @@ DAI_duc_duc = { # Dục Đức
 }
 
 DAI_hiep_hoa = { # Hiệp Hòa
-	first_name = "Hiep_Hoa"
+	first_name = "Hong_Dat"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -59,7 +92,7 @@ DAI_hiep_hoa = { # Hiệp Hòa
 }
 
 DAI_kien_phuc = { # Kiến Phúc
-	first_name = "Kien_Phuc"
+	first_name = "Ung_Dang"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -79,7 +112,7 @@ DAI_kien_phuc = { # Kiến Phúc
 }
 
 DAI_ham_nghi = { # Hàm Nghi
-	first_name = "Ham_Nghi"
+	first_name = "Ung_Lich"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -100,7 +133,7 @@ DAI_ham_nghi = { # Hàm Nghi
 }
 
 DAI_dong_khanh = { # Dong Khánh
-	first_name = "Dong_Khanh"
+	first_name = "Ung_Ky"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -121,7 +154,7 @@ DAI_dong_khanh = { # Dong Khánh
 }
 
 DAI_thanh_thai = { # Thanh Thái
-	first_name = "Thanh_Thai"
+	first_name = "Buu_Lan"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -143,7 +176,7 @@ DAI_thanh_thai = { # Thanh Thái
 }
 
 DAI_duy_tan = { # Duy Tan
-	first_name = "Duy_Tan"
+	first_name = "Vinh_San"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -164,7 +197,7 @@ DAI_duy_tan = { # Duy Tan
 }
 
 DAI_khai_dinh = { # Khai Dinh
-	first_name = "Khai_Dinh"
+	first_name = "Buu_Dao"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -186,7 +219,7 @@ DAI_khai_dinh = { # Khai Dinh
 }
 
 DAI_bao_dai = { # Bao Dai
-	first_name = "Bao_Dai"
+	first_name = "Vinh_Thuy"
 	last_name = "Nguyen_Phuoc"
 	historical = yes
 	heir = yes
@@ -195,7 +228,7 @@ DAI_bao_dai = { # Bao Dai
 	culture = cu:vietnamese
 	religion = rel:confucian
 	interest_group = ig_landowners
-	ideology = ideology_royalist
+	ideology = ideology_reformer
 	home_region = STATE_ANNAM
 	traits = {
 		erudite
@@ -221,6 +254,27 @@ DAI_bao_long = {
 	traits = {
 		erudite
 		reserved
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+### Regents
+DAI_nguyen_van_tuong = {
+	first_name = "Tuong"
+	last_name = "Nguyen"
+	historical = yes
+	birth_date = 1824.4.1 # Specific date unknown
+	culture = cu:vietnamese
+	religion = rel:confucian
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ANNAM
+	traits = {
+		imperious
+		ruthless
+		persistent
 	}
 	on_created = {
 		set_variable = is_married

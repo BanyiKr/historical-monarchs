@@ -9,7 +9,7 @@
 }
 
 hm_chinese_era_names = {
-	default = use_chinese_era_name
+	default = use_chinese_era_name # Vanilla default
 
 	use_chinese_era_name = {
 	}
@@ -19,12 +19,22 @@ hm_chinese_era_names = {
 }
 
 hm_korean_era_names = {
-	default = use_korean_personal_name
+	default = use_korean_personal_name # Vanilla default
 
 	use_korean_era_name = {
 	}
 
 	use_korean_personal_name = {
+	}
+}
+
+hm_vietnamese_era_names = {
+	default = use_vietnamese_personal_name # Vanilla default
+
+	use_vietnamese_era_name = {
+	}
+
+	use_vietnamese_personal_name = {
 	}
 }
 

@@ -51,6 +51,9 @@ korea.1 = {
 				hidden_effect = {
 					set_last_name = None
 				}
+				c:KOR = {
+					set_variable = { name = emperor_era_name_var value = PREV }
+				}
 			}
 		}
 		hidden_effect = {

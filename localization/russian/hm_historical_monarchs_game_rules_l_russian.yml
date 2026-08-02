@@ -16,6 +16,11 @@
  setting_use_korean_era_name_desc: "Имя корейского [Concept('concept_ruler','монарха')] после восшествия на престол изменится на имя его эпохи (царское имя)"
  setting_use_korean_personal_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_korean_personal_name_desc Имя при рождении#!#!"
  setting_use_korean_personal_name_desc: "Имя корейского [Concept('concept_ruler','монарха')] останется его личным именем после восшествия на престол"
+ rule_hm_vietnamese_era_names: "Имя вьетнамского императора"
+ setting_use_vietnamese_era_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_vietnamese_era_name_desc Девиз правления#!#!"
+ setting_use_vietnamese_era_name_desc: "Имя вьетнамского [Concept('concept_ruler','императора')] после восшествия на престол изменится на имя его эпохи (царское имя)"
+ setting_use_vietnamese_personal_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_vietnamese_personal_name_desc Имя при рождении#!#!"
+ setting_use_vietnamese_personal_name_desc: "Имя вьетнамского [Concept('concept_ruler','императора')] останется его личным именем после восшествия на престол"
 
  rule_hm_heir_generation: "Создание исторического наследника"
  setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Агрессивное#!#!"

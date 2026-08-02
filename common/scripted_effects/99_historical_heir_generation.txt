@@ -872,3 +872,149 @@ siam_generate_scripted_heirs = {
 		}
 	}
 }
+
+vietnam_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1829.9.22
+			NOT = { is_template_used = DAI_tu_duc }
+			ruler ?= {
+				has_template = DAI_thieu_tri_nguyen_phuoc
+			}
+		}
+		create_character = {
+			template = DAI_tu_duc
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1852.2.23
+			NOT = { is_template_used = DAI_duc_duc }
+			ruler ?= {
+				has_template = DAI_tu_duc
+			}
+		}
+		create_character = {
+			template = DAI_duc_duc
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1847.11.1
+			NOT = { is_template_used = DAI_hiep_hoa }
+			ruler ?= {
+				has_template = DAI_duc_duc
+			}
+		}
+		create_character = {
+			template = DAI_hiep_hoa
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.2.12
+			NOT = { is_template_used = DAI_kien_phuc }
+			ruler ?= {
+				has_template = DAI_hiep_hoa
+			}
+		}
+		create_character = {
+			template = DAI_kien_phuc
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.8.3
+			NOT = { is_template_used = DAI_ham_nghi }
+			ruler ?= {
+				has_template = DAI_kien_phuc
+			}
+		}
+		create_character = {
+			template = DAI_ham_nghi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1864.2.28
+			NOT = { is_template_used = DAI_dong_khanh }
+			ruler ?= {
+				has_template = DAI_ham_nghi
+			}
+		}
+		create_character = {
+			template = DAI_dong_khanh
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1879.3.14
+			NOT = { is_template_used = DAI_thanh_thai }
+			ruler ?= {
+				has_template = DAI_dong_khanh
+			}
+		}
+		create_character = {
+			template = DAI_thanh_thai
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1900.9.5
+			NOT = { is_template_used = DAI_duy_tan }
+			ruler ?= {
+				has_template = DAI_thanh_thai
+			}
+		}
+		create_character = {
+			template = DAI_duy_tan
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1885.10.8
+			NOT = { is_template_used = DAI_khai_dinh }
+			ruler ?= {
+				has_template = DAI_duy_tan
+			}
+		}
+		create_character = {
+			template = DAI_khai_dinh
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1913.10.22
+			NOT = { is_template_used = DAI_bao_dai }
+			ruler ?= {
+				has_template = DAI_khai_dinh
+			}
+		}
+		create_character = {
+			template = DAI_bao_dai
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1936.1.4
+			NOT = { is_template_used = DAI_bao_long }
+			ruler ?= {
+				has_template = DAI_bao_dai
+			}
+		}
+		create_character = {
+			template = DAI_bao_long
+			heir = yes
+		}
+	}
+}

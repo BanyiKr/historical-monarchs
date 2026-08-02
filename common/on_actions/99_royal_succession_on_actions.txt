@@ -75,6 +75,15 @@ on_become_independent = {
 	}
 }
 
+# Fires after everyone enters the game from the lobby for the first time for each campaign
+# At this point we DO know who the players are
+# No root scope set
+on_game_started_after_lobby = {
+	on_actions = {
+		hm_on_game_started_after_lobby
+	}
+}
+
 # Root = Character
 historical_successions_on_new_ruler = {
 	trigger = {
@@ -1650,6 +1659,16 @@ historical_heirs_on_monthly_pulse_country = {
 				}
 				siam_generate_scripted_heirs = yes
 			}
+			else_if = { # Dai Viet
+				limit = {
+					OR = {
+						c:DAI ?= this
+						was_formed_from = DAI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				vietnam_generate_scripted_heirs = yes
+			}
 		}
 	}
 }
@@ -1737,5 +1756,76 @@ germany_federal_monarchy_on_wargoal_enforced = {
 	}
 	effect = {
 		GER_initialize_federal_monarchies = yes
+	}
+}
+
+# Fires after everyone enters the game from the lobby for the first time for each campaign
+# At this point we DO know who the players are
+# No root scope set
+hm_on_game_started_after_lobby = {
+	effect = {
+		### Japan
+		c:JAP ?= {
+			random_scope_character = {
+				limit = {
+					has_template = JAP_ninko_yamato
+				}
+				owner = {
+					set_variable = { name = hide_ruler_surname_var value = PREV }
+				}
+			}
+		}
+		if = { ### China
+			limit = { has_game_rule = use_chinese_era_name }
+			c:CHI ?= {
+				random_scope_character = {
+					limit = {
+						has_template = chi_daoguang_template
+					}
+					set_first_name = Daoguang
+					set_last_name = None
+					owner = {
+						set_variable = { name = emperor_era_name_var value = PREV }
+					}
+				}
+			}
+		}
+		if = { ### Korea
+			limit = { has_game_rule = use_korean_era_name }
+			c:KOR ?= {
+				random_scope_character = {
+					limit = {
+						has_template = KOR_yi_hwan
+					}
+					korean_monarch_set_era_name_based_on_china = yes
+				}
+			}
+		}
+		if = { ### Dai Viet
+			limit = { has_game_rule = use_vietnamese_era_name }
+			c:DAI ?= {
+				random_scope_character = {
+					limit = {
+						has_template = DAI_minh_mang_nguyen_phuoc
+					}
+					set_first_name = Minh_Mang
+					set_last_name = None
+					owner = {
+						set_variable = { name = emperor_era_name_var value = PREV }
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			c:DAI ?= {
+				random_scope_character = {
+					limit = {
+						has_template = DAI_minh_mang_nguyen_phuoc
+					}
+					set_first_name = Kieu
+				}
+			}
+		}
 	}
 }

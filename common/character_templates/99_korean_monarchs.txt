@@ -1,4 +1,28 @@
-﻿KOR_sunjong = { # Emperor Sunjong
+﻿REPLACE:KOR_yi_hwan = {
+	# Heonjong of Joseon
+	first_name = "Hwan"
+	last_name = "Yi"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1827.9.8
+	dna = dna_king_heonjong
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_SEOUL
+	traits = {
+		trait_child
+		sickly
+	}
+	on_created = {
+		if = {
+			limit = { has_game_rule = use_korean_era_name }
+			korean_monarch_set_era_name_based_on_china = yes
+		}
+	}
+}
+
+KOR_sunjong = { # Emperor Sunjong
 	first_name = Cheok
 	last_name = Yi
 	historical = yes

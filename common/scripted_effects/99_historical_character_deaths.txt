@@ -891,24 +891,27 @@ character_china_scripted_deaths_effect = {
 			has_template = CHI_tongzhi
 			year >= 1875
 		}
+		kill_character = { hidden = no }
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			kill_character = { hidden = no }
 			owner ?= {
 				create_character = {
 					template = CHI_guangxu
 					heir = yes
 					on_created = {
-						set_first_name = Guangxu
-						set_last_name = None
+						if = {
+							limit = {  has_game_rule = use_chinese_era_name }
+							set_first_name = Guangxu
+							set_last_name = None
+							c:CHI = {
+								set_variable = { name = emperor_era_name_var value = PREV }
+							}
+						}
 					}
 				}
 			}
-		}
-		else = {
-			kill_character = { hidden = no }
 		}
 	}
 	else_if = {
@@ -1053,6 +1056,32 @@ character_dai_viet_scripted_deaths_effect = {
 			year >= 1883
 		}
 		kill_character = { hidden = no }
+		if = {
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_hiep_hoa
+					heir = yes
+					on_created = {
+						set_variable = lifetime_regency
+						if = {
+							limit = { has_game_rule = use_vietnamese_era_name }
+							set_first_name = Hiep_Hoa
+							set_last_name = None
+							c:DAI = {
+								set_variable = { name = emperor_era_name_var value = PREV }
+							}
+						}
+						else_if = {
+							limit = { has_game_rule = use_vietnamese_personal_name }
+							set_first_name = Thang
+						}
+					}
+				}
+			}
+		}
 	}
 	else_if = {
 		limit = {
@@ -1063,21 +1092,64 @@ character_dai_viet_scripted_deaths_effect = {
 			}
 		}
 		kill_character = { hidden = no }
+		if = {
+			limit = {
+				is_heir_of_own_country = yes
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_kien_phuc
+					heir = yes
+					on_created = {
+						set_variable = lifetime_regency
+						if = {
+							limit = { has_game_rule = use_vietnamese_era_name }
+							set_first_name = Kien_Phuc
+							set_last_name = None
+							c:DAI = {
+								set_variable = { name = emperor_era_name_var value = PREV }
+							}
+						}
+						else_if = {
+							limit = { has_game_rule = use_vietnamese_personal_name }
+							set_first_name = Ha_o
+						}
+					}
+				}
+			}
+		}
 	}
 	else_if = {
 		limit = {
 			has_template = DAI_kien_phuc
 			year >= 1884
 		}
+		kill_character = { hidden = no }
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			create_character = {
-				template = DAI_ham_nghi
+			owner ?= {
+				create_character = {
+					template = DAI_ham_nghi
+					heir = yes
+					on_created = {
+						if = {
+							limit = { has_game_rule = use_vietnamese_era_name }
+							set_first_name = Ham_Nghi
+							set_last_name = None
+							c:DAI = {
+								set_variable = { name = emperor_era_name_var value = PREV }
+							}
+						}
+						else_if = {
+							limit = { has_game_rule = use_vietnamese_personal_name }
+							set_first_name = Minh
+						}
+					}
+				}
 			}
 		}
-		kill_character = { hidden = no }
 	}
 	else_if = {
 		limit = {
@@ -1089,10 +1161,30 @@ character_dai_viet_scripted_deaths_effect = {
 		}
 		if = {
 			limit = {
+				has_game_rule = enable_scripted_deaths
+			}
+			set_variable = lifetime_regency
+		}
+		if = {
+			limit = {
 				is_heir_of_own_country = yes
 			}
 			create_character = {
 				template = DAI_dong_khanh
+				on_created = {
+					if = {
+						limit = { has_game_rule = use_vietnamese_era_name }
+						set_first_name = Dong_Khanh
+						set_last_name = None
+						c:DAI = {
+							set_variable = { name = emperor_era_name_var value = PREV }
+						}
+					}
+					else_if = {
+						limit = { has_game_rule = use_vietnamese_personal_name }
+						set_first_name = Bien
+					}
+				}
 			}
 		}
 		resign_and_retire = yes
