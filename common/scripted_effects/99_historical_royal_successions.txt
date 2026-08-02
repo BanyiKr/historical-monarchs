@@ -2013,8 +2013,23 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = chi_xianfeng_template
 		}
-		set_first_name = Xianfeng
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Xianfeng
+			set_last_name = None
+			c:CHI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2032,8 +2047,23 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = CHI_tongzhi
 		}
-		set_first_name = Tongzhi
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Tongzhi
+			set_last_name = None
+			c:CHI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2079,8 +2109,24 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = CHI_guangxu
 		}
-		set_first_name = Guangxu
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Guangxu
+			set_last_name = None
+			c:CHI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+					
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2120,8 +2166,23 @@ character_china_ruler_succession_chain_effect = {
 		limit = {
 			has_template = CHI_puyi
 		}
-		set_first_name = Xuantong
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_chinese_era_name
+			}
+			set_first_name = Xuantong
+			set_last_name = None
+			c:CHI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+			
+			if = { # Switch Korean era name too
+				limit = {
+					has_game_rule = use_korean_era_name
+				}
+				korean_monarch_update_era_name_based_on_china = yes
+			}
+		}
 		if = {
 			limit = {
 				is_adult = no
@@ -2147,10 +2208,29 @@ character_china_ruler_succession_chain_effect = {
 character_korea_ruler_succession_chain_effect = {
 	if = {
 		limit = {
+			has_template = KOR_yi_byeon
+		}
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
+	}
+	else_if = {
+		limit = {
 			has_template = KOR_yi_myongbok
 		}
-		set_first_name = Gwangmu
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2167,8 +2247,14 @@ character_korea_ruler_succession_chain_effect = {
 		limit = {
 			has_template = KOR_sunjong
 		}
-		set_first_name = Yunghui
-		set_last_name = None
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
 		if = {
 			limit = {
 				is_adult = yes
@@ -2181,6 +2267,165 @@ character_korea_ruler_succession_chain_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_template = KOR_yi_un
+		}
+		if = {
+			limit = {
+				has_game_rule = use_korean_era_name
+				exists = c:CHI
+				owner = { is_subject_of = c:CHI }
+			}
+			korean_monarch_set_era_name_based_on_china = yes
+		}
+	}
+}
+
+korean_monarch_set_era_name_based_on_china = {
+	if = {
+		limit = {
+			exists = c:CHI
+			c:CHI = {
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+				trigger_if = {
+					limit = {
+						has_gov_regency = no
+					}
+					ruler = {
+						is_historical = yes
+					}
+				}
+				trigger_else = {
+					heir ?= {
+						is_historical = yes
+					}
+				}
+			}
+		}
+		set_last_name = None
+		c:KOR = {
+			set_variable = { name = hide_ruler_surname_var value = PREV }
+		}
+		if = {
+			limit = {
+				c:CHI = {
+					has_gov_regency = no
+				}
+			}
+			if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = chi_daoguang_template
+					}
+				}
+				set_first_name = Dogwang
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = chi_xianfeng_template
+					}
+				}
+				set_first_name = Hampung
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = CHI_tongzhi
+					}
+				}
+				set_first_name = Dongchi
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = CHI_guangxu
+					}
+				}
+				set_first_name = Gwangseo
+			}
+			else_if = {
+				limit = {
+					c:CHI.ruler = {
+						has_template = CHI_puyi
+					}
+				}
+				set_first_name = Seontong
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = chi_daoguang_template
+					}
+				}
+				set_first_name = Dogwang
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = chi_xianfeng_template
+					}
+				}
+				set_first_name = Hampung
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = CHI_tongzhi
+					}
+				}
+				set_first_name = Dongchi
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = CHI_guangxu
+					}
+				}
+				set_first_name = Gwangseo
+			}
+			else_if = {
+				limit = {
+					c:CHI.heir ?= {
+						has_template = CHI_puyi
+					}
+				}
+				set_first_name = Seontong
+			}
+		}
+	}
+}
+
+korean_monarch_update_era_name_based_on_china = {
+	if = {
+		limit = {
+			exists = c:KOR
+			c:KOR = {
+				is_subject_of = c:CHI
+				country_has_monarchy_law = yes
+				country_has_non_monarchy_law = no
+			}
+		}
+		c:KOR = {
+			if = {
+				limit = {
+					has_gov_regency = no
+				}
+				ruler = {
+					korean_monarch_set_era_name_based_on_china = yes
+				}
+			}
+			else = {
+				heir ?= {
+					korean_monarch_set_era_name_based_on_china = yes
+				}
+			}
+		}
+	}
 }
 
 character_vietnam_ruler_succession_chain_effect = {
@@ -2188,10 +2433,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_thieu_tri_nguyen_phuoc
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_tu_duc
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Thieu_Tri
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Tuyen
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1829.9.22
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_tu_duc
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2199,10 +2462,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_tu_duc
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_duc_duc
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Tu_Duc
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Thi_
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1852.2.23
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_duc_duc
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2210,21 +2491,58 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_duc_duc
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_hiep_hoa
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Duc_Duc
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
 			}
+		}
+		set_variable = lifetime_regency
+		owner ?= {
+			set_variable = { name = hide_ruler_change_notification days = 3 }
+			add_modifier = modifier_regency
+			country_summon_character_effect = {
+				TEMPLATE = DAI_nguyen_van_tuong
+				ON_CREATED_EFFECT = summon_generic_make_ruler_effect
+			}
+			ruler = {
+				set_interest_group = owner.ig:ig_armed_forces
+				remove_character_role = character_role_ig_leader
+				designate_character_as_regent = {
+					YEARS = 3
+				}
+			}
+			set_heir = ROOT
 		}
 	}
 	else_if = {
 		limit = {
 			has_template = DAI_hiep_hoa
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_kien_phuc
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Hiep_Hoa
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Thang
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1869.2.12
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_kien_phuc
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2232,10 +2550,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_kien_phuc
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_ham_nghi
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Kien_Phuc
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Ha_o
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1871.8.3
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_ham_nghi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2243,10 +2579,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_ham_nghi
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_dong_khanh
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Ham_Nghi
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Minh
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1864.2.28
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_dong_khanh
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2254,10 +2608,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_dong_khanh
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_thanh_thai
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Dong_Khanh
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Bien
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1879.3.14
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_thanh_thai
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2265,10 +2637,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_thanh_thai
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_duy_tan
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Thanh_Thai
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Chieu
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1900.9.5
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_duy_tan
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2276,10 +2666,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_duy_tan
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_khai_dinh
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Duy_Tan
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Hoa_ng
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1885.10.8
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_khai_dinh
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2287,10 +2695,28 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_khai_dinh
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_bao_dai
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Khai_Dinh
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = use_vietnamese_personal_name }
+			set_first_name = Tuan
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1913.10.22
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_bao_dai
+					heir = yes
+				}
 			}
 		}
 	}
@@ -2298,10 +2724,24 @@ character_vietnam_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAI_bao_dai
 		}
-		owner ?= {
-			create_character = {
-				template = DAI_bao_long
-				heir = yes
+		if = {
+			limit = { has_game_rule = use_vietnamese_era_name }
+			set_first_name = Bao_Dai
+			set_last_name = None
+			c:DAI = {
+				set_variable = { name = emperor_era_name_var value = PREV }
+			}
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1936.1.4
+			}
+			owner ?= {
+				create_character = {
+					template = DAI_bao_long
+					heir = yes
+				}
 			}
 		}
 	}

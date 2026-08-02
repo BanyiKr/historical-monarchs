@@ -2,9 +2,26 @@
 
  rule_hm_scripted_deaths: "Vorherbestimmte Todesfälle historischer Monarchen"
  setting_enable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_enable_scripted_deaths_desc Historisch#!#!"
- setting_enable_scripted_deaths_desc: "Aaktiviere vorprogrammierte Todesfälle für bestimmte Monarchen je nach Spieljahr"
+ setting_enable_scripted_deaths_desc: "Aaktiviere vorprogrammierte Todesfälle für bestimmte [Concept('concept_ruler','Monarchen')] je nach Spieljahr"
  setting_disable_scripted_deaths: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_disable_scripted_deaths_desc Zufällig#!#!"
- setting_disable_scripted_deaths_desc: "Deaktiviere vorprogrammierte Todesfälle für bestimmte Monarchen je nach Spieljahr"
+ setting_disable_scripted_deaths_desc: "Deaktiviere vorprogrammierte Todesfälle für bestimmte [Concept('concept_ruler','Monarchen')] je nach Spieljahr"
+
+ rule_hm_chinese_era_names: "Name des chinesischen Kaisers"
+ setting_use_chinese_era_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_chinese_era_name_desc Äraname#!#!"
+ setting_use_chinese_era_name_desc: "Der Name des chinesischen [Concept('concept_ruler','$RULER_TITLE_EMPEROR$s')] ändert sich bei seiner Thronbesteigung in seinen Äranamen (Herrschernamen)"
+ setting_use_chinese_personal_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_chinese_personal_name_desc Geburtsname#!#!"
+ setting_use_chinese_personal_name_desc: "Der Name des chinesischen [Concept('concept_ruler','$RULER_TITLE_EMPEROR$s')] behält bei seiner Thronbesteigung seinen Geburtsnamen"
+ rule_hm_korean_era_names: "Name des koreanischen Monarchen"
+ setting_use_korean_era_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_korean_era_name_desc Äraname#!#!"
+ setting_use_korean_era_name_desc: "Der Name des koreanischen [Concept('concept_ruler','Monarchen')] ändert sich bei seiner Thronbesteigung in seinen Äranamen (Herrschernamen)"
+ setting_use_korean_personal_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_korean_personal_name_desc Geburtsname#!#!"
+ setting_use_korean_personal_name_desc: "Der Name des koreanischen [Concept('concept_ruler','Monarchen')] behält bei seiner Thronbesteigung seinen Geburtsnamen"
+
+ rule_hm_vietnamese_era_names: "Name des vietnamesischen Kaisers"
+ setting_use_vietnamese_era_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_vietnamese_era_name_desc Äraname#!#!"
+ setting_use_vietnamese_era_name_desc: "Der Name des vietnamesischen [Concept('concept_ruler','$RULER_TITLE_EMPEROR$s')] ändert sich bei seiner Thronbesteigung in seinen Äranamen (Herrschernamen)"
+ setting_use_vietnamese_personal_name: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_use_vietnamese_personal_name_desc Geburtsname#!#!"
+ setting_use_vietnamese_personal_name_desc: "Der Name des vietnamesischen [Concept('concept_ruler','$RULER_TITLE_EMPEROR$s')] behält bei seiner Thronbesteigung seinen Geburtsnamen"
 
  rule_hm_heir_generation: "Generierung der historischen Erben"
  setting_aggressive_heir_generation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_aggressive_heir_generation_desc Aggressiv#!#!"

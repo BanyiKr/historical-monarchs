@@ -8,6 +8,36 @@
 	}
 }
 
+hm_chinese_era_names = {
+	default = use_chinese_era_name # Vanilla default
+
+	use_chinese_era_name = {
+	}
+
+	use_chinese_personal_name = {
+	}
+}
+
+hm_korean_era_names = {
+	default = use_korean_personal_name # Vanilla default
+
+	use_korean_era_name = {
+	}
+
+	use_korean_personal_name = {
+	}
+}
+
+hm_vietnamese_era_names = {
+	default = use_vietnamese_personal_name # Vanilla default
+
+	use_vietnamese_era_name = {
+	}
+
+	use_vietnamese_personal_name = {
+	}
+}
+
 # Obsolete
 #hm_heir_generation = {
 #	default = aggressive_heir_generation

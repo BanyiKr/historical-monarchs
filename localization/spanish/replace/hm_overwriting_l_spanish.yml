@@ -1,0 +1,17 @@
+﻿l_spanish:
+
+### Names
+ Nguyen_Phuoc: "Nguyễn Phúc"
+ Nguyen: "Nguyễn"
+ Mien_Tong: "Miên Tông"
+ Thieu_Tri: "Thiệu Trị"
+ Vinh_San: "Vĩnh San"
+ Tuan: "Tuấn"
+ Buu_Lan: "Bửu Lân"
+ Minh_Mang: "Minh Mạng"
+
+ CHARACTER_TOOLTIP_HEADER_NAME: "[SelectLocalization( ObjectsEqual( Character.Self, Character.GetCountry.MakeScope.Var('emperor_era_name_var').GetCharacter.Self ), 'CHARACTER_TOOLTIP_HEADER_CHINESE_ERA_NAME', 'CHARACTER_TOOLTIP_HEADER_NAME_OTHER')]"
+ CHARACTER_TOOLTIP_HEADER_NAME_OTHER: "[SelectLocalization( ObjectsEqual( Character.Self, Character.GetCountry.MakeScope.Var('hide_ruler_surname_var').GetCharacter.Self ), 'CHARACTER_TOOLTIP_HEADER_GENERIC_ERA_NAME', 'CHARACTER_TOOLTIP_HEADER_NAME_BASE')]"
+ CHARACTER_TOOLTIP_HEADER_NAME_BASE: "[Character.GetFullNameWithTitleNoFormatting] [AddLocalizationIf( Character.IsInExilePool, 'CHARACTER_IS_IN_EXILE')]"
+ CHARACTER_TOOLTIP_HEADER_GENERIC_ERA_NAME: "[Character.GetPrimaryRoleTitle] [Character.GetFirstNameNoFormatting] [AddLocalizationIf( Character.IsInExilePool, 'CHARACTER_IS_IN_EXILE')]"
+ CHARACTER_TOOLTIP_HEADER_CHINESE_ERA_NAME: "[Character.GetPrimaryRoleTitle] [Character.GetFirstNameNoFormatting] [AddLocalizationIf( Character.IsInExilePool, 'CHARACTER_IS_IN_EXILE')]"
