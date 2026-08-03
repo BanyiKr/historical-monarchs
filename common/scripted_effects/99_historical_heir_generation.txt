@@ -1284,3 +1284,926 @@ bulgaria_generate_scripted_heirs = {
 		}
 	}
 }
+
+bavaria_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1845.8.25
+			NOT = { is_template_used = BAV_ludwig_ii_von_bayern }
+			ruler ?= {
+				has_template = BAV_maximillian_von_bayern
+			}
+		}
+		create_character = {
+			template = BAV_ludwig_ii_von_bayern
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1848.4.27
+			NOT = { is_template_used = BAV_otto_i_von_bayern }
+			ruler ?= {
+				has_template = BAV_ludwig_ii_von_bayern
+			}
+		}
+		create_character = {
+			template = BAV_otto_i_von_bayern
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.5.18
+			NOT = { is_template_used = BAV_prince_rupprecht }
+			ruler ?= {
+				has_template = BAV_ludwig_iii_von_bayern
+			}
+		}
+		create_character = {
+			template = BAV_prince_rupprecht
+			heir = yes
+		}
+	}
+}
+
+saxony_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1801.12.12
+			NOT = { is_template_used = SAX_johann_i }
+			ruler ?= {
+				has_template = SAX_friedrich_august_von_wettin
+			}
+		}
+		create_character = {
+			template = SAX_johann_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1828.4.23
+			NOT = { is_template_used = SAX_albert_i }
+			ruler ?= {
+				has_template = SAX_johann_i
+			}
+		}
+		create_character = {
+			template = SAX_albert_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1832.8.8
+			NOT = { is_template_used = SAX_georg_i }
+			ruler ?= {
+				has_template = SAX_albert_i
+			}
+		}
+		create_character = {
+			template = SAX_georg_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >=  1865.5.25
+			NOT = { is_template_used = SAX_friedrich_august_iii }
+			ruler ?= {
+				has_template = SAX_georg_i
+			}
+		}
+		create_character = {
+			template = SAX_friedrich_august_iii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >=  1893.1.15
+			NOT = { is_template_used = SAX_prince_georg }
+			ruler ?= {
+				has_template = SAX_friedrich_august_iii
+			}
+		}
+		create_character = {
+			template = SAX_prince_georg
+			heir = yes
+		}
+	}
+}
+
+wurttemberg_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1848.2.25
+			NOT = { is_template_used = WUR_wilhelm_ii }
+			ruler ?= {
+				has_template = WUR_karl_von_wurttemberg
+			}
+		}
+		create_character = {
+			template = WUR_wilhelm_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1833.3.1
+			game_date < 1903.2.22
+			NOT = { is_template_used = WUR_duke_nicholas }
+			ruler ?= {
+				has_template = WUR_wilhelm_ii
+			}
+		}
+		create_character = {
+			template = WUR_duke_nicholas
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1838.7.30
+			game_date < 1917.10.11
+			NOT = { is_template_used = WUR_duke_philipp }
+			ruler ?= {
+				has_template = WUR_wilhelm_ii
+			}
+		}
+		create_character = {
+			template = WUR_duke_philipp
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1865.12.23
+			NOT = { is_template_used = WUR_duke_albrecht }
+			ruler ?= {
+				has_template = WUR_wilhelm_ii
+			}
+		}
+		create_character = {
+			template = WUR_duke_albrecht
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1893.11.14
+			NOT = { is_template_used = WUR_duke_philipp_albrecht }
+			ruler ?= {
+				has_template = WUR_duke_albrecht
+			}
+		}
+		create_character = {
+			template = WUR_duke_philipp_albrecht
+			heir = yes
+		}
+	}
+}
+
+hanover_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1845.9.21
+			NOT = { is_template_used = HAN_prince_ernest_august }
+			ruler ?= {
+				has_template = HAN_george_hannover
+			}
+		}
+		create_character = {
+			template = HAN_prince_ernest_august
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1880.10.28
+			NOT = { is_template_used = HAN_prince_george_william }
+			ruler ?= {
+				has_template = HAN_prince_ernest_august
+			}
+		}
+		create_character = {
+			template = HAN_prince_george_william
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1887.11.17
+			NOT = { is_template_used = HAN_duke_ernst_august }
+			ruler ?= {
+				has_template = HAN_prince_george_william
+			}
+		}
+		create_character = {
+			template = HAN_duke_ernst_august
+			heir = yes
+		}
+	}
+}
+
+baden_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1826.9.9
+			NOT = { is_template_used = BAD_frederick_i }
+			ruler ?= {
+				has_template = BAD_ludwig_von_baden
+			}
+		}
+		create_character = {
+			template = BAD_frederick_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1857.7.9
+			NOT = { is_template_used = BAD_frederick_ii }
+			ruler ?= {
+				has_template = BAD_frederick_i
+			}
+		}
+		create_character = {
+			template = BAD_frederick_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1867.7.10
+			NOT = { is_template_used = BAD_maximillian_of_baden }
+			ruler ?= {
+				has_template = BAD_frederick_ii
+			}
+		}
+		create_character = {
+			template = BAD_maximillian_of_baden
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1906.2.24
+			NOT = { is_template_used = BAD_bethold_of_baden }
+			ruler ?= {
+				has_template = BAD_maximillian_of_baden
+			}
+		}
+		create_character = {
+			template = BAD_bethold_of_baden
+			heir = yes
+		}
+	}
+}
+
+hesse_darmstadt_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1837.9.12
+			NOT = { is_template_used = HES_ludwig_iv_von_hessen_darmstadt }
+			ruler ?= {
+				has_template = HES_ludwig_iii_von_hessen_darmstadt
+			}
+		}
+		create_character = {
+			template = HES_ludwig_iv_von_hessen_darmstadt
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1868.11.25
+			NOT = { is_template_used = HES_ernst_ludwig_i_von_hessen_darmstadt }
+			ruler ?= {
+				has_template = HES_ludwig_iv_von_hessen_darmstadt
+			}
+		}
+		create_character = {
+			template = HES_ernst_ludwig_i_von_hessen_darmstadt
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1906.11.8
+			NOT = { is_template_used = HES_georg_donatus_i_von_hessen_darmstadt }
+			ruler ?= {
+				has_template = HES_ernst_ludwig_i_von_hessen_darmstadt
+			}
+		}
+		create_character = {
+			template = HES_georg_donatus_i_von_hessen_darmstadt
+			heir = yes
+		}
+	}
+}
+
+hesse_kassel_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1820.11.26
+			NOT = { is_template_used = HEK_frederick_william_ii_von_hessen_kassel }
+			ruler ?= {
+				has_template = HEK_frederick_william_von_hessen_kassel
+			}
+		}
+		create_character = {
+			template = HEK_frederick_william_ii_von_hessen_kassel
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1868.5.1
+			NOT = { is_template_used = HEK_frederick_karl_von_hessen_kassel }
+			ruler ?= {
+				has_template = HEK_frederick_william_ii_von_hessen_kassel
+			}
+		}
+		create_character = {
+			template = HEK_frederick_karl_von_hessen_kassel
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1896.11.6
+			NOT = { is_template_used = HEK_wolfgang_von_hessen_kassel }
+			ruler ?= {
+				has_template = HEK_frederick_karl_von_hessen_kassel
+			}
+		}
+		create_character = {
+			template = HEK_wolfgang_von_hessen_kassel
+			heir = yes
+		}
+	}
+}
+
+oldenburg_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1852.11.16
+			NOT = { is_template_used = OLD_frederick_augustus_ii }
+			ruler ?= {
+				has_template = OLD_peter_von_holstein_gottorp
+			}
+		}
+		create_character = {
+			template = OLD_frederick_augustus_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1897.8.10
+			NOT = { is_template_used = OLD_nikolaus }
+			ruler ?= {
+				has_template = OLD_frederick_augustus_ii
+			}
+		}
+		create_character = {
+			template = OLD_nikolaus
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1923.1.16
+			NOT = { is_template_used = OLD_anton_gunther }
+			ruler ?= {
+				has_template = OLD_nikolaus
+			}
+		}
+		create_character = {
+			template = OLD_anton_gunther
+			heir = yes
+		}
+	}
+}
+
+mecklenburg_schwerin_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1823.2.28
+			NOT = { is_template_used = MEC_friedrich_franz_ii_von_mecklenburg_schwerin }
+			ruler ?= {
+				has_template = MEC_paul_friedrich_von_mecklenburg_schwerin
+			}
+		}
+		create_character = {
+			template = MEC_friedrich_franz_ii_von_mecklenburg_schwerin
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1851.3.19
+			NOT = { is_template_used = MEC_friedrich_franz_iii_von_mecklenburg_schwerin }
+			ruler ?= {
+				has_template = MEC_friedrich_franz_ii_von_mecklenburg_schwerin
+			}
+		}
+		create_character = {
+			template = MEC_friedrich_franz_iii_von_mecklenburg_schwerin
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1882.4.9
+			NOT = { is_template_used = MEC_friedrich_franz_iv_von_mecklenburg_schwerin }
+			ruler ?= {
+				has_template = MEC_friedrich_franz_iii_von_mecklenburg_schwerin
+			}
+		}
+		create_character = {
+			template = MEC_friedrich_franz_iv_von_mecklenburg_schwerin
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1910.4.22
+			NOT = { is_template_used = MEC_hereditary_duke_friedrich_franz_von_mecklenburg_schwerin }
+			ruler ?= {
+				has_template = MEC_friedrich_franz_iv_von_mecklenburg_schwerin
+			}
+		}
+		create_character = {
+			template = MEC_hereditary_duke_friedrich_franz_von_mecklenburg_schwerin
+			heir = yes
+		}
+	}
+}
+
+mecklenburg_sterlitz_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1848.7.22
+			NOT = { is_template_used = MST_adolf_friedrich_v_von_mecklenburg_strelitz }
+			ruler ?= {
+				has_template = MST_frederick_william_von_mecklenburg_strelitz
+			}
+		}
+		create_character = {
+			template = MST_adolf_friedrich_v_von_mecklenburg_strelitz
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1882.6.17
+			NOT = { is_template_used = MST_adolf_friedrich_vi_von_mecklenburg_strelitz }
+			ruler ?= {
+				has_template = MST_adolf_friedrich_v_von_mecklenburg_strelitz
+			}
+		}
+		create_character = {
+			template = MST_adolf_friedrich_vi_von_mecklenburg_strelitz
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1863.6.17
+			NOT = { is_template_used = MST_carl_michael_von_mecklenburg_strelitz }
+			ruler ?= {
+				has_template = MST_adolf_friedrich_vi_von_mecklenburg_strelitz
+			}
+		}
+		create_character = {
+			template = MST_carl_michael_von_mecklenburg_strelitz
+			heir = yes
+		}
+	}
+}
+
+saxe_weimar_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1876.6.10
+			NOT = { is_template_used = WEI_wilhelm_ernst_von_sachsen_weimar_eisenach }
+			ruler ?= {
+				has_template = WEI_charles_alexander_von_sachsen_weimar_eisenach
+			}
+		}
+		create_character = {
+			template = WEI_wilhelm_ernst_von_sachsen_weimar_eisenach
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1912.7.28
+			NOT = { is_template_used = WEI_carl_august_von_sachsen_weimar_eisenach }
+			ruler ?= {
+				has_template = WEI_wilhelm_ernst_von_sachsen_weimar_eisenach
+			}
+		}
+		create_character = {
+			template = WEI_carl_august_von_sachsen_weimar_eisenach
+			heir = yes
+		}
+	}
+}
+
+saxe_coburg_gotha_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1844.8.6
+			NOT = { is_template_used = COB_alfred_von_sachsen_coburg_gotha }
+			ruler ?= {
+				has_template = COB_ernst_ii_von_sachsen_coburg_gotha
+			}
+		}
+		create_character = {
+			template = COB_alfred_von_sachsen_coburg_gotha
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1884.7.19
+			NOT = { is_template_used = COB_charles_edward_von_sachsen_coburg_gotha }
+			ruler ?= {
+				has_template = COB_alfred_von_sachsen_coburg_gotha
+			}
+		}
+		create_character = {
+			template = COB_charles_edward_von_sachsen_coburg_gotha
+			heir = yes
+		}
+	}
+}
+
+saxe_meiningen_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1851.4.1
+			NOT = { is_template_used = MEI_bernhard_iii_von_sachsen_meiningen }
+			ruler ?= {
+				has_template = MEI_georg_von_sachsen_meiningen
+			}
+		}
+		create_character = {
+			template = MEI_bernhard_iii_von_sachsen_meiningen
+			heir = yes
+		}
+	}
+}
+
+anhalt_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1856.8.19
+			NOT = { is_template_used = ANH_friedrich_ii_askanier }
+			ruler ?= {
+				has_template = ANH_friedrich_askanier
+			}
+		}
+		create_character = {
+			template = ANH_friedrich_ii_askanier
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1861.4.18
+			NOT = { is_template_used = ANH_eduard_askanier }
+			ruler ?= {
+				has_template = ANH_friedrich_ii_askanier
+			}
+		}
+		create_character = {
+			template = ANH_eduard_askanier
+			heir = yes
+		}
+	}
+}
+
+lippe_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1824.4.18
+			NOT = { is_template_used = LIP_woldemar_von_lippe }
+			ruler ?= {
+				has_template = LIP_leopold_iii_von_lippe
+			}
+		}
+		create_character = {
+			template = LIP_woldemar_von_lippe
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1831.1.13
+			NOT = { is_template_used = LIP_alexander_von_lippe }
+			ruler ?= {
+				has_template = LIP_woldemar_von_lippe
+			}
+		}
+		create_character = {
+			template = LIP_alexander_von_lippe
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.5.30
+			NOT = { is_template_used = LIP_leopold_iv_von_lippe }
+			ruler ?= {
+				has_template = LIP_alexander_von_lippe
+			}
+		}
+		create_character = {
+			template = LIP_leopold_iv_von_lippe
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1902.5.30
+			NOT = { is_template_used = LIP_ernst_von_lippe }
+			ruler ?= {
+				has_template = LIP_leopold_iv_von_lippe
+			}
+		}
+		create_character = {
+			template = LIP_ernst_von_lippe
+			heir = yes
+		}
+	}
+}
+
+persia_generate_scripted_heirs = {
+	# Qajar
+	if = {
+		limit = {
+			game_date >= 1853.3.25
+			NOT = { is_template_used = PER_mozaffar_ad_din_shah_qajar }
+			ruler ?= {
+				has_template = per_nasir_al_din_qajar_template
+			}
+		}
+		create_character = {
+			template = PER_mozaffar_ad_din_shah_qajar
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1872.6.21
+			NOT = { is_template_used = PER_mohammad_ali_shah_qajar }
+			ruler ?= {
+				has_template = PER_mozaffar_ad_din_shah_qajar
+			}
+		}
+		create_character = {
+			template = PER_mohammad_ali_shah_qajar
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1898.1.21
+			NOT = { is_template_used = PER_ahmad_shah_qajar }
+			ruler ?= {
+				has_template = PER_mohammad_ali_shah_qajar
+			}
+		}
+		create_character = {
+			template = PER_ahmad_shah_qajar
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1922.1.22
+			NOT = { is_template_used = PER_prince_freydoun_qajar }
+			ruler ?= {
+				has_template = PER_ahmad_shah_qajar
+			}
+		}
+		create_character = {
+			template = PER_prince_freydoun_qajar
+			heir = yes
+		}
+	}
+	# Pahlavi
+	else_if = {
+		limit = {
+			game_date >= 1919.10.26
+			NOT = { is_template_used = PER_mohammad_reza_pahlavi }
+			ruler ?= {
+				has_template = PER_reza_pahlavi
+			}
+		}
+		create_character = {
+			template = PER_mohammad_reza_pahlavi
+			heir = yes
+		}
+	}
+}
+
+oman_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1832.6.7
+			NOT = { is_template_used = OMA_turki_bin_said }
+			ruler ?= {
+				has_template = oma_thuwaini_bin_said
+			}
+		}
+		create_character = {
+			template = OMA_turki_bin_said
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1864.6.8
+			NOT = { is_template_used = OMA_faisal_bin_turki }
+			ruler ?= {
+				has_template = OMA_turki_bin_said
+			}
+		}
+		create_character = {
+			template = OMA_faisal_bin_turki
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1886.6.8
+			NOT = { is_template_used = OMA_taimur_bin_feisal }
+			ruler ?= {
+				has_template = OMA_faisal_bin_turki
+			}
+		}
+		create_character = {
+			template = OMA_taimur_bin_feisal
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1910.8.13
+			NOT = { is_template_used = OMA_said_bin_taimur }
+			ruler ?= {
+				has_template = OMA_taimur_bin_feisal
+			}
+		}
+		create_character = {
+			template = OMA_said_bin_taimur
+			heir = yes
+		}
+	}
+}
+
+egypt_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1812.7.1
+			NOT = { is_template_used = EGY_abbas_helmy }
+			ruler ?= {
+				has_template = egy_ibrahim_alawi_template
+			}
+		}
+		create_character = {
+			template = EGY_abbas_helmy
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1822.1.17
+			NOT = { is_template_used = EGY_mohamed_said }
+			ruler ?= {
+				has_template = EGY_abbas_helmy
+			}
+		}
+		create_character = {
+			template = EGY_mohamed_said
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1830.1.12
+			NOT = { is_template_used = EGY_ismail_pasha }
+			ruler ?= {
+				has_template = EGY_mohamed_said
+			}
+		}
+		create_character = {
+			template = EGY_ismail_pasha
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1852.11.15
+			NOT = { is_template_used = EGY_mohamed_tewfik }
+			ruler ?= {
+				has_template = EGY_ismail_pasha
+			}
+		}
+		create_character = {
+			template = EGY_mohamed_tewfik
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1874.7.14
+			NOT = { is_template_used = EGY_abbas_helmy_ii }
+			ruler ?= {
+				has_template = EGY_mohamed_tewfik
+			}
+		}
+		create_character = {
+			template = EGY_abbas_helmy_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1853.11.21
+			NOT = { is_template_used = EGY_hussein_kamel }
+			ruler ?= {
+				has_template = EGY_abbas_helmy_ii
+			}
+		}
+		create_character = {
+			template = EGY_hussein_kamel
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1853.11.21
+			NOT = { is_template_used = EGY_hussein_kamel }
+			ruler ?= {
+				has_template = EGY_abbas_helmy_ii
+			}
+		}
+		create_character = {
+			template = EGY_hussein_kamel
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1868.3.26
+			is_subject = yes
+			overlord ?= {
+				is_in_geographic_region = geographic_region_europe
+				NOT = {
+					c:TUR ?= this
+				}
+			}
+			NOT = { is_template_used = EGY_fuad_i }
+			ruler ?= {
+				has_template = EGY_hussein_kamel
+			}
+		}
+		create_character = {
+			template = EGY_fuad_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1874.12.20
+			NOT = { is_template_used = EGY_prince_kamal_el_dine }
+			ruler ?= {
+				has_template = EGY_hussein_kamel
+			}
+		}
+		create_character = {
+			template = EGY_prince_kamal_el_dine
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1920.2.11
+			NOT = { is_template_used = EGY_farouk_i }
+			ruler ?= {
+				has_template = EGY_fuad_i
+			}
+		}
+		create_character = {
+			template = EGY_farouk_i
+			heir = yes
+		}
+	}
+}
