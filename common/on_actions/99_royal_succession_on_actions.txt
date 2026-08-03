@@ -1529,8 +1529,9 @@ historical_heirs_on_monthly_pulse_country = {
 		if = {
 			limit = {
 				has_gov_regency = no
-				ruler ?= {
-					is_adult = yes
+				ruler ?= { is_adult = yes }
+				NOT = {
+					is_subject_type = subject_type_personal_union
 				}
 			}
 			if = { # Belgium
@@ -1668,6 +1669,58 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				vietnam_generate_scripted_heirs = yes
+			}
+			else_if = { # Schleswig-Holstein
+				limit = {
+					OR = {
+						c:SCH ?= this
+						was_formed_from = SCH
+						c:HOL ?= this
+						was_formed_from = HOL
+					}
+					can_generate_scripted_heirs = yes
+				}
+				schleswig_holstein_generate_scripted_heirs = yes
+			}
+			else_if = { # Greece
+				limit = {
+					OR = {
+						c:GRE ?= this
+						was_formed_from = GRE
+					}
+					can_generate_scripted_heirs = yes
+				}
+				greece_generate_scripted_heirs = yes
+			}
+			else_if = { # Montenegro
+				limit = {
+					OR = {
+						c:MON ?= this
+						was_formed_from = MON
+					}
+					can_generate_scripted_heirs = yes
+				}
+				montenegro_generate_scripted_heirs = yes
+			}
+			else_if = { # Romania
+				limit = {
+					OR = {
+						c:ROM ?= this
+						was_formed_from = ROM
+					}
+					can_generate_scripted_heirs = yes
+				}
+				romania_generate_scripted_heirs = yes
+			}
+			else_if = { # Bulgaria
+				limit = {
+					OR = {
+						c:BUL ?= this
+						was_formed_from = BUL
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bulgaria_generate_scripted_heirs = yes
 			}
 		}
 	}

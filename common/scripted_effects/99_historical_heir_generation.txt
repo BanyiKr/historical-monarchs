@@ -1018,3 +1018,269 @@ vietnam_generate_scripted_heirs = {
 		}
 	}
 }
+
+schleswig_holstein_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1829.7.6
+			NOT = { is_template_used = SCH_frederik_viii }
+			ruler ?= {
+				has_template = SCH_christian_augusti_ii
+			}
+		}
+		create_character = {
+			template = SCH_frederik_viii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1863.8.11
+			NOT = { is_template_used = SCH_ernst_gunther_ii }
+			ruler ?= {
+				has_template = SCH_frederik_viii
+			}
+		}
+		create_character = {
+			template = SCH_ernst_gunther_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.2.26
+			NOT = { is_template_used = SCH_albert_i }
+			ruler ?= {
+				has_template = SCH_ernst_gunther_ii
+			}
+		}
+		create_character = {
+			template = SCH_albert_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1855.10.12
+			NOT = { is_template_used = SCH_friedrich_ferdinand }
+			ruler ?= {
+				has_template = SCH_albert_i
+			}
+		}
+		create_character = {
+			template = SCH_friedrich_ferdinand
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1891.8.23
+			NOT = { is_template_used = SCH_wilhelm_friedrich }
+			ruler ?= {
+				has_template = SCH_friedrich_ferdinand
+			}
+		}
+		create_character = {
+			template = SCH_wilhelm_friedrich
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1922.4.30
+			NOT = { is_template_used = SCH_peter_i }
+			ruler ?= {
+				has_template = SCH_wilhelm_friedrich
+			}
+		}
+		create_character = {
+			template = SCH_peter_i
+			heir = yes
+		}
+	}
+}
+
+greece_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1868.8.2
+			NOT = { is_template_used = GRE_constantine_i }
+			ruler ?= {
+				has_template = GRE_george_i_of_greece
+			}
+		}
+		create_character = {
+			template = GRE_constantine_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1890.7.19
+			NOT = { is_template_used = GRE_geroge_II }
+			ruler ?= {
+				has_template = GRE_constantine_i
+			}
+		}
+		create_character = {
+			template = GRE_geroge_II
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1901.12.14
+			NOT = { is_template_used = GRE_paul_i }
+			ruler ?= {
+				has_template = GRE_geroge_II
+			}
+		}
+		create_character = {
+			template = GRE_paul_i
+			heir = yes
+		}
+	}
+}
+
+montenegro_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1841.10.7
+			NOT = { is_template_used = MON_Nikola_I }
+			ruler ?= {
+				has_template = mon_danilo_petrovic_njegos
+			}
+		}
+		create_character = {
+			template = MON_Nikola_I
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.6.29
+			NOT = { is_template_used = MON_Prince_Danilo }
+			ruler ?= {
+				has_template = MON_Nikola_I
+			}
+		}
+		create_character = {
+			template = MON_Prince_Danilo
+			heir = yes
+		}
+	}
+}
+
+romania_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1865.8.24
+			NOT = { is_template_used = ROM_ferdinand_i }
+			ruler ?= {
+				has_template = ROM_carol_i
+			}
+		}
+		create_character = {
+			template = ROM_ferdinand_i
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1893.10.15
+			NOT = { is_template_used = ROM_carol_ii }
+			ruler ?= {
+				has_template = ROM_ferdinand_i
+			}
+		}
+		create_character = {
+			template = ROM_carol_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1921.10.25
+			NOT = { is_template_used = ROM_mihai_i }
+			ruler ?= {
+				has_template = ROM_carol_ii
+			}
+		}
+		create_character = {
+			template = ROM_mihai_i
+			heir = yes
+		}
+	}
+}
+
+bulgaria_generate_scripted_heirs = {
+	# Battenberg
+	if = {
+		limit = {
+			game_date >= 1890.1.16
+			NOT = { is_template_used = BUL_assen_hartenau }
+			ruler ?= {
+				has_template = BUL_alexander_i
+			}
+		}
+		create_character = {
+			template = BUL_assen_hartenau
+			heir = yes
+		}
+	}
+	# Saxe-Coburg-Gotha
+	else_if = {
+		limit = {
+			game_date >= 1894.1.30
+			NOT = { is_template_used = BUL_boris_iii }
+			ruler ?= {
+				has_template = BUL_alexander_i
+			}
+		}
+		create_character = {
+			template = BUL_boris_iii
+			heir = yes
+		}
+	}
+	# Rosenborg
+	else_if = {
+		limit = {
+			game_date >= 1887.6.10
+			NOT = { is_template_used = DEN_prince_aage }
+			ruler ?= {
+				has_template = DEN_prince_valdemar
+			}
+		}
+		create_character = {
+			template = DEN_prince_aage
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1915.1.3
+			NOT = { is_template_used = DEN_count_valdemar }
+			ruler ?= {
+				has_template = DEN_prince_aage
+			}
+		}
+		create_character = {
+			template = DEN_count_valdemar
+			heir = yes
+		}
+	}
+	# Reuss
+	else_if = {
+		limit = {
+			game_date >= 1879.7.26
+			NOT = { is_template_used = GER_Heinrich_XXXIII_Reuss }
+			ruler ?= {
+				has_template = GER_Heinrich_XXXII_Reuss
+			}
+		}
+		create_character = {
+			template = GER_Heinrich_XXXIII_Reuss
+			heir = yes
+		}
+	}
+}

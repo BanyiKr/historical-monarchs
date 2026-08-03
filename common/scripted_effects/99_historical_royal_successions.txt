@@ -127,10 +127,15 @@ character_schleswig_holstein_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SCH_christian_augusti_ii
 		}
-		owner ?= {
-			create_character = {
-				template = SCH_frederik_viii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+			}
+			owner ?= {
+				create_character = {
+					template = SCH_frederik_viii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -138,10 +143,16 @@ character_schleswig_holstein_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SCH_frederik_viii
 		}
-		owner ?= {
-			create_character = {
-				template = SCH_ernst_gunther_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1863.8.11
+			}
+			owner ?= {
+				create_character = {
+					template = SCH_ernst_gunther_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -149,10 +160,16 @@ character_schleswig_holstein_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SCH_ernst_gunther_ii
 		}
-		owner ?= {
-			create_character = {
-				template = SCH_albert_i
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1869.2.26
+			}
+			owner ?= {
+				create_character = {
+					template = SCH_albert_i
+					heir = yes
+				}
 			}
 		}
 	}
@@ -160,10 +177,16 @@ character_schleswig_holstein_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SCH_albert_i
 		}
-		owner ?= {
-			create_character = {
-				template = SCH_friedrich_ferdinand
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >=  1855.10.12
+			}
+			owner ?= {
+				create_character = {
+					template = SCH_friedrich_ferdinand
+					heir = yes
+				}
 			}
 		}
 	}
@@ -171,10 +194,16 @@ character_schleswig_holstein_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SCH_friedrich_ferdinand
 		}
-		owner ?= {
-			create_character = {
-				template = SCH_wilhelm_friedrich
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1891.8.23
+			}
+			owner ?= {
+				create_character = {
+					template = SCH_wilhelm_friedrich
+					heir = yes
+				}
 			}
 		}
 	}
@@ -182,10 +211,16 @@ character_schleswig_holstein_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SCH_wilhelm_friedrich
 		}
-		owner ?= {
-			create_character = {
-				template = SCH_peter_i
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1922.4.30
+			}
+			owner ?= {
+				create_character = {
+					template = SCH_peter_i
+					heir = yes
+				}
 			}
 		}
 	}
@@ -525,9 +560,15 @@ character_greece_ruler_succession_chain_effect = {
 		limit = {
 			has_template = GRE_george_i_of_greece
 		}
-		owner ?= {
-			create_character = {
-				template = GRE_constantine_i
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1868.8.2
+			}
+			owner ?= {
+				create_character = {
+					template = GRE_constantine_i
+				}
 			}
 		}
 	}
@@ -535,9 +576,15 @@ character_greece_ruler_succession_chain_effect = {
 		limit = {
 			has_template = GRE_constantine_i
 		}
-		owner ?= {
-			create_character = {
-				template = GRE_geroge_II
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1890.7.19
+			}
+			owner ?= {
+				create_character = {
+					template = GRE_geroge_II
+				}
 			}
 		}
 	}
@@ -545,9 +592,15 @@ character_greece_ruler_succession_chain_effect = {
 		limit = {
 			has_template = GRE_geroge_II
 		}
-		owner ?= {
-			create_character = {
-				template = GRE_paul_i
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1901.12.14
+			}
+			owner ?= {
+				create_character = {
+					template = GRE_paul_i
+				}
 			}
 		}
 	}
@@ -558,9 +611,15 @@ character_montenegro_ruler_succession_chain_effect = {
 		limit = {
 			has_template = mon_danilo_petrovic_njegos
 		}
-		owner ?= {
-			create_character = {
-				template = MON_Nikola_I
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1841.10.7
+			}
+			owner ?= {
+				create_character = {
+					template = MON_Nikola_I
+				}
 			}
 		}
 	}
@@ -568,9 +627,15 @@ character_montenegro_ruler_succession_chain_effect = {
 		limit = {
 			has_template = MON_Nikola_I
 		}
-		owner ?= {
-			create_character = {
-				template = MON_Prince_Danilo
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1871.6.29
+			}
+			owner ?= {
+				create_character = {
+					template = MON_Prince_Danilo
+				}
 			}
 		}
 	}
@@ -615,10 +680,16 @@ character_moldavia_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ROM_carol_i
 		}
-		owner ?= {
-			create_character = {
-				template = ROM_ferdinand_i
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1865.8.24
+			}
+			owner ?= {
+				create_character = {
+					template = ROM_ferdinand_i
+					heir = yes
+				}
 			}
 		}
 	}
@@ -626,10 +697,16 @@ character_moldavia_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ROM_ferdinand_i
 		}
-		owner ?= {
-			create_character = {
-				template = ROM_carol_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1893.10.15
+			}
+			owner ?= {
+				create_character = {
+					template = ROM_carol_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -637,10 +714,16 @@ character_moldavia_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ROM_carol_ii
 		}
-		owner ?= {
-			create_character = {
-				template = ROM_mihai_i
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1921.10.25
+			}
+			owner ?= {
+				create_character = {
+					template = ROM_mihai_i
+					heir = yes
+				}
 			}
 		}
 	}
@@ -721,10 +804,16 @@ character_wallachia_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ROM_carol_i
 		}
-		owner ?= {
-			create_character = {
-				template = ROM_ferdinand_i
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1865.8.24
+			}
+			owner ?= {
+				create_character = {
+					template = ROM_ferdinand_i
+					heir = yes
+				}
 			}
 		}
 	}
@@ -732,10 +821,16 @@ character_wallachia_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ROM_ferdinand_i
 		}
-		owner ?= {
-			create_character = {
-				template = ROM_carol_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1893.10.15
+			}
+			owner ?= {
+				create_character = {
+					template = ROM_carol_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -743,10 +838,16 @@ character_wallachia_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ROM_carol_ii
 		}
-		owner ?= {
-			create_character = {
-				template = ROM_mihai_i
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1921.10.25
+			}
+			owner ?= {
+				create_character = {
+					template = ROM_mihai_i
+					heir = yes
+				}
 			}
 		}
 	}
@@ -794,10 +895,16 @@ character_bulgaria_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BUL_alexander_i
 		}
-		owner ?= {
-			create_character = {
-				template = BUL_assen_hartenau
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1890.1.16
+			}
+			owner ?= {
+				create_character = {
+					template = BUL_assen_hartenau
+					heir = yes
+				}
 			}
 		}
 	}
@@ -806,10 +913,16 @@ character_bulgaria_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BUL_ferdinand_i
 		}
-		owner ?= {
-			create_character = {
-				template = BUL_boris_iii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1894.1.30
+			}
+			owner ?= {
+				create_character = {
+					template = BUL_boris_iii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -818,10 +931,16 @@ character_bulgaria_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DEN_prince_valdemar
 		}
-		owner ?= {
-			create_character = {
-				template = DEN_prince_aage
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1887.6.10
+			}
+			owner ?= {
+				create_character = {
+					template = DEN_prince_aage
+					heir = yes
+				}
 			}
 		}
 	}
@@ -829,10 +948,16 @@ character_bulgaria_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DEN_prince_aage
 		}
-		owner ?= {
-			create_character = {
-				template = DEN_count_valdemar
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1915.1.3
+			}
+			owner ?= {
+				create_character = {
+					template = DEN_count_valdemar
+					heir = yes
+				}
 			}
 		}
 	}
@@ -841,10 +966,16 @@ character_bulgaria_ruler_succession_chain_effect = {
 		limit = {
 			has_template = GER_Heinrich_XXXII_Reuss
 		}
-		owner ?= {
-			create_character = {
-				template = GER_Heinrich_XXXIII_Reuss
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1879.7.26
+			}
+			owner ?= {
+				create_character = {
+					template = GER_Heinrich_XXXIII_Reuss
+					heir = yes
+				}
 			}
 		}
 	}

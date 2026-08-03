@@ -447,9 +447,12 @@ hm_monarch_choice.2 = { # Bulgaria
 			ruler = yes
 		}
 		hidden_effect = {
-			create_character = {
-				template = BUL_assen_hartenau
-				heir = yes
+			if = {
+				limit = { game_date >= 1890.1.16 }
+				create_character = {
+					template = BUL_assen_hartenau
+					heir = yes
+				}
 			}
 		}
 		change_relations = {
@@ -865,7 +868,7 @@ hm_monarch_choice.2 = { # Bulgaria
 			value = -10
 		}
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 	}
 }
