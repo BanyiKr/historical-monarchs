@@ -3074,3 +3074,893 @@ shewa_generate_scripted_heirs = {
 		}
 	}
 }
+
+basutoland_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1811.1.1
+			NOT = { is_template_used = BST_Letsie_I }
+			ruler ?= {
+				has_template = BST_Moshoeshoe
+			}
+		}
+		create_character = {
+			template = BST_Letsie_I
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1836.1.1
+			NOT = { is_template_used = BST_Lerotholi_I }
+			ruler ?= {
+				has_template = BST_Letsie_I
+			}
+		}
+		create_character = {
+			template = BST_Lerotholi_I
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1870.1.1
+			NOT = { is_template_used = BST_Nathaniel_Griffith }
+			ruler ?= {
+				has_template = BST_Lerotholi_I
+			}
+		}
+		create_character = {
+			template = BST_Nathaniel_Griffith
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1905.1.1
+			NOT = { is_template_used = BST_Simon_Seeiso_Griffith }
+			ruler ?= {
+				has_template = BST_Nathaniel_Griffith
+			}
+		}
+		create_character = {
+			template = BST_Simon_Seeiso_Griffith
+			heir = yes
+		}
+	}
+}
+
+swaziland_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1855.1.1
+			NOT = { is_template_used = SWZ_ludvonga_ii }
+			ruler ?= {
+				has_template = SWZ_mswati
+			}
+		}
+		create_character = {
+			template = SWZ_ludvonga_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1872.1.1
+			NOT = { is_template_used = SWZ_mbandzeni }
+			ruler ?= {
+				has_template = SWZ_mswati
+			}
+		}
+		create_character = {
+			template = SWZ_mbandzeni
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1855.1.1
+			NOT = { is_template_used = SWZ_mbandzeni }
+			ruler ?= {
+				has_template = SWZ_ludvonga_ii
+			}
+		}
+		create_character = {
+			template = SWZ_mbandzeni
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1876.5.11
+			NOT = { is_template_used = SWZ_bhunu }
+			ruler ?= {
+				has_template = SWZ_mbandzeni
+			}
+		}
+		create_character = {
+			template = SWZ_bhunu
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1899.7.22
+			NOT = { is_template_used = SWZ_sobhuza_ii }
+			ruler ?= {
+				has_template = SWZ_bhunu
+			}
+		}
+		create_character = {
+			template = SWZ_sobhuza_ii
+			heir = yes
+		}
+	}
+}
+
+burundi_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1892.1.1
+			NOT = { is_template_used = BRD_mutaga_iv_ntwero }
+			ruler ?= {
+				has_template = BRD_mwezi_iv_ntwero
+			}
+		}
+		create_character = {
+			template = BRD_mutaga_iv_ntwero
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1912.5.6
+			NOT = { is_template_used = BRD_mwambutsa_iv_ntwero }
+			ruler ?= {
+				has_template = BRD_mutaga_iv_ntwero
+			}
+		}
+		create_character = {
+			template = BRD_mwambutsa_iv_ntwero
+			heir = yes
+		}
+	}
+}
+
+rwanda_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1840.1.1
+			NOT = { is_template_used = RWD_kigeli_iv_abanyiginya }
+			ruler ?= {
+				has_template = RWD_mutara_ii_abanyiginya
+			}
+		}
+		create_character = {
+			template = RWD_kigeli_iv_abanyiginya
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1859.1.1
+			NOT = { is_template_used = RWD_mibambwe_iv_abanyiginya }
+			ruler ?= {
+				has_template = RWD_kigeli_iv_abanyiginya
+			}
+		}
+		create_character = {
+			template = RWD_mibambwe_iv_abanyiginya
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1883.1.1
+			NOT = { is_template_used = RWD_yuhi_v_abanyiginya }
+			ruler ?= {
+				has_template = RWD_mibambwe_iv_abanyiginya
+			}
+		}
+		create_character = {
+			template = RWD_yuhi_v_abanyiginya
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1911.3.1
+			NOT = { is_template_used = RWD_mutara_iii_abanyiginya }
+			ruler ?= {
+				has_template = RWD_yuhi_v_abanyiginya
+			}
+		}
+		create_character = {
+			template = RWD_mutara_iii_abanyiginya
+			heir = yes
+		}
+	}
+}
+
+sokoto_generate_scripted_heirs = { # Technically unecessary, since almost all of them were born before 1836, but kept for consistency and potential future use
+	if = {
+		limit = {
+			game_date >= 1804.1.1
+			NOT = { is_template_used = SOK_ali_babba_dan_fodio }
+			ruler ?= {
+				has_template = SOK_abu_bakr_atiku_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_ali_babba_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1807.1.1
+			NOT = { is_template_used = SOK_ahmadu_atiku_dan_fodio }
+			ruler ?= {
+				has_template = SOK_ali_babba_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_ahmadu_atiku_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1814.1.1
+			NOT = { is_template_used = SOK_ahmadu_rufai_dan_fodio }
+			ruler ?= {
+				has_template = SOK_ahmadu_atiku_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_ahmadu_rufai_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1816.1.1
+			NOT = { is_template_used = SOK_muazu_dan_fodio }
+			ruler ?= {
+				has_template = SOK_ahmadu_rufai_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_muazu_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1824.1.1
+			NOT = { is_template_used = SOK_umaru_dan_fodio }
+			ruler ?= {
+				has_template = SOK_muazu_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_umaru_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1828.1.1
+			NOT = { is_template_used = SOK_abd_al_rahman_dan_fodio }
+			ruler ?= {
+				has_template = SOK_umaru_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_abd_al_rahman_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1840.1.1
+			NOT = { is_template_used = SOK_muhammadu_attahiru_dan_fodio }
+			ruler ?= {
+				has_template = SOK_abd_al_rahman_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_muhammadu_attahiru_dan_fodio
+			heir = yes
+		}
+	}
+}
+
+hawaii_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1830.12.11
+			NOT = { is_template_used = HAW_kamehameha_v }
+			ruler ?= {
+				has_template = HAW_kamehameha_iv
+			}
+		}
+		create_character = {
+			template = HAW_kamehameha_v
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1836.11.16
+			NOT = { is_template_used = HAW_kalakaua }
+			ruler ?= {
+				has_template = HAW_kamehameha_v
+			}
+		}
+		create_character = {
+			template = HAW_kalakaua
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1838.9.2
+			NOT = { is_template_used = HAW_liliuokalani }
+			ruler ?= {
+				has_template = HAW_kalakaua
+			}
+		}
+		create_character = {
+			template = HAW_liliuokalani
+			heir = yes
+		}
+	}
+}
+
+brunei_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1825.1.1
+			NOT = { is_template_used = BRU_hashim_jalilul_bolkiah }
+			ruler ?= {
+				has_template = BRU_abdul_momin_bolkiah
+			}
+		}
+		create_character = {
+			template = BRU_hashim_jalilul_bolkiah
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1889.1.1
+			NOT = { is_template_used = BRU_muhammad_jamalul_alam_ii_bolkiah }
+			ruler ?= {
+				has_template = BRU_hashim_jalilul_bolkiah
+			}
+		}
+		create_character = {
+			template = BRU_muhammad_jamalul_alam_ii_bolkiah
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1912.8.22
+			NOT = { is_template_used = BRU_ahmad_tajuddin_bolkiah }
+			ruler ?= {
+				has_template = BRU_muhammad_jamalul_alam_ii_bolkiah
+			}
+		}
+		create_character = {
+			template = BRU_ahmad_tajuddin_bolkiah
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1914.9.23
+			NOT = { is_template_used = BRU_omar_ali_saifuddien_iii }
+			ruler ?= {
+				has_template = BRU_ahmad_tajuddin_bolkiah
+			}
+		}
+		create_character = {
+			template = BRU_omar_ali_saifuddien_iii
+			heir = yes
+		}
+	}
+}
+
+sulu_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1830.12.6
+			NOT = { is_template_used = SUL_jamal_ul_azam_sulu }
+			ruler ?= {
+				has_template = SUL_mohammad_pulalun_kiram_sulu
+			}
+		}
+		create_character = {
+			template = SUL_jamal_ul_azam_sulu
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1862.1.6
+			NOT = { is_template_used = SUL_badarud_din_ii }
+			ruler ?= {
+				has_template = SUL_jamal_ul_azam_sulu
+			}
+		}
+		create_character = {
+			template = SUL_badarud_din_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.1.6
+			NOT = { is_template_used = SUL_harun_ar_rashid }
+			ruler ?= {
+				has_template = SUL_badarud_din_ii
+			}
+		}
+		create_character = {
+			template = SUL_harun_ar_rashid
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1868.3.27
+			NOT = { is_template_used = SUL_jamalul_kiram_ii }
+			ruler ?= {
+				has_template = SUL_harun_ar_rashid
+			}
+		}
+		create_character = {
+			template = SUL_jamalul_kiram_ii
+			heir = yes
+		}
+	}
+}
+
+bornu_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1830.5.5
+			NOT = { is_template_used = BOR_abu_bakr_al_kanemi }
+			ruler ?= {
+				has_template = BOR_umar_al_kanemi
+			}
+		}
+		create_character = {
+			template = BOR_abu_bakr_al_kanemi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1834.5.5
+			NOT = { is_template_used = BOR_ibrahim_al_kanemi }
+			ruler ?= {
+				has_template = BOR_abu_bakr_al_kanemi
+			}
+		}
+		create_character = {
+			template = BOR_ibrahim_al_kanemi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1837.5.5
+			NOT = { is_template_used = BOR_hashim_al_kanemi }
+			ruler ?= {
+				has_template = BOR_ibrahim_al_kanemi
+			}
+		}
+		create_character = {
+			template = BOR_hashim_al_kanemi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1854.5.5
+			NOT = { is_template_used = BOR_kyari_al_kanemi }
+			ruler ?= {
+				has_template = BOR_hashim_al_kanemi
+			}
+		}
+		create_character = {
+			template = BOR_kyari_al_kanemi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1842.5.5
+			NOT = { is_template_used = BOR_umar_sanda_al_kanemi }
+			ruler ?= {
+				has_template = BOR_kyari_al_kanemi
+			}
+		}
+		create_character = {
+			template = BOR_umar_sanda_al_kanemi
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1846.5.5
+			NOT = { is_template_used = BOR_abubakar_garbau_al_kanemi }
+			ruler ?= {
+				has_template = BOR_umar_sanda_al_kanemi
+			}
+		}
+		create_character = {
+			template = BOR_abubakar_garbau_al_kanemi
+			heir = yes
+		}
+	}
+}
+
+bagirmi_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1834.5.5
+			NOT = { is_template_used = BGI_abu_sekkin_mohammed_iv }
+			ruler ?= {
+				has_template = BGI__abdul_qadir_ii_al_mahdi
+			}
+		}
+		create_character = {
+			template = BGI_abu_sekkin_mohammed_iv
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1858.5.5
+			NOT = { is_template_used = BGI__abd_ar_rahman_gaourang_ii }
+			ruler ?= {
+				has_template = BGI_abu_sekkin_mohammed_iv
+			}
+		}
+		create_character = {
+			template = BGI__abd_ar_rahman_gaourang_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1878.5.5
+			NOT = { is_template_used = BGI__abdul_qadir_iii }
+			ruler ?= {
+				has_template = BGI__abd_ar_rahman_gaourang_ii
+			}
+		}
+		create_character = {
+			template = BGI__abdul_qadir_iii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1900.5.5
+			NOT = { is_template_used = BGI_youssuf }
+			ruler ?= {
+				has_template = BGI__abdul_qadir_iii
+			}
+		}
+		create_character = {
+			template = BGI_youssuf
+			heir = yes
+		}
+	}
+}
+
+borgu_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1800.1.1
+			NOT = { is_template_used = BRG_waruko_gajere_dan_maikuka }
+			ruler ?= {
+				has_template = BRG_beraki_dan_jibrim
+			}
+		}
+		create_character = {
+			template = BRG_waruko_gajere_dan_maikuka
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1830.1.1
+			NOT = { is_template_used = BRG_kigera_ii_jibrim_dan_toro_dan_kitoro }
+			ruler ?= {
+				has_template = BRG_waruko_gajere_dan_maikuka
+			}
+		}
+		create_character = {
+			template = BRG_kigera_ii_jibrim_dan_toro_dan_kitoro
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1840.1.1
+			NOT = { is_template_used = BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro }
+			ruler ?= {
+				has_template = BRG_kigera_ii_jibrim_dan_toro_dan_kitoro
+			}
+		}
+		create_character = {
+			template = BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1850.1.1
+			NOT = { is_template_used = BRG_kitoro_gani_kilisha_yerima_dan_dan_toro }
+			ruler ?= {
+				has_template = BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro
+			}
+		}
+		create_character = {
+			template = BRG_kitoro_gani_kilisha_yerima_dan_dan_toro
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1855.1.1
+			NOT = { is_template_used = BRG_jibrim_dan_dan_toro }
+			ruler ?= {
+				has_template = BRG_kitoro_gani_kilisha_yerima_dan_dan_toro
+			}
+		}
+		create_character = {
+			template = BRG_jibrim_dan_dan_toro
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1875.1.1
+			NOT = { is_template_used = BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro }
+			ruler ?= {
+				has_template = BRG_jibrim_dan_dan_toro
+			}
+		}
+		create_character = {
+			template = BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1895.1.1
+			NOT = { is_template_used = BRG_wuru_babaki_dan_dan_toro }
+			ruler ?= {
+				has_template = BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro
+			}
+		}
+		create_character = {
+			template = BRG_wuru_babaki_dan_dan_toro
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1905.1.1
+			NOT = { is_template_used = BRG_muhammadu_sani }
+			ruler ?= {
+				has_template = BRG_wuru_babaki_dan_dan_toro
+			}
+		}
+		create_character = {
+			template = BRG_muhammadu_sani
+			heir = yes
+		}
+	}
+}
+
+ashanti_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1840.1.1
+			NOT = { is_template_used = ASH_mensa_bonsu_oyoko }
+			ruler ?= {
+				has_template = ASH_kofi_karikari_oyoko
+			}
+		}
+		create_character = {
+			template = ASH_mensa_bonsu_oyoko
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1860.1.1
+			NOT = { is_template_used = ASH_kwaku_dua_ii_oyoko }
+			ruler ?= {
+				has_template = ASH_mensa_bonsu_oyoko
+			}
+		}
+		create_character = {
+			template = ASH_kwaku_dua_ii_oyoko
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1870.12.18
+			NOT = { is_template_used = ASH__kwaku_dua_iii_oyoko }
+			ruler ?= {
+				has_template = ASH_kwaku_dua_ii_oyoko
+			}
+		}
+		create_character = {
+			template = ASH__kwaku_dua_iii_oyoko
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1892.5.18
+			NOT = { is_template_used = ASH__prempeh_ii_oyoko }
+			ruler ?= {
+				has_template = ASH__kwaku_dua_iii_oyoko
+			}
+		}
+		create_character = {
+			template = ASH__prempeh_ii_oyoko
+			heir = yes
+		}
+	}
+}
+
+dahomey_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1845.4.4
+			NOT = { is_template_used = DAH_gbehanzin }
+			ruler ?= {
+				has_template = DAH_glele
+			}
+		}
+		create_character = {
+			template = DAH_gbehanzin
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1850.4.4
+			NOT = { is_template_used = DAH_agoli_agbo }
+			ruler ?= {
+				has_template = DAH_gbehanzin
+			}
+		}
+		create_character = {
+			template = DAH_agoli_agbo
+			heir = yes
+		}
+	}
+}
+
+oyo_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1840.2.1
+			NOT = { is_template_used = OYO_adeyemi_alowolodu }
+			ruler ?= {
+				has_template = OYO_olujide_adelu_anguloye
+			}
+		}
+		create_character = {
+			template = OYO_adeyemi_alowolodu
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1860.2.1
+			NOT = { is_template_used = OYO_lawani_amubieya_agogoja }
+			ruler ?= {
+				has_template = OYO_adeyemi_alowolodu
+			}
+		}
+		create_character = {
+			template = OYO_lawani_amubieya_agogoja
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1872.2.1
+			NOT = { is_template_used = OYO_siyanbola_ladigbolu }
+			ruler ?= {
+				has_template = OYO_lawani_amubieya_agogoja
+			}
+		}
+		create_character = {
+			template = OYO_siyanbola_ladigbolu
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1875.2.1
+			NOT = { is_template_used = OYO_adeyemi_ii_adeniran }
+			ruler ?= {
+				has_template = OYO_siyanbola_ladigbolu
+			}
+		}
+		create_character = {
+			template = OYO_adeyemi_ii_adeniran
+			heir = yes
+		}
+	}
+}
+
+benin_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1857.3.1
+			NOT = { is_template_used = BEN_ovonramwen }
+			ruler ?= {
+				has_template = BEN_adolo
+			}
+		}
+		create_character = {
+			template = BEN_ovonramwen
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1878.3.1
+			NOT = { is_template_used = BEN_eweka_ii }
+			ruler ?= {
+				has_template = BEN_ovonramwen
+			}
+		}
+		create_character = {
+			template = BEN_eweka_ii
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1899.1.7
+			NOT = { is_template_used = BEN_akenzua }
+			ruler ?= {
+				has_template = BEN_eweka_ii
+			}
+		}
+		create_character = {
+			template = BEN_akenzua
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1923.6.22
+			NOT = { is_template_used = BEN_erediauwa }
+			ruler ?= {
+				has_template = BEN_akenzua
+			}
+		}
+		create_character = {
+			template = BEN_erediauwa
+			heir = yes
+		}
+	}
+}

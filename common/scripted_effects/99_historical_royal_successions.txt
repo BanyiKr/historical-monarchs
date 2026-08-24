@@ -4364,10 +4364,16 @@ character_basutoland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BST_Moshoeshoe
 		}
-		owner ?= {
-			create_character = {
-				template = BST_Letsie_I
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1811.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BST_Letsie_I
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4375,10 +4381,16 @@ character_basutoland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BST_Letsie_I
 		}
-		owner ?= {
-			create_character = {
-				template = BST_Lerotholi_I
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1836.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BST_Lerotholi_I
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4386,10 +4398,16 @@ character_basutoland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BST_Lerotholi_I
 		}
-		owner ?= {
-			create_character = {
-				template = BST_Nathaniel_Griffith
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1870.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BST_Nathaniel_Griffith
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4397,10 +4415,16 @@ character_basutoland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BST_Nathaniel_Griffith
 		}
-		owner ?= {
-			create_character = {
-				template = BST_Simon_Seeiso_Griffith
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1905.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BST_Simon_Seeiso_Griffith
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4411,10 +4435,16 @@ character_swaziland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SWZ_mswati
 		}
-		owner ?= {
-			create_character = {
-				template = SWZ_ludvonga_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1855.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SWZ_ludvonga_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4422,10 +4452,16 @@ character_swaziland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SWZ_ludvonga_ii
 		}
-		owner ?= {
-			create_character = {
-				template = SWZ_mbandzeni
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1855.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SWZ_mbandzeni
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4433,10 +4469,16 @@ character_swaziland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SWZ_mbandzeni
 		}
-		owner ?= {
-			create_character = {
-				template = SWZ_bhunu
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1876.5.11
+			}
+			owner ?= {
+				create_character = {
+					template = SWZ_bhunu
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4444,10 +4486,16 @@ character_swaziland_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SWZ_bhunu
 		}
-		owner ?= {
-			create_character = {
-				template = SWZ_sobhuza_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1899.7.22
+			}
+			owner ?= {
+				create_character = {
+					template = SWZ_sobhuza_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4458,10 +4506,16 @@ character_burundi_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRD_mwezi_iv_ntwero
 		}
-		owner ?= {
-			create_character = {
-				template = BRD_mutaga_iv_ntwero
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1892.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRD_mutaga_iv_ntwero
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4469,10 +4523,16 @@ character_burundi_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRD_mutaga_iv_ntwero
 		}
-		owner ?= {
-			create_character = {
-				template = BRD_mwambutsa_iv_ntwero
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1912.5.6
+			}
+			owner ?= {
+				create_character = {
+					template = BRD_mwambutsa_iv_ntwero
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4483,10 +4543,16 @@ character_rwanda_ruler_succession_chain_effect = {
 		limit = {
 			has_template = RWD_mutara_ii_abanyiginya
 		}
-		owner ?= {
-			create_character = {
-				template = RWD_kigeli_iv_abanyiginya
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1840.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = RWD_kigeli_iv_abanyiginya
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4494,10 +4560,16 @@ character_rwanda_ruler_succession_chain_effect = {
 		limit = {
 			has_template = RWD_kigeli_iv_abanyiginya
 		}
-		owner ?= {
-			create_character = {
-				template = RWD_mibambwe_iv_abanyiginya
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1859.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = RWD_mibambwe_iv_abanyiginya
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4505,10 +4577,16 @@ character_rwanda_ruler_succession_chain_effect = {
 		limit = {
 			has_template = RWD_mibambwe_iv_abanyiginya
 		}
-		owner ?= {
-			create_character = {
-				template = RWD_yuhi_v_abanyiginya
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1883.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = RWD_yuhi_v_abanyiginya
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4516,10 +4594,16 @@ character_rwanda_ruler_succession_chain_effect = {
 		limit = {
 			has_template = RWD_yuhi_v_abanyiginya
 		}
-		owner ?= {
-			create_character = {
-				template = RWD_mutara_iii_abanyiginya
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1911.3.1
+			}
+			owner ?= {
+				create_character = {
+					template = RWD_mutara_iii_abanyiginya
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4530,10 +4614,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_abu_bakr_atiku_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_ali_babba_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1804.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_ali_babba_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4541,10 +4631,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_ali_babba_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_ahmadu_atiku_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1807.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_ahmadu_atiku_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4552,10 +4648,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_ahmadu_atiku_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_ahmadu_rufai_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1814.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_ahmadu_rufai_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4563,10 +4665,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_ahmadu_rufai_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_muazu_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1816.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muazu_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4574,10 +4682,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_muazu_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_umaru_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1824.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_umaru_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4585,10 +4699,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_umaru_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_abd_al_rahman_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1828.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_abd_al_rahman_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4596,10 +4716,16 @@ character_sokoto_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SOK_abd_al_rahman_dan_fodio
 		}
-		owner ?= {
-			create_character = {
-				template = SOK_muhammadu_attahiru_dan_fodio
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1840.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_attahiru_dan_fodio
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4610,10 +4736,16 @@ character_hawaii_ruler_succession_chain_effect = {
 		limit = {
 			has_template = HAW_kamehameha_iv
 		}
-		owner ?= {
-			create_character = {
-				template = HAW_kamehameha_v
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1830.12.11
+			}
+			owner ?= {
+				create_character = {
+					template = HAW_kamehameha_v
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4621,10 +4753,16 @@ character_hawaii_ruler_succession_chain_effect = {
 		limit = {
 			has_template = HAW_kamehameha_v
 		}
-		owner ?= {
-			create_character = {
-				template = HAW_kalakaua
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1836.11.16
+			}
+			owner ?= {
+				create_character = {
+					template = HAW_kalakaua
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4632,10 +4770,16 @@ character_hawaii_ruler_succession_chain_effect = {
 		limit = {
 			has_template = HAW_kalakaua
 		}
-		owner ?= {
-			create_character = {
-				template = HAW_liliuokalani
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1838.9.2
+			}
+			owner ?= {
+				create_character = {
+					template = HAW_liliuokalani
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4646,10 +4790,16 @@ character_brunei_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRU_abdul_momin_bolkiah
 		}
-		owner ?= {
-			create_character = {
-				template = BRU_hashim_jalilul_bolkiah
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1825.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRU_hashim_jalilul_bolkiah
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4657,10 +4807,16 @@ character_brunei_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRU_hashim_jalilul_bolkiah
 		}
-		owner ?= {
-			create_character = {
-				template = BRU_muhammad_jamalul_alam_ii_bolkiah
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1889.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRU_muhammad_jamalul_alam_ii_bolkiah
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4668,10 +4824,16 @@ character_brunei_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRU_muhammad_jamalul_alam_ii_bolkiah
 		}
-		owner ?= {
-			create_character = {
-				template = BRU_ahmad_tajuddin_bolkiah
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1912.8.22
+			}
+			owner ?= {
+				create_character = {
+					template = BRU_ahmad_tajuddin_bolkiah
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4679,10 +4841,16 @@ character_brunei_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRU_ahmad_tajuddin_bolkiah
 		}
-		owner ?= {
-			create_character = {
-				template = BRU_omar_ali_saifuddien_iii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1914.9.23
+			}
+			owner ?= {
+				create_character = {
+					template = BRU_omar_ali_saifuddien_iii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4693,10 +4861,16 @@ character_sulu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SUL_mohammad_pulalun_kiram_sulu
 		}
-		owner ?= {
-			create_character = {
-				template = SUL_jamal_ul_azam_sulu
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1830.12.6
+			}
+			owner ?= {
+				create_character = {
+					template = SUL_jamal_ul_azam_sulu
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4704,10 +4878,16 @@ character_sulu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SUL_jamal_ul_azam_sulu
 		}
-		owner ?= {
-			create_character = {
-				template = SUL_badarud_din_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1862.1.6
+			}
+			owner ?= {
+				create_character = {
+					template = SUL_badarud_din_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4715,10 +4895,16 @@ character_sulu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SUL_badarud_din_ii
 		}
-		owner ?= {
-			create_character = {
-				template = SUL_harun_ar_rashid
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1869.1.6
+			}
+			owner ?= {
+				create_character = {
+					template = SUL_harun_ar_rashid
+					heir = yes
+				}
 			}
 		}
 	}
@@ -4726,10 +4912,16 @@ character_sulu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = SUL_harun_ar_rashid
 		}
-		owner ?= {
-			create_character = {
-				template = SUL_jamalul_kiram_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1868.3.27
+			}
+			owner ?= {
+				create_character = {
+					template = SUL_jamalul_kiram_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5130,10 +5322,16 @@ character_bornu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BOR_umar_al_kanemi
 		}
-		owner ?= {
-			create_character = {
-				template = BOR_abu_bakr_al_kanemi
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1830.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BOR_abu_bakr_al_kanemi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5141,10 +5339,16 @@ character_bornu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BOR_abu_bakr_al_kanemi
 		}
-		owner ?= {
-			create_character = {
-				template = BOR_ibrahim_al_kanemi
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1834.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BOR_ibrahim_al_kanemi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5152,10 +5356,16 @@ character_bornu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BOR_ibrahim_al_kanemi
 		}
-		owner ?= {
-			create_character = {
-				template = BOR_hashim_al_kanemi
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1837.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BOR_hashim_al_kanemi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5163,10 +5373,16 @@ character_bornu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BOR_hashim_al_kanemi
 		}
-		owner ?= {
-			create_character = {
-				template = BOR_kyari_al_kanemi
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1854.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BOR_kyari_al_kanemi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5174,10 +5390,16 @@ character_bornu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BOR_kyari_al_kanemi
 		}
-		owner ?= {
-			create_character = {
-				template = BOR_umar_sanda_al_kanemi
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1842.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BOR_umar_sanda_al_kanemi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5185,10 +5407,16 @@ character_bornu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BOR_umar_sanda_al_kanemi
 		}
-		owner ?= {
-			create_character = {
-				template = BOR_abubakar_garbau_al_kanemi
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1846.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BOR_abubakar_garbau_al_kanemi
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5199,10 +5427,16 @@ character_bagirmi_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BGI__abdul_qadir_ii_al_mahdi
 		}
-		owner ?= {
-			create_character = {
-				template = BGI_abu_sekkin_mohammed_iv
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1834.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BGI_abu_sekkin_mohammed_iv
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5210,10 +5444,16 @@ character_bagirmi_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BGI_abu_sekkin_mohammed_iv
 		}
-		owner ?= {
-			create_character = {
-				template = BGI__abd_ar_rahman_gaourang_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1858.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BGI__abd_ar_rahman_gaourang_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5221,10 +5461,16 @@ character_bagirmi_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BGI__abd_ar_rahman_gaourang_ii
 		}
-		owner ?= {
-			create_character = {
-				template = BGI__abdul_qadir_iii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1878.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BGI__abdul_qadir_iii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5232,10 +5478,16 @@ character_bagirmi_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BGI__abdul_qadir_iii
 		}
-		owner ?= {
-			create_character = {
-				template = BGI_youssuf
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1900.5.5
+			}
+			owner ?= {
+				create_character = {
+					template = BGI_youssuf
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5246,10 +5498,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_beraki_dan_jibrim
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_waruko_gajere_dan_maikuka
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1800.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_waruko_gajere_dan_maikuka
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5257,10 +5515,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_waruko_gajere_dan_maikuka
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_kigera_ii_jibrim_dan_toro_dan_kitoro
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1830.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_kigera_ii_jibrim_dan_toro_dan_kitoro
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5268,10 +5532,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_kigera_ii_jibrim_dan_toro_dan_kitoro
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1840.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5279,10 +5549,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_wuru_yaro_kisaru_kisan_dogo_dan_kitoro
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_kitoro_gani_kilisha_yerima_dan_dan_toro
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1850.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_kitoro_gani_kilisha_yerima_dan_dan_toro
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5290,10 +5566,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_kitoro_gani_kilisha_yerima_dan_dan_toro
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_jibrim_dan_dan_toro
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1855.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_jibrim_dan_dan_toro
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5301,10 +5583,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_jibrim_dan_dan_toro
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1875.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5312,10 +5600,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_muhammadu_kitoro_gani_kilisha_yenima_dan_dan_toro
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_wuru_babaki_dan_dan_toro
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1895.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_wuru_babaki_dan_dan_toro
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5323,10 +5617,16 @@ character_borgu_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BRG_wuru_babaki_dan_dan_toro
 		}
-		owner ?= {
-			create_character = {
-				template = BRG_muhammadu_sani
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1905.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = BRG_muhammadu_sani
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5337,10 +5637,16 @@ character_ashanti_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ASH_kofi_karikari_oyoko
 		}
-		owner ?= {
-			create_character = {
-				template = ASH_mensa_bonsu_oyoko
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1840.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ASH_mensa_bonsu_oyoko
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5348,10 +5654,16 @@ character_ashanti_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ASH_mensa_bonsu_oyoko
 		}
-		owner ?= {
-			create_character = {
-				template = ASH_kwaku_dua_ii_oyoko
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1860.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ASH_kwaku_dua_ii_oyoko
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5359,10 +5671,16 @@ character_ashanti_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ASH_kwaku_dua_ii_oyoko
 		}
-		owner ?= {
-			create_character = {
-				template = ASH__kwaku_dua_iii_oyoko
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1870.12.18
+			}
+			owner ?= {
+				create_character = {
+					template = ASH__kwaku_dua_iii_oyoko
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5370,10 +5688,16 @@ character_ashanti_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ASH__kwaku_dua_iii_oyoko
 		}
-		owner ?= {
-			create_character = {
-				template = ASH__prempeh_ii_oyoko
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1892.5.18
+			}
+			owner ?= {
+				create_character = {
+					template = ASH__prempeh_ii_oyoko
+					heir = yes
+				}
 			}
 		}
 	}	
@@ -5384,10 +5708,16 @@ character_dahomey_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAH_glele
 		}
-		owner ?= {
-			create_character = {
-				template = DAH_gbehanzin
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1845.4.4
+			}
+			owner ?= {
+				create_character = {
+					template = DAH_gbehanzin
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5395,10 +5725,16 @@ character_dahomey_ruler_succession_chain_effect = {
 		limit = {
 			has_template = DAH_gbehanzin
 		}
-		owner ?= {
-			create_character = {
-				template = DAH_agoli_agbo
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1850.4.4
+			}
+			owner ?= {
+				create_character = {
+					template = DAH_agoli_agbo
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5409,10 +5745,16 @@ character_oyo_ruler_succession_chain_effect = {
 		limit = {
 			has_template = OYO_olujide_adelu_anguloye
 		}
-		owner ?= {
-			create_character = {
-				template = OYO_adeyemi_alowolodu
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1840.2.1
+			}
+			owner ?= {
+				create_character = {
+					template = OYO_adeyemi_alowolodu
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5420,10 +5762,16 @@ character_oyo_ruler_succession_chain_effect = {
 		limit = {
 			has_template = OYO_adeyemi_alowolodu
 		}
-		owner ?= {
-			create_character = {
-				template = OYO_lawani_amubieya_agogoja
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1860.2.1
+			}
+			owner ?= {
+				create_character = {
+					template = OYO_lawani_amubieya_agogoja
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5431,10 +5779,16 @@ character_oyo_ruler_succession_chain_effect = {
 		limit = {
 			has_template = OYO_lawani_amubieya_agogoja
 		}
-		owner ?= {
-			create_character = {
-				template = OYO_siyanbola_ladigbolu
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1872.2.1
+			}
+			owner ?= {
+				create_character = {
+					template = OYO_siyanbola_ladigbolu
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5442,10 +5796,16 @@ character_oyo_ruler_succession_chain_effect = {
 		limit = {
 			has_template = OYO_siyanbola_ladigbolu
 		}
-		owner ?= {
-			create_character = {
-				template = OYO_adeyemi_ii_adeniran
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1875.2.1
+			}
+			owner ?= {
+				create_character = {
+					template = OYO_adeyemi_ii_adeniran
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5456,10 +5816,16 @@ character_benin_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BEN_adolo
 		}
-		owner ?= {
-			create_character = {
-				template = BEN_ovonramwen
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1857.3.1
+			}
+			owner ?= {
+				create_character = {
+					template = BEN_ovonramwen
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5467,10 +5833,16 @@ character_benin_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BEN_ovonramwen
 		}
-		owner ?= {
-			create_character = {
-				template = BEN_eweka_ii
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1878.3.1
+			}
+			owner ?= {
+				create_character = {
+					template = BEN_eweka_ii
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5478,10 +5850,16 @@ character_benin_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BEN_eweka_ii
 		}
-		owner ?= {
-			create_character = {
-				template = BEN_akenzua
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1899.1.7
+			}
+			owner ?= {
+				create_character = {
+					template = BEN_akenzua
+					heir = yes
+				}
 			}
 		}
 	}
@@ -5489,10 +5867,16 @@ character_benin_ruler_succession_chain_effect = {
 		limit = {
 			has_template = BEN_akenzua
 		}
-		owner ?= {
-			create_character = {
-				template = BEN_erediauwa
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1923.6.22
+			}
+			owner ?= {
+				create_character = {
+					template = BEN_erediauwa
+					heir = yes
+				}
 			}
 		}
 	}
