@@ -1529,8 +1529,9 @@ historical_heirs_on_monthly_pulse_country = {
 		if = {
 			limit = {
 				has_gov_regency = no
-				ruler ?= {
-					is_adult = yes
+				ruler ?= { is_adult = yes }
+				NOT = {
+					is_subject_type = subject_type_personal_union
 				}
 			}
 			if = { # Belgium
@@ -1668,6 +1669,548 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				vietnam_generate_scripted_heirs = yes
+			}
+			else_if = { # Schleswig-Holstein
+				limit = {
+					OR = {
+						c:SCH ?= this
+						was_formed_from = SCH
+						c:HOL ?= this
+						was_formed_from = HOL
+					}
+					can_generate_scripted_heirs = yes
+				}
+				schleswig_holstein_generate_scripted_heirs = yes
+			}
+			else_if = { # Greece
+				limit = {
+					OR = {
+						c:GRE ?= this
+						was_formed_from = GRE
+					}
+					can_generate_scripted_heirs = yes
+				}
+				greece_generate_scripted_heirs = yes
+			}
+			else_if = { # Montenegro
+				limit = {
+					OR = {
+						c:MON ?= this
+						was_formed_from = MON
+					}
+					can_generate_scripted_heirs = yes
+				}
+				montenegro_generate_scripted_heirs = yes
+			}
+			else_if = { # Romania
+				limit = {
+					OR = {
+						c:ROM ?= this
+						was_formed_from = ROM
+					}
+					can_generate_scripted_heirs = yes
+				}
+				romania_generate_scripted_heirs = yes
+			}
+			else_if = { # Bulgaria
+				limit = {
+					OR = {
+						c:BUL ?= this
+						was_formed_from = BUL
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bulgaria_generate_scripted_heirs = yes
+			}
+			else_if = { # Bavaria
+				limit = {
+					OR = {
+						c:BAV ?= this
+						was_formed_from = BAV
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bavaria_generate_scripted_heirs = yes
+			}
+			else_if = { # Saxony
+				limit = {
+					OR = {
+						c:SAX ?= this
+						was_formed_from = SAX
+					}
+					can_generate_scripted_heirs = yes
+				}
+				saxony_generate_scripted_heirs = yes
+			}
+			else_if = { # Württemberg
+				limit = {
+					OR = {
+						c:WUR ?= this
+						was_formed_from = WUR
+					}
+					can_generate_scripted_heirs = yes
+				}
+				wurttemberg_generate_scripted_heirs = yes
+			}
+			else_if = { # Hanover
+				limit = {
+					OR = {
+						c:HAN ?= this
+						was_formed_from = HAN
+					}
+					can_generate_scripted_heirs = yes
+				}
+				character_hanover_ruler_succession_chain_effect = yes
+			}
+			else_if = { # Baden
+				limit = {
+					OR = {
+						c:BAD ?= this
+						was_formed_from = BAD
+					}
+					can_generate_scripted_heirs = yes
+				}
+				baden_generate_scripted_heirs = yes
+			}
+			else_if = { # Hesse-Darmstadt
+				limit = {
+					OR = {
+						c:HES ?= this
+						was_formed_from = HES
+					}
+					can_generate_scripted_heirs = yes
+				}
+				hesse_darmstadt_generate_scripted_heirs = yes
+			}
+			else_if = { # Hesse-Kassel
+				limit = {
+					OR = {
+						c:HEK ?= this
+						was_formed_from = HEK
+					}
+					can_generate_scripted_heirs = yes
+				}
+				hesse_kassel_generate_scripted_heirs = yes
+			}
+			else_if = { # Oldenburg
+				limit = {
+					OR = {
+						c:OLD ?= this
+						was_formed_from = OLD
+					}
+					can_generate_scripted_heirs = yes
+				}
+				oldenburg_generate_scripted_heirs = yes
+			}
+			else_if = { # Mecklenburg-Schwerin
+				limit = {
+					OR = {
+						c:MEC ?= this
+						was_formed_from = MEC
+					}
+					can_generate_scripted_heirs = yes
+				}
+				mecklenburg_schwerin_generate_scripted_heirs = yes
+			}
+			else_if = { # Mecklenburg-Sterlitz
+				limit = {
+					OR = {
+						c:MST ?= this
+						was_formed_from = MST
+					}
+					can_generate_scripted_heirs = yes
+				}
+				mecklenburg_sterlitz_generate_scripted_heirs = yes
+			}
+			else_if = { # Saxe-Weimar
+				limit = {
+					OR = {
+						c:WEI ?= this
+						was_formed_from = WEI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				saxe_weimar_generate_scripted_heirs = yes
+			}
+			else_if = { # Saxe-Coburg-Gotha
+				limit = {
+					OR = {
+						c:COB ?= this
+						was_formed_from = COB
+					}
+					can_generate_scripted_heirs = yes
+				}
+				saxe_coburg_gotha_generate_scripted_heirs = yes
+			}
+			else_if = { # Saxe-Meiningen
+				limit = {
+					OR = {
+						c:MEI ?= this
+						was_formed_from = MEI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				saxe_meiningen_generate_scripted_heirs = yes
+			}
+			else_if = { # Anhalt
+				limit = {
+					OR = {
+						c:ANH ?= this
+						was_formed_from = ANH
+					}
+					can_generate_scripted_heirs = yes
+				}
+				anhalt_generate_scripted_heirs = yes
+			}
+			else_if = { # Lippe
+				limit = {
+					OR = {
+						c:LIP ?= this
+						was_formed_from = LIP
+					}
+					can_generate_scripted_heirs = yes
+				}
+				lippe_generate_scripted_heirs = yes
+			}
+			else_if = { # Persia
+				limit = {
+					OR = {
+						c:PER ?= this
+						was_formed_from = PER
+					}
+					can_generate_scripted_heirs = yes
+				}
+				persia_generate_scripted_heirs = yes
+			}
+			else_if = { # Oman
+				limit = {
+					OR = {
+						c:OMA ?= this
+						was_formed_from = OMA
+					}
+					can_generate_scripted_heirs = yes
+				}
+				oman_generate_scripted_heirs = yes
+			}
+			else_if = { # Egypt
+				limit = {
+					OR = {
+						c:EGY ?= this
+						was_formed_from = EGY
+					}
+					can_generate_scripted_heirs = yes
+				}
+				egypt_generate_scripted_heirs = yes
+			}
+			else_if = { # Nejd
+				limit = {
+					OR = {
+						c:NEJ ?= this
+						was_formed_from = NEJ
+					}
+					can_generate_scripted_heirs = yes
+				}
+				nejd_generate_scripted_heirs = yes
+			}
+			else_if = { # Hedjaz
+				limit = {
+					OR = {
+						c:HDJ ?= this
+						was_formed_from = HDJ
+					}
+					can_generate_scripted_heirs = yes
+				}
+				hedjaz_generate_scripted_heirs = yes
+			}
+			else_if = { # Qasimid State
+				limit = {
+					OR = {
+						c:ZAI ?= this
+						was_formed_from = ZAI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				zaidi_generate_scripted_heirs = yes
+			}
+			else_if = { # Bahrain
+				limit = {
+					OR = {
+						c:BHN ?= this
+						was_formed_from = BHN
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bahrain_generate_scripted_heirs = yes
+			}
+			else_if = { # Abu Dhabi
+				limit = {
+					OR = {
+						c:ABU ?= this
+						was_formed_from = ABU
+					}
+					can_generate_scripted_heirs = yes
+				}
+				abu_dhabi_generate_scripted_heirs = yes
+			}
+			else_if = { # Tunis
+				limit = {
+					OR = {
+						c:TUN ?= this
+						was_formed_from = TUN
+					}
+					can_generate_scripted_heirs = yes
+				}
+				tunis_generate_scripted_heirs = yes
+			}
+			else_if = { # Luang Prabang
+				limit = {
+					OR = {
+						c:LUA ?= this
+						was_formed_from = LUA
+					}
+					can_generate_scripted_heirs = yes
+				}
+				luang_prabang_generate_scripted_heirs = yes
+			}
+			else_if = { # Cambodia
+				limit = {
+					OR = {
+						c:CAM ?= this
+						was_formed_from = CAM
+					}
+					can_generate_scripted_heirs = yes
+				}
+				cambodia_generate_scripted_heirs = yes
+			}
+			else_if = { # Burma
+				limit = {
+					OR = {
+						c:BUR ?= this
+						was_formed_from = BUR
+					}
+					can_generate_scripted_heirs = yes
+				}
+				burma_generate_scripted_heirs = yes
+			}
+			else_if = { # Nepal
+				limit = {
+					OR = {
+						c:NEP ?= this
+						was_formed_from = NEP
+					}
+					can_generate_scripted_heirs = yes
+				}
+				nepal_generate_scripted_heirs = yes
+			}
+			else_if = { # Bukhara
+				limit = {
+					OR = {
+						c:BUK ?= this
+						was_formed_from = BUK
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bukhara_generate_scripted_heirs = yes
+			}
+			else_if = { # Khiva
+				limit = {
+					OR = {
+						c:KHI ?= this
+						was_formed_from = KHI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				character_khiva_ruler_succession_chain_effect = yes
+			}
+			else_if = { # Kokand
+				limit = {
+					OR = {
+						c:KOK ?= this
+						was_formed_from = KOK
+					}
+					can_generate_scripted_heirs = yes
+				}
+				kokand_generate_scripted_heirs = yes
+			}
+			else_if = { # Kabul
+				limit = {
+					OR = {
+						c:KAB ?= this
+						was_formed_from = KAB
+					}
+					can_generate_scripted_heirs = yes
+				}
+				kabul_generate_scripted_heirs = yes
+			}
+			else_if = { # Begemder
+				limit = {
+					OR = {
+						c:BGM ?= this
+						was_formed_from = BGM
+					}
+					can_generate_scripted_heirs = yes
+				}
+				begemder_generate_scripted_heirs = yes
+			}
+			else_if = { # Shewa
+				limit = {
+					OR = {
+						c:SHW ?= this
+						was_formed_from = SHW
+					}
+					can_generate_scripted_heirs = yes
+				}
+				shewa_generate_scripted_heirs = yes
+			}
+			else_if = { # Basutoland
+				limit = {
+					OR = {
+						c:BST ?= this
+						was_formed_from = BST
+					}
+					can_generate_scripted_heirs = yes
+				}
+				basutoland_generate_scripted_heirs = yes
+			}
+			else_if = { # Swaziland
+				limit = {
+					OR = {
+						c:SWZ ?= this
+						was_formed_from = SWZ
+					}
+					can_generate_scripted_heirs = yes
+				}
+				swaziland_generate_scripted_heirs = yes
+			}
+			else_if = { # Burundi
+				limit = {
+					OR = {
+						c:BRD ?= this
+						was_formed_from = BRD
+					}
+					can_generate_scripted_heirs = yes
+				}
+				burundi_generate_scripted_heirs = yes
+			}
+			else_if = { # Rwanda
+				limit = {
+					OR = {
+						c:RWD ?= this
+						was_formed_from = RWD
+					}
+					can_generate_scripted_heirs = yes
+				}
+				rwanda_generate_scripted_heirs = yes
+			}
+			else_if = { # Sokoto
+				limit = {
+					OR = {
+						c:SOK ?= this
+						was_formed_from = SOK
+					}
+					can_generate_scripted_heirs = yes
+				}
+				sokoto_generate_scripted_heirs = yes
+			}
+			else_if = { # Hawaii
+				limit = {
+					OR = {
+						c:HAW ?= this
+						was_formed_from = HAW
+					}
+					can_generate_scripted_heirs = yes
+				}
+				hawaii_generate_scripted_heirs = yes
+			}
+			else_if = { # Brunei
+				limit = {
+					OR = {
+						c:BRU ?= this
+						was_formed_from = BRU
+					}
+					can_generate_scripted_heirs = yes
+				}
+				brunei_generate_scripted_heirs = yes
+			}
+			else_if = { # Sulu
+				limit = {
+					OR = {
+						c:SUL ?= this
+						was_formed_from = SUL
+					}
+					can_generate_scripted_heirs = yes
+				}
+				sulu_generate_scripted_heirs = yes
+			}
+			else_if = { # Bornu
+				limit = {
+					OR = {
+						c:BOR ?= this
+						was_formed_from = BOR
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bornu_generate_scripted_heirs = yes
+			}
+			else_if = { # Bagirmi
+				limit = {
+					OR = {
+						c:BGI ?= this
+						was_formed_from = BGI
+					}
+					can_generate_scripted_heirs = yes
+				}
+				bagirmi_generate_scripted_heirs = yes
+			}
+			else_if = { # Borgu
+				limit = {
+					OR = {
+						c:BRG ?= this
+						was_formed_from = BRG
+					}
+					can_generate_scripted_heirs = yes
+				}
+				borgu_generate_scripted_heirs = yes
+			}
+			else_if = { # Asahanti
+				limit = {
+					OR = {
+						c:ASH ?= this
+						was_formed_from = ASH
+					}
+					can_generate_scripted_heirs = yes
+				}
+				ashanti_generate_scripted_heirs = yes
+			}
+			else_if = { # Dahomey
+				limit = {
+					OR = {
+						c:DAH ?= this
+						was_formed_from = DAH
+					}
+					can_generate_scripted_heirs = yes
+				}
+				dahomey_generate_scripted_heirs = yes
+			}
+			else_if = { # Oyo
+				limit = {
+					OR = {
+						c:OYO ?= this
+						was_formed_from = OYO
+					}
+					can_generate_scripted_heirs = yes
+				}
+				oyo_generate_scripted_heirs = yes
+			}
+			else_if = { # Benin
+				limit = {
+					OR = {
+						c:BEN ?= this
+						was_formed_from = BEN
+					}
+					can_generate_scripted_heirs = yes
+				}
+				benin_generate_scripted_heirs = yes
 			}
 		}
 	}
