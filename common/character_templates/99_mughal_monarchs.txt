@@ -1,0 +1,40 @@
+﻿MUG_mirza_fakhru = {
+	first_name = "Fakhru"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1816.9.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+        sickly
+    }
+    on_created = {
+    }
+}
+
+MUH_mirza_mughal = {
+	first_name = "Mughal"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1817.6.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+        ruthless
+		inexperienced
+		ambitious
+		grifter
+    }
+    on_created = {
+    }
+}
