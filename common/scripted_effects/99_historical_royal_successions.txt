@@ -4979,6 +4979,23 @@ character_aceh_ruler_succession_chain_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_template = ACE_alauddin_muhammad_ii_bugis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1896.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_ibrahim_ii_bugis
+					heir = yes
+				}
+			}
+		}
+	}
 }
 
 character_tibet_ruler_succession_chain_effect = {

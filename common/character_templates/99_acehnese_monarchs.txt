@@ -44,3 +44,19 @@ ACE_alauddin_muhammad_ii_bugis = {
 		persistent
 	}
 }
+
+ACE_alauddin_ibrahim_ii_bugis = {
+	first_name = "Alauddin_Ibrahim"
+	last_name = "Bugis"
+	historical = yes
+	culture = cu:sumatran
+	heir = yes
+	noble = yes
+	birth_date = 1896.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ACEH
+	traits = {
+		persistent
+	}
+}
