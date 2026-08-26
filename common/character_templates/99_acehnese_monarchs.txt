@@ -13,3 +13,34 @@
 		imperious
 	}
 }
+
+ACE_alauddin_mahmud_ii_bugis = {
+	first_name = "Alauddin_Mahmud"
+	last_name = "Bugis"
+	historical = yes
+	culture = cu:sumatran
+	heir = yes
+	noble = yes
+	birth_date = 1855.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ACEH
+	traits = {
+	}
+}
+
+ACE_alauddin_muhammad_ii_bugis = {
+	first_name = "Alauddin_Muhammad"
+	last_name = "Bugis"
+	historical = yes
+	culture = cu:sumatran
+	heir = yes
+	noble = yes
+	birth_date = 1864.1.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_ACEH
+	traits = {
+		persistent
+	}
+}

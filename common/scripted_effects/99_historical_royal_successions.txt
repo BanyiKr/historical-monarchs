@@ -4932,10 +4932,50 @@ character_aceh_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ACE_alauddin_sulaiman_bugis
 		}
-		owner ?= {
-			create_character = {
-				template = ACE_alauddin_ibrahim_bugis
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1808.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_ibrahim_bugis
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ACE_alauddin_ibrahim_bugis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1855.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_mahmud_ii_bugis
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ACE_alauddin_mahmud_ii_bugis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1864.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_muhammad_ii_bugis
+					heir = yes
+				}
 			}
 		}
 	}
