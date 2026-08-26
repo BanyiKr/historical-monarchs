@@ -4729,6 +4729,57 @@ character_sokoto_ruler_succession_chain_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_template = SOK_muhammadu_attahiru_dan_fodio
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1845.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_attahiru_ii_dan_fodio
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_muhammadu_attahiru_ii_dan_fodio
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1854.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_maiturare_dan_fodio
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_muhammadu_maiturare_dan_fodio
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1880.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_tambari_dan_fodio
+					heir = yes
+				}
+			}
+		}
+	}
 }
 
 character_hawaii_ruler_succession_chain_effect = {

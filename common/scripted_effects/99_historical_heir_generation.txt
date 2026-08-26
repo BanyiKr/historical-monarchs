@@ -3363,7 +3363,7 @@ sokoto_generate_scripted_heirs = { # Technically unecessary, since almost all of
 	}
 	else_if = {
 		limit = {
-			game_date >= 1840.1.1
+			game_date >= 1845.1.1
 			NOT = { is_template_used = SOK_muhammadu_attahiru_dan_fodio }
 			ruler ?= {
 				has_template = SOK_abd_al_rahman_dan_fodio
@@ -3371,6 +3371,45 @@ sokoto_generate_scripted_heirs = { # Technically unecessary, since almost all of
 		}
 		create_character = {
 			template = SOK_muhammadu_attahiru_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1840.1.1
+			NOT = { is_template_used = SOK_muhammadu_attahiru_ii_dan_fodio }
+			ruler ?= {
+				has_template = SOK_muhammadu_attahiru_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_muhammadu_attahiru_ii_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1854.1.1
+			NOT = { is_template_used = SOK_muhammadu_maiturare_dan_fodio }
+			ruler ?= {
+				has_template = SOK_muhammadu_attahiru_ii_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_muhammadu_maiturare_dan_fodio
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1880.1.1
+			NOT = { is_template_used = SOK_muhammadu_tambari_dan_fodio }
+			ruler ?= {
+				has_template = SOK_muhammadu_maiturare_dan_fodio
+			}
+		}
+		create_character = {
+			template = SOK_muhammadu_tambari_dan_fodio
 			heir = yes
 		}
 	}
