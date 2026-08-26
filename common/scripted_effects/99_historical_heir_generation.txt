@@ -3964,3 +3964,153 @@ benin_generate_scripted_heirs = {
 		}
 	}
 }
+
+hindustan_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1790.6.20
+			game_date < 1849.2.8
+			NOT = { is_template_used = mug_mirza_dara_bakht }
+			ruler ?= {
+				has_template = mug_bahadur_ii
+			}
+		}
+		create_character = {
+			template = mug_mirza_dara_bakht
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1849.2.8
+			game_date < 1856.7.10
+			NOT = { is_template_used = mug_mirza_fakhru }
+			ruler ?= {
+				has_template = mug_bahadur_ii
+			}
+		}
+		create_character = {
+			template = mug_mirza_fakhru
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1856.7.10
+			NOT = { is_template_used = mug_mirza_mughal }
+			ruler ?= {
+				has_template = mug_bahadur_ii
+			}
+		}
+		create_character = {
+			template = mug_mirza_mughal
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1818.4.1
+			game_date < 1856.7.10
+			NOT = { is_template_used = mug_mirza_fakhru }
+			ruler ?= {
+				has_template = mug_mirza_dara_bakht
+			}
+		}
+		create_character = {
+			template = mug_mirza_fakhru
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1856.7.10
+			NOT = { is_template_used = mug_mirza_mughal }
+			ruler ?= {
+				has_template = mug_mirza_dara_bakht
+			}
+		}
+		create_character = {
+			template = mug_mirza_mughal
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1817.1.5
+			NOT = { is_template_used = mug_mirza_mughal }
+			ruler ?= {
+				has_template = mug_mirza_fakhru
+			}
+		}
+		create_character = {
+			template = mug_mirza_mughal
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1835.6.26
+			NOT = { is_template_used = MUG_mirza_abu_bakht }
+			ruler ?= {
+				has_template = mug_mirza_mughal
+			}
+		}
+		create_character = {
+			template = MUG_mirza_abu_bakht
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1852.6.26
+			NOT = { is_template_used = MUG_mirza_fakhrunda_jamal }
+			ruler ?= {
+				has_template = MUG_mirza_abu_bakht
+			}
+		}
+		create_character = {
+			template = MUG_mirza_fakhrunda_jamal
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1855.6.26
+			NOT = { is_template_used = MUG_mirza_muhammed_baig }
+			ruler ?= {
+				has_template = MUG_mirza_fakhrunda_jamal
+			}
+		}
+		create_character = {
+			template = MUG_mirza_muhammed_baig
+			heir = yes
+		}
+	}
+	### Jawan Bakht line
+	else_if = {
+		limit = {
+			game_date >= 1860.4.26
+			NOT = { is_template_used = MUG_mirza_jamshed_bakht }
+			ruler ?= {
+				has_template = MUG_mirza_jawan_bakht
+			}
+		}
+		create_character = {
+			template = MUG_mirza_jamshed_bakht
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1900.4.26
+			NOT = { is_template_used = MUG_bedar_bakht }
+			ruler ?= {
+				has_template = MUG_mirza_jamshed_bakht
+			}
+		}
+		create_character = {
+			template = MUG_bedar_bakht
+			heir = yes
+		}
+	}
+}

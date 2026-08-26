@@ -959,6 +959,18 @@ historical_successions_on_new_ruler = {
 				}
 				character_benin_ruler_succession_chain_effect = yes
 			}
+			### Mughal monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:MUG ?= this
+							was_formed_from = MUG
+						}
+					}
+				}
+				character_hindustan_ruler_succession_chain_effect = yes
+			}
 		}
 	}
 }
@@ -2211,6 +2223,16 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				benin_generate_scripted_heirs = yes
+			}
+			else_if = { # Mughals
+				limit = {
+					OR = {
+						c:MUG ?= this
+						was_formed_from = MUG
+					}
+					can_generate_scripted_heirs = yes
+				}
+				hindustan_generate_scripted_heirs = yes
 			}
 		}
 	}
