@@ -1,0 +1,152 @@
+﻿REPLACE:mug_mirza_mughal = {
+    first_name = "Mughal"
+    last_name = "Gurkani"
+    historical = yes
+    dna = dna_mirza_mughal
+    birth_date = 1817.1.5 # excact date unknown.
+    culture = cu:hindustani
+    is_general = yes
+    religion = rel:sunni
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+        resupply_commander
+        basic_political_operator
+        cruel
+        grifter
+    }
+}
+
+REPLACE:mug_mirza_fakhru = { # Mirza Fakhru historically died in 1856, potentially from poisoning, allegedly from cholera.
+    first_name = "Fakhru"
+    last_name = "Gurkani"
+    historical = yes
+    birth_date = 1818.4.1 # excact date unknown.
+    culture = cu:avadhi
+    heir = yes
+    religion = rel:sunni
+    noble = yes
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+    }
+}
+
+MUG_mirza_abu_bakht = { # Son of Mirza Fakhru
+	first_name = "Abu_Bakht"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1835.6.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+        cruel
+    }
+}
+
+MUG_mirza_fakhrunda_jamal = { # Son of Mirza Fakhru
+	first_name = "Fakhrunda_Jamal"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1852.6.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+    }
+}
+
+MUG_mirza_muhammed_baig = { # Son of Mirza Fakhru
+	first_name = "Muhammed_Baig"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1855.6.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+    }
+}
+
+###Quraish Shikoh line
+MUG_mirza_quraish_shikoh = { # Son of Bahadur Shah II
+	first_name = "Quraish_Shikoh"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1820.6.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+    }
+}
+
+### Jawan Bakht line
+MUG_mirza_jawan_bakht = { # Son of Bahadur Shah II
+	first_name = "Jawan_Bakht"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1841.6.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+
+    }
+}
+
+MUG_mirza_jamshed_bakht = {
+	first_name = "Jamshed_Bakht"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1860.4.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+        charismatic
+    }
+}
+
+MUG_bedar_bakht = {
+	first_name = "Bedar_Bakht"
+    last_name = "Gurkani"
+    historical = yes
+    culture = cu:hindustani
+    religion = rel:sunni
+    heir = yes
+    noble = yes
+    birth_date = 1900.4.26 # actual birthdate unknown
+    interest_group = ig_landowners
+    ideology = ideology_moderate
+    home_region = STATE_DELHI
+    traits = {
+    }
+}
