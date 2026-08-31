@@ -507,6 +507,7 @@ charater_baltic_governorates_scripted_deaths_effect = {
 		owner ?= {
 			create_character = {
 				template = UBD_yevgeny_golovin
+				ruler = yes
 			}
 		}
 	}
@@ -515,60 +516,65 @@ charater_baltic_governorates_scripted_deaths_effect = {
 			has_template = UBD_yevgeny_golovin
 			year >= 1848
 		}
-		transfer_character = c:RUS
 		owner ?= {
 			create_character = {
 				template = UBD_alexander_suvorov
+				ruler = yes
 			}
 		}
+		transfer_character = c:RUS
 	}
 	else_if = {
 		limit = {
 			has_template = UBD_alexander_suvorov
 			year >= 1861
 		}
-		transfer_character = c:RUS
 		owner ?= {
 			create_character = {
 				template = UBD_wilhelm_heinrich_von_lieven
+				ruler = yes
 			}
 		}
+		transfer_character = c:RUS
 	}
 	else_if = {
 		limit = {
 			has_template = UBD_wilhelm_heinrich_von_lieven
 			year >= 1864
 		}
-		transfer_character = c:RUS
 		owner ?= {
 			create_character = {
 				template = UBD_pyotr_shuvalov
+				ruler = yes
 			}
 		}
+		transfer_character = c:RUS
 	}
 	else_if = {
 		limit = {
 			has_template = UBD_pyotr_shuvalov
 			year >= 1866
 		}
-		transfer_character = c:RUS
 		owner ?= {
 			create_character = {
 				template = UBD_pyotr_albedinsky
+				ruler = yes
 			}
 		}
+		transfer_character = c:RUS
 	}
 	else_if = {
 		limit = {
 			has_template = UBD_pyotr_albedinsky
 			year >= 1870
 		}
-		transfer_character = c:RUS
 		owner ?= {
 			create_character = {
 				template = UBD_pyotr_bagratoni
+				ruler = yes
 			}
 		}
+		transfer_character = c:RUS
 	}
 }
 
