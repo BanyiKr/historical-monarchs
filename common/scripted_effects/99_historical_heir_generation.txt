@@ -2358,6 +2358,71 @@ zaidi_generate_scripted_heirs = {
 			heir = yes
 		}
 	}
+	else_if = {
+		limit = {
+			game_date >= 1818.6.16
+			NOT = { is_template_used = ZAI_al_mutawakkil_al_mushin }
+			ruler ?= {
+				has_template = ZAI_al_mansur_muhammad_al_qasim
+			}
+		}
+		create_character = {
+			template = ZAI_al_mutawakkil_al_mushin
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1820.6.16
+			NOT = { is_template_used = ZAI_al_hadi_sharaf_ad_din }
+			ruler ?= {
+				has_template = ZAI_al_mutawakkil_al_mushin
+			}
+		}
+		create_character = {
+			template = ZAI_al_hadi_sharaf_ad_din
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1839.6.16
+			NOT = { is_template_used = ZAI_muhammad_bin_yahya_al_qasim }
+			ruler ?= {
+				has_template = ZAI_al_hadi_sharaf_ad_din
+			}
+		}
+		create_character = {
+			template = ZAI_muhammad_bin_yahya_al_qasim
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.6.18
+			NOT = { is_template_used = ZAI_yahya_al_qasim }
+			ruler ?= {
+				has_template = ZAI_muhammad_bin_yahya_al_qasim
+			}
+		}
+		create_character = {
+			template = ZAI_yahya_al_qasim
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1891.6.18
+			NOT = { is_template_used = ZAI_ahmad_al_qasim }
+			ruler ?= {
+				has_template = ZAI_yahya_al_qasim
+			}
+		}
+		create_character = {
+			template = ZAI_ahmad_al_qasim
+			heir = yes
+		}
+	}
 }
 
 bahrain_generate_scripted_heirs = {

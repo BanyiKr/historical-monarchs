@@ -2411,6 +2411,86 @@ character_zaidi_ruler_succession_chain_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_template = ZAI_al_mansur_muhammad_al_qasim
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1818.6.16
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_al_mutawakkil_al_mushin
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_al_mutawakkil_al_mushin
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1820.6.16
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_al_hadi_sharaf_ad_din
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_al_hadi_sharaf_ad_din
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1839.6.16
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_muhammad_bin_yahya_al_qasim
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_muhammad_bin_yahya_al_qasim
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1869.6.18
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_yahya_al_qasim
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_yahya_al_qasim
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1891.6.18
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_ahmad_al_qasim
+				}
+			}
+		}
+	}
 }
 
 character_bahrain_ruler_succession_chain_effect = {

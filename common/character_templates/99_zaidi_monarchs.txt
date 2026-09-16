@@ -26,7 +26,7 @@ REPLACE:ZAI_al_mansur_ali_al_qasim = {
 	heir = yes
 	noble = yes
 	birth_date = 1812.1.1
-	interest_group = ig_devout
+	interest_group = ig_landowners
 	ideology = ideology_traditionalist
 	home_region = STATE_YEMEN
 	traits = {
@@ -51,6 +51,105 @@ ZAI_al_mansur_muhammad_al_qasim = {
 	home_region = STATE_YEMEN
 	traits = {
 		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+ZAI_al_mutawakkil_al_mushin = {
+	first_name = "al-Mutawakkil_al-Mushin"
+	last_name = "ash_Shahari"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1818.6.16 # Unknown
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		persistent
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+ZAI_al_hadi_sharaf_ad_din = {
+	first_name = "al-Hadi_Sharaf_ad-Din"
+	last_name = "al_Hashimi"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1820.6.16 # Exact date unknown
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		persistent
+		ambitious
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+ZAI_muhammad_bin_yahya_al_qasim = {
+	first_name = "Muhammad"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1839.6.16 # Exact date unknown
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		persistent
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+ZAI_yahya_al_qasim = {
+	first_name = "Yahya"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1869.6.18
+	interest_group = ig_devout
+	ideology = ideology_authoritarian
+	home_region = STATE_YEMEN
+	traits = {
+		imperious
+		ruthless
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+ZAI_ahmad_al_qasim = {
+	first_name = "Ahmad"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = cu:yemenite
+	heir = yes
+	noble = yes
+	birth_date = 1891.6.18
+	interest_group = ig_devout
+	ideology = ideology_authoritarian
+	home_region = STATE_YEMEN
+	traits = {
+		wrathful
+		social_bandit
 	}
 	on_created = {
 		set_variable = is_married
