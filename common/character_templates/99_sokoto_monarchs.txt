@@ -122,3 +122,57 @@ SOK_muhammadu_attahiru_dan_fodio = {
 		set_variable = is_married
 	}
 }
+
+SOK_muhammadu_attahiru_ii_dan_fodio = {
+	first_name = "Muhammadu_Attahiru"
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1845.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_muhammadu_maiturare_dan_fodio = {
+	first_name = "Muhammadu_Maiturare"
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1854.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	traits = {
+		traditionalist_commander
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SOK_muhammadu_tambari_dan_fodio = {
+	first_name = "Muhammadu_Tambari"
+	last_name = "dan_Fodio"
+	historical = yes
+	culture = cu:fulbe
+	heir = yes
+	noble = yes
+	birth_date = 1880.1.1
+	home_region = STATE_HAUSALAND
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	traits = {
+		traditionalist_commander
+	}
+	on_created = {
+		set_variable = is_married
+	}
+}

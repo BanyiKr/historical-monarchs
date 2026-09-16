@@ -2411,6 +2411,86 @@ character_zaidi_ruler_succession_chain_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_template = ZAI_al_mansur_muhammad_al_qasim
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1818.6.16
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_al_mutawakkil_al_mushin
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_al_mutawakkil_al_mushin
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1820.6.16
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_al_hadi_sharaf_ad_din
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_al_hadi_sharaf_ad_din
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1839.6.16
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_muhammad_bin_yahya_al_qasim
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_muhammad_bin_yahya_al_qasim
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1869.6.18
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_yahya_al_qasim
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ZAI_yahya_al_qasim
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1891.6.18
+			}
+			owner ?= {
+				create_character = {
+					template = ZAI_ahmad_al_qasim
+				}
+			}
+		}
+	}
 }
 
 character_bahrain_ruler_succession_chain_effect = {
@@ -4729,6 +4809,57 @@ character_sokoto_ruler_succession_chain_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_template = SOK_muhammadu_attahiru_dan_fodio
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1845.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_attahiru_ii_dan_fodio
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_muhammadu_attahiru_ii_dan_fodio
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1854.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_maiturare_dan_fodio
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SOK_muhammadu_maiturare_dan_fodio
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1880.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = SOK_muhammadu_tambari_dan_fodio
+					heir = yes
+				}
+			}
+		}
+	}
 }
 
 character_hawaii_ruler_succession_chain_effect = {
@@ -4932,10 +5063,67 @@ character_aceh_ruler_succession_chain_effect = {
 		limit = {
 			has_template = ACE_alauddin_sulaiman_bugis
 		}
-		owner ?= {
-			create_character = {
-				template = ACE_alauddin_ibrahim_bugis
-				heir = yes
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1808.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_ibrahim_bugis
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ACE_alauddin_ibrahim_bugis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1855.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_mahmud_ii_bugis
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ACE_alauddin_mahmud_ii_bugis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1864.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_muhammad_ii_bugis
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ACE_alauddin_muhammad_ii_bugis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1896.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ACE_alauddin_ibrahim_ii_bugis
+					heir = yes
+				}
 			}
 		}
 	}

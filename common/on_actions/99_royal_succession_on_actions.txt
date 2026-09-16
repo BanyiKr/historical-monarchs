@@ -2234,6 +2234,16 @@ historical_heirs_on_monthly_pulse_country = {
 				}
 				hindustan_generate_scripted_heirs = yes
 			}
+			else_if = { # Aceh
+				limit = {
+					OR = {
+						c:ACE ?= this
+						was_formed_from = ACE
+					}
+					can_generate_scripted_heirs = yes
+				}
+				aceh_generate_scripted_heirs = yes
+			}
 		}
 	}
 }
