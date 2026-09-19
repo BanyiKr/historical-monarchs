@@ -2032,7 +2032,7 @@ historical_heirs_on_monthly_pulse_country = {
 					}
 					can_generate_scripted_heirs = yes
 				}
-				character_khiva_ruler_succession_chain_effect = yes
+				khiva_generate_scripted_heirs = yes
 			}
 			else_if = { # Kokand
 				limit = {
