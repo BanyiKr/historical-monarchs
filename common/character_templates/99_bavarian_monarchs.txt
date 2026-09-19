@@ -40,6 +40,7 @@ BAV_ludwig_ii_von_bayern = {
     interest_group = ig_petty_bourgeoisie
     ideology = ideology_royalist
     home_region = STATE_BAVARIA
+    dna = dna_ludwig_ii_of_bavaria
     traits = {
         reserved
 		aesthete
@@ -58,6 +59,7 @@ BAV_otto_i_von_bayern = {
     interest_group = ig_armed_forces
     ideology = ideology_royalist
     home_region = STATE_BAVARIA
+    dna = dna_otto_i_of_bavaria
     traits = {
         psychological_affliction
 		shellshocked
@@ -78,6 +80,7 @@ BAV_luitpold_von_bayern = {
     interest_group = ig_landowners
     ideology = ideology_royalist
     home_region = STATE_BAVARIA
+    dna = dna_luitpold_of_bavaria
     traits = {
         charismatic
     }
@@ -96,6 +99,7 @@ BAV_ludwig_iii_von_bayern = {
     interest_group = ig_devout
     ideology = ideology_royalist
     home_region = STATE_BAVARIA
+    dna = dna_ludwig_iii_of_bavaria
     traits = {
         innovative
 		pious
@@ -115,7 +119,26 @@ BAV_prince_rupprecht = {
     interest_group = ig_intelligentsia
     ideology = ideology_royalist
     home_region = STATE_BAVARIA
+    dna = dna_prince_rupprecht_of_bavaria
     traits = {
         basic_offensive_planner
+    }
+}
+
+BAV_prince_albrecht = {
+    first_name = "Albrecht"
+    last_name = "von_Bayern"
+    historical = yes
+    culture = cu:south_german
+    noble = yes
+	birth_date = 1905.5.3
+    interest_group = ig_intelligentsia
+    ideology = ideology_royalist
+    home_region = STATE_BAVARIA
+    dna = dna_prince_albrecht_of_bavaria
+    traits = {
+        reserved
+        literary
+        erudite
     }
 }
