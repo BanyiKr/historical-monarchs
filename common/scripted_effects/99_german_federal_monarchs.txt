@@ -437,12 +437,34 @@ GER_character_generate_bavaria_federal_monarch = { # Owner = country, ROOT = pre
 			else_if = {
 				limit = {
 					s:STATE_BAVARIA ?= {
-						var:bavaria_king_chain_id >= 5
+						var:bavaria_king_chain_id = 5
 					}
 					game_date >= 1869.5.18
 				}
 				create_character = {
 					template = BAV_prince_rupprecht
+					role = character_role_magnate
+					role = character_role_politician
+					holding_type = building_manor_house
+					on_created = {
+						set_variable = { name = ger_federal_monarch_var value = s:STATE_BAVARIA }
+						add_career_length = {
+							role = character_role_politician
+							years = 50
+							random_range = { 1.0 1.5 } # 50-65 years
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					s:STATE_BAVARIA ?= {
+						var:bavaria_king_chain_id >= 6
+					}
+					game_date >= 1905.5.3
+				}
+				create_character = {
+					template = BAV_prince_albrecht
 					role = character_role_magnate
 					role = character_role_politician
 					holding_type = building_manor_house

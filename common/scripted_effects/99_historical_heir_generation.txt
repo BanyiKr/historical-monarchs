@@ -1364,6 +1364,19 @@ bavaria_generate_scripted_heirs = {
 			heir = yes
 		}
 	}
+	else_if = {
+		limit = {
+			game_date >= 1905.5.3
+			NOT = { is_template_used = BAV_prince_albrecht }
+			ruler ?= {
+				has_template = BAV_prince_rupprecht
+			}
+		}
+		create_character = {
+			template = BAV_prince_albrecht
+			heir = yes
+		}
+	}
 }
 
 saxony_generate_scripted_heirs = {
