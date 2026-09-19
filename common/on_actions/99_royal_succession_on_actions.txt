@@ -1772,7 +1772,7 @@ historical_heirs_on_monthly_pulse_country = {
 					}
 					can_generate_scripted_heirs = yes
 				}
-				character_hanover_ruler_succession_chain_effect = yes
+				hanover_generate_scripted_heirs = yes
 			}
 			else_if = { # Baden
 				limit = {
