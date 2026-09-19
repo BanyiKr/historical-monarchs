@@ -2439,14 +2439,14 @@ character_zaidi_ruler_succession_chain_effect = {
 			}
 			owner ?= {
 				create_character = {
-					template = ZAI_al_mutawakkil_al_mushin
+					template = ZAI_al_mutawakkil_al_muhsin
 				}
 			}
 		}
 	}
 	else_if = {
 		limit = {
-			has_template = ZAI_al_mutawakkil_al_mushin
+			has_template = ZAI_al_mutawakkil_al_muhsin
 		}
 		if = {
 			limit = {

@@ -765,6 +765,45 @@ china_generate_scripted_heirs = {
 		limit = {
 			game_date >= 1871.8.14
 			NOT = { is_template_used = CHI_guangxu }
+			NOT = {
+				heir ?= {
+					has_template = CHI_tongzhi
+				}
+			}
+			has_gov_regency = yes
+			ruler ?= {
+				has_template = chi_cixi_template
+			}
+		}
+		create_character = {
+			template = CHI_guangxu
+			heir = yes
+			on_created = {
+				if = {
+					limit = {
+						has_game_rule = use_chinese_era_name
+					}
+					set_first_name = Guangxu
+					set_last_name = None
+					c:CHI = {
+						set_variable = { name = emperor_era_name_var value = PREV }
+					}
+					
+					if = { # Switch Korean era name too
+						limit = {
+							has_game_rule = use_korean_era_name
+							
+						}
+						korean_monarch_update_era_name_based_on_china = yes
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.8.14
+			NOT = { is_template_used = CHI_guangxu }
 			ruler ?= {
 				has_template = CHI_tongzhi
 			}
@@ -2374,13 +2413,13 @@ zaidi_generate_scripted_heirs = {
 	else_if = {
 		limit = {
 			game_date >= 1818.6.16
-			NOT = { is_template_used = ZAI_al_mutawakkil_al_mushin }
+			NOT = { is_template_used = ZAI_al_mutawakkil_al_muhsin }
 			ruler ?= {
 				has_template = ZAI_al_mansur_muhammad_al_qasim
 			}
 		}
 		create_character = {
-			template = ZAI_al_mutawakkil_al_mushin
+			template = ZAI_al_mutawakkil_al_muhsin
 			heir = yes
 		}
 	}
@@ -2389,7 +2428,7 @@ zaidi_generate_scripted_heirs = {
 			game_date >= 1820.6.16
 			NOT = { is_template_used = ZAI_al_hadi_sharaf_ad_din }
 			ruler ?= {
-				has_template = ZAI_al_mutawakkil_al_mushin
+				has_template = ZAI_al_mutawakkil_al_muhsin
 			}
 		}
 		create_character = {
