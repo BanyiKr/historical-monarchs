@@ -18,12 +18,15 @@
 			has_template = NET_prince_alexander
 			year >= 1884
 		}
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = { # Replace heir if still heir
 			limit = {
 				is_heir_of_own_country = yes
 			}
 			kill_character = { hidden = no }
-			owner ?= {
+			scope:owner_country_scope ?= {
 				create_character = {
 					template = NET_wilhelmina_i
 					heir = yes
@@ -63,12 +66,15 @@ character_belgium_scripted_deaths_effect = {
 			has_template = BEL_Prince_Philippe
 			year >= 1905
 		}
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = { # Replace heir if still heir
 			limit = {
 				is_heir_of_own_country = yes
 			}
 			kill_character = { hidden = no }
-			owner ?= {
+			scope:owner_country_scope ?= {
 				if = {
 					limit = {
 						game_date < 1891.1.23
@@ -323,13 +329,13 @@ character_transylvania_scripted_deaths_effect = {
 			has_template = aus_ferdinand_karl_joseph_of_austria-este
 			year >= 1837
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = TRS_janos_kornis
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
@@ -343,39 +349,39 @@ character_transylvania_scripted_deaths_effect = {
 			has_template = TRS_jozsef_teleki
 			year >= 1848
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = TRS_imre_miko
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
 			has_template = TRS_imre_miko
 			year >= 1848
 		}
-		remove_character_role = ruler
 		owner ?= {
 			create_character = {
 				template = TRS_miklos_vay
 				ruler = yes
 			}
 		}
+		remove_character_role = ruler
 	}
 	else_if = {
 		limit = {
 			has_template = TRS_miklos_vay
 			year >= 1849
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = TRS_ludwwig_von_wohlgemuth
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
@@ -396,26 +402,26 @@ character_transylvania_scripted_deaths_effect = {
 			has_template = TRS_friedrich_von_liechtenstein
 			year >= 1861
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = TRS_franz_folliot_de_crenneville
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
 			has_template = TRS_franz_folliot_de_crenneville
 			year >= 1867
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = TRS_mano_pechy
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 }
 
@@ -449,13 +455,13 @@ character_croatia_scripted_deaths_effect = {
 			has_template = CRO_franz_haller
 			year >= 1845
 		}
-		resign_and_retire = yes
 		owner ?= {
 			country_summon_character_effect = {
 				TEMPLATE = CRO_juraj_haulik
 				ON_CREATED_EFFECT = summon_generic_make_ruler_effect
 			}
 		}
+		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
@@ -487,13 +493,13 @@ character_croatia_scripted_deaths_effect = {
 			has_template = CRO_johann_baptist_coronini_cronberg
 			year >= 1860
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = CRO_josip_sokcevic
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 }
 
@@ -503,13 +509,13 @@ charater_baltic_governorates_scripted_deaths_effect = {
 			has_template = UBD_carl_magnus_von_der_pahlen
 			year >= 1845
 		}
-		resign_and_retire = yes
 		owner ?= {
 			create_character = {
 				template = UBD_yevgeny_golovin
 				ruler = yes
 			}
 		}
+		resign_and_retire = yes
 	}
 	else_if = {
 		limit = {
@@ -897,12 +903,15 @@ character_china_scripted_deaths_effect = {
 			has_template = CHI_tongzhi
 			year >= 1875
 		}
-		kill_character = { hidden = no }
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			owner ?= {
+			kill_character = { hidden = no }
+			scope:owner_country_scope ?= {
 				create_character = {
 					template = CHI_guangxu
 					heir = yes
@@ -918,6 +927,9 @@ character_china_scripted_deaths_effect = {
 					}
 				}
 			}
+		}
+		else = {
+			kill_character = { hidden = no }
 		}
 	}
 	else_if = {
@@ -1061,12 +1073,15 @@ character_dai_viet_scripted_deaths_effect = {
 			is_ruler_of_own_country = yes
 			year >= 1883
 		}
-		kill_character = { hidden = no }
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			owner ?= {
+			kill_character = { hidden = no }
+			scope:owner_country_scope ?= {
 				create_character = {
 					template = DAI_hiep_hoa
 					heir = yes
@@ -1088,6 +1103,9 @@ character_dai_viet_scripted_deaths_effect = {
 				}
 			}
 		}
+		else = {
+			kill_character = { hidden = no }
+		}
 	}
 	else_if = {
 		limit = {
@@ -1097,12 +1115,15 @@ character_dai_viet_scripted_deaths_effect = {
 				is_subject = yes
 			}
 		}
-		kill_character = { hidden = no }
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			owner ?= {
+			kill_character = { hidden = no }
+			scope:owner_country_scope ?= {
 				create_character = {
 					template = DAI_kien_phuc
 					heir = yes
@@ -1124,18 +1145,24 @@ character_dai_viet_scripted_deaths_effect = {
 				}
 			}
 		}
+		else = {
+			kill_character = { hidden = no }
+		}
 	}
 	else_if = {
 		limit = {
 			has_template = DAI_kien_phuc
 			year >= 1884
 		}
-		kill_character = { hidden = no }
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			owner ?= {
+			kill_character = { hidden = no }
+			scope:owner_country_scope ?= {
 				create_character = {
 					template = DAI_ham_nghi
 					heir = yes
@@ -1155,6 +1182,9 @@ character_dai_viet_scripted_deaths_effect = {
 					}
 				}
 			}
+		}
+		else = {
+			kill_character = { hidden = no }
 		}
 	}
 	else_if = {
@@ -1751,18 +1781,24 @@ character_france_scripted_deaths_effect = {
 			has_template = FRA_ferdinand_philippe
 			year >= 1842
 		}
+		owner ?= {
+			save_temporary_scope_as = owner_country_scope
+		}
 		if = {
 			limit = {
 				is_heir_of_own_country = yes
 			}
-			owner ?= {
+			kill_character = { hidden = no }
+			scope:owner_country_scope ?= {
 				create_character = {
 					template = FRA_philippe_de_orleans_of_paris
 					heir = yes
 				}
 			}
 		}
-		kill_character = { hidden = no }
+		else = {
+			kill_character = { hidden = no }
+		}
 	}
 	else_if = {
 		limit = {
