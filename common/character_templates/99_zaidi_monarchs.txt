@@ -57,8 +57,8 @@ ZAI_al_mansur_muhammad_al_qasim = {
 	}
 }
 
-ZAI_al_mutawakkil_al_mushin = {
-	first_name = "al-Mutawakkil_al-Mushin"
+ZAI_al_mutawakkil_al_muhsin = {
+	first_name = "al-Mutawakkil_al-Muhsin"
 	last_name = "ash_Shahari"
 	historical = yes
 	culture = cu:yemenite

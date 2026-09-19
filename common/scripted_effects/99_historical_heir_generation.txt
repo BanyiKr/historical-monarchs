@@ -2400,13 +2400,13 @@ zaidi_generate_scripted_heirs = {
 	else_if = {
 		limit = {
 			game_date >= 1818.6.16
-			NOT = { is_template_used = ZAI_al_mutawakkil_al_mushin }
+			NOT = { is_template_used = ZAI_al_mutawakkil_al_muhsin }
 			ruler ?= {
 				has_template = ZAI_al_mansur_muhammad_al_qasim
 			}
 		}
 		create_character = {
-			template = ZAI_al_mutawakkil_al_mushin
+			template = ZAI_al_mutawakkil_al_muhsin
 			heir = yes
 		}
 	}
@@ -2415,7 +2415,7 @@ zaidi_generate_scripted_heirs = {
 			game_date >= 1820.6.16
 			NOT = { is_template_used = ZAI_al_hadi_sharaf_ad_din }
 			ruler ?= {
-				has_template = ZAI_al_mutawakkil_al_mushin
+				has_template = ZAI_al_mutawakkil_al_muhsin
 			}
 		}
 		create_character = {
