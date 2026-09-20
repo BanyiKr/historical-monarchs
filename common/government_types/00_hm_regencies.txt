@@ -88,7 +88,6 @@ gov_hm_regency_principality = {
 
 	possible = {
 		country_has_monarchy_law = yes
-		has_law = law_type:law_autocracy
 		OR = {
 			c:SCW ?= this
 			c:WLD ?= this
@@ -118,7 +117,6 @@ gov_hm_regency_principality_constitutional = {
 
 	possible = {
 		country_has_monarchy_law = yes
-		has_law = law_type:law_autocracy
 		OR = {
 			c:SCW ?= this
 			c:WLD ?= this
@@ -148,7 +146,6 @@ gov_hm_regency_electorate = {
 
 	possible = {
 		country_has_monarchy_law = yes
-		has_law = law_type:law_autocracy
 		c:HEK ?= this
 		country_has_voting_franchise = no
 		has_gov_regency = yes
@@ -172,7 +169,6 @@ gov_hm_regency_electorate_constitutional = {
 
 	possible = {
 		country_has_monarchy_law = yes
-		has_law = law_type:law_autocracy
 		c:HEK ?= this
 		country_has_voting_franchise = yes
 		has_gov_regency = yes

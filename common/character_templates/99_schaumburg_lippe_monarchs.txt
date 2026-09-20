@@ -1,0 +1,35 @@
+﻿SCM_georg_von_schaumburg_lippe = {
+	first_name = Georg
+	last_name = "von_Schaumburg-Lippe"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1846.10.10
+	home_region = STATE_WESTPHALIA
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+}
+
+SCM_adolf_ii_von_schaumburg_lippe = {
+	first_name = Adolf
+	last_name = "von_Schaumburg-Lippe"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1883.2.23
+	home_region = STATE_WESTPHALIA
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+}
+
+SCM_wolrad_von_schaumburg_lippe = {
+	first_name = Wolrad
+	last_name = "von_Schaumburg-Lippe"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1887.4.19
+	home_region = STATE_WESTPHALIA
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+}

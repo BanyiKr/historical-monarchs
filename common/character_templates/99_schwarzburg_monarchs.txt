@@ -1,0 +1,74 @@
+﻿SCW_friedrich_gunther_von_schwarzburg = {
+	first_name = Friedrich_Gunther
+	last_name = "von_Schwarzburg"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1793.11.6
+	home_region = STATE_SAXONY
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+REPLACE:SCW_albert_von_schwarzburg = {
+	first_name = Albert
+	last_name = "von_Schwarzburg"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1798.4.30
+	home_region = STATE_SAXONY
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCW_georg_albert_von_schwarzburg = {
+	first_name = Georg_Albert
+	last_name = "von_Schwarzburg"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1838.11.23
+	home_region = STATE_SAXONY
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCW_gunther_victor_von_schwarzburg = {
+	first_name = GU_nther_Victor
+	last_name = "von_Schwarzburg"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1852.8.21
+	home_region = STATE_SAXONY
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}
+
+SCW_gunther_sizzo_von_schwarzburg = {
+	first_name = Sizzo
+	last_name = "von_Schwarzburg"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1860.6.3
+	home_region = STATE_SAXONY
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+	}
+}

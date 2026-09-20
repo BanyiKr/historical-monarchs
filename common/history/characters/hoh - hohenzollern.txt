@@ -1,0 +1,11 @@
+﻿CHARACTERS = {
+	c:HOH ?= {
+		create_character = {
+			template = HOH_karl_von_hohenzollern_sigmaringen
+		}	
+
+		create_character = {
+			template = HOH_karl_anton_von_hohenzollern
+		}
+	}
+}

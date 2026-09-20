@@ -1,0 +1,10 @@
+﻿CHARACTERS = {
+	c:SCW ?= {
+		create_character = {
+			template = SCW_friedrich_gunther_von_schwarzburg
+		}
+		create_character = {
+			template = SCW_albert_von_schwarzburg
+		}	
+	}
+}
