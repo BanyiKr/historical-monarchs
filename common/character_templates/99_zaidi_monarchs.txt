@@ -1,4 +1,21 @@
-﻿ZAI_al_hadi_muhammad_al_qasim = {
+﻿REPLACE:ZAI_an_nasir_abdallah_al_qasim = {
+	# An-Nasir Abdallah
+	first_name = "An-Nasir_Abdallah"
+	last_name = "al_Qasim"
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	age = 25
+	interest_group = ig_devout
+	ideology = ideology_traditionalist
+	home_region = STATE_YEMEN
+	traits = {
+		ambitious
+	}
+}
+
+
+ZAI_al_hadi_muhammad_al_qasim = {
 	first_name = "al-Hadi_Muhammad"
 	last_name = "al_Qasim"
 	historical = yes

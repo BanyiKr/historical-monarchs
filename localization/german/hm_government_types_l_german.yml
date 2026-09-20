@@ -127,7 +127,7 @@
  gov_hm_regency_china: "Regentschaft"
  gov_hm_regency_china_desc: "Dies ist eine [concept_government_type], bei der die Macht beim [Concept('concept_ruler','$RULER_TITLE_EMPRESS_DOWAGER$')] liegt, die anstelle eines [Concept('concept_ruler','$RULER_TITLE_EMPEROR$s')] regiert, die noch nicht den Thron besteigen können.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_hm_regency_dalai_lama: "Regentschaft"
- gov_hm_regency_dalai_lama_desc: "Dies ist eine [concept_government_type], bei der die Macht vor allem bei [Concept('concept_ruler','$RULER_TITLE_AMBAN$')] liegt, der anstelle eines [Concept('concept_ruler','$RULER_TITLE_DALAI_LAMA$s')] regiert, die noch nicht den Thron besteigen können.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_hm_regency_dalai_lama_desc: "Dies ist eine [concept_government_type], bei der die Macht vor allem bei [Concept('concept_ruler','$RULER_TITLE_REGENT$en')] liegt, der anstelle eines [Concept('concept_ruler','$RULER_TITLE_DALAI_LAMA$s')] regiert, die noch nicht den Thron besteigen können.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_hm_regency_baganda_monarchy: "Regentschaft"
  gov_hm_regency_baganda_monarchy_desc: "Dies ist eine [concept_government_type], bei der die Macht beim [Concept('concept_ruler','$RULER_TITLE_REGENT$en')] liegt, der anstelle eines [Concept('concept_ruler','$RULER_TITLE_KABAKA$s')] regiert, die noch nicht den Thron besteigen können.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_hm_regency_banyoro_monarchy: "Regentschaft"

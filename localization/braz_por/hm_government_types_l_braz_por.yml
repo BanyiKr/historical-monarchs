@@ -125,7 +125,7 @@
  gov_hm_regency_china: "Regência"
  gov_hm_regency_china_desc: "Este é um [concept_government_type] em que o poder está nas mãos do [Concept('concept_ruler','$RULER_TITLE_EMPRESS_DOWAGER$')], que reina no lugar de um [Concept('concept_ruler','$RULER_TITLE_EMPEROR$')] ainda incapaz de assumir o trono.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_hm_regency_dalai_lama: "Regência"
- gov_hm_regency_dalai_lama_desc: "Este é um [concept_government_type] em que o poder está nas mãos do [Concept('concept_ruler','$RULER_TITLE_AMBAN$')], que reina no lugar de um [Concept('concept_ruler','$RULER_TITLE_DALAI_LAMA$')] ainda incapaz de assumir o trono.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_hm_regency_dalai_lama_desc: "Este é um [concept_government_type] em que o poder está nas mãos do [Concept('concept_ruler','$RULER_TITLE_REGENT$')], que reina no lugar de um [Concept('concept_ruler','$RULER_TITLE_DALAI_LAMA$')] ainda incapaz de assumir o trono.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_hm_regency_baganda_monarchy: "Regência"
  gov_hm_regency_baganda_monarchy_desc: "Este é um [concept_government_type] em que o poder está nas mãos do [Concept('concept_ruler','$RULER_TITLE_REGENT$')], que reina no lugar de um [Concept('concept_ruler','$RULER_TITLE_KABAKA$')] ainda incapaz de assumir o trono.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_hm_regency_banyoro_monarchy: "Regência"

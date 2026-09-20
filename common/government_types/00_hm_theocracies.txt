@@ -1,4 +1,57 @@
-﻿gov_hm_fulbe_imamate = {
+﻿REPLACE:gov_dalai_lama = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_DALAI_LAMA"
+	female_ruler = "" # Empty on purpose
+
+	possible = {
+		has_law_or_variant = law_type:law_theocracy
+		exists = c:TIB
+		c:TIB = ROOT
+		has_gov_regency = no
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+REPLACE:gov_zaidi_imamate = {
+	transfer_of_power = hereditary
+	male_ruler = "RULER_IMAM"
+	female_ruler = "RULER_IMAM"
+
+	male_heir = "RULER_TITLE_HEIR_APPARENT"
+	female_heir = "RULER_TITLE_HEIR_APPARENT"
+
+	possible = {
+		has_gov_regency = no
+		has_law_or_variant = law_type:law_theocracy
+		country_has_state_religion = rel:shiite
+		OR = {
+			AND = {
+				exists = c:ZAI
+				c:ZAI = ROOT
+			}
+			AND = {
+				exists = c:YEM
+				c:YEM = ROOT
+			}
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_hm_fulbe_imamate = {
 	transfer_of_power = dictatorial
 
 	male_ruler = "RULER_TITLE_ALMAMI"
