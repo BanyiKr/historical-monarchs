@@ -971,6 +971,54 @@ historical_successions_on_new_ruler = {
 				}
 				character_hindustan_ruler_succession_chain_effect = yes
 			}
+			### Hohenzollern monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:HOH ?= this
+							was_formed_from = HOH
+						}
+					}
+				}
+				character_hohenzollern_ruler_succession_chain_effect = yes
+			}
+			### Schaumburg-Lippe monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SCM ?= this
+							was_formed_from = SCM
+						}
+					}
+				}
+				character_schaumburg_lippe_ruler_succession_chain_effect = yes
+			}
+			### Schwarzburg monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:SCW ?= this
+							was_formed_from = SCW
+						}
+					}
+				}
+				character_schwarzburg_ruler_succession_chain_effect = yes
+			}
+			### Waldeck monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:WLD ?= this
+							was_formed_from = WLD
+						}
+					}
+				}
+				character_waldeck_ruler_succession_chain_effect = yes
+			}
 		}
 	}
 }
@@ -2243,6 +2291,46 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				aceh_generate_scripted_heirs = yes
+			}
+			else_if = { # Hohenzollern
+				limit = {
+					OR = {
+						c:HOH ?= this
+						was_formed_from = HOH
+					}
+					can_generate_scripted_heirs = yes
+				}
+				hohenzollern_generate_scripted_heirs = yes
+			}
+			else_if = { # Schaumburg-Lippe
+				limit = {
+					OR = {
+						c:SCM ?= this
+						was_formed_from = SCM
+					}
+					can_generate_scripted_heirs = yes
+				}
+				schaumburg_lippe_generate_scripted_heirs = yes
+			}
+			else_if = { # Schwarzburg
+				limit = {
+					OR = {
+						c:SCW ?= this
+						was_formed_from = SCW
+					}
+					can_generate_scripted_heirs = yes
+				}
+				schwarzburg_generate_scripted_heirs = yes
+			}
+			else_if = { # Waldeck
+				limit = {
+					OR = {
+						c:WLD ?= this
+						was_formed_from = WLD
+					}
+					can_generate_scripted_heirs = yes
+				}
+				waldeck_generate_scripted_heirs = yes
 			}
 		}
 	}

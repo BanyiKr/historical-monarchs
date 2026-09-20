@@ -6265,3 +6265,221 @@ character_hindustan_ruler_succession_chain_effect = {
 		}
 	}
 }
+
+character_hohenzollern_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = HOH_karl_anton_von_hohenzollern
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1835.9.22
+			}
+			owner ?= {
+				create_character = {
+					template = HOH_leopold_von_hohenzollern
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = HOH_leopold_von_hohenzollern
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1864.3.7
+			}
+			owner ?= {
+				create_character = {
+					template = HOH_wilhelm_von_hohenzollern_sigmaringen
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = HOH_wilhelm_von_hohenzollern_sigmaringen
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1891.8.30
+			}
+			owner ?= {
+				create_character = {
+					template = HOH_friedrich_von_hohenzollern_sigmaringen
+					heir = yes
+				}
+			}
+		}
+	}
+}
+
+character_schaumburg_lippe_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SCM_adolf_von_schaumburg_lippe
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1846.10.10
+			}
+			owner ?= {
+				create_character = {
+					template = SCM_georg_von_schaumburg_lippe
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCM_georg_von_schaumburg_lippe
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1883.2.23
+			}
+			owner ?= {
+				create_character = {
+					template = SCM_adolf_ii_von_schaumburg_lippe
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCM_adolf_ii_von_schaumburg_lippe
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1887.4.19
+			}
+			owner ?= {
+				create_character = {
+					template = SCM_wolrad_von_schaumburg_lippe
+					heir = yes
+				}
+			}
+		}
+	}
+}
+
+character_schwarzburg_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = SCW_albert_von_schwarzburg
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1838.11.23
+			}
+			owner ?= {
+				create_character = {
+					template = SCW_georg_albert_von_schwarzburg
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCW_georg_albert_von_schwarzburg
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1852.8.21
+			}
+			owner ?= {
+				create_character = {
+					template = SCW_gunther_victor_von_schwarzburg
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = SCW_gunther_victor_von_schwarzburg
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1860.6.3
+			}
+			owner ?= {
+				create_character = {
+					template = SCW_gunther_sizzo_von_schwarzburg
+					heir = yes
+				}
+			}
+		}
+	}
+}
+
+character_waldeck_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = WLD_george_victor_von_waldeck_und_pyrmont
+		}
+		if = {
+			limit = {
+				is_adult = no
+			}
+			owner ?= {
+				set_variable = { name = hide_ruler_change_notification days = 3 }
+				add_modifier = modifier_regency
+				create_character = {
+					template = WLD_emma_of_anhalt_bernburg_schaumburg_hoym
+					on_created = {
+						set_character_as_ruler = yes
+						designate_character_as_regent = {
+							YEARS = 1
+						}
+					}
+				}
+				set_heir = ROOT
+			}
+		}
+		else_if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1865.5.12
+			}
+			owner ?= {
+				create_character = {
+					template = WLD_friedrich_von_waldeck_und_pyrmont
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = WLD_friedrich_von_waldeck_und_pyrmont
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1896.5.13
+			}
+			owner ?= {
+				create_character = {
+					template = WLD_josias_von_waldeck_und_pyrmont
+					heir = yes
+				}
+			}
+		}
+	}
+}

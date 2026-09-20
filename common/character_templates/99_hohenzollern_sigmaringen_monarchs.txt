@@ -1,0 +1,79 @@
+﻿HOH_karl_von_hohenzollern_sigmaringen = {
+	first_name = Karl
+	last_name = "von_Hohenzollern_Sigmaringen"
+	historical = yes
+	culture = cu:south_german
+	ruler = yes
+	birth_date = 1785.2.20
+	home_region = STATE_WURTTEMBERG
+	interest_group = ig_intelligentsia
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = is_married
+		set_variable = house_hohenzollern
+	}
+}
+
+REPLACE:HOH_karl_anton_von_hohenzollern = {
+	first_name = Karl-Anton
+	last_name = "von_Hohenzollern_Sigmaringen"
+	historical = yes
+	culture = cu:south_german
+	heir = yes
+	birth_date = 1811.9.7
+	home_region = STATE_WURTTEMBERG
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	on_created = {
+		set_variable = is_married
+		set_variable = house_hohenzollern
+	}
+}
+
+REPLACE:HOH_leopold_von_hohenzollern = {
+	first_name = Leopold
+	last_name = "von_Hohenzollern_Sigmaringen"
+	historical = yes
+	culture = cu:south_german
+	heir = yes
+	birth_date = 1835.9.22
+	home_region = STATE_WURTTEMBERG
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	traits = {
+		trait_child
+	}
+	on_created = {
+		set_variable = house_hohenzollern
+	}
+}
+
+HOH_wilhelm_von_hohenzollern_sigmaringen = {
+	first_name = Wilhelm
+	last_name = "von_Hohenzollern_Sigmaringen"
+	historical = yes
+	culture = cu:south_german
+	ruler = yes
+	birth_date = 1864.3.7
+	home_region = STATE_WURTTEMBERG
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = house_hohenzollern
+	}
+}
+
+HOH_friedrich_von_hohenzollern_sigmaringen = {
+	first_name = Friedrich
+	last_name = "von_Hohenzollern_Sigmaringen"
+	historical = yes
+	culture = cu:south_german
+	ruler = yes
+	birth_date = 1891.8.30
+	home_region = STATE_WURTTEMBERG
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	on_created = {
+		set_variable = house_hohenzollern
+	}
+}

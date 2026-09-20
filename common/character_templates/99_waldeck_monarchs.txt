@@ -1,0 +1,35 @@
+﻿WLD_emma_of_anhalt_bernburg_schaumburg_hoym = {
+	first_name = Emma
+	last_name = von_Anhalt-Bernburg-Schaumburg-Hoym
+	female = yes
+	historical = yes
+	culture = cu:north_german
+	birth_date = 1802.5.20
+	interest_group = ig_landowners
+	ideology = ideology_reformer
+	home_region = STATE_HESSE
+}
+
+WLD_friedrich_von_waldeck_und_pyrmont = {
+	first_name = Friedrich
+	last_name = "von_Waldeck_und_Pyrmont"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1865.5.12
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_HESSE
+}
+
+WLD_josias_von_waldeck_und_pyrmont = {
+	first_name = Josias
+	last_name = "von_Waldeck_und_Pyrmont"
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1896.5.13
+	interest_group = ig_armed_forces
+	ideology = ideology_fascist
+	home_region = STATE_HESSE
+}

@@ -4325,3 +4325,158 @@ aceh_generate_scripted_heirs = {
 		}
 	}
 }
+
+hohenzollern_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1835.9.22
+			NOT = { is_template_used = HOH_leopold_von_hohenzollern }
+			ruler ?= {
+				has_template = HOH_karl_anton_von_hohenzollern
+			}
+		}
+		create_character = {
+			template = HOH_leopold_von_hohenzollern
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1864.3.7
+			NOT = { is_template_used = HOH_wilhelm_von_hohenzollern_sigmaringen }
+			ruler ?= {
+				has_template = HOH_leopold_von_hohenzollern
+			}
+		}
+		create_character = {
+			template = HOH_wilhelm_von_hohenzollern_sigmaringen
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1891.8.30
+			NOT = { is_template_used = HOH_friedrich_von_hohenzollern_sigmaringen }
+			ruler ?= {
+				has_template = HOH_wilhelm_von_hohenzollern_sigmaringen
+			}
+		}
+		create_character = {
+			template = HOH_friedrich_von_hohenzollern_sigmaringen
+			heir = yes
+		}
+	}
+}
+
+schaumburg_lippe_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1846.10.10
+			NOT = { is_template_used = SCM_georg_von_schaumburg_lippe }
+			ruler ?= {
+				has_template = SCM_adolf_von_schaumburg_lippe
+			}
+		}
+		create_character = {
+			template = SCM_georg_von_schaumburg_lippe
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1883.2.23
+			NOT = { is_template_used = SCM_adolf_ii_von_schaumburg_lippe }
+			ruler ?= {
+				has_template = SCM_georg_von_schaumburg_lippe
+			}
+		}
+		create_character = {
+			template = SCM_adolf_ii_von_schaumburg_lippe
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1887.4.19
+			NOT = { is_template_used = SCM_wolrad_von_schaumburg_lippe }
+			ruler ?= {
+				has_template = SCM_adolf_ii_von_schaumburg_lippe
+			}
+		}
+		create_character = {
+			template = SCM_wolrad_von_schaumburg_lippe
+			heir = yes
+		}
+	}
+}
+
+schwarzburg_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1838.11.23
+			NOT = { is_template_used = SCW_georg_albert_von_schwarzburg }
+			ruler ?= {
+				has_template = SCW_albert_von_schwarzburg
+			}
+		}
+		create_character = {
+			template = SCW_georg_albert_von_schwarzburg
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1852.8.21
+			NOT = { is_template_used = SCW_gunther_victor_von_schwarzburg }
+			ruler ?= {
+				has_template = SCW_georg_albert_von_schwarzburg
+			}
+		}
+		create_character = {
+			template = SCW_gunther_victor_von_schwarzburg
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1860.6.3
+			NOT = { is_template_used = SCW_gunther_sizzo_von_schwarzburg }
+			ruler ?= {
+				has_template = SCW_gunther_victor_von_schwarzburg
+			}
+		}
+		create_character = {
+			template = SCW_gunther_sizzo_von_schwarzburg
+			heir = yes
+		}
+	}
+}
+
+waldeck_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1865.5.12
+			NOT = { is_template_used = WLD_friedrich_von_waldeck_und_pyrmont }
+			ruler ?= {
+				has_template = WLD_george_victor_von_waldeck_und_pyrmont
+			}
+		}
+		create_character = {
+			template = WLD_friedrich_von_waldeck_und_pyrmont
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1896.5.13
+			NOT = { is_template_used = WLD_josias_von_waldeck_und_pyrmont }
+			ruler ?= {
+				has_template = WLD_friedrich_von_waldeck_und_pyrmont
+			}
+		}
+		create_character = {
+			template = WLD_josias_von_waldeck_und_pyrmont
+			heir = yes
+		}
+	}
+}
