@@ -1,5 +1,5 @@
 ﻿SCW_friedrich_gunther_von_schwarzburg = {
-	first_name = Albert
+	first_name = Friedrich_Gunther
 	last_name = "von_Schwarzburg"
 	historical = yes
 	culture = primary_culture
