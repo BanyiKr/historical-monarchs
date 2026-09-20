@@ -61,7 +61,7 @@ The chains of succession for countries that historically abolished the monarchy 
 | Hesse-Darmstadt | ☑️ | | | | | |
 | Hesse-Kassel | ☑️ | | | | ☑️ | |
 | Hindustan (Mughals) | ☑️ | | | | | |
-| Hohenzollern | | | | | ☑️ | |
+| Hohenzollern | ☑️ | | | | ☑️ | |
 | Hungary | ☑️ | ☑️ | | | | |
 | Kaarta | | | | | ☑️ | |
 | Kabul | ☑️ | | | | | |
@@ -95,9 +95,9 @@ The chains of succession for countries that historically abolished the monarchy 
 | Saxe-Coburg-Gotha | ☑️ | | | | | |
 | Saxe-Meiningen | ☑️ | | | | | |
 | Saxe-Weimar | ☑️ | | | | | |
-| Schaumburg-Lippe | | | | | ☑️ | |
+| Schaumburg-Lippe | ☑️ | | | | ☑️ | |
 | Schleswig-Holstein | ☑️ | | | | | |
-| Schwarzburg | | | | | ☑️ | |
+| Schwarzburg | ☑️ | | | | ☑️ | |
 | Segou | | | | | ☑️ | |
 | Shewa | ☑️ | | | | | |
 | Siam | ☑️ | ☑️ | | | | |
@@ -112,7 +112,7 @@ The chains of succession for countries that historically abolished the monarchy 
 | Trucial Coast | ☑️ | | | | | |
 | Tunis | ☑️ | | | | | |
 | Waddai | | | | | ☑️ | |
-| Waldeck | | | | | ☑️ | |
+| Waldeck | ☑️ | | | | ☑️ | |
 | Wallachia | ☑️ | ☑️ | | | ☑️ | |
 | Württemberg | ☑️ | ☑️ | | | | |
 | Zulu | | | | | ☑️ | |
