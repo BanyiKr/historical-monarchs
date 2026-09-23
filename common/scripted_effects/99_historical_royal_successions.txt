@@ -6483,3 +6483,91 @@ character_waldeck_ruler_succession_chain_effect = {
 		}
 	}
 }
+
+character_aussa_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = AWS_hanfere_mudaito
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1817.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = AWS_mohammad_ibn_hanfere
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AWS_mohammad_ibn_hanfere
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1820.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = AWS_mohammad_ibn_aydahis
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AWS_mohammad_ibn_aydahis
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1847.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = AWS_yayyo_ibn_mohammad
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AWS_yayyo_ibn_mohammad
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1871.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = AWS_mohammad_ibn_yayyo
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = AWS_mohammad_ibn_yayyo
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1919.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = AWS_alimirah_hanfare
+					heir = yes
+				}
+			}
+		}
+	}
+}

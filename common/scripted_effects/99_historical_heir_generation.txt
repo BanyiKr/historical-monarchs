@@ -4480,3 +4480,71 @@ waldeck_generate_scripted_heirs = {
 		}
 	}
 }
+
+aussa_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1817.1.1
+			NOT = { is_template_used = AWS_mohammad_ibn_hanfere }
+			ruler ?= {
+				has_template = AWS_hanfere_mudaito
+			}
+		}
+		create_character = {
+			template = AWS_mohammad_ibn_hanfere
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1820.1.1
+			NOT = { is_template_used = AWS_mohammad_ibn_aydahis }
+			ruler ?= {
+				has_template = AWS_mohammad_ibn_hanfere
+			}
+		}
+		create_character = {
+			template = AWS_mohammad_ibn_aydahis
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1847.1.1
+			NOT = { is_template_used = AWS_yayyo_ibn_mohammad }
+			ruler ?= {
+				has_template = AWS_mohammad_ibn_aydahis
+			}
+		}
+		create_character = {
+			template = AWS_yayyo_ibn_mohammad
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.1.1
+			NOT = { is_template_used = AWS_mohammad_ibn_yayyo }
+			ruler ?= {
+				has_template = AWS_yayyo_ibn_mohammad
+			}
+		}
+		create_character = {
+			template = AWS_mohammad_ibn_yayyo
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1919.1.1
+			NOT = { is_template_used = AWS_alimirah_hanfare }
+			ruler ?= {
+				has_template = AWS_mohammad_ibn_yayyo
+			}
+		}
+		create_character = {
+			template = AWS_alimirah_hanfare
+			heir = yes
+		}
+	}
+}

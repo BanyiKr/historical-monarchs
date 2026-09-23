@@ -1,0 +1,74 @@
+﻿AWS_mohammad_ibn_hanfere = {
+	first_name = "Mohammad"
+	last_name = "Mudaito"
+	historical = yes
+	culture = cu:afar
+	religion = rel:sunni
+	heir = yes
+	birth_date = 1817.1.1 # Unknown. Presumambly the son of Hanfere ibn Aydahis
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OROMIA
+	traits = {
+	}
+}
+
+AWS_mohammad_ibn_aydahis = {
+	first_name = "Mohammad"
+	last_name = "Mudaito"
+	historical = yes
+	culture = cu:afar
+	religion = rel:sunni
+	heir = yes
+	birth_date = 1820.1.1 # Unknown. Presumambly the brtoher of Hanfere ibn Aydahis
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OROMIA
+	traits = {
+	}
+}
+
+AWS_yayyo_ibn_mohammad = {
+	first_name = "Yayyo"
+	last_name = "Mudaito"
+	historical = yes
+	culture = cu:afar
+	religion = rel:sunni
+	heir = yes
+	birth_date = 1847.1.1 # Unknown. Presumambly the son of Mohammad ibn Aydahis
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OROMIA
+	traits = {
+	}
+}
+
+AWS_mohammad_ibn_yayyo = {
+	first_name = "Mohammad"
+	last_name = "Mudaito"
+	historical = yes
+	culture = cu:afar
+	religion = rel:sunni
+	heir = yes
+	birth_date = 1871.1.1 # Unknown. Presumably the son of Yayyo ibn Mohammad
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_OROMIA
+	traits = {
+	}
+}
+
+AWS_alimirah_hanfare = {
+	first_name = "Alimirah"
+	last_name = "Mudaito"
+	historical = yes
+	culture = cu:afar
+	religion = rel:sunni
+	heir = yes
+	birth_date = 1919.1.1 # Exact date unknown
+	interest_group = ig_rural_folk
+	ideology = ideology_modernizer_leader
+	home_region = STATE_OROMIA
+	traits = {
+	}
+}
