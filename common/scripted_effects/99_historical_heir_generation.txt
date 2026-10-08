@@ -4671,3 +4671,71 @@ buganda_generate_scripted_heirs = {
 		}
 	}
 }
+
+champasak_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1810.1.1
+			NOT = { is_template_used = CHP_boua_chao }
+			ruler ?= {
+				has_template = CHP_nark_chao
+			}
+		}
+		create_character = {
+			template = CHP_boua_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1820.1.1
+			NOT = { is_template_used = CHP_kham_nai_chao }
+			ruler ?= {
+				has_template = CHP_boua_chao
+			}
+		}
+		create_character = {
+			template = CHP_kham_nai_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1830.1.1
+			NOT = { is_template_used = CHP_kham_souk_chao }
+			ruler ?= {
+				has_template = CHP_kham_nai_chao
+			}
+		}
+		create_character = {
+			template = CHP_kham_souk_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1874.5.1
+			NOT = { is_template_used = CHP_ratsadanay_chao }
+			ruler ?= {
+				has_template = CHP_kham_souk_chao
+			}
+		}
+		create_character = {
+			template = CHP_ratsadanay_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1911.12.2
+			NOT = { is_template_used = CHP_boun_oum_chao }
+			ruler ?= {
+				has_template = CHP_ratsadanay_chao
+			}
+		}
+		create_character = {
+			template = CHP_boun_oum_chao
+			heir = yes
+		}
+	}
+}

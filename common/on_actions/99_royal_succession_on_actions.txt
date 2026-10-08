@@ -1055,6 +1055,18 @@ historical_successions_on_new_ruler = {
 				}
 				character_buganda_ruler_succession_chain_effect = yes
 			}
+			### Champasak monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:CHP ?= this
+							was_formed_from = CHP
+						}
+					}
+				}
+				character_champasak_ruler_succession_chain_effect = yes
+			}
 		}
 	}
 }
@@ -2397,6 +2409,16 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				buganda_generate_scripted_heirs = yes
+			}
+			else_if = { # Champasak
+				limit = {
+					OR = {
+						c:CHP ?= this
+						was_formed_from = CHP
+					}
+					can_generate_scripted_heirs = yes
+				}
+				champasak_generate_scripted_heirs = yes
 			}
 		}
 	}

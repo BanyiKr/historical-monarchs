@@ -6730,3 +6730,91 @@ character_buganda_ruler_succession_chain_effect = {
 		}
 	}
 }
+
+character_champasak_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = CHP_nark_chao
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1810.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = CHP_boua_chao
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CHP_boua_chao
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1820.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = CHP_kham_nai_chao
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CHP_kham_nai_chao
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1830.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = CHP_kham_souk_chao
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CHP_kham_souk_chao
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1874.5.1
+			}
+			owner ?= {
+				create_character = {
+					template = CHP_ratsadanay_chao
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = CHP_ratsadanay_chao
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1911.12.2
+			}
+			owner ?= {
+				create_character = {
+					template = CHP_boun_oum_chao
+					heir = yes
+				}
+			}
+		}
+	}
+}
