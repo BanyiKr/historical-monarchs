@@ -6642,3 +6642,91 @@ character_ankole_ruler_succession_chain_effect = {
 		}
 	}
 }
+
+character_buganda_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = BUG_suuna_ii_abalasangeye
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1837.2.1
+			}
+			owner ?= {
+				create_character = {
+					template = BUG_muteesa_i_abalasangeye
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BUG_muteesa_i_abalasangeye
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1868.6.3
+			}
+			owner ?= {
+				create_character = {
+					template = BUG_mwanga_ii_abalasangeye
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BUG_mwanga_ii_abalasangeye
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1872.6.3
+			}
+			owner ?= {
+				create_character = {
+					template = BUG_kalema_i_abalasangeye
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BUG_kalema_i_abalasangeye
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1896.8.8
+			}
+			owner ?= {
+				create_character = {
+					template = BUG_daudi_cwa_ii_abalasangeye
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = BUG_daudi_cwa_ii_abalasangeye
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1924.11.19
+			}
+			owner ?= {
+				create_character = {
+					template = BUG_muteesa_ii_abalasangeye
+					heir = yes
+				}
+			}
+		}
+	}
+}

@@ -1043,6 +1043,18 @@ historical_successions_on_new_ruler = {
 				}
 				character_ankole_ruler_succession_chain_effect = yes
 			}
+			### Baganda monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BUG ?= this
+							was_formed_from = BUG
+						}
+					}
+				}
+				character_buganda_ruler_succession_chain_effect = yes
+			}
 		}
 	}
 }
@@ -2375,6 +2387,16 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				ankole_generate_scripted_heirs = yes
+			}
+			else_if = { # Buganda
+				limit = {
+					OR = {
+						c:BUG ?= this
+						was_formed_from = BUG
+					}
+					can_generate_scripted_heirs = yes
+				}
+				buganda_generate_scripted_heirs = yes
 			}
 		}
 	}

@@ -4603,3 +4603,71 @@ ankole_generate_scripted_heirs = {
 		}
 	}
 }
+
+buganda_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1837.2.1
+			NOT = { is_template_used = BUG_muteesa_i_abalasangeye }
+			ruler ?= {
+				has_template = BUG_suuna_ii_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_muteesa_i_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1868.6.3
+			NOT = { is_template_used = BUG_mwanga_ii_abalasangeye }
+			ruler ?= {
+				has_template = BUG_muteesa_i_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_mwanga_ii_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1872.6.3
+			NOT = { is_template_used = BUG_kalema_i_abalasangeye }
+			ruler ?= {
+				has_template = BUG_mwanga_ii_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_kalema_i_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1896.8.8
+			NOT = { is_template_used = BUG_daudi_cwa_ii_abalasangeye }
+			ruler ?= {
+				has_template = BUG_kalema_i_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_daudi_cwa_ii_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1924.11.19
+			NOT = { is_template_used = BUG_muteesa_ii_abalasangeye }
+			ruler ?= {
+				has_template = BUG_daudi_cwa_ii_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_muteesa_ii_abalasangeye
+			heir = yes
+		}
+	}
+}
