@@ -1031,6 +1031,18 @@ historical_successions_on_new_ruler = {
 				}
 				character_aussa_ruler_succession_chain_effect = yes
 			}
+			### Nkole monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:ANK ?= this
+							was_formed_from = ANK
+						}
+					}
+				}
+				character_ankole_ruler_succession_chain_effect = yes
+			}
 		}
 	}
 }
@@ -2353,6 +2365,16 @@ historical_heirs_on_monthly_pulse_country = {
 					can_generate_scripted_heirs = yes
 				}
 				aussa_generate_scripted_heirs = yes
+			}
+			else_if = { # Ankole
+				limit = {
+					OR = {
+						c:ANK ?= this
+						was_formed_from = ANK
+					}
+					can_generate_scripted_heirs = yes
+				}
+				ankole_generate_scripted_heirs = yes
 			}
 		}
 	}

@@ -6571,3 +6571,74 @@ character_aussa_ruler_succession_chain_effect = {
 		}
 	}
 }
+
+character_ankole_ruler_succession_chain_effect = {
+	if = {
+		limit = {
+			has_template = ANK_gasiyonga_nkole
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1800.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ANK_mutambuka_nkole
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ANK_mutambuka_nkole
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1830.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ANK_ntare_v_nkole
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ANK_ntare_v_nkole
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1877.1.1
+			}
+			owner ?= {
+				create_character = {
+					template = ANK_kahaya_ii_nkole
+					heir = yes
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_template = ANK_kahaya_ii_nkole
+		}
+		if = {
+			limit = {
+				is_adult = yes
+				game_date >= 1900.12.8
+			}
+			owner ?= {
+				create_character = {
+					template = ANK_gasiyonga_ii_nkole
+					heir = yes
+				}
+			}
+		}
+	}
+}
