@@ -4672,6 +4672,74 @@ buganda_generate_scripted_heirs = {
 	}
 }
 
+bunyoro_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1822.1.1
+			NOT = { is_template_used = BNY_kyebambe_iv_babiito }
+			ruler ?= {
+				has_template = BNY_olimi_v_babiito
+			}
+		}
+		create_character = {
+			template = BNY_kyebambe_iv_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1853.6.18
+			NOT = { is_template_used = BNY_kabalega_babiito }
+			ruler ?= {
+				has_template = BNY_kyebambe_iv_babiito
+			}
+		}
+		create_character = {
+			template = BNY_kabalega_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.6.18
+			NOT = { is_template_used = BNY_kitahimbwa_babiito }
+			ruler ?= {
+				has_template = BNY_kabalega_babiito
+			}
+		}
+		create_character = {
+			template = BNY_kitahimbwa_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1873.6.18
+			NOT = { is_template_used = BNY_duhaga_ii_babiito }
+			ruler ?= {
+				has_template = BNY_kitahimbwa_babiito
+			}
+		}
+		create_character = {
+			template = BNY_duhaga_ii_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1900.6.18
+			NOT = { is_template_used = BNY_winyi_iv_babiito }
+			ruler ?= {
+				has_template = BNY_duhaga_ii_babiito
+			}
+		}
+		create_character = {
+			template = BNY_winyi_iv_babiito
+			heir = yes
+		}
+	}
+}
+
 champasak_generate_scripted_heirs = {
 	if = {
 		limit = {

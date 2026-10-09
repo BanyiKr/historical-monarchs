@@ -1055,6 +1055,18 @@ historical_successions_on_new_ruler = {
 				}
 				character_buganda_ruler_succession_chain_effect = yes
 			}
+			### Banyoro monarchs
+			else_if = {
+				limit = {
+					owner ?= {
+						OR = {
+							c:BNY ?= this
+							was_formed_from = BNY
+						}
+					}
+				}
+				character_bunyoro_ruler_succession_chain_effect = yes
+			}
 			### Champasak monarchs
 			else_if = {
 				limit = {
@@ -1641,6 +1653,7 @@ historical_heirs_on_monthly_pulse_country = {
 				NOT = {
 					is_subject_type = subject_type_personal_union
 				}
+				can_generate_scripted_heirs = yes
 			}
 			if = { # Belgium
 				limit = {
@@ -1648,7 +1661,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BEL ?= this
 						was_formed_from = BEL
 					}
-					can_generate_scripted_heirs = yes
 				}
 				belgium_generate_scripted_heirs = yes
 			}
@@ -1658,7 +1670,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:NET ?= this
 						was_formed_from = NET
 					}
-					can_generate_scripted_heirs = yes
 				}
 				netherlands_generate_scripted_heirs = yes
 			}
@@ -1668,7 +1679,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:DEN ?= this
 						was_formed_from = DEN
 					}
-					can_generate_scripted_heirs = yes
 				}
 				denmark_generate_scripted_heirs = yes
 			}
@@ -1680,21 +1690,18 @@ historical_heirs_on_monthly_pulse_country = {
 						c:LUX ?= this
 						was_formed_from = LUX
 					}
-					can_generate_scripted_heirs = yes
 				}
 				luxembourg_generate_scripted_heirs = yes
 			}
 			else_if = { # Ottoman Empire
 				limit = {
 					c:TUR ?= this
-					can_generate_scripted_heirs = yes
 				}
 				ottoman_empire_generate_scripted_heirs = yes
 			}
 			else_if = { # Russia
 				limit = {
 					c:RUS ?= this
-					can_generate_scripted_heirs = yes
 				}
 				russia_generate_scripted_heirs = yes
 			}
@@ -1704,7 +1711,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SER ?= this
 						was_formed_from = SER
 					}
-					can_generate_scripted_heirs = yes
 				}
 				serbia_generate_scripted_heirs = yes
 			}
@@ -1714,7 +1720,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:MOR ?= this
 						was_formed_from = MOR
 					}
-					can_generate_scripted_heirs = yes
 				}
 				morocco_generate_scripted_heirs = yes
 			}
@@ -1724,7 +1729,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:PRU ?= this
 						was_formed_from = PRU
 					}
-					can_generate_scripted_heirs = yes
 				}
 				prussia_generate_scripted_heirs = yes
 			}
@@ -1734,7 +1738,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SAR ?= this
 						was_formed_from = SAR
 					}
-					can_generate_scripted_heirs = yes
 				}
 				sardinia_generate_scripted_heirs = yes
 			}
@@ -1744,7 +1747,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:CHI ?= this
 						was_formed_from = CHI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				china_generate_scripted_heirs = yes
 			}
@@ -1754,7 +1756,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:KOR ?= this
 						was_formed_from = KOR
 					}
-					can_generate_scripted_heirs = yes
 				}
 				korea_generate_scripted_heirs = yes
 			}
@@ -1764,7 +1765,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SIA ?= this
 						was_formed_from = SIA
 					}
-					can_generate_scripted_heirs = yes
 				}
 				siam_generate_scripted_heirs = yes
 			}
@@ -1774,7 +1774,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:DAI ?= this
 						was_formed_from = DAI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				vietnam_generate_scripted_heirs = yes
 			}
@@ -1786,7 +1785,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HOL ?= this
 						was_formed_from = HOL
 					}
-					can_generate_scripted_heirs = yes
 				}
 				schleswig_holstein_generate_scripted_heirs = yes
 			}
@@ -1796,7 +1794,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:GRE ?= this
 						was_formed_from = GRE
 					}
-					can_generate_scripted_heirs = yes
 				}
 				greece_generate_scripted_heirs = yes
 			}
@@ -1806,7 +1803,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:MON ?= this
 						was_formed_from = MON
 					}
-					can_generate_scripted_heirs = yes
 				}
 				montenegro_generate_scripted_heirs = yes
 			}
@@ -1816,7 +1812,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ROM ?= this
 						was_formed_from = ROM
 					}
-					can_generate_scripted_heirs = yes
 				}
 				romania_generate_scripted_heirs = yes
 			}
@@ -1826,7 +1821,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BUL ?= this
 						was_formed_from = BUL
 					}
-					can_generate_scripted_heirs = yes
 				}
 				bulgaria_generate_scripted_heirs = yes
 			}
@@ -1836,7 +1830,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BAV ?= this
 						was_formed_from = BAV
 					}
-					can_generate_scripted_heirs = yes
 				}
 				bavaria_generate_scripted_heirs = yes
 			}
@@ -1846,7 +1839,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SAX ?= this
 						was_formed_from = SAX
 					}
-					can_generate_scripted_heirs = yes
 				}
 				saxony_generate_scripted_heirs = yes
 			}
@@ -1856,7 +1848,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:WUR ?= this
 						was_formed_from = WUR
 					}
-					can_generate_scripted_heirs = yes
 				}
 				wurttemberg_generate_scripted_heirs = yes
 			}
@@ -1866,7 +1857,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HAN ?= this
 						was_formed_from = HAN
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hanover_generate_scripted_heirs = yes
 			}
@@ -1876,7 +1866,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BAD ?= this
 						was_formed_from = BAD
 					}
-					can_generate_scripted_heirs = yes
 				}
 				baden_generate_scripted_heirs = yes
 			}
@@ -1886,7 +1875,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HES ?= this
 						was_formed_from = HES
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hesse_darmstadt_generate_scripted_heirs = yes
 			}
@@ -1896,7 +1884,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HEK ?= this
 						was_formed_from = HEK
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hesse_kassel_generate_scripted_heirs = yes
 			}
@@ -1906,7 +1893,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:OLD ?= this
 						was_formed_from = OLD
 					}
-					can_generate_scripted_heirs = yes
 				}
 				oldenburg_generate_scripted_heirs = yes
 			}
@@ -1916,7 +1902,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:MEC ?= this
 						was_formed_from = MEC
 					}
-					can_generate_scripted_heirs = yes
 				}
 				mecklenburg_schwerin_generate_scripted_heirs = yes
 			}
@@ -1926,7 +1911,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:MST ?= this
 						was_formed_from = MST
 					}
-					can_generate_scripted_heirs = yes
 				}
 				mecklenburg_sterlitz_generate_scripted_heirs = yes
 			}
@@ -1936,7 +1920,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:WEI ?= this
 						was_formed_from = WEI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				saxe_weimar_generate_scripted_heirs = yes
 			}
@@ -1946,7 +1929,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:COB ?= this
 						was_formed_from = COB
 					}
-					can_generate_scripted_heirs = yes
 				}
 				saxe_coburg_gotha_generate_scripted_heirs = yes
 			}
@@ -1956,7 +1938,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:MEI ?= this
 						was_formed_from = MEI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				saxe_meiningen_generate_scripted_heirs = yes
 			}
@@ -1966,7 +1947,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ANH ?= this
 						was_formed_from = ANH
 					}
-					can_generate_scripted_heirs = yes
 				}
 				anhalt_generate_scripted_heirs = yes
 			}
@@ -1976,7 +1956,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:LIP ?= this
 						was_formed_from = LIP
 					}
-					can_generate_scripted_heirs = yes
 				}
 				lippe_generate_scripted_heirs = yes
 			}
@@ -1986,7 +1965,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:PER ?= this
 						was_formed_from = PER
 					}
-					can_generate_scripted_heirs = yes
 				}
 				persia_generate_scripted_heirs = yes
 			}
@@ -1996,7 +1974,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:OMA ?= this
 						was_formed_from = OMA
 					}
-					can_generate_scripted_heirs = yes
 				}
 				oman_generate_scripted_heirs = yes
 			}
@@ -2006,7 +1983,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:EGY ?= this
 						was_formed_from = EGY
 					}
-					can_generate_scripted_heirs = yes
 				}
 				egypt_generate_scripted_heirs = yes
 			}
@@ -2016,7 +1992,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:NEJ ?= this
 						was_formed_from = NEJ
 					}
-					can_generate_scripted_heirs = yes
 				}
 				nejd_generate_scripted_heirs = yes
 			}
@@ -2026,7 +2001,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HDJ ?= this
 						was_formed_from = HDJ
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hedjaz_generate_scripted_heirs = yes
 			}
@@ -2036,7 +2010,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ZAI ?= this
 						was_formed_from = ZAI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				zaidi_generate_scripted_heirs = yes
 			}
@@ -2046,7 +2019,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BHN ?= this
 						was_formed_from = BHN
 					}
-					can_generate_scripted_heirs = yes
 				}
 				bahrain_generate_scripted_heirs = yes
 			}
@@ -2056,7 +2028,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ABU ?= this
 						was_formed_from = ABU
 					}
-					can_generate_scripted_heirs = yes
 				}
 				abu_dhabi_generate_scripted_heirs = yes
 			}
@@ -2066,7 +2037,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:TUN ?= this
 						was_formed_from = TUN
 					}
-					can_generate_scripted_heirs = yes
 				}
 				tunis_generate_scripted_heirs = yes
 			}
@@ -2076,7 +2046,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:LUA ?= this
 						was_formed_from = LUA
 					}
-					can_generate_scripted_heirs = yes
 				}
 				luang_prabang_generate_scripted_heirs = yes
 			}
@@ -2086,7 +2055,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:CAM ?= this
 						was_formed_from = CAM
 					}
-					can_generate_scripted_heirs = yes
 				}
 				cambodia_generate_scripted_heirs = yes
 			}
@@ -2096,7 +2064,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BUR ?= this
 						was_formed_from = BUR
 					}
-					can_generate_scripted_heirs = yes
 				}
 				burma_generate_scripted_heirs = yes
 			}
@@ -2106,7 +2073,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:NEP ?= this
 						was_formed_from = NEP
 					}
-					can_generate_scripted_heirs = yes
 				}
 				nepal_generate_scripted_heirs = yes
 			}
@@ -2116,7 +2082,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BUK ?= this
 						was_formed_from = BUK
 					}
-					can_generate_scripted_heirs = yes
 				}
 				bukhara_generate_scripted_heirs = yes
 			}
@@ -2126,7 +2091,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:KHI ?= this
 						was_formed_from = KHI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				khiva_generate_scripted_heirs = yes
 			}
@@ -2136,7 +2100,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:KOK ?= this
 						was_formed_from = KOK
 					}
-					can_generate_scripted_heirs = yes
 				}
 				kokand_generate_scripted_heirs = yes
 			}
@@ -2146,7 +2109,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:KAB ?= this
 						was_formed_from = KAB
 					}
-					can_generate_scripted_heirs = yes
 				}
 				kabul_generate_scripted_heirs = yes
 			}
@@ -2156,7 +2118,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BGM ?= this
 						was_formed_from = BGM
 					}
-					can_generate_scripted_heirs = yes
 				}
 				begemder_generate_scripted_heirs = yes
 			}
@@ -2166,7 +2127,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SHW ?= this
 						was_formed_from = SHW
 					}
-					can_generate_scripted_heirs = yes
 				}
 				shewa_generate_scripted_heirs = yes
 			}
@@ -2176,7 +2136,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BST ?= this
 						was_formed_from = BST
 					}
-					can_generate_scripted_heirs = yes
 				}
 				basutoland_generate_scripted_heirs = yes
 			}
@@ -2186,7 +2145,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SWZ ?= this
 						was_formed_from = SWZ
 					}
-					can_generate_scripted_heirs = yes
 				}
 				swaziland_generate_scripted_heirs = yes
 			}
@@ -2196,7 +2154,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BRD ?= this
 						was_formed_from = BRD
 					}
-					can_generate_scripted_heirs = yes
 				}
 				burundi_generate_scripted_heirs = yes
 			}
@@ -2206,7 +2163,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:RWD ?= this
 						was_formed_from = RWD
 					}
-					can_generate_scripted_heirs = yes
 				}
 				rwanda_generate_scripted_heirs = yes
 			}
@@ -2216,7 +2172,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SOK ?= this
 						was_formed_from = SOK
 					}
-					can_generate_scripted_heirs = yes
 				}
 				sokoto_generate_scripted_heirs = yes
 			}
@@ -2226,7 +2181,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HAW ?= this
 						was_formed_from = HAW
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hawaii_generate_scripted_heirs = yes
 			}
@@ -2236,7 +2190,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BRU ?= this
 						was_formed_from = BRU
 					}
-					can_generate_scripted_heirs = yes
 				}
 				brunei_generate_scripted_heirs = yes
 			}
@@ -2246,7 +2199,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SUL ?= this
 						was_formed_from = SUL
 					}
-					can_generate_scripted_heirs = yes
 				}
 				sulu_generate_scripted_heirs = yes
 			}
@@ -2256,7 +2208,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BOR ?= this
 						was_formed_from = BOR
 					}
-					can_generate_scripted_heirs = yes
 				}
 				bornu_generate_scripted_heirs = yes
 			}
@@ -2266,7 +2217,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BGI ?= this
 						was_formed_from = BGI
 					}
-					can_generate_scripted_heirs = yes
 				}
 				bagirmi_generate_scripted_heirs = yes
 			}
@@ -2276,7 +2226,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BRG ?= this
 						was_formed_from = BRG
 					}
-					can_generate_scripted_heirs = yes
 				}
 				borgu_generate_scripted_heirs = yes
 			}
@@ -2286,7 +2235,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ASH ?= this
 						was_formed_from = ASH
 					}
-					can_generate_scripted_heirs = yes
 				}
 				ashanti_generate_scripted_heirs = yes
 			}
@@ -2296,7 +2244,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:DAH ?= this
 						was_formed_from = DAH
 					}
-					can_generate_scripted_heirs = yes
 				}
 				dahomey_generate_scripted_heirs = yes
 			}
@@ -2306,7 +2253,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:OYO ?= this
 						was_formed_from = OYO
 					}
-					can_generate_scripted_heirs = yes
 				}
 				oyo_generate_scripted_heirs = yes
 			}
@@ -2316,7 +2262,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BEN ?= this
 						was_formed_from = BEN
 					}
-					can_generate_scripted_heirs = yes
 				}
 				benin_generate_scripted_heirs = yes
 			}
@@ -2326,7 +2271,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:MUG ?= this
 						was_formed_from = MUG
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hindustan_generate_scripted_heirs = yes
 			}
@@ -2336,7 +2280,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ACE ?= this
 						was_formed_from = ACE
 					}
-					can_generate_scripted_heirs = yes
 				}
 				aceh_generate_scripted_heirs = yes
 			}
@@ -2346,7 +2289,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:HOH ?= this
 						was_formed_from = HOH
 					}
-					can_generate_scripted_heirs = yes
 				}
 				hohenzollern_generate_scripted_heirs = yes
 			}
@@ -2356,7 +2298,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SCM ?= this
 						was_formed_from = SCM
 					}
-					can_generate_scripted_heirs = yes
 				}
 				schaumburg_lippe_generate_scripted_heirs = yes
 			}
@@ -2366,7 +2307,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:SCW ?= this
 						was_formed_from = SCW
 					}
-					can_generate_scripted_heirs = yes
 				}
 				schwarzburg_generate_scripted_heirs = yes
 			}
@@ -2376,7 +2316,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:WLD ?= this
 						was_formed_from = WLD
 					}
-					can_generate_scripted_heirs = yes
 				}
 				waldeck_generate_scripted_heirs = yes
 			}
@@ -2386,7 +2325,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:AWS ?= this
 						was_formed_from = AWS
 					}
-					can_generate_scripted_heirs = yes
 				}
 				aussa_generate_scripted_heirs = yes
 			}
@@ -2396,7 +2334,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:ANK ?= this
 						was_formed_from = ANK
 					}
-					can_generate_scripted_heirs = yes
 				}
 				ankole_generate_scripted_heirs = yes
 			}
@@ -2406,9 +2343,17 @@ historical_heirs_on_monthly_pulse_country = {
 						c:BUG ?= this
 						was_formed_from = BUG
 					}
-					can_generate_scripted_heirs = yes
 				}
 				buganda_generate_scripted_heirs = yes
+			}
+			else_if = { # Bunyoro
+				limit = {
+					OR = {
+						c:BNY ?= this
+						was_formed_from = BNY
+					}
+				}
+				bunyoro_generate_scripted_heirs = yes
 			}
 			else_if = { # Champasak
 				limit = {
@@ -2416,7 +2361,6 @@ historical_heirs_on_monthly_pulse_country = {
 						c:CHP ?= this
 						was_formed_from = CHP
 					}
-					can_generate_scripted_heirs = yes
 				}
 				champasak_generate_scripted_heirs = yes
 			}
