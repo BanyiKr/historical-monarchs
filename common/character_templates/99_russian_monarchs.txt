@@ -1,0 +1,135 @@
+
+### Tsars
+
+REPLACE:RUS_nicholas_i = { #Nicholas I
+	first_name = Nikolai
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	ruler = yes
+	birth_date = 1796.7.6
+	home_region = STATE_INGRIA
+	dna = dna_rus_nikolai_01
+	traits = {
+		arrogant
+		pious
+		imposing
+	}
+	on_created = {
+		set_variable = is_married
+	}
+ 
+}
+
+REPLACE:RUS_alexander_ii = { #Alexander II, son of Nicholas I
+	first_name = Aleksandr
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1818.4.29
+	home_region = STATE_INGRIA
+	dna = dna_rus_aleksandr_02
+	interest_group = ig_landowners
+	ideology = ideology_market_liberal
+	traits = {
+		meticulous
+		romantic
+	}
+ 
+}
+
+REPLACE:RUS_alexander_iii = { #Alexander III, second son of Alexander II
+	first_name = Aleksandr
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1845.3.10
+	home_region = STATE_INGRIA
+	dna = dna_rus_aleksandr_03
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		imposing
+		charismatic
+		bigoted
+	}
+ 
+}
+
+REPLACE:RUS_nicholas_ii = { #Nicholas II, son of Alexander III
+	first_name = Nikolai
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1868.5.18
+	home_region = STATE_INGRIA
+	dna = dna_rus_nikolai_02
+	interest_group = ig_landowners
+	ideology = ideology_authoritarian
+	traits = {
+		imperious
+		pious
+	}
+ 
+}
+
+REPLACE:RUS_george_i = { #Georgy Romanov
+	first_name = Georgy
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1871.5.9
+	home_region = STATE_INGRIA
+	dna = dna_rus_georgy_aleksandrovich
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	traits = {
+		erudite
+		basic_naval_commander
+		sickly
+	}
+ 
+}
+
+REPLACE:RUS_michael_ii = { #Mikhail Romanov
+	first_name = Mikhail
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1878.5.9
+	home_region = STATE_INGRIA
+	dna = dna_rus_mikhail_aleksandrovich
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	traits = {
+		basic_artillery_commander
+		tactful
+	}
+ 
+}
+
+REPLACE:RUS_alexei_ii = { #Alexei Romanov, son of Nicholas II
+	first_name = Alexei
+	last_name = Romanov
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1904.8.12
+	home_region = STATE_INGRIA
+	dna = dna_rus_aleksei_02
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	traits = {
+		sickly
+		romantic
+		arrogant
+	}
+ 
+}
