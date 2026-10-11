@@ -4480,3 +4480,330 @@ waldeck_generate_scripted_heirs = {
 		}
 	}
 }
+
+aussa_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1817.1.1
+			NOT = { is_template_used = AWS_mohammad_ibn_hanfere }
+			ruler ?= {
+				has_template = AWS_hanfere_mudaito
+			}
+		}
+		create_character = {
+			template = AWS_mohammad_ibn_hanfere
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1820.1.1
+			NOT = { is_template_used = AWS_mohammad_ibn_aydahis }
+			ruler ?= {
+				has_template = AWS_mohammad_ibn_hanfere
+			}
+		}
+		create_character = {
+			template = AWS_mohammad_ibn_aydahis
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1847.1.1
+			NOT = { is_template_used = AWS_yayyo_ibn_mohammad }
+			ruler ?= {
+				has_template = AWS_mohammad_ibn_aydahis
+			}
+		}
+		create_character = {
+			template = AWS_yayyo_ibn_mohammad
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1871.1.1
+			NOT = { is_template_used = AWS_mohammad_ibn_yayyo }
+			ruler ?= {
+				has_template = AWS_yayyo_ibn_mohammad
+			}
+		}
+		create_character = {
+			template = AWS_mohammad_ibn_yayyo
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1919.1.1
+			NOT = { is_template_used = AWS_alimirah_hanfare }
+			ruler ?= {
+				has_template = AWS_mohammad_ibn_yayyo
+			}
+		}
+		create_character = {
+			template = AWS_alimirah_hanfare
+			heir = yes
+		}
+	}
+}
+
+ankole_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1800.1.1
+			NOT = { is_template_used = ANK_mutambuka_nkole }
+			ruler ?= {
+				has_template = ANK_gasiyonga_nkole
+			}
+		}
+		create_character = {
+			template = ANK_mutambuka_nkole
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1830.1.1
+			NOT = { is_template_used = ANK_ntare_v_nkole }
+			ruler ?= {
+				has_template = ANK_mutambuka_nkole
+			}
+		}
+		create_character = {
+			template = ANK_ntare_v_nkole
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1877.1.1
+			NOT = { is_template_used = ANK_kahaya_ii_nkole }
+			ruler ?= {
+				has_template = ANK_ntare_v_nkole
+			}
+		}
+		create_character = {
+			template = ANK_kahaya_ii_nkole
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1900.12.8
+			NOT = { is_template_used = ANK_gasiyonga_ii_nkole }
+			ruler ?= {
+				has_template = ANK_kahaya_ii_nkole
+			}
+		}
+		create_character = {
+			template = ANK_gasiyonga_ii_nkole
+			heir = yes
+		}
+	}
+}
+
+buganda_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1837.2.1
+			NOT = { is_template_used = BUG_muteesa_i_abalasangeye }
+			ruler ?= {
+				has_template = BUG_suuna_ii_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_muteesa_i_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1868.6.3
+			NOT = { is_template_used = BUG_mwanga_ii_abalasangeye }
+			ruler ?= {
+				has_template = BUG_muteesa_i_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_mwanga_ii_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1872.6.3
+			NOT = { is_template_used = BUG_kalema_i_abalasangeye }
+			ruler ?= {
+				has_template = BUG_mwanga_ii_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_kalema_i_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1896.8.8
+			NOT = { is_template_used = BUG_daudi_cwa_ii_abalasangeye }
+			ruler ?= {
+				has_template = BUG_kalema_i_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_daudi_cwa_ii_abalasangeye
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1924.11.19
+			NOT = { is_template_used = BUG_muteesa_ii_abalasangeye }
+			ruler ?= {
+				has_template = BUG_daudi_cwa_ii_abalasangeye
+			}
+		}
+		create_character = {
+			template = BUG_muteesa_ii_abalasangeye
+			heir = yes
+		}
+	}
+}
+
+bunyoro_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1822.1.1
+			NOT = { is_template_used = BNY_kyebambe_iv_babiito }
+			ruler ?= {
+				has_template = BNY_olimi_v_babiito
+			}
+		}
+		create_character = {
+			template = BNY_kyebambe_iv_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1853.6.18
+			NOT = { is_template_used = BNY_kabalega_babiito }
+			ruler ?= {
+				has_template = BNY_kyebambe_iv_babiito
+			}
+		}
+		create_character = {
+			template = BNY_kabalega_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1869.6.18
+			NOT = { is_template_used = BNY_kitahimbwa_babiito }
+			ruler ?= {
+				has_template = BNY_kabalega_babiito
+			}
+		}
+		create_character = {
+			template = BNY_kitahimbwa_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1873.6.18
+			NOT = { is_template_used = BNY_duhaga_ii_babiito }
+			ruler ?= {
+				has_template = BNY_kitahimbwa_babiito
+			}
+		}
+		create_character = {
+			template = BNY_duhaga_ii_babiito
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1900.6.18
+			NOT = { is_template_used = BNY_winyi_iv_babiito }
+			ruler ?= {
+				has_template = BNY_duhaga_ii_babiito
+			}
+		}
+		create_character = {
+			template = BNY_winyi_iv_babiito
+			heir = yes
+		}
+	}
+}
+
+champasak_generate_scripted_heirs = {
+	if = {
+		limit = {
+			game_date >= 1810.1.1
+			NOT = { is_template_used = CHP_boua_chao }
+			ruler ?= {
+				has_template = CHP_nark_chao
+			}
+		}
+		create_character = {
+			template = CHP_boua_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1820.1.1
+			NOT = { is_template_used = CHP_kham_nai_chao }
+			ruler ?= {
+				has_template = CHP_boua_chao
+			}
+		}
+		create_character = {
+			template = CHP_kham_nai_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1830.1.1
+			NOT = { is_template_used = CHP_kham_souk_chao }
+			ruler ?= {
+				has_template = CHP_kham_nai_chao
+			}
+		}
+		create_character = {
+			template = CHP_kham_souk_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1874.5.1
+			NOT = { is_template_used = CHP_ratsadanay_chao }
+			ruler ?= {
+				has_template = CHP_kham_souk_chao
+			}
+		}
+		create_character = {
+			template = CHP_ratsadanay_chao
+			heir = yes
+		}
+	}
+	else_if = {
+		limit = {
+			game_date >= 1911.12.2
+			NOT = { is_template_used = CHP_boun_oum_chao }
+			ruler ?= {
+				has_template = CHP_ratsadanay_chao
+			}
+		}
+		create_character = {
+			template = CHP_boun_oum_chao
+			heir = yes
+		}
+	}
+}

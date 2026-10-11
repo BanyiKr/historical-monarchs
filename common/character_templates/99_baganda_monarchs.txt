@@ -1,0 +1,107 @@
+﻿BUG_suuna_ii_abalasangeye = {
+	first_name = Suuna
+	last_name = Abalasangeye
+	historical = yes
+	ruler = yes
+	noble = yes
+	culture = primary_culture
+	birth_date = 1820.2.1 # Approximate
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_UGANDA
+	traits = {
+		charismatic
+		ruthless
+		arrogant
+		cruel
+		ambitious
+	}
+}
+
+BUG_muteesa_i_abalasangeye = {
+	first_name = Muteesa
+	last_name = Abalasangeye
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:sunni
+	birth_date = 1837.2.1 # Approximate
+	interest_group = ig_landowners
+	ideology = ideology_jingoist_leader
+	home_region = STATE_UGANDA
+	traits = {
+		inexperienced
+		tactful
+	}
+}
+
+BUG_mwanga_ii_abalasangeye = {
+	first_name = Mwanga
+	last_name = Abalasangeye
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:sunni
+	birth_date = 1868.6.3
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+		reckless
+		ruthless
+	}
+}
+
+BUG_kalema_i_abalasangeye = {
+	first_name = Kalema
+	last_name = Abalasangeye
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:sunni
+	birth_date = 1872.6.3 # Unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+		cruel
+		reckless
+	}
+}
+
+BUG_daudi_cwa_ii_abalasangeye = {
+	first_name = Daudi_Cwa
+	last_name = Abalasangeye
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:sunni
+	birth_date = 1896.8.8
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+BUG_muteesa_ii_abalasangeye = {
+	first_name = Muteesa
+	last_name = Abalasangeye
+	historical = yes
+	heir = yes
+	noble = yes
+	culture = primary_culture
+	religion = rel:sunni
+	birth_date = 1924.11.19
+	interest_group = ig_landowners
+	ideology = ideology_child
+	home_region = STATE_UGANDA
+	traits = {
+		ambitious
+		trait_child
+	}
+}

@@ -1,0 +1,105 @@
+﻿BNY_nyabongo_ii_babiito = {
+	first_name = Nyabongo
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	ruler = yes
+	culture = primary_culture
+	age = 51 # Unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+BNY_olimi_v_babiito = {
+	first_name = Olimi
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	heir = yes
+	culture = primary_culture
+	age = 43 # Unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+BNY_kyebambe_iv_babiito = {
+	first_name = Kyebambe
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	heir = yes
+	culture = primary_culture
+	birth_date = 1822.1.1 # Exact date unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+BNY_kabalega_babiito = {
+	first_name = Kabalega
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	heir = yes
+	culture = primary_culture
+	birth_date = 1853.6.18
+	interest_group = ig_armed_forces
+	ideology = ideology_abolitionist
+	home_region = STATE_UGANDA
+	traits = {
+		basic_diplomat
+	}
+}
+
+BNY_kitahimbwa_babiito = {
+	first_name = Kitahimbwa
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	heir = yes
+	culture = primary_culture
+	birth_date = 1869.6.18
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+BNY_duhaga_ii_babiito = {
+	first_name = Duhaga
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	heir = yes
+	culture = primary_culture
+	birth_date = 1873.6.18
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+BNY_winyi_iv_babiito = {
+	first_name = Winyi
+	last_name = Babiito
+	historical = yes
+	noble = yes
+	heir = yes
+	culture = primary_culture
+	birth_date = 1900.6.18
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}

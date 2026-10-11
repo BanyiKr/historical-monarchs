@@ -1,0 +1,79 @@
+﻿MLD_muhammad_mueenuddeen_ii = {
+    # Muhammad Mueenuddeen II
+    first_name = "Muhammad_Mueenuddeen"
+    last_name = "Huraa"
+    historical = yes
+    culture = cu:sinhala
+    religion = rel:sunni
+    heir = yes
+    birth_date = 1840.12.21 # Unknown
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_CEYLON
+    traits = {
+    }
+}
+
+MLD_muhammad_imaaduddeen_v = {
+    # Muhammad Imaaduddeen V
+    first_name = "Muhammad_Imaaduddeen"
+    last_name = "Huraa"
+    historical = yes
+    culture = cu:sinhala
+    religion = rel:sunni
+    heir = yes
+    birth_date = 1884.6.21 # Unknown
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_CEYLON
+    traits = {
+    }
+}
+
+MLD_muhammad_shamsuddeen_iii = {
+    # Muhammad Shamsuddeen III
+    first_name = "Muhammad_Shamsuddeen"
+    last_name = "Huraa"
+    historical = yes
+    culture = cu:sinhala
+    religion = rel:sunni
+    heir = yes
+    birth_date = 1879.10.20
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_CEYLON
+    traits = {
+    }
+}
+
+MLD_muhammad_imaaduddeen_vi = {
+    # Muhammad Imaaduddeen VI
+    first_name = "Muhammad_Imaaduddeen"
+    last_name = "Huraa"
+    historical = yes
+    culture = cu:sinhala
+    religion = rel:sunni
+    heir = yes
+    birth_date = 1868.10.25
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_CEYLON
+    traits = {
+    }
+}
+
+MLD_hassan_nooraddeen_ii = {
+    # Hassan Nooraddeen II
+    first_name = "Hassan_Nooraddeen"
+    last_name = "Huraa"
+    historical = yes
+    culture = cu:sinhala
+    religion = rel:sunni
+    heir = yes
+    birth_date = 1887.4.21
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_CEYLON
+    traits = {
+    }
+}

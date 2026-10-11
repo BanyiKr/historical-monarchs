@@ -1,0 +1,8 @@
+﻿CHARACTERS = {
+	c:BUG ?= {
+		create_character = {
+			template = BUG_suuna_ii_abalasangeye
+			ruler = yes
+		}
+	}
+}

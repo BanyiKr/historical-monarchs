@@ -1,0 +1,12 @@
+﻿CHARACTERS = {
+	c:BNY ?= {
+		create_character = {
+			template = BNY_nyabongo_ii_babiito
+			ruler = yes
+		}
+		create_character = {
+			template = BNY_olimi_v_babiito
+			heir = yes
+		}
+	}
+}

@@ -1,0 +1,69 @@
+﻿CHP_boua_chao = {
+	# Boua
+	first_name = "Boua"
+	last_name = "Chao"
+	historical = yes
+	culture = cu:lao
+	birth_date = 1810.1.1 # Unknown, son of Huy
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+	}
+}
+
+CHP_kham_nai_chao = {
+	# Kham Nai
+	first_name = "Kham_Nai"
+	last_name = "Chao"
+	historical = yes
+	culture = cu:lao
+	birth_date = 1820.1.1 # Unknown, son of Huy
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+	}
+}
+
+CHP_kham_souk_chao = {
+	# Kham Souk
+	first_name = "Kham_Souk"
+	last_name = "Chao"
+	historical = yes
+	culture = cu:lao
+	birth_date = 1830.1.1 # Unknown, son of Huy
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+	}
+}
+
+CHP_ratsadanay_chao = {
+	# Ratsadanay
+	first_name = "Ratsadanay"
+	last_name = "Chao"
+	historical = yes
+	culture = cu:lao
+	birth_date = 1874.5.1
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_LAOS
+	traits = {
+	}
+}
+
+CHP_boun_oum_chao = {
+	# Boun Oum
+	first_name = "Boun_Oum"
+	last_name = "Chao"
+	historical = yes
+	culture = cu:lao
+	birth_date = 1911.12.2
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_LAOS
+	traits = {
+	}
+}

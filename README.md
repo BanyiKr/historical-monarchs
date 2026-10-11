@@ -20,9 +20,9 @@ The chains of succession for countries that historically abolished the monarchy 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Aceh | ☑️ | | | | | |
 | Anhalt | ☑️ | | | | | |
-| Ankole | | | | | ☑️ | |
+| Ankole | ☑️ | | | | ☑️ | |
 | Ashanti | ☑️ | | | | ☑️ | |
-| Aussa | | | | | ☑️ | |
+| Aussa | ☑️ | | | | ☑️ | |
 | Baden | ☑️ | ☑️ | | | | |
 | Bagirmi | ☑️ | | | | ☑️ | |
 | Bahrain | ☑️ | | | | | |
@@ -36,14 +36,14 @@ The chains of succession for countries that historically abolished the monarchy 
 | Borgu | ☑️ | | | | ☑️ | |
 | Bornu | ☑️ | | | | ☑️ | |
 | Brunei | ☑️ | | | | | |
-| Buganda | | | | | ☑️ | |
+| Buganda | ☑️ | | | | ☑️ | |
 | Bukhara | ☑️ | | | | | |
 | Bulgaria | ☑️ | | | | | |
-| Bunyoro | | | | | ☑️ | |
+| Bunyoro | ☑️ | | | | ☑️ | |
 | Burma | ☑️ | | | | | |
 | Burundi | ☑️ | | | | ☑️ | |
 | Cambodia | ☑️ | ☑️ | | | | |
-| Champasak | | | | | ☑️ | |
+| Champasak | ☑️ | | | | ☑️ | |
 | China | ☑️ | ☑️ | | | | ☑️ |
 | Croatia | ☑️ | ☑️ | | | | |
 | Dahomey | ☑️ | | | | ☑️ | |

@@ -1,0 +1,75 @@
+﻿REPLACE:ANK_gasiyonga_nkole = {
+	# Gasiyonga I
+	first_name = Gasiyonga
+	last_name = Bahinda
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1791.12.8 # Complete guesswork, but ruled from 1811-1839
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+ANK_mutambuka_nkole = {
+	# Mutambuka
+	first_name = Mutambuka
+	last_name = Bahinda
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1800.1.1 # Unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+ANK_ntare_v_nkole = {
+	# Ntare V
+	first_name = Ntare
+	last_name = Bahinda
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1830.1.1 # Unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
+
+ANK_kahaya_ii_nkole = {
+	# Ntare V
+	first_name = Ntare
+	last_name = Bahinda
+	historical = yes
+	culture = primary_culture
+	heir = yes
+	birth_date = 1877.1.1 # WAs around 18 in 1895
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+		imposing
+	}
+}
+
+ANK_gasiyonga_ii_nkole = {
+	# Gasiyonga II
+	first_name = Gasiyonga
+	last_name = Bahinda
+	historical = yes
+	culture = primary_culture
+	ruler = yes
+	birth_date = 1900.12.8 # Unknown
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	home_region = STATE_UGANDA
+	traits = {
+	}
+}
